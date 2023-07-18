@@ -455,6 +455,7 @@ def index():
 
 @bp.route("/home")
 def home():
+    session["foo"] = "bar"
     is_rie = any(
         [
             IPAddress(request.remote_addr) in IPNetwork(network_ip)

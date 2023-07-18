@@ -5,6 +5,7 @@ import pytest
 from flask import session
 from flaskr import create_app
 from flask_migrate import Migrate
+from flask_webtest import TestApp
 
 import flaskr.utils
 
@@ -53,6 +54,7 @@ def app(mocker):
             "TESTING": True,
             "BIGBLUEBUTTON_ENDPOINT": "https://bbb.test",
             "OIDC_ATTENDEE_ISSUER": "http://oidc-server.test",
+            "SESSION_COOKIE_NAME": "B3Desk",
         }
     )
     with app.app_context():
@@ -64,7 +66,8 @@ def app(mocker):
 
 @pytest.fixture()
 def client_app(app):
-    return app.test_client()
+    # with app.app_context():
+    yield TestApp(app)
 
 
 @pytest.fixture()

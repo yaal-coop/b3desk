@@ -13,6 +13,7 @@
 from flask import Flask, render_template, request, session
 import os
 import logging
+import datetime
 
 from flask_babel import Babel
 from flask_wtf.csrf import CSRFProtect
@@ -30,6 +31,7 @@ def setup_babel(app):
     def get_locale():
         if request.args.get("lang"):
             session["lang"] = request.args["lang"]
+        print(session)
         return session.get("lang", "fr")
 
 
@@ -50,6 +52,12 @@ def create_app(test_config=None, gunicorn_logging=False):
     app.config.from_pyfile("config.py")
     if test_config:
         app.config.from_mapping(test_config)
+
+    if app.config["TESTING"]:
+        @app.before_request
+        def make_session_permanent():
+            session.permanent = True
+            app.permanent_session_lifetime = datetime.timedelta(days=365)
 
     @app.context_processor
     def global_processor():

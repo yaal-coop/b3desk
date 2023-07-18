@@ -235,7 +235,8 @@ def test_waiting_meeting_with_a_fullname_containing_a_slash(client_app, app, mee
     response = client_app.get(waiting_meeting_url)
 
     assert response.status_code == 200
-    assert fullname in response.get_data(as_text=True)
+    # assert fullname in response.get_data(as_text=True)
+    response.mustcontain(fullname)
 
 
 def test_waiting_meeting_with_empty_fullname_suffix(client_app, app, meeting):

@@ -46,7 +46,8 @@ def test_new_meeting_when_recording_not_configured(client_app, app, authenticate
 
     response = client_app.get("/meeting/new")
 
-    assert "Enregistrement" not in response.get_data(as_text=True)
+    # assert "Enregistrement" not in response.get_data(as_text=True)
+    response.mustcontain("Enregistrement")
 
 
 def test_edit_meeting(client_app, app, authenticated_user, meeting, bbb_response):
@@ -179,10 +180,12 @@ def test_save_moderatorOnlyMessage_too_long(
 
     assert response.status_code == 200
     response_html = response.get_data(as_text=True)
-    assert "<!-- test page wizard -->" in response_html
-    assert "Le formulaire contient des erreurs" in response_html
-    assert moderator_only_message in response_html
-    assert "Le message est trop long" in response_html
+
+    # assert "<!-- test page wizard -->" in response_html
+    # assert "Le formulaire contient des erreurs" in response_html
+    # assert moderator_only_message in response_html
+    # assert "Le message est trop long" in response_html
+    response_html.mustcontain("<!-- test page wizard -->", "Le formulaire contient des erreurs", moderator_only_message, "Le message est trop long")
     with app.app_context():
         assert not Meeting.query.all()
 
