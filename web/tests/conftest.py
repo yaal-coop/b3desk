@@ -1,4 +1,5 @@
 import functools
+from flask import url_for
 import time
 import pytest
 
@@ -56,6 +57,7 @@ def app(mocker):
             "BIGBLUEBUTTON_ENDPOINT": "https://bbb.test",
             "OIDC_ATTENDEE_ISSUER": "http://oidc-server.test",
             "SESSION_COOKIE_NAME": "B3Desk",
+            "STATS_URL": None,
         }
     )
     with app.app_context():
