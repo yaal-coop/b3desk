@@ -52,6 +52,7 @@ def app(mocker):
             "SQLALCHEMY_DATABASE_URI": "sqlite:///:memory:",
             "WTF_CSRF_ENABLED": False,
             "TESTING": True,
+            "DEBUG": True,
             "BIGBLUEBUTTON_ENDPOINT": "https://bbb.test",
             "OIDC_ATTENDEE_ISSUER": "http://oidc-server.test",
             "SESSION_COOKIE_NAME": "B3Desk",
