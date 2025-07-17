@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import requests
 from flask import Blueprint
 from flask import abort
 from flask import current_app
@@ -281,8 +282,11 @@ def visio_code_connexion():
         visio_code_attempt_counter_update(False)
         if session["visio_code"]["captchetat_is_needed"]:
             flash("CAPTCHA", "error")
+            response = get_captchetat_token()
             if session["visio_code"]["captchetat_is_dead"]:
                 flash("captchetat_is_dead", "error")
+            if response.access_token:
+                flash(response.access_token, "success")
         return redirect(url_for("public.home"))
     visio_code_attempt_counter_update(True)
     return join_waiting_meeting_with_visio_code(meeting)
@@ -296,3 +300,25 @@ def join_waiting_meeting_with_visio_code(meeting):
     return signin_meeting(
         meeting_fake_id=meeting_fake_id, creator=creator, h=h, role=role
     )
+
+
+def get_captchetat_token():
+    url = "https://oauth.piste.gouv.fr/api/oauth/token"
+    form_data = {
+        "grant_type": "client_credentials",
+        "client_id": current_app.config["CLIENT_ID"],
+        "client_secret": current_app.config["CLIENT_SECRET"],
+        "scope": "piste.captchetat",
+    }
+    headers = {"Content-Type": "application/x-www-form-urlencoded"}
+    response = requests.post(url, data=form_data, headers=headers)
+    # response example :
+    # {
+    #     "access_token": "abcd",
+    #     "token_type": "bearer",
+    #     "expires_in": 3600,
+    #     "scope": "openid",
+    # }
+    if response.status_code != 200 or "access_token" not in response:
+        session["visio_code"]["captchetat_is_dead"] = True
+    return response
