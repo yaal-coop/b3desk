@@ -158,6 +158,8 @@ Bv5MNsMlw30mv0xhyDwa5TvvzBgWcU2xseTBWTKLaGUJ82oTtzG3eFHxZ7GLFlP4
 0fJCgDTN52LXjWmEyDeLA1c=
 -----END PRIVATE KEY-----
 """,
+        "CLIENT_ID": "",
+        "CLIENT_SECRET": "",
     }
 
 
