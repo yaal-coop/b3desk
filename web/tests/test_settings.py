@@ -11,7 +11,9 @@ def test_list_of_strings_type(configuration):
     assert config_obj.OIDC_ATTENDEE_SCOPES == ["openid", "profile", "ect.scope.cv"]
 
 
-def test_enable_sip_true_with_and_without_private_key_home_page(client_app):
+def test_enable_sip_true_with_and_without_private_key_home_page(
+    client_app, visio_code_session
+):
     response = client_app.get("/", status=302).follow()
     response.location == "/home"
     assert (
@@ -26,7 +28,9 @@ def test_enable_sip_true_with_and_without_private_key_home_page(client_app):
     )
 
 
-def test_enable_sip_true_with_and_without_private_key_welcome_page(client_app, user):
+def test_enable_sip_true_with_and_without_private_key_welcome_page(
+    client_app, user, visio_code_session
+):
     response = client_app.get("/", status=302).follow()
     response.location == "/welcome"
     assert (
