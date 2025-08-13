@@ -64,7 +64,9 @@ def test_edit_meeting(client_app, authenticated_user, meeting, bbb_response):
     assert response.template == "meeting/wizard.html"
 
 
-def test_save_new_meeting(client_app, authenticated_user, mock_meeting_is_not_running):
+def test_save_new_meeting(
+    client_app, authenticated_user, mock_meeting_is_not_running, caplog
+):
     res = client_app.get("/meeting/new")
     res.form["name"] = "Mon meeting de test"
     res.form["welcome"] = "Bienvenue dans mon meeting de test"
@@ -119,10 +121,14 @@ def test_save_new_meeting(client_app, authenticated_user, mock_meeting_is_not_ru
         assert meeting.voiceBridge == "123456789"
     assert len(meeting.visio_code) == 9
     assert meeting.visio_code.isdigit()
+    assert (
+        "séminaire Mon meeting de test was created/updated by alice@domain.tld\n"
+        in caplog.text
+    )
 
 
 def test_save_existing_meeting_not_running(
-    client_app, authenticated_user, meeting, mock_meeting_is_not_running
+    client_app, authenticated_user, meeting, mock_meeting_is_not_running, caplog
 ):
     assert len(Meeting.query.all()) == 1
 
@@ -176,6 +182,7 @@ def test_save_existing_meeting_not_running(
     assert meeting.allowStartStopRecording is True
     if client_app.app.config["ENABLE_PIN_MANAGEMENT"]:
         assert meeting.voiceBridge == "123456789"
+    assert "séminaire meeting was created/updated by alice@domain.tld\n" in caplog.text
 
 
 def test_save_existing_meeting_running(
