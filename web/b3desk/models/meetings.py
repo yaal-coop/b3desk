@@ -16,6 +16,7 @@ from typing import Optional
 
 from flask import current_app
 from flask import url_for
+from flask_babel import lazy_gettext as _
 from sqlalchemy_utils import StringEncryptedType
 from wtforms import ValidationError
 
@@ -521,3 +522,43 @@ def get_all_visio_codes():
 
 def get_meeting_by_visio_code(visio_code):
     return Meeting.query.filter_by(visio_code=visio_code).one_or_none()
+
+
+def create_meeting_from_api(user):
+    meeting = Meeting()
+    meeting.user = user
+    meeting.name = str(
+        _(
+            "%(the_meeting)s de %(user_name)s",
+            the_meeting=current_app.config["WORDING_THE_MEETING"],
+            user_name=user.given_name,
+        )
+    )
+    meeting.visio_code = unique_visio_code_generation()
+    meeting.voiceBridge = pin_generation()
+    meeting.dialNumber = current_app.config["BIGBLUEBUTTON_DIALNUMBER"]
+    meeting.moderatorPW = "Pa55W0rd1"
+    meeting.attendeePW = "Pa55W0rd2"
+    meeting.welcome = str(
+        _(
+            "Bienvenue dans %(this_meeting)s %(meeting_name)s.",
+            this_meeting=current_app.config["WORDING_THIS_MEETING"],
+            meeting_name="<u><strong> %%CONFNAME%% </strong></u>",
+        )
+    )
+    meeting.maxParticipants = "350"
+    meeting.duration = "280"
+    meeting.guestPolicy = False
+    meeting.webcamsOnlyForModerator = False
+    meeting.muteOnStart = True
+    meeting.lockSettingsDisableCam = False
+    meeting.lockSettingsDisablePrivateChat = False
+    meeting.lockSettingsDisablePublicChat = False
+    meeting.lockSettingsDisableNote = False
+    meeting.moderatorOnlyMessage = str(_("Bienvenue aux modérateurs"))
+    meeting.logoutUrl = current_app.config["MEETING_LOGOUT_URL"]
+
+    meeting.save()
+
+    saved_meeting = get_meeting_by_visio_code(meeting.visio_code)
+    return saved_meeting

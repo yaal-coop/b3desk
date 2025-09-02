@@ -2,6 +2,7 @@ from flask import Blueprint
 from flask import current_app
 from flask import request
 
+from b3desk.models.meetings import create_meeting_from_api
 from b3desk.models.meetings import get_or_create_shadow_meeting
 from b3desk.models.roles import Role
 from b3desk.models.users import get_or_create_user
@@ -100,3 +101,55 @@ def account_check():
     user = get_user(email)
 
     return {"available_account": bool(user)}
+
+
+@bp.route("/api/create-meeting")
+@check_oidc_connection(auth)
+@auth.token_auth("default", scopes_required=["profile", "email"])
+def create_meeting():
+    client = auth.clients["default"]
+    access_token = auth._parse_access_token(request)
+    userinfo = client.userinfo_request(access_token).to_dict()
+    email = userinfo["email"]
+    user = get_user(email)
+
+    if not user:
+        return {"error": "user need an account on B3Desk"}
+
+    if not user.can_create_meetings:
+        return {"error": "user not authorized to create more meeting"}
+
+    meeting = create_meeting_from_api(user)
+
+    if not meeting.id:
+        return {"error": "BBB failed to create meeting"}
+
+    return {
+        "meeting": [
+            {
+                **{
+                    "name": meeting.name,
+                    "moderator_url": meeting.get_signin_url(Role.moderator),
+                    "attendee_url": meeting.get_signin_url(Role.attendee),
+                    "visio_code": meeting.visio_code,
+                },
+                **(
+                    {
+                        "phone_number": current_app.config["BIGBLUEBUTTON_DIALNUMBER"],
+                        "PIN": meeting.voiceBridge,
+                    }
+                    if current_app.config["ENABLE_PIN_MANAGEMENT"]
+                    else {}
+                ),
+                **(
+                    {
+                        "SIPMediaGW_url": meeting.visio_code
+                        + "@"
+                        + current_app.config["FQDN_SIP_SERVER"],
+                    }
+                    if current_app.config["ENABLE_SIP"]
+                    else {}
+                ),
+            }
+        ]
+    }

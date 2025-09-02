@@ -216,3 +216,45 @@ def test_api_user_without_account(
     )
 
     assert not res.json["available_account"]
+
+
+def test_api_create_meeting_no_user(
+    client_app,
+    iam_token,
+):
+    res = client_app.get(
+        "/api/create-meeting",
+        headers={"Authorization": f"Bearer {iam_token.access_token}"},
+    )
+    assert res.json == {"error": "user need an account on B3Desk"}
+
+
+def test_api_create_meeting_fail_too_much_meeting(
+    client_app,
+    user,
+    meeting,
+    meeting_2,
+    meeting_3,
+    iam_token,
+):
+    client_app.app.config["MAX_MEETINGS_PER_USER"] = 3
+    res = client_app.get(
+        "/api/create-meeting",
+        headers={"Authorization": f"Bearer {iam_token.access_token}"},
+    )
+    assert res.json == {"error": "user not authorized to create more meeting"}
+
+
+def test_api_create_meeting(
+    client_app,
+    user,
+    iam_token,
+):
+    res = client_app.get(
+        "/api/create-meeting",
+        headers={"Authorization": f"Bearer {iam_token.access_token}"},
+    )
+
+    assert res.json["meeting"][0]["name"] == "le séminaire de Alice"
+
+    assert len(user.meetings) == 1
