@@ -295,6 +295,11 @@ def get_or_create_user(user_info):
     return user
 
 
+def get_user(email):
+    user = db.session.query(User).filter(User.email == email).first()
+    return user
+
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.Unicode(150), unique=True)

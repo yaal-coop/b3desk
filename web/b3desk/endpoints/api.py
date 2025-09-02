@@ -5,6 +5,7 @@ from flask import request
 from b3desk.models.meetings import get_or_create_shadow_meeting
 from b3desk.models.roles import Role
 from b3desk.models.users import get_or_create_user
+from b3desk.models.users import get_user
 from b3desk.utils import check_oidc_connection
 
 from .. import auth
@@ -86,3 +87,16 @@ def shadow_meeting():
             }
         ]
     }
+
+
+@bp.route("/api/account-check")
+@check_oidc_connection(auth)
+@auth.token_auth("default", scopes_required=["profile", "email"])
+def account_check():
+    client = auth.clients["default"]
+    access_token = auth._parse_access_token(request)
+    userinfo = client.userinfo_request(access_token).to_dict()
+    email = userinfo["email"]
+    user = get_user(email)
+
+    return {"available_account": bool(user)}

@@ -191,3 +191,28 @@ def test_api_new_shadow_meeting(
     assert len(res.json["shadow-meeting"][0]["visio_code"]) == 9
     assert "SIPMediaGW_url" not in res.json["shadow-meeting"][0]
     assert len(res.json["shadow-meeting"]) == 1
+
+
+def test_api_user_has_account(
+    client_app,
+    user,
+    iam_token,
+):
+    res = client_app.get(
+        "/api/account-check",
+        headers={"Authorization": f"Bearer {iam_token.access_token}"},
+    )
+
+    assert res.json["available_account"]
+
+
+def test_api_user_without_account(
+    client_app,
+    iam_token,
+):
+    res = client_app.get(
+        "/api/account-check",
+        headers={"Authorization": f"Bearer {iam_token.access_token}"},
+    )
+
+    assert not res.json["available_account"]
