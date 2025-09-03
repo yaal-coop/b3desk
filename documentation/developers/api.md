@@ -2,7 +2,7 @@
 
 ## Points d'accès
 
-Une API publique est disponible sur `/api/meetings` et `/api/shadow-meeting`. Cette API est utilisée par les greffons Thunderbird et Outlook.
+Une API publique est disponible sur `/api/meetings`, `/api/shadow-meeting` et `api/create-meeting`. Cette API est utilisée par les greffons Thunderbird et Outlook.
 
 Les réponses sont au format json sous la forme suivante :
 
@@ -18,6 +18,22 @@ Les réponses sont au format json sous la forme suivante :
 }
 ```
 
+ou
+
+```json
+{
+  "error": "message"
+}
+```
+
+Sur `/api/account-check`, l'utilisateur peut vérifier s'il a un compte B3Desk. La réponse est au format json sous la forme suivante :
+
+```json
+{
+  "available_account": "true"
+}
+```
+
 ### Liste des meetings
 `/api/meetings`
 L'API renvoie la liste des meetings de l'utilisateurs.
@@ -26,6 +42,17 @@ L'API renvoie la liste des meetings de l'utilisateurs.
 `/api/shadow-meeting`
 Chaque utilisateur possède un meeting 'silencieux' invisible dans l'interface b3desk, mais utilisable par des greffons.
 L'API renvoie les liens d'invitation du meeting silencieux.
+
+### Création de meeting
+`api/create-meeting`
+L'utilisateur peut créer un meeting par défaut qui sera nommé : "<the_meeting> de <user_name>"
+L'utilisateur doit avoir un compte B3Desk.
+L'API renvoie les liens du nouveau meeting.
+
+### Vérification de compte B3Desk
+`/api/account-check`
+L'utilisateur peut vérifier s'il a un compte B3Desk.
+L'api renvoie un booléen.
 
 ## Authentification
 
