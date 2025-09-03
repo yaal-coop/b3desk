@@ -203,7 +203,7 @@ def test_api_user_has_account(
         headers={"Authorization": f"Bearer {iam_token.access_token}"},
     )
 
-    assert res.json["available_account"]
+    assert res.json["available_account"] == "true"
 
 
 def test_api_user_without_account(
@@ -215,7 +215,7 @@ def test_api_user_without_account(
         headers={"Authorization": f"Bearer {iam_token.access_token}"},
     )
 
-    assert not res.json["available_account"]
+    assert res.json["available_account"] == "false"
 
 
 def test_api_create_meeting_no_user(

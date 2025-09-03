@@ -100,7 +100,7 @@ def account_check():
     email = userinfo["email"]
     user = get_user(email)
 
-    return {"available_account": bool(user)}
+    return {"available_account": str(bool(user)).lower()}
 
 
 @bp.route("/api/create-meeting")
