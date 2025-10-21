@@ -25,6 +25,11 @@ def has_user_session():
     return user_session.is_authenticated()
 
 
+def get_attendee_session():
+    user_session = UserSession(dict(session), "attendee")
+    return user_session if user_session.is_authenticated() else None
+
+
 def get_authenticated_attendee_fullname():
     attendee_session = UserSession(session)
     attendee_info = attendee_session.userinfo

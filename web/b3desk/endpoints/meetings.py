@@ -34,6 +34,7 @@ from b3desk.models.users import User
 from b3desk.utils import check_oidc_connection
 
 from .. import auth
+from ..session import get_attendee_session
 from ..session import get_current_user
 from ..session import meeting_owner_needed
 from ..session import should_display_captcha
@@ -383,3 +384,20 @@ def meeting_favorite():
 @auth.oidc_auth("default")
 def get_available_visio_code():
     return jsonify(available_visio_code=unique_visio_code_generation())
+
+
+@bp.route("/meeting/<meeting:meeting>/logout")
+def logout(meeting):
+    """Users are redirected to this endpoint when leaving a metting."""
+    if get_attendee_session():
+        return auth._logout(None)
+    #    if oidc_session := get_attendee_session():
+    #        well_known_endpoint = current_app.config["OIDC_ATTENDEE_ISSUER"] + "/.well-known/openid-configuration"
+    #        well_known_payload = requests.get(well_known_endpoint).json()
+    #        end_session_endpoint = w/ell_known_payload["end_session_endpoint"]
+    #
+    #        client_id = current_app.config["OIDC_ATTENDEE_CLIENT_ID"]
+    #        url = f"{end_session_endpoint}?client_id={client_id}&id_token_hint={oidc_session.id_token_jwt}"
+    #        return redirect(url)
+
+    return redirect(current_app.config["MEETING_LOGOUT_URL"])

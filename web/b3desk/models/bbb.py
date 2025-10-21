@@ -152,10 +152,10 @@ class BBB:
             params["welcome"] = param
         if param := self.meeting.maxParticipants:
             params["maxParticipants"] = str(param)
-        if param := self.meeting.logoutUrl or current_app.config.get(
-            "MEETING_LOGOUT_URL", ""
-        ):
-            params["logoutURL"] = str(param)
+        if param := self.meeting.logoutUrl:
+            params["logoutURL"] = url_for(
+                "meetings.logout", meeting=self.meeting, _external=True
+            )
         if param := self.meeting.duration:
             params["duration"] = str(param)
         if current_app.config["ENABLE_PIN_MANAGEMENT"] and (
