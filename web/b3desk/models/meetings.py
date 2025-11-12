@@ -19,6 +19,8 @@ from flask_babel import lazy_gettext as _
 from sqlalchemy_utils import StringEncryptedType
 from wtforms import ValidationError
 
+from b3desk.models.intermediate_tables import delegate_table
+from b3desk.models.intermediate_tables import favorite_table
 from b3desk.utils import get_random_alphanumeric_string
 from b3desk.utils import secret_key
 
@@ -85,7 +87,6 @@ class Meeting(db.Model):
     updated_at = db.Column(
         db.DateTime, default=datetime.now, onupdate=datetime.now, nullable=False
     )
-    is_favorite = db.Column(db.Boolean, unique=False, default=False)
     user = db.relationship("User", back_populates="meetings")
     files = db.relationship("MeetingFiles", back_populates="meeting")
     externalFiles = db.relationship("MeetingFilesExternal", back_populates="meeting")
@@ -120,6 +121,12 @@ class Meeting(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
 
     user = db.relationship("User")
+    delegates = db.relationship(
+        "User", secondary=delegate_table, back_populates="meetings_delegate"
+    )
+    is_favorite = db.relationship(
+        "User", secondary=favorite_table, back_populates="favorites"
+    )
 
     _bbb = None
 
