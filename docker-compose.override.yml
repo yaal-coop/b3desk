@@ -59,6 +59,10 @@ services:
       - NEXTCLOUD_ADMIN_PASSWORD=Pa55w0rd
       - NEXTCLOUD_USER=bbb-visio-user
       - NEXTCLOUD_USER_PASS=passwordSTRONG
+      - NEXTCLOUD_B3DESK_USER=b3desk-user
+      - NEXTCLOUD_B3DESK_USER_PASS=passwordSTRONG
+      - NEXTCLOUD_B3DESK_USER2=b3desk-user2
+      - NEXTCLOUD_B3DESK_USER2_PASS=passwordSTRONG
       - NEXTCLOUD_TRUSTED_DOMAINS=nextcloud.localhost  # service name in docker network
       - NEXTCLOUD_ALLOW_ORIGIN=http://b3desk.localhost:5000  # allow local browser to pick nextcloud files
     volumes:

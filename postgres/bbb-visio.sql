@@ -50,6 +50,8 @@ COPY public.slideshow (id, filename, description, user_id) FROM stdin;
 
 COPY public."user" (id, email, given_name, family_name, presets) FROM stdin;
 1	bbb-visio-user@apps.fr	BBB	User	[]
+2   b3desk-user@apps.fr b3desk b3desk-user  []
+3   b3desk-user2@apps.fr b3desk2 b3desk-user2  []
 \.
 
 

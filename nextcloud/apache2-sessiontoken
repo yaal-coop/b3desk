@@ -22,6 +22,9 @@ su -p "www-data" -s /bin/sh -c "php occ app:enable webapppassword"
 
 # create bbb-visio-user
 su -p "www-data" -s /bin/sh -c "OC_PASS=$NEXTCLOUD_USER_PASS php occ user:add $NEXTCLOUD_USER --password-from-env"
+# create b3desk-user & b3desk-user2
+su -p "www-data" -s /bin/sh -c "OC_PASS=$NEXTCLOUD_B3DESK_USER_PASS php occ user:add $NEXTCLOUD_B3DESK_USER --password-from-env"
+su -p "www-data" -s /bin/sh -c "OC_PASS=$NEXTCLOUD_B3DESK_USER2_PASS php occ user:add $NEXTCLOUD_B3DESK_USER2 --password-from-env"
 
 chown -R www-data: /var/www/html/
 
