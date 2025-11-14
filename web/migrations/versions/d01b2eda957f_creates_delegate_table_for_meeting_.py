@@ -63,10 +63,10 @@ def upgrade():
         "meeting",
         sa.column("id", sa.Integer),
         sa.column("user_id", sa.Integer),
-        sa.column("is_favorite", sa.Boolean),
+        sa.column("favorite_of", sa.Boolean),
     )
 
-    favorite_meetings = select(meetings).where(meetings.c.is_favorite)
+    favorite_meetings = select(meetings).where(meetings.c.favorite_of)
 
     for (
         meeting_id,
@@ -77,16 +77,16 @@ def upgrade():
         )
     session.commit()
 
-    # delete is_favorite column in meeting table
+    # delete favorite_of column in meeting table
     with op.batch_alter_table("meeting", schema=None) as batch_op:
-        batch_op.drop_column("is_favorite")
+        batch_op.drop_column("favorite_of")
 
 
 def downgrade():
-    # create is_favorite column in meeting table
+    # create favorite_of column in meeting table
     with op.batch_alter_table("meeting", schema=None) as batch_op:
         batch_op.add_column(
-            sa.Column("is_favorite", sa.BOOLEAN(), autoincrement=False, nullable=True)
+            sa.Column("favorite_of", sa.BOOLEAN(), autoincrement=False, nullable=True)
         )
 
     # save previous favorites in meeting table
@@ -96,7 +96,7 @@ def downgrade():
         "meeting",
         sa.column("id", sa.Integer),
         sa.column("user_id", sa.Integer),
-        sa.column("is_favorite", sa.Boolean),
+        sa.column("favorite_of", sa.Boolean),
     )
     favorites = sa.table(
         "favorite",
@@ -111,7 +111,7 @@ def downgrade():
             update(meetings)
             .where(meetings.c.id == meeting_id)
             .where(meetings.c.user_id == user_id)
-            .values(is_favorite=True)
+            .values(favorite_of=True)
         )
     session.commit()
 
