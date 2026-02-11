@@ -29,6 +29,7 @@ docker-compose-web-auth-local.yml
 .env
 web.env
 celery.env
+celerybeat-schedule*
 nextcloud.env
 web-ecoles.env
 web-colleges.env

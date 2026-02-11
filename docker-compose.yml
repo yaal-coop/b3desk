@@ -38,9 +38,11 @@ services:
     # WORKER NEEDS TO HAVE REDIS_URL ENV VAR SET, either by shared.env or web.env
     environment:
       - APP=tasks.celery
+      - PYTHONPATH=/usr/src
     volumes:
-      - ./web/b3desk:/usr/src/app
-    command: celery --app tasks.celery worker --loglevel=info
+      - ./web/b3desk:/usr/src/b3desk
+    working_dir: /usr/src/b3desk
+    command: celery --app tasks.celery worker --beat --loglevel=info
 
   broker:
     container_name: broker

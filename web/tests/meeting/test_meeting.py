@@ -20,9 +20,11 @@ from b3desk.models.meetings import get_all_previous_voiceBridges
 from b3desk.models.meetings import get_forbidden_pins
 from b3desk.models.meetings import get_meeting_by_visio_code
 from b3desk.models.meetings import get_meeting_file_hash
+from b3desk.models.meetings import get_or_create_shadow_meeting
 from b3desk.models.meetings import unique_visio_code_generation
 from b3desk.models.meetings import visio_code_exists
 from b3desk.models.roles import Role
+from b3desk.tasks import delete_old_meetings
 from flask import url_for
 
 
@@ -1194,3 +1196,25 @@ def test_get_available_visio_code(client_app, authenticated_user):
 def test_get_available_visio_code_no_user(client_app):
     """Test that unauthenticated user is redirected from visio code endpoint."""
     client_app.get("/meeting/available-visio-code", status=302)
+
+
+def test_delete_old_meetings(
+    app,
+    client_app,
+    time_machine,
+    meeting,
+    meeting_2,
+    meeting_3,
+    shadow_meeting,
+    shadow_meeting_2,
+    shadow_meeting_3,
+    user,
+):
+    """Test that old shadow meetings are deleted except the most recent one."""
+    time_machine.move_to(datetime.datetime(2025, 6, 1))
+    with mock.patch("b3desk.create_app", return_value=client_app.app):
+        delete_old_meetings()
+    voiceBridges = get_all_previous_voiceBridges()
+    assert voiceBridges == ["111111111", "111111112", "555555552", "555555553"]
+    assert user.meetings == [meeting_3, shadow_meeting]
+    assert get_or_create_shadow_meeting(user) == shadow_meeting

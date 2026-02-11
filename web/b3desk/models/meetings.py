@@ -342,20 +342,6 @@ def save_voiceBridge_and_delete_meeting(meeting):
     db.session.commit()
 
 
-def delete_all_old_shadow_meetings():
-    """Delete all shadow meetings not used in the past year."""
-    old_shadow_meetings = [
-        shadow_meeting
-        for shadow_meeting in db.session.query(Meeting).filter(
-            Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
-            Meeting.is_shadow,
-        )
-    ]
-
-    for shadow_meeting in old_shadow_meetings:
-        save_voiceBridge_and_delete_meeting(shadow_meeting)
-
-
 def visio_code_exists(code):
     """Check if a visio code already exists."""
     return db.session.query(
