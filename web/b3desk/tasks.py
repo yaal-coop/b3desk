@@ -24,6 +24,7 @@ logger = get_task_logger(__name__)
 @celery.task(name="delete-old-meetings")
 def delete_old_meetings():
     """Celery cron task to delete expired meetings from database."""
+    logger.info("Celery cron task: delete_old_meetings started")
     from datetime import datetime
 
     from b3desk import create_app
@@ -41,9 +42,10 @@ def delete_old_meetings():
                 Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
             )
         ]
-        logger.info(
-            "Celery cron task: %d expired meetings to delete", len(old_meetings)
-        )
+        if old_meetings:
+            logger.info(
+                "Celery cron task: %d expired meetings to delete", len(old_meetings)
+            )
         for meeting in old_meetings:
             save_voiceBridge_and_delete_meeting(meeting)
             logger.info(
@@ -52,6 +54,7 @@ def delete_old_meetings():
                 meeting.id,
                 meeting.name,
             )
+        logger.info("Celery cron task: delete_old_meetings ended")
 
 
 @celery.task(name="background_upload")

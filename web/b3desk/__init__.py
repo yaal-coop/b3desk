@@ -135,6 +135,7 @@ def setup_logging(app):
         dictConfig(
             {
                 "version": 1,
+                "disable_existing_loggers": False,
                 "formatters": {
                     "default": {
                         "format": "[%(asctime)s] %(levelname)s in %(module)s: %(message)s",
@@ -155,6 +156,7 @@ def setup_logging(app):
         dictConfig(
             {
                 "version": 1,
+                "disable_existing_loggers": False,
                 "formatters": {
                     "default": {
                         "format": "[%(asctime)s] %(levelname)s in %(module)s: %(message)s",
