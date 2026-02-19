@@ -1,0 +1,64 @@
+name: Check translation quality
+
+on:
+  pull_request:
+    branches:
+      - production
+      - main
+  push:
+    branches:
+      - production
+      - main
+
+jobs:
+  check-fuzzy:
+    name: No fuzzy entries in catalogs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check for fuzzy entries
+        run: |
+          if grep -rn "^#, fuzzy" web/translations/*/LC_MESSAGES/messages.po; then
+            echo ""
+            echo "❌ Fuzzy entries found in translation catalogs!"
+            echo "Review and fix each fuzzy entry above, then remove the #, fuzzy flag."
+            exit 1
+          else
+            echo "✅ No fuzzy entries found"
+          fi
+
+  check-variant-coverage:
+    name: Variant locales translate "réunion"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check fr@cours and fr@seminaire cover "réunion" strings
+        run: |
+          MISSING=$(awk '
+            /^# @no-variant-translation/ { skip=1 }
+            /^msgid / { msgid=$0; in_msgid=1; in_msgstr=0; linenum=NR; msgstr_cont=0 }
+            /^msgstr / { msgstr=$0; in_msgid=0; in_msgstr=1; msgstr_cont=0 }
+            /^"/ { if (in_msgid) msgid=msgid " " $0; if (in_msgstr) msgstr_cont=1 }
+            /^$/ {
+              if (!skip && msgid ~ /[Rr]éunion/ && msgstr == "msgstr \"\"" && !msgstr_cont)
+                print FILENAME ":" linenum ": " msgid
+              msgid=""; msgstr=""; in_msgid=0; in_msgstr=0; msgstr_cont=0; skip=0
+            }
+            END {
+              if (!skip && msgid ~ /[Rr]éunion/ && msgstr == "msgstr \"\"" && !msgstr_cont)
+                print FILENAME ":" linenum ": " msgid
+            }
+          ' web/translations/fr@cours/LC_MESSAGES/messages.po \
+            web/translations/fr@seminaire/LC_MESSAGES/messages.po)
+
+          if [ -n "$MISSING" ]; then
+            echo "$MISSING"
+            echo ""
+            echo "❌ Some strings containing \"réunion\" are not translated in variant locales!"
+            echo "Add translations for the entries listed above."
+            exit 1
+          else
+            echo "✅ All \"réunion\" strings are translated in variant locales"
+          fi

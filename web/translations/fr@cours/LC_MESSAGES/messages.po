@@ -1495,6 +1495,7 @@ msgid "Quel est notre rôle ?"
 msgstr ""
 
 #: web/b3desk/templates/footer/donnees_personnelles.html:28
+# @no-variant-translation
 msgid ""
 "Le Webinaire est un service en ligne proposé aux agents de l’Etat destiné"
 " à faciliter le travail à distance par l’organisation et la tenue de "
@@ -1510,6 +1511,7 @@ msgid ""
 msgstr ""
 
 #: web/b3desk/templates/footer/donnees_personnelles.html:30
+# @no-variant-translation
 msgid ""
 "Visio-agents est un service en ligne proposé aux agents du ministère de "
 "l'Éducation Nationale destiné à faciliter le travail à distance par "
