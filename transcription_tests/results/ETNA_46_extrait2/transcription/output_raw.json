@@ -1,0 +1,7513 @@
+{
+  "diarization": [
+    {
+      "speaker": "SPEAKER_01",
+      "start": 0.265,
+      "end": 0.965
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 0.405,
+      "end": 0.525
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 1.645,
+      "end": 12.105
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 13.185,
+      "end": 42.365
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 42.365,
+      "end": 42.525
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 42.525,
+      "end": 45.485
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 45.585,
+      "end": 45.905
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 47.885,
+      "end": 48.305
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 48.305,
+      "end": 48.665
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 48.885,
+      "end": 50.885
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 51.365,
+      "end": 52.965
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 51.985,
+      "end": 52.685
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 52.885,
+      "end": 53.205
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 53.205,
+      "end": 53.325
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 54.265,
+      "end": 55.745
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 56.605,
+      "end": 58.245
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 59.125,
+      "end": 77.965
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 78.325,
+      "end": 92.345
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 92.865,
+      "end": 94.105
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 94.705,
+      "end": 108.505
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 108.745,
+      "end": 108.985
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 108.985,
+      "end": 109.005
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 109.145,
+      "end": 111.865
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 111.845,
+      "end": 116.425
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 116.665,
+      "end": 138.405
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 138.825,
+      "end": 148.605
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 150.585,
+      "end": 151.385
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 151.465,
+      "end": 152.925
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 152.945,
+      "end": 153.725
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 153.725,
+      "end": 153.745
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 154.265,
+      "end": 154.525
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 154.505,
+      "end": 155.885
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 155.825,
+      "end": 160.085
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 156.505,
+      "end": 156.525
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 156.585,
+      "end": 157.485
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 158.365,
+      "end": 162.625
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 162.905,
+      "end": 164.805
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 165.965,
+      "end": 166.025
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 166.025,
+      "end": 166.085
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 166.085,
+      "end": 166.165
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 166.165,
+      "end": 166.265
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 166.685,
+      "end": 171.025
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 167.365,
+      "end": 169.105
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 171.925,
+      "end": 183.385
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 183.805,
+      "end": 190.305
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 191.325,
+      "end": 192.325
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 193.085,
+      "end": 202.025
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 203.925,
+      "end": 204.445
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 204.445,
+      "end": 205.265
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 205.825,
+      "end": 205.845
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 205.845,
+      "end": 206.205
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 206.205,
+      "end": 206.345
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 206.705,
+      "end": 206.785
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 206.785,
+      "end": 206.805
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 206.805,
+      "end": 206.965
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 206.965,
+      "end": 207.285
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 208.305,
+      "end": 209.405
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 209.825,
+      "end": 209.905
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 210.545,
+      "end": 222.405
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 222.805,
+      "end": 229.525
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 229.805,
+      "end": 249.705
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 250.265,
+      "end": 255.125
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 256.945,
+      "end": 257.225
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 257.785,
+      "end": 258.345
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 259.085,
+      "end": 265.145
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 265.865,
+      "end": 274.965
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 275.385,
+      "end": 281.285
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 282.225,
+      "end": 285.805
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 286.225,
+      "end": 291.005
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 291.405,
+      "end": 292.325
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 292.785,
+      "end": 298.245
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 298.605,
+      "end": 317.325
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 317.805,
+      "end": 323.025
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 323.825,
+      "end": 325.345
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 326.185,
+      "end": 328.485
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 327.325,
+      "end": 329.705
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 329.345,
+      "end": 333.145
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 334.345,
+      "end": 334.785
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 334.745,
+      "end": 335.145
+    },
+    {
+      "speaker": "SPEAKER_02",
+      "start": 335.145,
+      "end": 335.725
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 339.545,
+      "end": 342.705
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 343.325,
+      "end": 353.885
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 354.745,
+      "end": 357.205
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 357.645,
+      "end": 371.505
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 371.925,
+      "end": 377.525
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 378.005,
+      "end": 385.725
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 386.065,
+      "end": 394.865
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 395.265,
+      "end": 396.605
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 396.845,
+      "end": 403.045
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 403.585,
+      "end": 418.465
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 418.845,
+      "end": 452.805
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 452.965,
+      "end": 464.845
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 465.785,
+      "end": 472.065
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 472.185,
+      "end": 477.065
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 478.365,
+      "end": 505.845
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 506.185,
+      "end": 508.185
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 509.385,
+      "end": 532.425
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 533.445,
+      "end": 560.745
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 560.965,
+      "end": 572.065
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 572.425,
+      "end": 584.845
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 585.165,
+      "end": 597.225
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 598.045,
+      "end": 601.445
+    },
+    {
+      "speaker": "SPEAKER_03",
+      "start": 601.645,
+      "end": 609.645
+    }
+  ],
+  "wordLevelTranscription": [
+    {
+      "start": 0.585,
+      "end": 0.8250000000000001,
+      "text": "Merci.",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 1.805,
+      "end": 1.885,
+      "text": "Alors",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 2.045,
+      "end": 2.205,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 2.205,
+      "end": 2.685,
+      "text": "portail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 2.765,
+      "end": 3.245,
+      "text": "apps,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 3.965,
+      "end": 4.125,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 4.285,
+      "end": 4.365,
+      "text": "ça",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 4.525,
+      "end": 4.605,
+      "text": "c'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 4.6850000000000005,
+      "end": 4.765000000000001,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 4.845000000000001,
+      "end": 5.005,
+      "text": "chiffres",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 5.245,
+      "end": 5.325,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 5.325,
+      "end": 5.325,
+      "text": "y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 5.405,
+      "end": 5.405,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 5.484999999999999,
+      "end": 5.725,
+      "text": "15",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 5.805,
+      "end": 5.885,
+      "text": "jours.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 6.285,
+      "end": 6.525,
+      "text": "D'ailleurs,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 6.605,
+      "end": 6.925000000000001,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 6.765000000000001,
+      "end": 6.925000000000001,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 6.845000000000001,
+      "end": 7.165000000000001,
+      "text": "dépassé,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 7.324999999999999,
+      "end": 7.404999999999999,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 7.484999999999999,
+      "end": 7.484999999999999,
+      "text": "est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 7.645,
+      "end": 7.805,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 7.725,
+      "end": 7.805,
+      "text": "plus",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 7.885,
+      "end": 7.965,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 7.965,
+      "end": 8.285,
+      "text": "80",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 8.365,
+      "end": 8.525,
+      "text": "000,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 8.925,
+      "end": 9.165000000000001,
+      "text": "presque",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 9.245000000000001,
+      "end": 9.645,
+      "text": "82",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 9.725,
+      "end": 9.805,
+      "text": "000",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 9.885,
+      "end": 9.965,
+      "text": "vidéos",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 10.045,
+      "end": 10.125,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 10.285,
+      "end": 10.845,
+      "text": "Podéduc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 10.924999999999999,
+      "end": 11.325,
+      "text": "Ingérieur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 11.565,
+      "end": 12.285,
+      "text": "d'Espace.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 13.322731706537997,
+      "end": 13.402731706537999,
+      "text": "Donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 13.562731706537999,
+      "end": 13.642731706537997,
+      "text": "ça",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 13.882731706538,
+      "end": 13.962731706537998,
+      "text": "c'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 14.922731706537999,
+      "end": 15.002731706537997,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 15.162731706538,
+      "end": 15.322731706537997,
+      "text": "chiffres",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 15.482731706538,
+      "end": 15.722731706537996,
+      "text": "d'avant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 15.882731706538,
+      "end": 15.962731706537998,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 15.962731706537998,
+      "end": 16.202731706538,
+      "text": "vacances.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 16.442731706537998,
+      "end": 16.522731706538,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 16.602731706538,
+      "end": 16.602731706538,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 16.762731706538,
+      "end": 17.402731706538,
+      "text": "221",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 17.482731706538,
+      "end": 17.642731706537997,
+      "text": "000",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 17.802731706537998,
+      "end": 18.282731706537998,
+      "text": "comptes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 18.362731706537996,
+      "end": 18.842731706538,
+      "text": "ouverts",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 19.162731706538,
+      "end": 19.402731706537995,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 19.482731706538,
+      "end": 19.642731706537997,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 19.722731706537996,
+      "end": 20.042731706537996,
+      "text": "portail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 20.362731706537996,
+      "end": 20.602731706538,
+      "text": "apps,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 21.002731706537997,
+      "end": 21.322731706537997,
+      "text": "sachant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 21.482731706538,
+      "end": 21.562731706538,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 21.642731706537997,
+      "end": 21.722731706537996,
+      "text": "ça",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 21.802731706538,
+      "end": 21.882731706538,
+      "text": "ne",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 21.962731706537998,
+      "end": 22.362731706537996,
+      "text": "compte",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 22.362731706537996,
+      "end": 22.442731706538,
+      "text": "pas",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 22.602731706538,
+      "end": 22.922731706538,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 22.922731706538,
+      "end": 23.322731706537997,
+      "text": "comptes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 23.322731706537997,
+      "end": 23.402731706537995,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 23.482731706538,
+      "end": 23.562731706538,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 23.562731706538,
+      "end": 23.642731706537997,
+      "text": "been",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 23.802731706538,
+      "end": 24.042731706537996,
+      "text": "ouverts",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 24.202731706538,
+      "end": 24.602731706538,
+      "text": "directly",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 24.682731706537997,
+      "end": 24.842731706538,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 24.842731706538,
+      "end": 24.922731706538,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 24.922731706538,
+      "end": 25.242731706538,
+      "text": "application.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 27.562731706538,
+      "end": 27.722731706537996,
+      "text": "They",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 27.802731706538,
+      "end": 27.882731706538,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 28.042731706537996,
+      "end": 28.202731706538,
+      "text": "passed",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 28.282731706537998,
+      "end": 28.442731706538,
+      "text": "by",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 28.442731706538,
+      "end": 28.602731706538,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 28.602731706538,
+      "end": 29.162731706538,
+      "text": "portail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 29.402731706537995,
+      "end": 29.562731706538,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 29.562731706538,
+      "end": 29.642731706537997,
+      "text": "they",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 29.722731706537996,
+      "end": 29.802731706538,
+      "text": "are",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 30.042731706537996,
+      "end": 30.522731706538,
+      "text": "enregistrés",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 30.602731706538,
+      "end": 30.682731706537997,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 30.682731706537997,
+      "end": 30.762731706538002,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 30.762731706538002,
+      "end": 31.642731706537997,
+      "text": "2210",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 31.722731706537996,
+      "end": 31.882731706538,
+      "text": "compt",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 31.962731706537998,
+      "end": 32.04273170653799,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 32.122731706538005,
+      "end": 32.202731706538,
+      "text": "are",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 32.282731706538,
+      "end": 32.522731706537996,
+      "text": "less.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 42.42386585326899,
+      "end": 42.503865853269005,
+      "text": "Donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 42.58386585326899,
+      "end": 42.663865853269,
+      "text": "ça",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 42.823865853269,
+      "end": 42.983865853268995,
+      "text": "fait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 43.06386585326899,
+      "end": 43.223865853269004,
+      "text": "qu'un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 43.383865853269,
+      "end": 43.543865853269,
+      "text": "tiers",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 43.623865853268995,
+      "end": 43.703865853268994,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 43.783865853269006,
+      "end": 43.86386585326899,
+      "text": "gens",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 43.943865853269,
+      "end": 44.02386585326899,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 44.103865853269,
+      "end": 44.263865853268996,
+      "text": "se",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 44.183865853269,
+      "end": 44.263865853268996,
+      "text": "sont",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 44.343865853268994,
+      "end": 44.663865853269,
+      "text": "connectés",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 44.743865853268986,
+      "end": 44.903865853269,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 44.903865853269,
+      "end": 45.14386585326899,
+      "text": "cinq",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 45.223865853269004,
+      "end": 45.383865853269,
+      "text": "mois.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 45.703865853268994,
+      "end": 46.02386585326899,
+      "text": "Voilà.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 48.620463413075996,
+      "end": 48.780463413076,
+      "text": "Mes",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 48.940463413075996,
+      "end": 49.260463413075996,
+      "text": "cinquième",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 49.500463413076,
+      "end": 50.06046341307599,
+      "text": "soixante-treize",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 50.380463413075994,
+      "end": 50.460463413076,
+      "text": "qui",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 50.540463413076,
+      "end": 50.620463413075996,
+      "text": "sont",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 57.27252438595897,
+      "end": 57.91252438595895,
+      "text": "Voilà.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 59.34386585326899,
+      "end": 59.74386585326899,
+      "text": "Matomo",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 59.983865853269,
+      "end": 60.063865853269,
+      "text": "is",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 60.223865853269,
+      "end": 60.38386585326901,
+      "text": "installed",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 60.543865853269004,
+      "end": 60.62386585326899,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 60.62386585326899,
+      "end": 60.703865853269,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 60.703865853269,
+      "end": 60.943865853268996,
+      "text": "portail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 61.023865853268994,
+      "end": 61.34386585326899,
+      "text": "apps,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 61.503865853269,
+      "end": 61.583865853268996,
+      "text": "so",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 61.663865853268994,
+      "end": 61.74386585326899,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 61.74386585326899,
+      "end": 61.823865853269005,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 61.90386585326899,
+      "end": 62.063865853269,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 62.063865853269,
+      "end": 62.303865853268995,
+      "text": "stats",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 62.46386585326899,
+      "end": 62.543865853269004,
+      "text": "pretty",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 62.703865853269,
+      "end": 63.103865853269006,
+      "text": "precise",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 63.583865853268996,
+      "end": 63.823865853269005,
+      "text": "about",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 64.303865853269,
+      "end": 64.54386585326901,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 64.54386585326901,
+      "end": 64.78386585326899,
+      "text": "parcours",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 64.94386585326899,
+      "end": 65.023865853269,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 65.023865853269,
+      "end": 65.183865853269,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 65.183865853269,
+      "end": 65.50386585326899,
+      "text": "utilisators,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 65.82386585326901,
+      "end": 65.903865853269,
+      "text": "where",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 66.143865853269,
+      "end": 66.22386585326899,
+      "text": "it",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 66.303865853269,
+      "end": 66.38386585326901,
+      "text": "is,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 69.343865853269,
+      "end": 69.50386585326899,
+      "text": "what",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 69.66386585326899,
+      "end": 70.143865853269,
+      "text": "terminal,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 70.303865853269,
+      "end": 70.463865853269,
+      "text": "etc.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 71.26386585326901,
+      "end": 71.343865853269,
+      "text": "We",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 71.423865853269,
+      "end": 71.50386585326899,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 71.98386585326901,
+      "end": 72.063865853269,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 72.063865853269,
+      "end": 72.143865853269,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 72.303865853269,
+      "end": 72.38386585326899,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 72.38386585326899,
+      "end": 72.463865853269,
+      "text": "child",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 72.54386585326901,
+      "end": 72.78386585326899,
+      "text": "interesting",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 73.023865853269,
+      "end": 73.10386585326899,
+      "text": "because",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 73.26386585326901,
+      "end": 73.423865853269,
+      "text": "it's",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 73.423865853269,
+      "end": 73.50386585326899,
+      "text": "been",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 73.82386585326901,
+      "end": 73.903865853269,
+      "text": "three",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 73.98386585326901,
+      "end": 74.143865853269,
+      "text": "semaines",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 74.22386585326899,
+      "end": 74.303865853269,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 74.303865853269,
+      "end": 74.38386585326899,
+      "text": "month",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 74.463865853269,
+      "end": 74.54386585326901,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 74.54386585326901,
+      "end": 74.70386585326901,
+      "text": "we've",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 74.78386585326899,
+      "end": 74.94386585326899,
+      "text": "closed.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 80.221597559807,
+      "end": 80.54159755980702,
+      "text": "The",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 80.54159755980702,
+      "end": 80.941597559807,
+      "text": "portail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 81.02159755980698,
+      "end": 81.741597559807,
+      "text": "6.4.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 95.72386585326899,
+      "end": 95.88386585326901,
+      "text": "Les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 95.963865853269,
+      "end": 96.20386585326901,
+      "text": "travaux",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 96.28386585326899,
+      "end": 96.363865853269,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 96.44386585326902,
+      "end": 96.60386585326899,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 96.523865853269,
+      "end": 97.16386585326899,
+      "text": "raccourcissement",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 97.32386585326901,
+      "end": 97.403865853269,
+      "text": "du",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 97.48386585326901,
+      "end": 97.963865853269,
+      "text": "LRL,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.12386585326902,
+      "end": 98.20386585326901,
+      "text": "je",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.20386585326901,
+      "end": 98.20386585326901,
+      "text": "ne",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.28386585326899,
+      "end": 98.28386585326899,
+      "text": "sais",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.28386585326899,
+      "end": 98.363865853269,
+      "text": "pas",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.363865853269,
+      "end": 98.44386585326902,
+      "text": "si",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.523865853269,
+      "end": 98.60386585326899,
+      "text": "tu",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.683865853269,
+      "end": 98.76386585326901,
+      "text": "as",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 98.843865853269,
+      "end": 99.083865853269,
+      "text": "quelque",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 99.00386585326902,
+      "end": 99.083865853269,
+      "text": "chose",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 99.16386585326899,
+      "end": 99.243865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 99.243865853269,
+      "end": 99.403865853269,
+      "text": "montrer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 99.56386585326902,
+      "end": 99.803865853269,
+      "text": "Hugo.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 100.76386585326901,
+      "end": 101.083865853269,
+      "text": "Non,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 100.923865853269,
+      "end": 101.00386585326902,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 101.00386585326902,
+      "end": 101.083865853269,
+      "text": "n'y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 101.083865853269,
+      "end": 101.083865853269,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 101.083865853269,
+      "end": 101.16386585326899,
+      "text": "rien",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 101.243865853269,
+      "end": 101.32386585326901,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 101.56386585326902,
+      "end": 101.72386585326899,
+      "text": "vo.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 111.62046341307601,
+      "end": 111.940463413076,
+      "text": "C'était",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.100463413076,
+      "end": 112.180463413076,
+      "text": "il",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.180463413076,
+      "end": 112.180463413076,
+      "text": "y",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.180463413076,
+      "end": 112.26046341307601,
+      "text": "a",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.26046341307601,
+      "end": 112.34046341307601,
+      "text": "deux",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.420463413076,
+      "end": 112.580463413076,
+      "text": "semaines",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.660463413076,
+      "end": 112.740463413076,
+      "text": "et",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.740463413076,
+      "end": 112.90046341307601,
+      "text": "ils",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.90046341307601,
+      "end": 112.98046341307601,
+      "text": "ont",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 112.98046341307601,
+      "end": 113.06046341307601,
+      "text": "dit",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.06046341307601,
+      "end": 113.220463413076,
+      "text": "qu'il",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.220463413076,
+      "end": 113.300463413076,
+      "text": "y",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.300463413076,
+      "end": 113.300463413076,
+      "text": "avait",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.460463413076,
+      "end": 113.54046341307601,
+      "text": "en",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.54046341307601,
+      "end": 113.62046341307601,
+      "text": "fait",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.70046341307601,
+      "end": 113.780463413076,
+      "text": "sur",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 113.940463413076,
+      "end": 114.26046341307601,
+      "text": "23",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 114.34046341307601,
+      "end": 114.420463413076,
+      "text": "semaines,",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 114.580463413076,
+      "end": 114.740463413076,
+      "text": "qu'il",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 114.740463413076,
+      "end": 114.820463413076,
+      "text": "y",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 114.820463413076,
+      "end": 114.820463413076,
+      "text": "en",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 114.90046341307601,
+      "end": 114.98046341307601,
+      "text": "avait",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 115.460463413076,
+      "end": 115.54046341307601,
+      "text": "un.",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 116.957060972883,
+      "end": 117.19706097288298,
+      "text": "Hugo",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 117.27706097288302,
+      "end": 117.357060972883,
+      "text": "is",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 117.517060972883,
+      "end": 117.677060972883,
+      "text": "allé",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 117.75706097288298,
+      "end": 117.837060972883,
+      "text": "voir",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 117.91706097288301,
+      "end": 118.237060972883,
+      "text": "l'équipe",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 118.397060972883,
+      "end": 118.71706097288302,
+      "text": "directement,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 119.27706097288302,
+      "end": 119.357060972883,
+      "text": "they",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 119.357060972883,
+      "end": 119.43706097288299,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 119.677060972883,
+      "end": 120.15706097288302,
+      "text": "discuté",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 120.15706097288302,
+      "end": 120.31706097288298,
+      "text": "ensemble",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 120.47706097288301,
+      "end": 120.557060972883,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 120.63706097288298,
+      "end": 120.797060972883,
+      "text": "too.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 121.59706097288301,
+      "end": 121.677060972883,
+      "text": "We",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 121.677060972883,
+      "end": 121.677060972883,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 121.837060972883,
+      "end": 121.99706097288299,
+      "text": "two",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 122.077060972883,
+      "end": 122.47706097288301,
+      "text": "devs",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 122.47706097288301,
+      "end": 122.557060972883,
+      "text": "who",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 122.63706097288298,
+      "end": 122.87706097288299,
+      "text": "travail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 123.03706097288301,
+      "end": 123.27706097288302,
+      "text": "jusqu'à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 123.59706097288301,
+      "end": 123.677060972883,
+      "text": "fin",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 123.837060972883,
+      "end": 123.91706097288301,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 123.91706097288301,
+      "end": 124.077060972883,
+      "text": "semaine.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 125.517060972883,
+      "end": 125.59706097288301,
+      "text": "Fin",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 125.677060972883,
+      "end": 125.75706097288298,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 125.75706097288298,
+      "end": 125.837060972883,
+      "text": "semaine,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 126.87706097288299,
+      "end": 127.27706097288302,
+      "text": "we're",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 127.27706097288302,
+      "end": 127.357060972883,
+      "text": "going",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 127.357060972883,
+      "end": 127.357060972883,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 127.43706097288299,
+      "end": 127.43706097288299,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 127.517060972883,
+      "end": 127.59706097288301,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 127.59706097288301,
+      "end": 127.75706097288298,
+      "text": "nouvelle",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 128.077060972883,
+      "end": 128.15706097288302,
+      "text": "du",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 128.31706097288298,
+      "end": 128.63706097288298,
+      "text": "development,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 128.797060972883,
+      "end": 128.877060972883,
+      "text": "but",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 129.037060972883,
+      "end": 129.117060972883,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 129.117060972883,
+      "end": 129.19706097288298,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 129.437060972883,
+      "end": 129.517060972883,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 129.597060972883,
+      "end": 129.917060972883,
+      "text": "bonus",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 130.31706097288298,
+      "end": 130.557060972883,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 130.957060972883,
+      "end": 131.037060972883,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 131.117060972883,
+      "end": 131.357060972883,
+      "text": "big",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 131.437060972883,
+      "end": 131.677060972883,
+      "text": "travel",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 132.477060972883,
+      "end": 132.71706097288302,
+      "text": "proposition",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 132.877060972883,
+      "end": 132.957060972883,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 133.037060972883,
+      "end": 133.517060972883,
+      "text": "Hugo",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 134.07706097288298,
+      "end": 134.31706097288298,
+      "text": "with",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 134.477060972883,
+      "end": 134.71706097288302,
+      "text": "them.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 138.80386585326903,
+      "end": 138.963865853269,
+      "text": "Il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 139.04386585326898,
+      "end": 139.203865853269,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 139.203865853269,
+      "end": 139.60386585326899,
+      "text": "fallu",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 140.48386585326898,
+      "end": 140.80386585326903,
+      "text": "travailler",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 141.04386585326898,
+      "end": 141.203865853269,
+      "text": "main",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 141.203865853269,
+      "end": 141.44386585326902,
+      "text": "dans",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 141.36386585326898,
+      "end": 141.68386585326903,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 141.60386585326899,
+      "end": 141.76386585326895,
+      "text": "main",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 142.083865853269,
+      "end": 142.323865853269,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 142.56386585326902,
+      "end": 142.723865853269,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 142.80386585326903,
+      "end": 143.04386585326898,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 142.963865853269,
+      "end": 143.203865853269,
+      "text": "devrait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 143.283865853269,
+      "end": 143.44386585326902,
+      "text": "avoir",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 143.44386585326902,
+      "end": 143.60386585326899,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 143.60386585326899,
+      "end": 144.24386585326897,
+      "text": "rapportissant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 144.403865853269,
+      "end": 144.48386585326898,
+      "text": "du",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 144.48386585326898,
+      "end": 144.80386585326903,
+      "text": "RM.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 144.88386585326896,
+      "end": 144.963865853269,
+      "text": "Donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 145.12386585326897,
+      "end": 145.203865853269,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 145.283865853269,
+      "end": 145.523865853269,
+      "text": "1er",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 145.68386585326903,
+      "end": 146.00386585326896,
+      "text": "juillet",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 146.24386585326897,
+      "end": 146.48386585326898,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 146.403865853269,
+      "end": 146.723865853269,
+      "text": "midi,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 146.963865853269,
+      "end": 147.12386585326897,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 147.12386585326897,
+      "end": 147.283865853269,
+      "text": "va",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 147.283865853269,
+      "end": 147.523865853269,
+      "text": "faire",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 147.44386585326902,
+      "end": 147.60386585326899,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 147.68386585326903,
+      "end": 147.92386585326898,
+      "text": "mise",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 148.00386585326896,
+      "end": 148.163865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 148.163865853269,
+      "end": 148.323865853269,
+      "text": "jour.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 150.421597559807,
+      "end": 150.58159755980702,
+      "text": "Voilà,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 150.74159755980705,
+      "end": 150.90159755980702,
+      "text": "je",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 150.82159755980703,
+      "end": 150.98159755980706,
+      "text": "te",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 150.98159755980706,
+      "end": 151.221597559807,
+      "text": "déconne.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 154.279329266345,
+      "end": 154.43932926634503,
+      "text": "Hein",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 154.519329266345,
+      "end": 154.75932926634502,
+      "text": "?",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 155.925,
+      "end": 156.085,
+      "text": "Ouais",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 156.165,
+      "end": 156.325,
+      "text": "c'est",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 157.845,
+      "end": 158.325,
+      "text": "automatiser",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 158.23706097288303,
+      "end": 158.55706097288308,
+      "text": "Non,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 158.48499999999999,
+      "end": 158.565,
+      "text": "en",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 158.55706097288308,
+      "end": 158.71706097288305,
+      "text": "c'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 159.91706097288304,
+      "end": 160.31706097288307,
+      "text": "déconnez.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 160.55706097288308,
+      "end": 160.637060972883,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 160.637060972883,
+      "end": 160.79706097288303,
+      "text": "n'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 160.87706097288302,
+      "end": 161.03706097288304,
+      "text": "pas",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 161.03706097288304,
+      "end": 161.19706097288307,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 161.11706097288302,
+      "end": 161.35706097288303,
+      "text": "prise",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 161.59706097288304,
+      "end": 161.91706097288304,
+      "text": "jusqu'au",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 161.91706097288304,
+      "end": 162.23706097288303,
+      "text": "14",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 162.39706097288305,
+      "end": 162.637060972883,
+      "text": "juin.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 162.79479267942102,
+      "end": 163.03479267942103,
+      "text": "Pourquoi",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.11479267942107,
+      "end": 163.19479267942106,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.19479267942106,
+      "end": 163.27479267942104,
+      "text": "est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.27479267942104,
+      "end": 163.35479267942108,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.35479267942108,
+      "end": 163.43479267942107,
+      "text": "prise",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.5947926794211,
+      "end": 163.75479267942106,
+      "text": "encore",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.75479267942106,
+      "end": 163.8347926794211,
+      "text": "?",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 163.91479267942103,
+      "end": 163.99479267942107,
+      "text": "Ah",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 164.07479267942105,
+      "end": 164.07479267942105,
+      "text": "avec",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 164.31479267942106,
+      "end": 164.39479267942104,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 164.47479267942109,
+      "end": 164.79479267942102,
+      "text": "évidemment",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 164.87479267942106,
+      "end": 164.87479267942106,
+      "text": "?",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 166.062731706538,
+      "end": 166.302731706538,
+      "text": "moi.",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 188.33706097288308,
+      "end": 188.41706097288306,
+      "text": "I",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 188.4970609728831,
+      "end": 188.5770609728831,
+      "text": "think",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 188.65706097288307,
+      "end": 188.89706097288308,
+      "text": "we'll",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 188.97706097288307,
+      "end": 189.05706097288305,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 189.6170609728831,
+      "end": 189.69706097288304,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 189.69706097288304,
+      "end": 189.69706097288304,
+      "text": "go",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 189.77706097288308,
+      "end": 189.85706097288306,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 190.41706097288306,
+      "end": 190.4970609728831,
+      "text": "time.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 193.06386585326902,
+      "end": 193.38386585326901,
+      "text": "Voilà,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 193.463865853269,
+      "end": 193.62386585326902,
+      "text": "alors",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 193.703865853269,
+      "end": 193.86386585326898,
+      "text": "pour",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 193.86386585326898,
+      "end": 194.023865853269,
+      "text": "rappel,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 194.343865853269,
+      "end": 194.42386585326904,
+      "text": "c'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 194.50386585326902,
+      "end": 194.583865853269,
+      "text": "un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 194.583865853269,
+      "end": 194.66386585326904,
+      "text": "outil",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 194.823865853269,
+      "end": 194.98386585326898,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 194.98386585326898,
+      "end": 195.463865853269,
+      "text": "API,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 195.62386585326902,
+      "end": 195.78386585326905,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 195.86386585326898,
+      "end": 196.023865853269,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 196.023865853269,
+      "end": 196.18386585326903,
+      "text": "sera",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 196.263865853269,
+      "end": 196.74386585326897,
+      "text": "disponible",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 196.74386585326897,
+      "end": 196.90386585326905,
+      "text": "aussi",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 196.98386585326898,
+      "end": 197.143865853269,
+      "text": "pour",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 197.143865853269,
+      "end": 197.463865853269,
+      "text": "d'autres",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 197.54386585326904,
+      "end": 197.703865853269,
+      "text": "services",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 197.86386585326898,
+      "end": 197.94386585326902,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 198.023865853269,
+      "end": 198.343865853269,
+      "text": "voudraient",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 198.50386585326902,
+      "end": 198.90386585326905,
+      "text": "générer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 199.703865853269,
+      "end": 199.78386585326905,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 200.023865853269,
+      "end": 200.343865853269,
+      "text": "URL",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 200.50386585326902,
+      "end": 201.06386585326902,
+      "text": "raccourcis",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 201.223865853269,
+      "end": 201.30386585326903,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 201.54386585326904,
+      "end": 201.94386585326902,
+      "text": "URP.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 210.8079877990351,
+      "end": 211.68798779903508,
+      "text": "Ensuite,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 213.60798779903504,
+      "end": 213.68798779903508,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 213.767987799035,
+      "end": 213.84798779903505,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 214.00798779903502,
+      "end": 214.32798779903507,
+      "text": "avancé",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 214.40798779903506,
+      "end": 214.48798779903504,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 214.56798779903508,
+      "end": 214.647987799035,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 214.647987799035,
+      "end": 214.88798779903502,
+      "text": "cycle",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 215.04798779903504,
+      "end": 215.12798779903503,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 215.20798779903507,
+      "end": 215.36798779903503,
+      "text": "vie",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 216.8079877990351,
+      "end": 216.96798779903506,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 217.04798779903504,
+      "end": 217.68798779903508,
+      "text": "l'architecture",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 217.9279877990351,
+      "end": 218.32798779903507,
+      "text": "particularly",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 218.40798779903506,
+      "end": 218.48798779903504,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 218.48798779903504,
+      "end": 218.56798779903508,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 218.56798779903508,
+      "end": 218.72798779903505,
+      "text": "cycle",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 218.88798779903502,
+      "end": 218.96798779903506,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 219.04798779903504,
+      "end": 219.28798779903505,
+      "text": "view,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 219.44798779903508,
+      "end": 219.52798779903506,
+      "text": "where",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 219.68798779903508,
+      "end": 219.767987799035,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 220.00798779903502,
+      "end": 220.24798779903503,
+      "text": "deploy",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 220.48798779903504,
+      "end": 220.647987799035,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 220.647987799035,
+      "end": 220.88798779903502,
+      "text": "micro",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 220.96798779903506,
+      "end": 221.36798779903503,
+      "text": "applications",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 221.60798779903504,
+      "end": 221.767987799035,
+      "text": "par",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 221.84798779903505,
+      "end": 222.40798779903506,
+      "text": "service.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 223.00571950557307,
+      "end": 223.1657195055731,
+      "text": "The",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 223.1657195055731,
+      "end": 223.64571950557306,
+      "text": "portail",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 223.80571950557308,
+      "end": 223.96571950557305,
+      "text": "will",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 224.0457195055731,
+      "end": 224.2857195055731,
+      "text": "apply",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 224.60571950557303,
+      "end": 224.76571950557306,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 224.84571950557304,
+      "end": 225.1657195055731,
+      "text": "micro",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 225.24571950557308,
+      "end": 225.64571950557306,
+      "text": "application",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 225.88571950557306,
+      "end": 225.96571950557305,
+      "text": "very",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 226.20571950557306,
+      "end": 226.44571950557307,
+      "text": "prise",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 226.76571950557306,
+      "end": 226.84571950557304,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 227.08571950557305,
+      "end": 227.72571950557304,
+      "text": "sécurisated",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 228.12571950557307,
+      "end": 228.2857195055731,
+      "text": "by",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 228.2857195055731,
+      "end": 228.44571950557307,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 228.44571950557307,
+      "end": 228.52571950557305,
+      "text": "system",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 228.76571950557306,
+      "end": 228.92571950557308,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 228.92571950557308,
+      "end": 229.24571950557308,
+      "text": "token.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 230.823865853269,
+      "end": 230.90386585326905,
+      "text": "And",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 231.143865853269,
+      "end": 231.223865853269,
+      "text": "this",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 231.54386585326904,
+      "end": 231.86386585326898,
+      "text": "micro",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 231.94386585326902,
+      "end": 232.263865853269,
+      "text": "application",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 232.50386585326902,
+      "end": 232.583865853269,
+      "text": "has",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 233.30386585326903,
+      "end": 233.38386585326901,
+      "text": "all",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 233.38386585326901,
+      "end": 233.463865853269,
+      "text": "these",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 233.62386585326902,
+      "end": 233.78386585326905,
+      "text": "actions",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 233.94386585326902,
+      "end": 234.263865853269,
+      "text": "necessary",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 234.42386585326904,
+      "end": 234.50386585326902,
+      "text": "for",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 234.583865853269,
+      "end": 234.66386585326904,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 234.823865853269,
+      "end": 235.06386585326902,
+      "text": "application.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 235.54386585326904,
+      "end": 235.62386585326902,
+      "text": "The",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 235.703865853269,
+      "end": 235.94386585326902,
+      "text": "intelligence",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 236.18386585326903,
+      "end": 236.263865853269,
+      "text": "is",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 236.42386585326904,
+      "end": 236.50386585326902,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 236.50386585326902,
+      "end": 236.583865853269,
+      "text": "nice",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 236.823865853269,
+      "end": 236.98386585326898,
+      "text": "micro",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 237.06386585326902,
+      "end": 237.38386585326901,
+      "text": "application.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 237.78386585326905,
+      "end": 238.023865853269,
+      "text": "Typically,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 241.38386585326901,
+      "end": 241.463865853269,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 241.463865853269,
+      "end": 241.463865853269,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 241.62386585326902,
+      "end": 241.78386585326905,
+      "text": "11",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 242.343865853269,
+      "end": 242.42386585326904,
+      "text": "tubes,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 242.74386585326897,
+      "end": 242.823865853269,
+      "text": "there",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 242.823865853269,
+      "end": 242.823865853269,
+      "text": "are",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 242.98386585326898,
+      "end": 243.06386585326902,
+      "text": "seven",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 243.223865853269,
+      "end": 243.463865853269,
+      "text": "micro",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 243.54386585326904,
+      "end": 243.78386585326905,
+      "text": "applications",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 243.94386585326902,
+      "end": 244.023865853269,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 244.343865853269,
+      "end": 244.823865853269,
+      "text": "parcelling",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 245.223865853269,
+      "end": 245.30386585326903,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 245.463865853269,
+      "end": 245.94386585326902,
+      "text": "pairtubes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 246.10386585326899,
+      "end": 246.18386585326903,
+      "text": "for",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 246.50386585326902,
+      "end": 246.74386585326897,
+      "text": "drive",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 246.903865853269,
+      "end": 246.98386585326898,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 247.06386585326902,
+      "end": 247.223865853269,
+      "text": "content,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 247.463865853269,
+      "end": 248.023865853269,
+      "text": "transferring",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 248.10386585326899,
+      "end": 248.18386585326903,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 248.18386585326903,
+      "end": 248.343865853269,
+      "text": "videos",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 248.42386585326904,
+      "end": 248.50386585326902,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 248.66386585326904,
+      "end": 248.74386585326897,
+      "text": "person,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 248.98386585326898,
+      "end": 249.143865853269,
+      "text": "etc.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 250.14159755980702,
+      "end": 250.221597559807,
+      "text": "This",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 250.38159755980703,
+      "end": 250.46159755980696,
+      "text": "is",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 250.621597559807,
+      "end": 250.781597559807,
+      "text": "not",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 250.861597559807,
+      "end": 250.94159755980698,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 251.02159755980702,
+      "end": 251.26159755980703,
+      "text": "portal",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 251.50159755980698,
+      "end": 251.58159755980697,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 251.661597559807,
+      "end": 251.741597559807,
+      "text": "will",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 252.221597559807,
+      "end": 252.301597559807,
+      "text": "know",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 252.541597559807,
+      "end": 252.781597559807,
+      "text": "exactly",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 252.94159755980698,
+      "end": 253.101597559807,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 253.101597559807,
+      "end": 253.421597559807,
+      "text": "particular",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 253.58159755980697,
+      "end": 253.661597559807,
+      "text": "things",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 253.82159755980697,
+      "end": 253.90159755980702,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 254.46159755980696,
+      "end": 254.541597559807,
+      "text": "this.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 259.223865853269,
+      "end": 259.54386585326904,
+      "text": "Mais",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 259.54386585326904,
+      "end": 259.62386585326897,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 259.863865853269,
+      "end": 259.943865853269,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 260.02386585326894,
+      "end": 260.103865853269,
+      "text": "avance",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 260.42386585326904,
+      "end": 260.74386585326897,
+      "text": "un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 260.50386585326896,
+      "end": 260.66386585326904,
+      "text": "peu",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 260.823865853269,
+      "end": 261.14386585326895,
+      "text": "dans",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 260.983865853269,
+      "end": 261.063865853269,
+      "text": "cette",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 261.30386585326903,
+      "end": 261.863865853269,
+      "text": "architecture",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 263.78386585326905,
+      "end": 264.02386585326894,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 264.343865853269,
+      "end": 264.583865853269,
+      "text": "santé",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 265.063865853269,
+      "end": 265.30386585326903,
+      "text": "coûte.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 266.141597559807,
+      "end": 266.381597559807,
+      "text": "Le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 266.381597559807,
+      "end": 266.94159755980706,
+      "text": "rancher",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 267.10159755980703,
+      "end": 267.1815975598071,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 267.1815975598071,
+      "end": 267.82159755980706,
+      "text": "pré-prod",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 268.70159755980706,
+      "end": 268.861597559807,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 268.861597559807,
+      "end": 269.0215975598071,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 269.0215975598071,
+      "end": 269.2615975598071,
+      "text": "été",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 269.1815975598071,
+      "end": 269.501597559807,
+      "text": "livré",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 269.661597559807,
+      "end": 269.741597559807,
+      "text": "maintenant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 269.901597559807,
+      "end": 270.06159755980707,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 269.981597559807,
+      "end": 269.981597559807,
+      "text": "y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 270.06159755980707,
+      "end": 270.06159755980707,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 271.58159755980705,
+      "end": 271.661597559807,
+      "text": "au",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 271.661597559807,
+      "end": 271.741597559807,
+      "text": "moins",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 271.901597559807,
+      "end": 271.981597559807,
+      "text": "deux",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 272.06159755980707,
+      "end": 272.22159755980704,
+      "text": "semaines",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 272.3015975598071,
+      "end": 272.46159755980705,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 272.381597559807,
+      "end": 272.46159755980705,
+      "text": "plus,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 272.621597559807,
+      "end": 272.70159755980706,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 272.861597559807,
+      "end": 272.94159755980706,
+      "text": "au",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 272.94159755980706,
+      "end": 273.0215975598071,
+      "text": "moins",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 273.1815975598071,
+      "end": 273.2615975598071,
+      "text": "cette",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 273.34159755980704,
+      "end": 273.501597559807,
+      "text": "semaine,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 273.661597559807,
+      "end": 273.741597559807,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 273.741597559807,
+      "end": 273.82159755980706,
+      "text": "n'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 273.981597559807,
+      "end": 274.141597559807,
+      "text": "toujours",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 274.22159755980704,
+      "end": 274.3015975598071,
+      "text": "pas",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 274.381597559807,
+      "end": 275.10159755980703,
+      "text": "fonctionnel.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 276.1993292663451,
+      "end": 276.6793292663451,
+      "text": "Voilà,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 276.91932926634513,
+      "end": 277.23932926634507,
+      "text": "dans",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 277.15932926634514,
+      "end": 277.319329266345,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 277.4793292663451,
+      "end": 277.87932926634505,
+      "text": "discussions,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 278.4393292663451,
+      "end": 278.51932926634504,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 278.6793292663451,
+      "end": 278.8393292663451,
+      "text": "avait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 278.91932926634513,
+      "end": 279.0793292663451,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 279.0793292663451,
+      "end": 279.319329266345,
+      "text": "demandes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 279.39932926634515,
+      "end": 279.63932926634504,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 279.559329266345,
+      "end": 280.11932926634506,
+      "text": "dérogation",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 280.5993292663451,
+      "end": 280.75932926634505,
+      "text": "pour",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 280.91932926634513,
+      "end": 281.23932926634507,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 282.777060972883,
+      "end": 283.09706097288296,
+      "text": "sujets",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 283.177060972883,
+      "end": 283.33706097288297,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 283.417060972883,
+      "end": 283.49706097288305,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 283.577060972883,
+      "end": 283.897060972883,
+      "text": "certificats.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 284.37706097288304,
+      "end": 284.4570609728831,
+      "text": "J'ai",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 284.537060972883,
+      "end": 284.61706097288305,
+      "text": "fait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 284.6970609728831,
+      "end": 284.777060972883,
+      "text": "une",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 284.777060972883,
+      "end": 284.9370609728831,
+      "text": "demande",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 285.09706097288296,
+      "end": 285.177060972883,
+      "text": "tout",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 285.25706097288304,
+      "end": 285.33706097288297,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 285.33706097288297,
+      "end": 285.49706097288305,
+      "text": "l'heure",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 286.27479267942107,
+      "end": 286.5147926794211,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 286.5147926794211,
+      "end": 286.994792679421,
+      "text": "clarification",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 287.234792679421,
+      "end": 287.3947926794211,
+      "text": "d'où",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 287.55479267942104,
+      "end": 287.714792679421,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 287.79479267942105,
+      "end": 287.8747926794211,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 287.954792679421,
+      "end": 288.1147926794211,
+      "text": "était.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 335.246853652304,
+      "end": 335.886853652304,
+      "text": "Merci.",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 344.1925243859591,
+      "end": 344.2725243859591,
+      "text": "We",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 344.2725243859591,
+      "end": 344.35252438595904,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 344.59252438595905,
+      "end": 344.6725243859591,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 344.83252438595906,
+      "end": 345.07252438595907,
+      "text": "great",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 345.392524385959,
+      "end": 345.7925243859591,
+      "text": "trouble",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 345.872524385959,
+      "end": 346.0325243859591,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 346.1925243859591,
+      "end": 346.2725243859591,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 346.59252438595905,
+      "end": 346.75252438595913,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 346.83252438595906,
+      "end": 347.1525243859591,
+      "text": "thèmes.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 348.11252438595903,
+      "end": 348.1925243859591,
+      "text": "We",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 348.2725243859591,
+      "end": 348.35252438595904,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 348.59252438595905,
+      "end": 348.6725243859591,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 348.6725243859591,
+      "end": 348.9125243859591,
+      "text": "thème",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 348.9125243859591,
+      "end": 348.99252438595914,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 349.1525243859591,
+      "end": 349.23252438595915,
+      "text": "was",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 349.47252438595916,
+      "end": 349.71252438595917,
+      "text": "prepared",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 349.7925243859591,
+      "end": 349.872524385959,
+      "text": "by",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 349.872524385959,
+      "end": 349.95252438595907,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 350.0325243859591,
+      "end": 350.2725243859591,
+      "text": "drame",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 350.4325243859591,
+      "end": 350.5125243859591,
+      "text": "du",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 350.5125243859591,
+      "end": 350.83252438595906,
+      "text": "Grand",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 350.9125243859591,
+      "end": 351.23252438595915,
+      "text": "Est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 351.632524385959,
+      "end": 351.71252438595917,
+      "text": "in",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 351.95252438595907,
+      "end": 352.0325243859591,
+      "text": "two,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 353.3125243859591,
+      "end": 353.392524385959,
+      "text": "two",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 353.5525243859591,
+      "end": 353.632524385959,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 353.7925243859591,
+      "end": 353.95252438595907,
+      "text": "dem.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 358.10386585326904,
+      "end": 358.18386585326897,
+      "text": "for",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 359.143865853269,
+      "end": 359.383865853269,
+      "text": "an",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 359.383865853269,
+      "end": 359.783865853269,
+      "text": "identity",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 359.86386585326903,
+      "end": 360.10386585326904,
+      "text": "graphique",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 360.34386585326905,
+      "end": 360.58386585326906,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 360.503865853269,
+      "end": 360.663865853269,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 360.743865853269,
+      "end": 360.903865853269,
+      "text": "tubes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 361.143865853269,
+      "end": 361.3038658532691,
+      "text": "for",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 361.383865853269,
+      "end": 361.46386585326894,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 361.5438658532691,
+      "end": 361.623865853269,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 361.623865853269,
+      "end": 361.783865853269,
+      "text": "gens",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 361.86386585326903,
+      "end": 362.10386585326904,
+      "text": "sachent",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 362.18386585326897,
+      "end": 362.263865853269,
+      "text": "là",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 362.423865853269,
+      "end": 362.503865853269,
+      "text": "où",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 362.503865853269,
+      "end": 362.58386585326906,
+      "text": "ils",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 362.663865853269,
+      "end": 362.743865853269,
+      "text": "sont.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 362.903865853269,
+      "end": 362.98386585326904,
+      "text": "Parce",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 362.98386585326904,
+      "end": 363.0638658532691,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 363.383865853269,
+      "end": 363.46386585326894,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 363.5438658532691,
+      "end": 363.70386585326895,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 363.70386585326895,
+      "end": 363.783865853269,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 363.86386585326903,
+      "end": 364.023865853269,
+      "text": "11,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 364.503865853269,
+      "end": 364.663865853269,
+      "text": "it's",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 364.98386585326904,
+      "end": 364.98386585326904,
+      "text": "not",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 365.0638658532691,
+      "end": 365.143865853269,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 365.22386585326893,
+      "end": 365.22386585326893,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 365.3038658532691,
+      "end": 365.46386585326894,
+      "text": "gens",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 365.5438658532691,
+      "end": 365.86386585326903,
+      "text": "comprennent",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 365.94386585326896,
+      "end": 366.023865853269,
+      "text": "là",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 366.10386585326904,
+      "end": 366.18386585326897,
+      "text": "où",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 366.263865853269,
+      "end": 366.34386585326905,
+      "text": "ils",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 366.423865853269,
+      "end": 366.58386585326906,
+      "text": "sont",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 366.663865853269,
+      "end": 366.743865853269,
+      "text": "anders",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 367.623865853269,
+      "end": 367.70386585326895,
+      "text": "quand",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 367.70386585326895,
+      "end": 367.783865853269,
+      "text": "ils",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 367.86386585326903,
+      "end": 368.10386585326904,
+      "text": "postent",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 368.18386585326897,
+      "end": 368.423865853269,
+      "text": "une",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 368.34386585326905,
+      "end": 368.82386585326907,
+      "text": "vidéo,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 368.98386585326904,
+      "end": 369.22386585326893,
+      "text": "qu'ils",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 369.3038658532691,
+      "end": 369.383865853269,
+      "text": "se",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 369.46386585326894,
+      "end": 369.783865853269,
+      "text": "retrouvent",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 369.94386585326896,
+      "end": 370.023865853269,
+      "text": "dans",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 370.023865853269,
+      "end": 370.263865853269,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 370.10386585326904,
+      "end": 370.423865853269,
+      "text": "navigation,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 370.82386585326907,
+      "end": 370.98386585326904,
+      "text": "etc.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 372.8815975598071,
+      "end": 372.96159755980705,
+      "text": "So",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 373.121597559807,
+      "end": 373.20159755980706,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 373.281597559807,
+      "end": 373.361597559807,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 374.001597559807,
+      "end": 374.241597559807,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 374.241597559807,
+      "end": 374.6415975598071,
+      "text": "thématique",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 374.80159755980696,
+      "end": 374.96159755980705,
+      "text": "with",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 375.121597559807,
+      "end": 375.20159755980706,
+      "text": "an",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 375.281597559807,
+      "end": 375.60159755980703,
+      "text": "identity",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 375.761597559807,
+      "end": 376.001597559807,
+      "text": "graphique",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 376.241597559807,
+      "end": 376.56159755980696,
+      "text": "par",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 376.80159755980696,
+      "end": 377.6815975598071,
+      "text": "Tiertube.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 378.03932926634513,
+      "end": 378.35932926634507,
+      "text": "Or",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 378.35932926634507,
+      "end": 378.51932926634504,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 378.5993292663451,
+      "end": 379.9593292663451,
+      "text": "7.1.1,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 380.27932926634514,
+      "end": 380.35932926634507,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 380.35932926634507,
+      "end": 380.439329266345,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 380.5993292663451,
+      "end": 380.679329266345,
+      "text": "been",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 380.75932926634505,
+      "end": 380.99932926634506,
+      "text": "obliged",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 381.159329266345,
+      "end": 381.23932926634507,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 381.3193292663451,
+      "end": 381.39932926634503,
+      "text": "pass",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 381.5593292663451,
+      "end": 381.63932926634504,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 381.7993292663451,
+      "end": 382.11932926634506,
+      "text": "urgence",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 382.27932926634514,
+      "end": 382.35932926634507,
+      "text": "in",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 382.51932926634504,
+      "end": 382.679329266345,
+      "text": "three",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 382.75932926634505,
+      "end": 383.0793292663451,
+      "text": "semaines",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 383.63932926634504,
+      "end": 383.9593292663451,
+      "text": "for",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 383.9593292663451,
+      "end": 384.199329266345,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 384.11932926634506,
+      "end": 384.199329266345,
+      "text": "problem",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 384.35932926634507,
+      "end": 384.51932926634504,
+      "text": "with",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 384.51932926634504,
+      "end": 384.99932926634506,
+      "text": "faille",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 384.99932926634506,
+      "end": 385.0793292663451,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 385.0793292663451,
+      "end": 385.4793292663451,
+      "text": "sécurité.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 396.99932926634506,
+      "end": 397.0793292663451,
+      "text": "It",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 397.23932926634495,
+      "end": 397.3193292663451,
+      "text": "was",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 397.3193292663451,
+      "end": 397.39932926634503,
+      "text": "not",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 397.63932926634504,
+      "end": 397.799329266345,
+      "text": "supported",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 397.959329266345,
+      "end": 398.039329266345,
+      "text": "by",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 398.039329266345,
+      "end": 398.11932926634506,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 398.199329266345,
+      "end": 398.99932926634506,
+      "text": "7.1.1.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 399.47932926634496,
+      "end": 399.5593292663451,
+      "text": "These",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 400.51932926634504,
+      "end": 400.8393292663451,
+      "text": "instances",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 401.159329266345,
+      "end": 401.39932926634503,
+      "text": "already",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 401.63932926634504,
+      "end": 401.71932926634497,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 401.959329266345,
+      "end": 402.35932926634507,
+      "text": "exactly",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 402.439329266345,
+      "end": 402.51932926634504,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 402.51932926634504,
+      "end": 402.679329266345,
+      "text": "same",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 402.919329266345,
+      "end": 403.0793292663451,
+      "text": "debt.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 403.6570609728831,
+      "end": 403.8170609728829,
+      "text": "It's",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 403.977060972883,
+      "end": 404.05706097288294,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 404.05706097288294,
+      "end": 404.1370609728831,
+      "text": "bit",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 404.217060972883,
+      "end": 404.457060972883,
+      "text": "dumb.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 405.097060972883,
+      "end": 405.17706097288306,
+      "text": "So",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 405.337060972883,
+      "end": 405.41706097288306,
+      "text": "there",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 405.41706097288306,
+      "end": 405.497060972883,
+      "text": "are",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 405.6570609728831,
+      "end": 405.737060972883,
+      "text": "videos",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 405.8970609728831,
+      "end": 405.977060972883,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 405.977060972883,
+      "end": 406.05706097288294,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 406.1370609728831,
+      "end": 406.217060972883,
+      "text": "been",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 406.217060972883,
+      "end": 406.377060972883,
+      "text": "done",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 406.53706097288295,
+      "end": 406.617060972883,
+      "text": "by",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 406.617060972883,
+      "end": 406.69706097288304,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 406.77706097288296,
+      "end": 407.097060972883,
+      "text": "dragon",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 407.17706097288306,
+      "end": 407.497060972883,
+      "text": "grandest",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 407.6570609728831,
+      "end": 407.737060972883,
+      "text": "at",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 407.737060972883,
+      "end": 407.8170609728829,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 407.8170609728829,
+      "end": 407.8970609728831,
+      "text": "sujet,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 408.217060972883,
+      "end": 408.29706097288295,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 408.29706097288295,
+      "end": 408.377060972883,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 408.617060972883,
+      "end": 409.257060972883,
+      "text": "propositions,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 409.57706097288303,
+      "end": 409.6570609728831,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 409.6570609728831,
+      "end": 409.8970609728831,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 409.977060972883,
+      "end": 410.457060972883,
+      "text": "Hugo",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 410.617060972883,
+      "end": 410.93706097288305,
+      "text": "who's",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 411.17706097288306,
+      "end": 411.41706097288306,
+      "text": "penchant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 411.737060972883,
+      "end": 411.8170609728829,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 411.8970609728831,
+      "end": 412.05706097288294,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 412.05706097288294,
+      "end": 412.217060972883,
+      "text": "question,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 412.53706097288295,
+      "end": 412.617060972883,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 412.69706097288304,
+      "end": 412.77706097288296,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 412.857060972883,
+      "end": 412.93706097288305,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 413.337060972883,
+      "end": 413.737060972883,
+      "text": "Manon",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 413.8170609728829,
+      "end": 413.8970609728831,
+      "text": "also,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 414.05706097288294,
+      "end": 414.1370609728831,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 414.1370609728831,
+      "end": 414.217060972883,
+      "text": "have",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 414.457060972883,
+      "end": 414.53706097288295,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 414.617060972883,
+      "end": 414.93706097288305,
+      "text": "reunion",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 415.337060972883,
+      "end": 415.41706097288306,
+      "text": "as",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 415.737060972883,
+      "end": 416.29706097288295,
+      "text": "interesting",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 416.617060972883,
+      "end": 416.77706097288296,
+      "text": "in",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 417.41706097288306,
+      "end": 417.497060972883,
+      "text": "two",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 417.6570609728831,
+      "end": 417.8970609728831,
+      "text": "semaines",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 417.977060972883,
+      "end": 418.05706097288294,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 418.217060972883,
+      "end": 418.377060972883,
+      "text": "week.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 419.143865853269,
+      "end": 419.383865853269,
+      "text": "After",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 419.5438658532691,
+      "end": 419.623865853269,
+      "text": "our",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 419.7838658532691,
+      "end": 420.0238658532691,
+      "text": "départ",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 420.1838658532691,
+      "end": 420.2638658532691,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 420.2638658532691,
+      "end": 420.58386585326906,
+      "text": "vacances,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 421.22386585326905,
+      "end": 421.3038658532691,
+      "text": "with",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 421.383865853269,
+      "end": 421.5438658532691,
+      "text": "tools,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 421.7838658532691,
+      "end": 422.2638658532691,
+      "text": "Valerie",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 422.34386585326905,
+      "end": 422.423865853269,
+      "text": "du",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 422.423865853269,
+      "end": 422.50386585326913,
+      "text": "Grand",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 422.663865853269,
+      "end": 422.74386585326914,
+      "text": "Est,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 422.903865853269,
+      "end": 423.143865853269,
+      "text": "Hugo,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 423.3038658532691,
+      "end": 423.7838658532691,
+      "text": "Manon",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 423.7838658532691,
+      "end": 424.10386585326904,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 424.0238658532691,
+      "end": 424.10386585326904,
+      "text": "I.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 441.3038658532691,
+      "end": 441.46386585326906,
+      "text": "And",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 441.46386585326906,
+      "end": 441.70386585326906,
+      "text": "Manon",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 441.9438658532691,
+      "end": 442.0238658532691,
+      "text": "said,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 442.34386585326905,
+      "end": 442.423865853269,
+      "text": "at",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 442.50386585326913,
+      "end": 442.58386585326906,
+      "text": "some",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 442.58386585326906,
+      "end": 442.663865853269,
+      "text": "point,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 442.82386585326907,
+      "end": 442.903865853269,
+      "text": "I",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 442.903865853269,
+      "end": 443.0638658532691,
+      "text": "wanted",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 443.143865853269,
+      "end": 443.22386585326905,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 443.22386585326905,
+      "end": 443.46386585326906,
+      "text": "parallel",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 443.5438658532691,
+      "end": 443.623865853269,
+      "text": "instance",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 443.7838658532691,
+      "end": 443.86386585326903,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 443.86386585326903,
+      "end": 443.9438658532691,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 443.9438658532691,
+      "end": 444.10386585326904,
+      "text": "parle",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 444.2638658532691,
+      "end": 444.34386585326905,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 444.423865853269,
+      "end": 444.50386585326913,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 444.58386585326906,
+      "end": 444.663865853269,
+      "text": "theme.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 450.663865853269,
+      "end": 451.0638658532691,
+      "text": "Masquer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 451.143865853269,
+      "end": 451.22386585326905,
+      "text": "al",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 451.3038658532691,
+      "end": 451.7838658532691,
+      "text": "maximum",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 451.86386585326903,
+      "end": 452.0238658532691,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 452.10386585326904,
+      "end": 452.58386585326906,
+      "text": "instances.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 453.82386585326896,
+      "end": 453.903865853269,
+      "text": "for",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 454.143865853269,
+      "end": 454.383865853269,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 454.383865853269,
+      "end": 454.46386585326906,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 454.623865853269,
+      "end": 454.783865853269,
+      "text": "gens",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 454.9438658532691,
+      "end": 455.1838658532691,
+      "text": "voient",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 455.34386585326894,
+      "end": 455.503865853269,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 455.503865853269,
+      "end": 456.143865853269,
+      "text": "thématiques",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 456.22386585326905,
+      "end": 456.543865853269,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 457.82386585326896,
+      "end": 457.98386585326904,
+      "text": "non",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 457.98386585326904,
+      "end": 458.06386585326896,
+      "text": "plus",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 458.22386585326905,
+      "end": 458.46386585326906,
+      "text": "quelque",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 458.383865853269,
+      "end": 458.46386585326906,
+      "text": "chose",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 458.543865853269,
+      "end": 458.70386585326906,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 458.623865853269,
+      "end": 458.9438658532691,
+      "text": "technique.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 459.34386585326894,
+      "end": 459.4238658532691,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 459.503865853269,
+      "end": 459.58386585326895,
+      "text": "y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 459.663865853269,
+      "end": 459.82386585326896,
+      "text": "arrive,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 459.98386585326904,
+      "end": 460.143865853269,
+      "text": "c'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 460.383865853269,
+      "end": 460.543865853269,
+      "text": "cool.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 460.86386585326903,
+      "end": 460.9438658532691,
+      "text": "Par",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 461.023865853269,
+      "end": 461.1038658532689,
+      "text": "contre,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 461.4238658532691,
+      "end": 461.503865853269,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 461.503865853269,
+      "end": 461.58386585326895,
+      "text": "n'y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 461.58386585326895,
+      "end": 461.663865853269,
+      "text": "aura",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 461.82386585326896,
+      "end": 461.98386585326904,
+      "text": "rien",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 462.06386585326896,
+      "end": 462.303865853269,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 462.22386585326905,
+      "end": 462.303865853269,
+      "text": "fait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 462.46386585326906,
+      "end": 462.623865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 462.543865853269,
+      "end": 462.623865853269,
+      "text": "ce",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 462.70386585326906,
+      "end": 463.1038658532689,
+      "text": "niveau-là",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 463.263865853269,
+      "end": 463.503865853269,
+      "text": "avant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 463.58386585326895,
+      "end": 463.743865853269,
+      "text": "au",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 463.663865853269,
+      "end": 463.82386585326896,
+      "text": "moins",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 463.903865853269,
+      "end": 463.98386585326904,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 464.06386585326896,
+      "end": 464.46386585326906,
+      "text": "rentrée",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 464.543865853269,
+      "end": 464.783865853269,
+      "text": "prochaine.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 465.921597559807,
+      "end": 466.00159755980707,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 466.00159755980707,
+      "end": 466.081597559807,
+      "text": "va",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 466.16159755980703,
+      "end": 466.321597559807,
+      "text": "rester",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 466.40159755980693,
+      "end": 466.561597559807,
+      "text": "pendant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 466.64159755980694,
+      "end": 466.88159755980695,
+      "text": "quelques",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 466.88159755980695,
+      "end": 466.961597559807,
+      "text": "mois,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 467.12159755980696,
+      "end": 467.201597559807,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 467.76159755980706,
+      "end": 467.841597559807,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 467.841597559807,
+      "end": 467.841597559807,
+      "text": "y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 468.00159755980707,
+      "end": 468.00159755980707,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 468.081597559807,
+      "end": 468.16159755980703,
+      "text": "un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 468.321597559807,
+      "end": 468.88159755980695,
+      "text": "message",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 468.961597559807,
+      "end": 469.201597559807,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 469.441597559807,
+      "end": 469.601597559807,
+      "text": "dit",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 470.081597559807,
+      "end": 470.16159755980703,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 470.16159755980703,
+      "end": 470.321597559807,
+      "text": "thème",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 470.4815975598071,
+      "end": 470.561597559807,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 470.561597559807,
+      "end": 470.7215975598071,
+      "text": "disparu,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 470.961597559807,
+      "end": 471.04159755980703,
+      "text": "mais",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 471.04159755980703,
+      "end": 471.12159755980696,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 471.201597559807,
+      "end": 471.601597559807,
+      "text": "reviendra",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 471.681597559807,
+      "end": 471.921597559807,
+      "text": "bientôt.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 472.2415975598071,
+      "end": 472.321597559807,
+      "text": "Bon,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 472.4815975598071,
+      "end": 472.7215975598071,
+      "text": "bientôt,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 472.88159755980695,
+      "end": 472.961597559807,
+      "text": "ça",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 473.04159755980703,
+      "end": 473.28159755980704,
+      "text": "arrive",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 473.52159755980705,
+      "end": 473.681597559807,
+      "text": "dans",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 473.681597559807,
+      "end": 474.00159755980707,
+      "text": "3-4",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 474.16159755980703,
+      "end": 474.321597559807,
+      "text": "mois,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 474.7215975598071,
+      "end": 474.88159755980695,
+      "text": "vu",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 474.961597559807,
+      "end": 475.12159755980696,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 475.12159755980696,
+      "end": 475.36159755980697,
+      "text": "travaux",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 475.36159755980697,
+      "end": 475.52159755980705,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 475.601597559807,
+      "end": 475.76159755980706,
+      "text": "va",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 475.841597559807,
+      "end": 476.321597559807,
+      "text": "entamer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 476.4815975598071,
+      "end": 476.64159755980694,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 476.561597559807,
+      "end": 476.7215975598071,
+      "text": "ce",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 476.7215975598071,
+      "end": 477.12159755980696,
+      "text": "sujet-là.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 478.42386585326904,
+      "end": 478.66386585326904,
+      "text": "La",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 478.74386585326897,
+      "end": 479.38386585326896,
+      "text": "transcription",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 479.703865853269,
+      "end": 479.863865853269,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 479.863865853269,
+      "end": 480.183865853269,
+      "text": "vidéos",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 480.343865853269,
+      "end": 480.50386585326896,
+      "text": "est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 480.50386585326896,
+      "end": 481.0638658532689,
+      "text": "opérationnelle",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 481.3038658532689,
+      "end": 481.62386585326897,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 481.5438658532689,
+      "end": 481.703865853269,
+      "text": "test.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 482.183865853269,
+      "end": 482.343865853269,
+      "text": "Maintenant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 482.50386585326896,
+      "end": 482.583865853269,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 482.74386585326897,
+      "end": 482.90386585326905,
+      "text": "est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 482.90386585326905,
+      "end": 483.0638658532689,
+      "text": "passé",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 483.14386585326906,
+      "end": 483.223865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 483.223865853269,
+      "end": 483.5438658532689,
+      "text": "l'asset,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 483.863865853269,
+      "end": 484.02386585326894,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 484.02386585326894,
+      "end": 484.183865853269,
+      "text": "va",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 484.183865853269,
+      "end": 484.343865853269,
+      "text": "pouvoir",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 484.50386585326896,
+      "end": 484.583865853269,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 484.66386585326904,
+      "end": 485.38386585326896,
+      "text": "généraliser.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 485.703865853269,
+      "end": 485.863865853269,
+      "text": "Donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 485.943865853269,
+      "end": 486.02386585326894,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 486.02386585326894,
+      "end": 486.103865853269,
+      "text": "faut",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 486.183865853269,
+      "end": 486.42386585326904,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 486.42386585326904,
+      "end": 486.583865853269,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 486.583865853269,
+      "end": 486.983865853269,
+      "text": "déploie",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 487.3038658532689,
+      "end": 487.463865853269,
+      "text": "avec",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 487.62386585326897,
+      "end": 488.103865853269,
+      "text": "Nicolas.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 488.343865853269,
+      "end": 488.66386585326904,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 488.50386585326896,
+      "end": 488.583865853269,
+      "text": "avait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 488.74386585326897,
+      "end": 488.90386585326905,
+      "text": "déjà",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 489.3038658532689,
+      "end": 489.38386585326896,
+      "text": "un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 489.38386585326896,
+      "end": 489.5438658532689,
+      "text": "serveur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 489.62386585326897,
+      "end": 489.703865853269,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 489.78386585326894,
+      "end": 489.863865853269,
+      "text": "est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 489.863865853269,
+      "end": 489.943865853269,
+      "text": "prêt,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 490.103865853269,
+      "end": 490.183865853269,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 490.183865853269,
+      "end": 490.26386585326895,
+      "text": "faut",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 490.343865853269,
+      "end": 490.583865853269,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 490.583865853269,
+      "end": 490.74386585326897,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 490.90386585326905,
+      "end": 490.983865853269,
+      "text": "fasse",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 491.14386585326906,
+      "end": 491.3038658532689,
+      "text": "un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 491.3038658532689,
+      "end": 492.02386585326894,
+      "text": "deuxième",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 492.583865853269,
+      "end": 492.90386585326905,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 493.5438658532689,
+      "end": 493.863865853269,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 493.863865853269,
+      "end": 494.50386585326896,
+      "text": "paramètre",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 494.583865853269,
+      "end": 494.823865853269,
+      "text": "tous",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 494.823865853269,
+      "end": 494.983865853269,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 494.983865853269,
+      "end": 495.5438658532689,
+      "text": "serveurs",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 495.5438658532689,
+      "end": 496.103865853269,
+      "text": "tubes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 496.343865853269,
+      "end": 496.66386585326904,
+      "text": "pour",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 497.3038658532689,
+      "end": 497.62386585326897,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 497.62386585326897,
+      "end": 497.78386585326894,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 497.863865853269,
+      "end": 498.183865853269,
+      "text": "transcription",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 498.343865853269,
+      "end": 498.50386585326896,
+      "text": "se",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 498.50386585326896,
+      "end": 498.66386585326904,
+      "text": "fasse.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 498.90386585326905,
+      "end": 499.0638658532689,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 498.983865853269,
+      "end": 499.223865853269,
+      "text": "va",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 499.14386585326906,
+      "end": 499.38386585326896,
+      "text": "commencer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 499.463865853269,
+      "end": 499.5438658532689,
+      "text": "par",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 499.62386585326897,
+      "end": 499.863865853269,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 499.703865853269,
+      "end": 500.183865853269,
+      "text": "transcription.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 500.50386585326896,
+      "end": 500.66386585326904,
+      "text": "Et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 500.74386585326897,
+      "end": 501.3038658532689,
+      "text": "ensuite,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 501.78386585326894,
+      "end": 501.863865853269,
+      "text": "ce",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 501.943865853269,
+      "end": 502.103865853269,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 502.183865853269,
+      "end": 502.42386585326904,
+      "text": "s'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 502.42386585326904,
+      "end": 502.50386585326896,
+      "text": "dit,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 502.66386585326904,
+      "end": 502.74386585326897,
+      "text": "c'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 502.823865853269,
+      "end": 503.0638658532689,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 503.14386585326906,
+      "end": 503.943865853269,
+      "text": "généraliserait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 503.943865853269,
+      "end": 504.183865853269,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 504.183865853269,
+      "end": 504.66386585326904,
+      "text": "transcription",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 504.823865853269,
+      "end": 505.0638658532689,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 505.0638658532689,
+      "end": 506.02386585326894,
+      "text": "transcodage",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 506.961597559807,
+      "end": 507.2815975598069,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 507.2815975598069,
+      "end": 508.081597559807,
+      "text": "externalité.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 509.363865853269,
+      "end": 509.4438658532689,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 509.52386585326894,
+      "end": 509.843865853269,
+      "text": "permettrait,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 510.083865853269,
+      "end": 510.24386585326897,
+      "text": "comme",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 510.24386585326897,
+      "end": 510.323865853269,
+      "text": "je",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 510.323865853269,
+      "end": 510.563865853269,
+      "text": "l'avais",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 510.64386585326895,
+      "end": 511.04386585326904,
+      "text": "expliqué",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 511.12386585326897,
+      "end": 511.52386585326894,
+      "text": "précédemment,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 511.843865853269,
+      "end": 512.003865853269,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 512.003865853269,
+      "end": 512.563865853269,
+      "text": "diminuer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 512.563865853269,
+      "end": 512.803865853269,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 512.803865853269,
+      "end": 513.2038658532689,
+      "text": "puissance",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 513.2038658532689,
+      "end": 513.363865853269,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 513.363865853269,
+      "end": 513.763865853269,
+      "text": "machines",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 514.243865853269,
+      "end": 514.4038658532689,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 514.4038658532689,
+      "end": 514.883865853269,
+      "text": "serveurs",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 514.9638658532689,
+      "end": 515.2038658532689,
+      "text": "tubes,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 515.4438658532689,
+      "end": 515.843865853269,
+      "text": "puisqu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 515.9238658532689,
+      "end": 516.003865853269,
+      "text": "ne",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 516.003865853269,
+      "end": 516.243865853269,
+      "text": "ferait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 516.323865853269,
+      "end": 516.483865853269,
+      "text": "plus",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 516.483865853269,
+      "end": 516.563865853269,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 516.643865853269,
+      "end": 516.803865853269,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 516.723865853269,
+      "end": 516.803865853269,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 516.883865853269,
+      "end": 517.2038658532689,
+      "text": "lecture",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 517.2038658532689,
+      "end": 517.283865853269,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 517.4438658532689,
+      "end": 517.523865853269,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 517.603865853269,
+      "end": 518.243865853269,
+      "text": "transcodage",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 518.323865853269,
+      "end": 518.483865853269,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 518.483865853269,
+      "end": 518.643865853269,
+      "text": "seraient",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 518.723865853269,
+      "end": 519.2038658532689,
+      "text": "eux",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 519.523865853269,
+      "end": 520.323865853269,
+      "text": "envoyés",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 520.323865853269,
+      "end": 520.563865853269,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 520.643865853269,
+      "end": 520.723865853269,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 520.883865853269,
+      "end": 521.123865853269,
+      "text": "11,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 521.363865853269,
+      "end": 521.4438658532689,
+      "text": "non",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 521.603865853269,
+      "end": 521.6838658532689,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 521.6838658532689,
+      "end": 521.9238658532689,
+      "text": "13",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 522.003865853269,
+      "end": 522.1638658532689,
+      "text": "même",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 522.243865853269,
+      "end": 522.4038658532689,
+      "text": "avec",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 522.4038658532689,
+      "end": 522.563865853269,
+      "text": "la",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 522.643865853269,
+      "end": 523.2038658532689,
+      "text": "Vinium",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 523.283865853269,
+      "end": 523.363865853269,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 523.6838658532689,
+      "end": 523.763865853269,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 523.843865853269,
+      "end": 524.4038658532689,
+      "text": "constellation",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 524.483865853269,
+      "end": 524.563865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 524.563865853269,
+      "end": 525.123865853269,
+      "text": "l'immédiat",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 525.2038658532689,
+      "end": 525.283865853269,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 525.283865853269,
+      "end": 525.363865853269,
+      "text": "sont",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 525.4438658532689,
+      "end": 525.523865853269,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 525.603865853269,
+      "end": 525.763865853269,
+      "text": "clair",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 525.843865853269,
+      "end": 526.003865853269,
+      "text": "aussi,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 526.083865853269,
+      "end": 526.1638658532689,
+      "text": "ils",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 526.323865853269,
+      "end": 526.563865853269,
+      "text": "restent",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 526.643865853269,
+      "end": 526.803865853269,
+      "text": "tous",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 526.9638658532689,
+      "end": 527.123865853269,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 527.123865853269,
+      "end": 527.283865853269,
+      "text": "deux",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 527.283865853269,
+      "end": 527.523865853269,
+      "text": "grosses",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 527.523865853269,
+      "end": 527.9238658532689,
+      "text": "machines",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 527.9238658532689,
+      "end": 528.003865853269,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 528.1638658532689,
+      "end": 528.483865853269,
+      "text": "passeraient",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 528.483865853269,
+      "end": 528.643865853269,
+      "text": "leur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 528.643865853269,
+      "end": 528.723865853269,
+      "text": "temps",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 528.723865853269,
+      "end": 528.803865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 528.803865853269,
+      "end": 528.9638658532689,
+      "text": "faire",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 528.9638658532689,
+      "end": 529.2038658532689,
+      "text": "du",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 529.123865853269,
+      "end": 529.6838658532689,
+      "text": "transpodage",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 529.763865853269,
+      "end": 529.843865853269,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 529.843865853269,
+      "end": 530.003865853269,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 530.003865853269,
+      "end": 530.083865853269,
+      "text": "ne",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 530.083865853269,
+      "end": 530.323865853269,
+      "text": "feraient",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 530.4038658532689,
+      "end": 530.483865853269,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 530.483865853269,
+      "end": 530.563865853269,
+      "text": "ça,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 530.723865853269,
+      "end": 531.4438658532689,
+      "text": "transcodage",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 531.4438658532689,
+      "end": 531.603865853269,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 531.603865853269,
+      "end": 532.003865853269,
+      "text": "transcription",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 532.003865853269,
+      "end": 532.083865853269,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 532.1638658532689,
+      "end": 532.483865853269,
+      "text": "vidéo.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 534.3838658532691,
+      "end": 535.0238658532692,
+      "text": "Voilà.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 536.703865853269,
+      "end": 537.183865853269,
+      "text": "Déploiement,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 537.5838658532691,
+      "end": 537.7438658532692,
+      "text": "je",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 537.7438658532692,
+      "end": 537.9038658532693,
+      "text": "mets",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 537.9838658532692,
+      "end": 538.0638658532691,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 538.0638658532691,
+      "end": 538.3838658532691,
+      "text": "priorité,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 538.5438658532692,
+      "end": 538.7838658532692,
+      "text": "effectivement,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 538.9438658532692,
+      "end": 539.5038658532692,
+      "text": "déploiement",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 539.663865853269,
+      "end": 539.8238658532691,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 539.8238658532691,
+      "end": 540.2238658532692,
+      "text": "l'asset",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 540.3838658532691,
+      "end": 540.8638658532691,
+      "text": "1.1",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 541.0238658532692,
+      "end": 541.183865853269,
+      "text": "à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 541.183865853269,
+      "end": 541.4238658532693,
+      "text": "cause",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 541.4238658532693,
+      "end": 541.5038658532692,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 541.5838658532691,
+      "end": 541.8238658532691,
+      "text": "failles",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 541.9038658532693,
+      "end": 542.0638658532691,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 542.0638658532691,
+      "end": 542.5438658532692,
+      "text": "sécurité.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 542.703865853269,
+      "end": 542.8638658532691,
+      "text": "Les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 542.8638658532691,
+      "end": 543.183865853269,
+      "text": "travaux",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 543.2638658532692,
+      "end": 543.3438658532691,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 543.3438658532691,
+      "end": 543.663865853269,
+      "text": "cycle",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 543.663865853269,
+      "end": 543.8238658532691,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 543.743865853269,
+      "end": 543.8238658532691,
+      "text": "vie",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 543.9838658532692,
+      "end": 544.1438658532691,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 544.1438658532691,
+      "end": 544.3038658532691,
+      "text": "comptes",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 544.3838658532693,
+      "end": 544.5438658532692,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 544.5438658532692,
+      "end": 544.7838658532692,
+      "text": "des",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 544.7838658532692,
+      "end": 545.5038658532692,
+      "text": "vidéos",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 545.8238658532691,
+      "end": 546.1438658532691,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 546.1438658532691,
+      "end": 546.5438658532692,
+      "text": "Tube.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 546.9438658532692,
+      "end": 547.183865853269,
+      "text": "Alors",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 547.2638658532692,
+      "end": 547.4238658532693,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 547.4238658532693,
+      "end": 547.743865853269,
+      "text": "y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 547.663865853269,
+      "end": 547.9838658532692,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 548.3038658532691,
+      "end": 548.5438658532692,
+      "text": "une",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 548.5438658532692,
+      "end": 548.9438658532692,
+      "text": "attente",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 549.0238658532692,
+      "end": 549.183865853269,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 549.183865853269,
+      "end": 549.5838658532691,
+      "text": "devis",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 550.3838658532693,
+      "end": 550.5438658532692,
+      "text": "par",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 550.5438658532692,
+      "end": 550.6238658532691,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 550.6238658532691,
+      "end": 551.0238658532692,
+      "text": "développeur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 551.2638658532692,
+      "end": 551.5038658532692,
+      "text": "qu'on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 551.5838658532691,
+      "end": 551.743865853269,
+      "text": "en",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 551.743865853269,
+      "end": 551.8238658532691,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 551.8238658532691,
+      "end": 552.0638658532691,
+      "text": "parlé",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 552.3838658532693,
+      "end": 552.6238658532691,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 552.6238658532691,
+      "end": 552.8638658532691,
+      "text": "avec",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 552.8638658532691,
+      "end": 553.663865853269,
+      "text": "l'éditeur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 553.743865853269,
+      "end": 554.703865853269,
+      "text": "Framasoft",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 554.9438658532692,
+      "end": 555.2638658532692,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 555.2638658532692,
+      "end": 555.5838658532691,
+      "text": "avec",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 555.9038658532693,
+      "end": 556.1438658532691,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 556.1438658532691,
+      "end": 556.8638658532691,
+      "text": "développeur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 559.183865853269,
+      "end": 559.4238658532693,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 559.4238658532693,
+      "end": 559.5838658532691,
+      "text": "nos",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 559.5838658532691,
+      "end": 560.1438658532691,
+      "text": "précédents",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 560.1438658532691,
+      "end": 560.7838658532692,
+      "text": "plugins.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 561.841597559807,
+      "end": 562.0015975598071,
+      "text": "On",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 562.0015975598071,
+      "end": 562.2415975598071,
+      "text": "s'est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 562.3215975598071,
+      "end": 562.4815975598071,
+      "text": "mis",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 562.4815975598071,
+      "end": 562.8015975598071,
+      "text": "d'accord",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 562.8015975598071,
+      "end": 562.9615975598072,
+      "text": "un",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 562.881597559807,
+      "end": 563.0415975598071,
+      "text": "peu",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 563.0415975598071,
+      "end": 563.1215975598072,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 563.1215975598072,
+      "end": 563.361597559807,
+      "text": "comment",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 563.2815975598071,
+      "end": 563.441597559807,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 563.441597559807,
+      "end": 564.2415975598071,
+      "text": "répartissait",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 564.2415975598071,
+      "end": 564.3215975598071,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 564.3215975598071,
+      "end": 564.6415975598072,
+      "text": "développements.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 564.881597559807,
+      "end": 564.9615975598072,
+      "text": "Il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 564.9615975598072,
+      "end": 565.0415975598071,
+      "text": "y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.0415975598071,
+      "end": 565.1215975598072,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.1215975598072,
+      "end": 565.2015975598072,
+      "text": "une",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.2015975598072,
+      "end": 565.361597559807,
+      "text": "partie",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.361597559807,
+      "end": 565.5215975598071,
+      "text": "qui",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.5215975598071,
+      "end": 565.6815975598072,
+      "text": "sera",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.6815975598072,
+      "end": 565.841597559807,
+      "text": "chez",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 565.841597559807,
+      "end": 566.7215975598072,
+      "text": "Framasoft,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 566.8015975598071,
+      "end": 566.9615975598072,
+      "text": "parce",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 566.9615975598072,
+      "end": 567.1215975598072,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 567.1215975598072,
+      "end": 567.2815975598071,
+      "text": "ça",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 567.2815975598071,
+      "end": 567.441597559807,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 567.441597559807,
+      "end": 568.0815975598073,
+      "text": "intéresse",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 568.0815975598073,
+      "end": 568.3215975598071,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 568.3215975598071,
+      "end": 568.6415975598072,
+      "text": "dire",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 568.6415975598072,
+      "end": 568.9615975598072,
+      "text": "qu'une",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 568.9615975598072,
+      "end": 569.441597559807,
+      "text": "vidéo",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 569.441597559807,
+      "end": 569.6815975598072,
+      "text": "ne",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 569.6815975598072,
+      "end": 569.921597559807,
+      "text": "peut",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 569.921597559807,
+      "end": 570.3215975598071,
+      "text": "durer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 570.3215975598071,
+      "end": 570.5615975598071,
+      "text": "que",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 570.5615975598071,
+      "end": 570.8015975598071,
+      "text": "tant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 570.8015975598071,
+      "end": 570.9615975598072,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 570.9615975598072,
+      "end": 571.2015975598072,
+      "text": "temps,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 571.361597559807,
+      "end": 571.6015975598073,
+      "text": "tant",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 571.6015975598073,
+      "end": 571.7615975598071,
+      "text": "de",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 571.7615975598071,
+      "end": 572.1615975598072,
+      "text": "mois.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 573.603865853269,
+      "end": 573.6838658532689,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 574.0838658532688,
+      "end": 574.4838658532689,
+      "text": "disparaît",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 574.5638658532688,
+      "end": 574.9638658532689,
+      "text": "automatically.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 577.123865853269,
+      "end": 577.603865853269,
+      "text": "That's",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 577.603865853269,
+      "end": 578.0838658532688,
+      "text": "interesting.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 578.2438658532691,
+      "end": 578.323865853269,
+      "text": "So",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 578.5638658532688,
+      "end": 578.803865853269,
+      "text": "we",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 579.0438658532688,
+      "end": 579.603865853269,
+      "text": "metting",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 579.603865853269,
+      "end": 579.7638658532691,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 579.7638658532691,
+      "end": 579.9238658532689,
+      "text": "in",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 579.9238658532689,
+      "end": 580.0838658532688,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 580.0838658532688,
+      "end": 580.4838658532689,
+      "text": "cœur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 580.883865853269,
+      "end": 581.123865853269,
+      "text": "of",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 581.123865853269,
+      "end": 581.9238658532689,
+      "text": "PierreTube.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 582.323865853269,
+      "end": 582.4038658532689,
+      "text": "Par",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 582.4038658532689,
+      "end": 582.5638658532688,
+      "text": "contre",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 582.7238658532689,
+      "end": 582.803865853269,
+      "text": "there",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 582.803865853269,
+      "end": 582.883865853269,
+      "text": "are",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 582.9638658532689,
+      "end": 583.0438658532688,
+      "text": "other",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.2038658532689,
+      "end": 583.363865853269,
+      "text": "things",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.363865853269,
+      "end": 583.4438658532689,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.5238658532688,
+      "end": 583.603865853269,
+      "text": "are",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.6838658532689,
+      "end": 583.7638658532691,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.7638658532691,
+      "end": 583.7638658532691,
+      "text": "little",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.7638658532691,
+      "end": 583.843865853269,
+      "text": "bit",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 583.843865853269,
+      "end": 583.9238658532689,
+      "text": "more",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 584.0038658532688,
+      "end": 584.323865853269,
+      "text": "specific",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 584.5638658532688,
+      "end": 584.7238658532689,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 584.7238658532689,
+      "end": 585.0438658532688,
+      "text": "us.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 585.1615975598069,
+      "end": 585.4015975598069,
+      "text": "For",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 585.4015975598069,
+      "end": 585.7215975598068,
+      "text": "example,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 585.8815975598069,
+      "end": 586.1215975598067,
+      "text": "to",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 586.1215975598067,
+      "end": 586.6815975598068,
+      "text": "declaring",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 586.6815975598068,
+      "end": 586.7615975598068,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 586.8415975598069,
+      "end": 586.9215975598069,
+      "text": "there",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 586.9215975598069,
+      "end": 587.0015975598068,
+      "text": "is",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 587.0815975598067,
+      "end": 587.2415975598068,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 587.2415975598068,
+      "end": 587.4015975598069,
+      "text": "mine",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 587.801597559807,
+      "end": 587.8815975598069,
+      "text": "in",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 587.8815975598069,
+      "end": 588.1215975598067,
+      "text": "the",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 588.1215975598067,
+      "end": 588.2015975598068,
+      "text": "video",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 588.5215975598068,
+      "end": 588.7615975598068,
+      "text": "and",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 588.7615975598068,
+      "end": 589.0015975598068,
+      "text": "that",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 589.0015975598068,
+      "end": 589.1615975598069,
+      "text": "this",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 589.321597559807,
+      "end": 589.4815975598068,
+      "text": "video",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 589.801597559807,
+      "end": 590.1215975598067,
+      "text": "does",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 590.1215975598067,
+      "end": 590.3615975598069,
+      "text": "not",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 590.6015975598067,
+      "end": 590.7615975598068,
+      "text": "be",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 591.5615975598067,
+      "end": 592.2015975598068,
+      "text": "détruited",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 592.2015975598068,
+      "end": 592.281597559807,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 592.281597559807,
+      "end": 592.4415975598068,
+      "text": "board",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 592.5215975598068,
+      "end": 593.0015975598068,
+      "text": "dungeon.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 602.6638658532688,
+      "end": 602.8238658532691,
+      "text": "Mais",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 602.983865853269,
+      "end": 603.1438658532688,
+      "text": "donc",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 603.3838658532691,
+      "end": 603.6238658532689,
+      "text": "là",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 603.703865853269,
+      "end": 603.8638658532691,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 603.8638658532691,
+      "end": 604.023865853269,
+      "text": "est",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 604.023865853269,
+      "end": 604.1838658532688,
+      "text": "prêt",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 604.263865853269,
+      "end": 604.3438658532691,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 604.3438658532691,
+      "end": 604.5838658532689,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 604.503865853269,
+      "end": 605.1438658532688,
+      "text": "descriptif,",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 605.3838658532691,
+      "end": 605.463865853269,
+      "text": "il",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 605.463865853269,
+      "end": 605.5438658532689,
+      "text": "n'y",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 605.5438658532689,
+      "end": 605.6238658532689,
+      "text": "a",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 605.6238658532689,
+      "end": 605.703865853269,
+      "text": "plus",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 605.7838658532689,
+      "end": 606.1038658532689,
+      "text": "qu'à",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 606.1038658532689,
+      "end": 606.503865853269,
+      "text": "gérer",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 606.503865853269,
+      "end": 606.743865853269,
+      "text": "les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 606.6638658532688,
+      "end": 606.983865853269,
+      "text": "devis",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 607.7838658532689,
+      "end": 608.1038658532689,
+      "text": "et",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 608.1038658532689,
+      "end": 608.423865853269,
+      "text": "trouver",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 608.423865853269,
+      "end": 608.503865853269,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 608.5838658532689,
+      "end": 608.8238658532691,
+      "text": "marché",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 608.8238658532691,
+      "end": 608.903865853269,
+      "text": "sur",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 608.903865853269,
+      "end": 609.0638658532689,
+      "text": "lequel",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 609.223865853269,
+      "end": 609.3038658532689,
+      "text": "on",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 609.3038658532689,
+      "end": 609.3838658532691,
+      "text": "va",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 609.463865853269,
+      "end": 609.5438658532689,
+      "text": "le",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 609.5438658532689,
+      "end": 609.8638658532691,
+      "text": "mettre.",
+      "speaker": "SPEAKER_03"
+    }
+  ],
+  "turnLevelTranscription": [
+    {
+      "start": 0.265,
+      "end": 0.965,
+      "text": "Merci.",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 1.645,
+      "end": 12.105,
+      "text": "Alors le portail apps, donc ça c'est les chiffres il y a 15 jours. D'ailleurs, on a dépassé, on est à plus de 80 000, presque 82 000 vidéos sur Podéduc Ingérieur d'Espace.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 13.185,
+      "end": 42.365,
+      "text": "Donc ça c'est les chiffres d'avant les vacances. On a 221 000 comptes ouverts on the portail apps, sachant que ça ne compte pas les comptes that have been ouverts directly on the application. They have passed by the portail and they are enregistrés on the 2210 compt that are less.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 42.525,
+      "end": 45.905,
+      "text": "Donc ça fait qu'un tiers des gens qui se sont connectés en cinq mois. Voilà.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 48.885,
+      "end": 50.885,
+      "text": "Mes cinquième soixante-treize qui sont",
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "start": 56.605,
+      "end": 58.245,
+      "text": "Voilà.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 59.125,
+      "end": 77.965,
+      "text": "Matomo is installed on the portail apps, so we have a stats pretty precise about the parcours of the utilisators, where it is, what terminal, etc. We have to have a child interesting because it's been three semaines a month that we've closed.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 78.325,
+      "end": 92.345,
+      "text": "The portail 6.4.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 94.705,
+      "end": 108.505,
+      "text": "Les travaux sur le raccourcissement du LRL, je ne sais pas si tu as quelque chose à montrer Hugo. Non, il n'y a rien de vo.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 111.845,
+      "end": 116.425,
+      "text": "C'était il y a deux semaines et ils ont dit qu'il y avait en fait sur 23 semaines, qu'il y en avait un.",
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "start": 116.665,
+      "end": 138.405,
+      "text": "Hugo is allé voir l'équipe directement, they have discuté ensemble and too. We have two devs who travail jusqu'à fin de semaine. Fin de semaine, we're going to have a nouvelle du development, but we have a bonus and a big travel proposition of Hugo with them.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 138.825,
+      "end": 148.605,
+      "text": "Il a fallu travailler main dans la main et donc on devrait avoir le rapportissant du RM. Donc le 1er juillet à midi, on va faire la mise à jour.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 150.585,
+      "end": 153.725,
+      "text": "Voilà, je te déconne.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 154.265,
+      "end": 154.505,
+      "text": "Hein ?",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 155.845,
+      "end": 158.425,
+      "text": "Ouais c'est automatiser en",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 158.425,
+      "end": 162.625,
+      "text": "Non, c'est déconnez. On n'est pas en prise jusqu'au 14 juin.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 162.905,
+      "end": 164.805,
+      "text": "Pourquoi on est en prise encore ? Ah avec les évidemment ?",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 165.965,
+      "end": 166.165,
+      "text": "moi.",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 183.805,
+      "end": 190.305,
+      "text": "I think we'll have to go the time.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 193.085,
+      "end": 202.025,
+      "text": "Voilà, alors pour rappel, c'est un outil en API, donc qui sera disponible aussi pour d'autres services qui voudraient générer des URL raccourcis and URP.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 210.545,
+      "end": 222.405,
+      "text": "Ensuite, on a avancé sur le cycle de vie sur l'architecture particularly of the cycle of view, where we deploy the micro applications par service.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 222.805,
+      "end": 229.525,
+      "text": "The portail will apply a micro application very prise and sécurisated by the system of token.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 229.805,
+      "end": 249.705,
+      "text": "And this micro application has all these actions necessary for that application. The intelligence is a nice micro application. Typically, we have 11 tubes, there are seven micro applications that parcelling the pairtubes for drive the content, transferring the videos of person, etc.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 250.265,
+      "end": 255.125,
+      "text": "This is not the portal that will know exactly the particular things of this.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 259.085,
+      "end": 265.145,
+      "text": "Mais donc on avance un peu dans cette architecture de santé coûte.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 265.865,
+      "end": 274.965,
+      "text": "Le rancher de pré-prod il a été livré maintenant il y a au moins deux semaines de plus, donc au moins cette semaine, il n'est toujours pas fonctionnel.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 275.385,
+      "end": 281.285,
+      "text": "Voilà, dans les discussions, on avait des demandes de dérogation pour les",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 282.225,
+      "end": 285.805,
+      "text": "sujets sur les certificats. J'ai fait une demande tout à l'heure",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 286.225,
+      "end": 291.005,
+      "text": "de clarification d'où on en était.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 335.145,
+      "end": 335.725,
+      "text": "Merci.",
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "start": 343.325,
+      "end": 353.885,
+      "text": "We have a great trouble to have the thèmes. We have a thème that was prepared by the drame du Grand Est in two, two and dem.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 357.645,
+      "end": 371.505,
+      "text": "for an identity graphique sur les tubes for que les gens sachent là où ils sont. Parce que on en a 11, it's not que les gens comprennent là où ils sont anders quand ils postent une vidéo, qu'ils se retrouvent dans la navigation, etc.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 371.925,
+      "end": 377.525,
+      "text": "So we have a thématique with an identity graphique par Tiertube.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 378.005,
+      "end": 385.725,
+      "text": "Or la 7.1.1, we have been obliged to pass on urgence in three semaines for a problem with faille de sécurité.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 396.845,
+      "end": 403.045,
+      "text": "It was not supported by the 7.1.1. These instances already have exactly the same debt.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 403.585,
+      "end": 418.465,
+      "text": "It's a bit dumb. So there are videos that have been done by the dragon grandest at the sujet, we have propositions, we have Hugo who's penchant to the question, and we have Manon also, we have a reunion as interesting in two semaines and week.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 418.845,
+      "end": 452.805,
+      "text": "After our départ en vacances, with tools, Valerie du Grand Est, Hugo, Manon and I. And Manon said, at some point, I wanted to parallel instance and we parle to the theme. Masquer al maximum the instances.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 452.965,
+      "end": 464.845,
+      "text": "for que les gens voient des thématiques et non plus quelque chose de technique. On y arrive, c'est cool. Par contre, il n'y aura rien de fait à ce niveau-là avant au moins la rentrée prochaine.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 465.785,
+      "end": 477.065,
+      "text": "On va rester pendant quelques mois, donc il y a un message qui dit le thème a disparu, mais il reviendra bientôt. Bon, bientôt, ça arrive dans 3-4 mois, vu les travaux qu'on va entamer sur ce sujet-là.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 478.365,
+      "end": 505.845,
+      "text": "La transcription des vidéos est opérationnelle sur test. Maintenant qu'on est passé à l'asset, on va pouvoir le généraliser. Donc il faut qu'on le déploie avec Nicolas. On avait déjà un serveur qui est prêt, il faut qu'on en fasse un deuxième et qu'on paramètre tous les serveurs tubes pour que la transcription se fasse. On va commencer par la transcription. Et ensuite, ce qu'on s'est dit, c'est qu'on généraliserait sur transcription et transcodage",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 506.185,
+      "end": 508.185,
+      "text": "en externalité.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 509.385,
+      "end": 532.425,
+      "text": "qui permettrait, comme je l'avais expliqué précédemment, de diminuer la puissance des machines des serveurs tubes, puisqu'on ne ferait plus que de la lecture et de transcodage qui seraient eux envoyés sur les 11, non les 13 même avec la Vinium et le constellation à l'immédiat qui sont en clair aussi, ils restent tous sur deux grosses machines qui passeraient leur temps à faire du transpodage et qui ne feraient que ça, transcodage et transcription de vidéo.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 533.445,
+      "end": 560.745,
+      "text": "Voilà. Déploiement, je mets en priorité, effectivement, déploiement de l'asset 1.1 à cause des failles de sécurité. Les travaux de cycle de vie des comptes et des vidéos sur Tube. Alors il y a une attente de devis par le développeur qu'on en a parlé et avec l'éditeur Framasoft et avec le développeur de nos précédents plugins.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 560.965,
+      "end": 572.065,
+      "text": "On s'est mis d'accord un peu sur comment on répartissait les développements. Il y a une partie qui sera chez Framasoft, parce que ça les intéresse de dire qu'une vidéo ne peut durer que tant de temps, tant de mois.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 572.425,
+      "end": 584.845,
+      "text": "and disparaît automatically. That's interesting. So we metting that in the cœur of PierreTube. Par contre there are other things that are a little bit more specific to us.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 585.165,
+      "end": 597.225,
+      "text": "For example, to declaring that there is a mine in the video and that this video does not be détruited on board dungeon.",
+      "speaker": "SPEAKER_03"
+    },
+    {
+      "start": 601.645,
+      "end": 609.645,
+      "text": "Mais donc là on est prêt sur le descriptif, il n'y a plus qu'à gérer les devis et trouver le marché sur lequel on va le mettre.",
+      "speaker": "SPEAKER_03"
+    }
+  ]
+}

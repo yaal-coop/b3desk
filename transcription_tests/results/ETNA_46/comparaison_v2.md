@@ -1,0 +1,1367 @@
+# Transcription source (Albert — openai/whisper-large-v3)
+
+ Et bah c'est parti pour ce 46ème, faut vraiment qu'on enlève les chiffres, ça commence à devenir un problème d'ego. J'espère que vous allez tous passer un bon week-end pour ceux qui ont fait le pont, et des bonnes semaines pour ceux qui ont réussi à avoir deux semaines de vacances dernièrement. Donc, Didier, Hugo, Benoît, deux semaines de vacances, une semaine. Et à distance aussi. Et à passer entre les gouttes des compétences. Allez, petit point projet. Qu'est-ce qui s'est passé sur cette quinzaine ? Donc, comité de domaine avec notamment Audran. Qu'est-ce qui en ressort ? Deux choses majeures. Premièrement, la réduction du budget sur toute la DLE. comme on s'était un petit peu imaginé. J'attends un peu les confirmations des montants sur notre programme, mais on va être un peu pas très aussi. Donc voilà, ça devrait être assez indolore en fonction des projets qu'il y a plus ou moins selon les choses qu'il y a à faire. Mais bon, sachez qu'on n'est pas à l'abri d'avoir un petit coup de rabot qu'on doit faire sur nos produits. Et puis, deuxième sujet surtout à retenir et qui est peut-être le plus important temps, c'est le suivi précis des prochains jalons. C'est Audran qui apprécie beaucoup toutes les nouvelles fonctionnalités qui vont arriver sur l'ensemble des projets. C'est plutôt positif. Il y a plein de choses qui arrivent et des changements fonctionnels et tout. C'est plutôt intéressant. Par contre, et il n'a pas tort, on n'est pas encore en mesure d'être assez précis sur la date de livraison, d'arrivée, de mise en production des nouveautés qu'on a à disposition de nos agents. Et donc, il faut qu'on... On souhaite en tout cas qu'on arrive à être meilleur là-dessus pour fournir des salons un peu plus précis. Aujourd'hui, on est seulement en capacité globalement... Alors, soit on donne des dates, mais on recule un petit peu. Soit on donne des ordres d'idées, c'est-à-dire qu'on dit au Técarat ou avant l'été ou après l'été ou pendant l'été. OK, mais il est de combien de temps en avance ces hommes ? Alors, c'est un peu le truc. Il n'y a pas... Ce que je veux dire, c'est qu'il n'y a pas de... Moi, je veux donner une date précise. d'une semaine avant. Alors, ça peut être bien, mais je pense qu'il veut un peu plus de visibilité. À 8 points, là, il va bien savoir pour septembre ou octobre, tu vois, qu'est-ce qui va arriver. Voilà, donc c'est un travail qu'il faut qu'on fasse et tout. Mais en tout cas, ça touche un sujet de fond quand même, qui est le fait de maîtriser avec nos prestats et que nos prestats tiennent un peu les plannings sur lesquels ils nous communiquent aussi. Donc, voilà, je vais comprendre que ce ne sont pas des choses faciles facile à faire, sinon le fleuré, bien sûr. Mais en tout cas, il y a un vrai sujet à amener plus de précision, plus d'informations, et de bonnes informations, en tout cas, à la direction en haut. Parce que vraiment, j'ai senti qu'il voulait avoir de l'info, de la communication. Et là, en bout, c'est quoi ? Il peut en faire quoi ? Je pense plusieurs choses. Je pense qu'il veut déjà... Je pense que ça le rassure s'il a des dates plus précises et qu'on n'est pas le seul en train de dire, ça arrive au T425 et finalement ça vissera après. On dirait qu'il y a un sujet en tout cas de tel art. Et je pense qu'il y a un sujet aussi où quand ils communiquent avec l'instance, d'autres directeurs de métier, d'autres personnes externes au ministère, ça va aussi être plus précis quand ils vont des choses. Je demanderai la prochaine fois, mais je dirais pas comme ça. Mais il n'a pas tort d'un côté, il faut qu'on arrive à être mêlé en tout cas nous en termes de avec nos testers. Il y a une balance entre l'intérêt pour lui d'aller communiquer sur un truc précis pour qu'elle bénéficie et le risque qu'on prend à partir de là et finalement ne pas livrer à cette date-là parce qu'il est bon sur la planète sanatoire. Je suis incapable de vous dire quand sortira la version 3.1. Une fois qu'elle est sortie, nous, on peut avoir un cycle de tests un peu contraint où on dit on a 4 semaines de tests et à la cinquième, on livre. Donc, peut donner des dates tant que le fournisseur que ce soit collabora que ce soit nextcloud que ce soit nextcloud peut-être un peu plus et encore ou bled.network enfin c'est genre je ne vois pas proposer une date en sachant très bien que l'éditeur lui-même va en plafonner la date et moi ça va m'entomber dessus derrière je te rejoins et du coup on a quand même un sujet genre arrêtez-moi là non mais je suis d'accord mais on a aussi nous du coup un vrai sujet pour s'améliorer d'avoir une relation en tout cas d'avoir de l'éditeur un engagement plus réaliste et plus... Il y a trop souvent des décalages de l'éditeur et tout. Donc, il y a quand même, nous aussi, un côté de maîtriser aussi quand est-ce que l'éditeur sort ces trucs. Et c'est un travail qu'on doit faire avec eux et qu'on doit essayer d'améliorer. Mais à l'inverse, les commandes qu'on a fixées sur BVB l'année dernière, au début de l'année-là, on va les avoir peut-être en fin d'année ou peut-être début d'année prochaine. Ce qui n'est pas normal non plus. Dans le sens où on a quand même payé pour les évoles et en fait, ça arrive quand ça arrive, on ne sait pas quand et tout. Ce n'est pas non plus une relation de client à défaut d'intérêt. Ça montre aussi qu'on a du travail à faire là-dessus pour s'améliorer. Donc je pense qu'il faut trouver l'équilibre des deux entre arriver déjà à trouver avec nos prestats un meilleur équilibre pour avoir plus de visibilité et plus de bonnes dates pour ce qui est des prestats et au grand, il faut aussi des dates précises. Sachant que ce n'est pas comme Tribu, par exemple, Tribu c'est notre outil, on peut faire des développements pour notre outil, met dans la disposition des autres soit comme de l'huile c'est libre la ronde et son élu c'est libre par des autres on parle de la borade et compagnie qui sont utilisés par plein d'autres personnes et qu'on n'est pas les seuls clients ou les seuls utilisateurs je te rejoins exprès tout pareil et je pense que peut-être que l'on y compare aussi par rapport aux outils qui sont développés à l'interne mais ça n'empêche qu'on doit quand même s'améliorer dans ce sens là aujourd'hui on utilise trop par vos places tard et eux ça les eux ils sont tous s'en foutent presque. Et c'est pas normalement plus dur. Parce qu'on a quand même aussi des commandes, on défend de l'argent et on doit avoir aussi plus de visibilité sur quand est-ce que ça arrive et sur l'exactitude des timings au moins. Sans avoir de date précise, mais au moins des timings. Parce que tu vois, ça existe trop longtemps. Est-ce qu'on parle... Non mais est-ce qu'on parle, parce que tu vois, typiquement, Collaborat, il y a eu une proposition pour financer des développements très précis pour nous. C'est-à-dire que nous, on a un financé et on aurait pu demander des choses particulières sur les dates de livraison ou autre, ok, mais par contre, de dire, donc on ne l'a pas fait, on ne l'a pas financé, donc là, on est lié aux sorties des versions publiques. Est-ce qu'on parle de fournitures de nos développements à nous, donc je disais, pour lesquels on paye particulièrement, ou est-ce qu'on parle de la sortie des nouvelles versions, en B2B 3.0, la 24.0.4 de Collaborat, qui sont des versions qui vont porter des améliorations qu'on connaît et qu'on attend mais pour lesquelles on n'a pas financé. Nous, on paye juste du support. Je pense qu'il y a un trait. Ce n'est pas séparer ce qu'on paye et ce qu'on ne paye pas. C'est un trait qu'on doit faire avec nos prestataires juste pour avoir une meilleure vue globale de l'ensemble et plus d'exactitude de leur côté. Ce que j'allais te dire sur les développements que nous, on finance, on pourrait très bien dire... On peut être plus exigeant. Non, justement. On peut être plus exigeant sur des choses qu'on paye directement en disant moi, je ne suis pas veux à ce moment là si vous êtes capable de me livrer à vous de me dire qu'on sortira la version 3.1 de DBV dans laquelle vous allez fournir cette évolution, vous la fournissez là en patch sur la version précédente et là on pourrait les utiliser avec eux mais dès que c'est sur des versions majeures, c'est là qu'on a tout le but. Non complètement, mais il y a quand même un travail à faire de maîtrise, en tout cas le travail de l'opérateur de mieux maîtriser leur roadmap, même si c'est eux qui maîtrisent à tout, en tout cas au-delà de la maîtrise, c'est c'est avoir des informations plus fiables. Il faut qu'eux aussi, ils se mettent dans un côté plus professionnel et tout. Il n'y a pas de raison non plus qu'ils puissent l'utiliser à chaque fois, donc 3, 4, 5 mois, parce qu'ils se réhabilitent. En tout cas, il faut qu'eux aussi nous amènent de la stabilité. Et la stabilité, c'est aussi la confiance. Donc, c'est aussi ça. Je ne dis pas que c'est simple, je dis qu'il y a un sujet qui est vrai aussi un peu. C'est vrai que, il y a vraiment des choses où on peut dire, ça arrive en mai, puis en fait, ça arrive en septembre. OK, ce n'est pas notre faute, mais L'argument n'est pas suffisant. Oui, mais ça dépendra clairement des éditeurs de même. Parce que, au colabore, on a zéro vision sur la roadmap. Zéro, probablement. Là où BBB, on a une vision, mais ça se décale en permanence. Et où Nestlode, il y a quelque chose de plus clair à la roadmap. Oui, mais plus clair. On sait qu'il y a une version qui s'en fait, je crois. Je me permets d'intervenir et de te couper, Benoît, concernant... en next load, là on a eu une déconvenue qui a été annoncée la semaine dernière sur la version 31 j'en parlerai tout à l'heure quand ce sera le point sur nuage mais voilà on a une grosse régression fonctionnelle qui a été introduite unilatéralement par l'éditeur côté partage de fichiers donc on ne peut pas en l'état livrer la 31 et nous ça nous plante et donc si j'avais annoncé quelque chose côté planning projet remonté côté DNE là on aurait carrément dérapé quoi Mais unilatéralement, c'est un fait côté éditeur. La 31, elle est quand même sortie à la date à laquelle il l'avait dite. Tout à fait. J'en parlerai tout à l'heure. Nous, il faut qu'on se prenne nos marges. Effectivement, c'est ce que je disais, on a le tunnel de test, déploiement, mais par contre, que l'éditeur nous livre en temps et en heure la 31, c'est déjà ça. C'est déjà mieux que Collaborat qui... Il faut remettre quand il veut, ce qu'il veut. Mais ça me donne bien qu'il y a des sujets amoureux de ce côté-là. OK. Autre actu, donc, pour l'information, ça ne vous touche pas directement, quoique c'est vos postes, mais ça vous est pour vous. Il y a un renouvellement des licences IES Microsoft qui ont été réalisées la semaine dernière. C'est tout ce qui est utilisation de Microsoft. C'est ce qu'on profite, mais pas que, à la même heure. Pas vous, vous trichez, mais tous ceux qui ont un PC normal. C'est pour les 30 000 agents. Voilà, prochain jalon. Retour d'expérience Squash. J'ai noté un Squash avec Tribu à organiser. Ça, ça sera à voir avec Simon, mais on va voir. C'est peut-être le prochain comité, ça te va Simon ? Oui, pas de souci. Et puis le comité des référents, donc ça c'est avec les référents de région académique, soit les DRAZI, soit les SGRAS, qui portent le programme, on les voit mardi prochain, pour faire le point un peu des sujets avec eux. Et puis je vous propose d'avancer, on va durer assez longtemps sur ma slide. Moi j'en profite juste pour le comité référent, qui sera dans une semaine, du coup vous allez sûrement recevoir des slides dans les prochains jours. à rentrer juste pour qu'on ait les infos sur les dernières actus à partager pour ce comité. En présentiel ou en distanciel ? En distanciel. Il va falloir y faire une arrivée. C'est moins heureux, c'est plus dur, c'est plus gris. Quoi que maintenant, il y a la grève. Petit point rapide, parce que le sujet n'a pas énormément avancé sur le 4, il me semble. Non, sur dotation, on est toujours sur l'étude des volumiers L'idée, c'est de faire le point avec Frédéric pour lui remettre le contexte du projet et réévaluer ensemble la liste des profils à doter et voir aussi comment on va se positionner sur le comité référent qui arrive à grands pas. Côté supportisateur, il y a une mise à jour en ce moment qui est en train d'être faite côté CRT et team. Ensuite, on verra les académies pour faire la montée en compétences sur nos projets. Je crois qu'il y a une certaine certains projets déjà qu'on commence à travailler sur l'accompagnement et la formation un peu aux équipes support. Donc, il faudra qu'on fasse un point de ces quatre avec l'ensemble d'entre vous pour voir quel projet est plutôt mûr ou si cet projet a des efforts à mettre pour former les équipes support en académie. BNA. Côté BNA, du coup, on va décaler de un mois le lancement de la campagne qui devait partir aujourd'hui, même il y a une autre enquête qui est menée par la DELCOM sur la même période. Donc pour éviter un déclouement de sollicitations, on a décidé de décaler le DNA du 16 au 27 ou 28 juin. Donc décalage d'un mois. À date, on a le questionnaire qui est finalisé, on a la première communication qui est prête et il faut juste qu'on intègre les deux suivantes et qu'on commence à regarder comment anticiper un petit peu le traitement des données, mais que c'était censé partir cette semaine, on a quand même pas mal de matière déjà prête. Et côté communication unifiée, pas d'avancée, je vais essayer de faire venir Bruno, qui passe un petit topo de là où sont les enjeux. C'est un sujet aussi qui commence à faire son petit bout de chemin, parce qu'avec le déménagement notamment qu'on a du ministère à Paris, dans un seul bureau, à Gentilly. Il y a un sujet en ce cas de soft-pointing qui se pose. Et du coup, entre l'EVT de Cisco ou Webex ou d'autres outils libres ou d'autres outils du marché. C'est un vrai sujet aussi qui, en ce moment, nous touche et qui touche encore le directeur directement. C'est un vrai sujet pour le logo. Pour savoir qu'est-ce qu'on met dedans, qu'est-ce qu'on veut comme service, etc. Et puis, est-ce qu'on veut un outil privé ou est-ce qu'on veut un outil libre ? comme la Normandie a mis en place. Sur les dernières années. Sur chaque appareil, c'est la téléphonie ? Oui, mais ce n'est pas de l'unifié. Tu ne peux pas appeler avec un téléphone. Tu ne peux pas appeler directement depuis du Cisco. Il y a tout un sujet autour de ça. Du Cisco. Du SIP ? Du SIP. Oui, c'est pas du tout. Tu montes un pastel, c'est bon, oui. Le chat, c'est pas mal. Surtout, nous s'appelons direct, mais tu n'as pas de... Oui, c'est sympa, c'est sympa. téléphone fixe, mais oui, c'est déjà une première forme de téléphonie. C'est clair que c'est là, c'est vrai qu'il faut définir les usages précisément. Il faut déjà voir ce qu'on peut faire. Donc, CHAP, c'est possible, on y travaille aussi, d'avoir du BBB dans CHAP, et d'avoir du BBB dans les salles de vidéo avec du SIP, c'est aussi le travail qu'on a avec avec Paul Fouad qui travaille sur le sujet, la site Nidigate Web. Si on arrive à tout faire en même temps et c'est ce sur quoi on travaille en ce moment, d'avoir le matériel compatible avec tout ça, qu'on ait testé, qu'on ait tout intégré et tout, on peut arriver à gentil avec le matériel tout intégré, du DVB, du CHAP, tout proprement. C'est un travail qu'il faut qu'on mène et qu'on a déjà commencé. Ça marche, merci. Et puis on passe directement au projet, puis on commence aujourd'hui avec Tribu. Et c'est bon, tu laisses la main. Oui. Alors côté Tribu, on se lance sur le chantier de la refonte graphique pour l'UX8. Donc ça va être une refonte ergonomique et là on est en train de faire le chiffrage toujours avec les prestataires. On est en train de valider le planning et un petit peu aussi toutes les estimations de chaque partie des écrans. Donc ça, on on aura à voir du nouveau cette semaine parce qu'avec les congés, ça a un petit peu prolongé au niveau du chiffrage et puis on a fait quelques allers-retours pour bien mettre tout à plat. Et comme ça, justement, on assure aussi la mise en prod qui, nous, on souhaite la faire pour la fin 2025. Donc après, ça va dépendre du périmètre qu'on pourra prendre en compte sur la refonte graphique, mais ça va permettre aussi de valider et de confirmer cette mise en prod. Donc, pour toute cette étude, on est en train de découper en lots toute la partie spécification. Donc on a découpé en commandes par lots chaque écran et donc on a trois lots en tout. Le premier lot concerne les accueils, les tableaux de bord, les parties dossiers. Donc pour vous donner une idée, ce premier lot ça a environ 80 jours. C'est des abacs parce que du coup on a du dev, on prend aussi en compte les retours au niveau des développements, des tests et sur les documents aussi parce qu'on On peut se rendre compte de petits imprévus en cours de route. Donc voilà, on essaye de se pallier à ça. Le lot 2, ça concerne les outils et la recherche dans tout ce qui est tribus. Et après, le lot 3, administration. Donc pour l'instant, l'équipe de développement est plutôt confiante pour avoir une version finalisée pour la fin d'année. Donc en tout, le chantier, c'est à peu près 200 jours. Et donc là, j'ai livré la première partie des specs fin avril. Et là, il y a quelques retours sur les specs, mais je pense qu'on va arriver sur de bons rails. Et du coup, en parallèle, on est en train de préparer un petit peu les environnements de pré-prod pour qu'on ait un environnement isoprod pour les problèmes qu'on peut rencontrer sur la production de tribus et un environnement pour le dev de la refonte graphique et aussi un environnement pour l'acuité. Donc ça, ça nous permet d'avoir plusieurs environnements pour justement avoir des travaux en parallèle et ça va nous permettre d'avancer de de façon sereine. En deuxième slide, j'avais mis un petit peu un planning, une trajectoire, on va dire, qu'on a partagé avec les développeurs. Là, pour l'instant, on est sur la partie spécification, mais on aimerait qu'on remet, se lancer sur le développement. Dès que le chiffrage sera acté, les développements seront lancés. En parallèle de ça, on a fait pas mal de montées de versions aussi sur Tribu, technique, ce qui va nous permettre d'avoir aussi un qui roule très bien et qui supporte très bien la charge donc on est prêt pour avoir plein d'utilisateurs sur la refonte graphique parce qu'on espère que ça va faire un effet waouh si je reprends les termes de Benjamin donc par rapport à ça ça vous donne une petite vue qu'on pense pouvoir tenir et ce qui nous permettrait d'avoir une MEP pour la fin novembre début décembre il faut une date plus précise le jour est l'heure 1h30 du DG C'est ça, après on voudrait garder quand même une quinzaine de jours en décembre avant les congés de Noël pour être sûr que tout roule suite à cette refonte graphique. Donc après on va essayer de mettre la pression aux développeurs mais pour l'instant on est vraiment en train de tout étudier pour ne pas laisser passer d'imprévus. Donc pour le coup là on est plutôt confiant. Et pour la date, on vous donnera une date plus précise effectivement. Et on attend que le chiffrage soit acté pour... pour donner, on va dire, des vraies infos. C'est le bonhomme, Charly, mais sur Tribu, je n'ai pas eu de problème de date. S'il te plaît, Johan, ne coupe pas le service pendant une semaine et demie pour mettre en prod une nouvelle version. Non, non, ça n'aura plus... Là, la mise en prod, elle va se faire en transparence avec l'utilisateur et il n'y aura pas de maintenance comme on a pu avoir sur la migration XO. C'était vraiment un cas particulier, la migration XO. Ne t'inquiète pas, ils en rigolent maintenant. Ils en rigolent. C'est pour ça qu'ils peuvent mettre le ressort comme ça. Parce que c'est vrai, on prend aussi en compte la mise à jour de tous les tutoriels, de tous les documents qui va se faire aussi avec les nouveaux écrans. Comme ça, les utilisateurs pourront directement avoir les tutoriels à jour avec le nouveau tribut. Ça marche. Donc voilà, côté tribut. Merci Simon. Alors, pas d'éduc, je crois qu'il y a... Non ? Je laisse Benoît peut-être en parler ? Oui. On sent que tout le monde est même deux semaines tranquille, là. Non, pas d'éduc. Alors, 99% de consommation de musée, je suis très étonné. En gros, t'avais pas de sujet, t'avais pas de sujet. que de la MCO, ça ne me choque pas. Si c'est que de la MCO, oui, de toute façon, c'est à la PHM, c'est un logiciel libre, donc effectivement, il y a peut-être 1000 euros de... Non, il y a un développement YALT, je ne sais pas où il en est, d'ailleurs. Non, mais je n'ai rien à te dire, ça, ce n'est pas du tout. Ça marche, tout va bien, on va me dire qu'il n'a pas fait de choses. Allez, presque 80 000 vidéos, on va dire. Et puis, une nouvelle version, allez, on passe. Joanne, Samir ? Joanne ? Chacun, vous vous refilez tous le bébé aujourd'hui. On a 10 400 caminos envoyés ce matin. Il y a 15 jours, on s'en fait à peu près. Aurélien, ils passent en pro, ils sont en train de faire un process en pro. Moi, ça... On va y aller, c'est pas mal. On est un peu de temps, mais si on est fulgurant, on peut dégager. On ne va pas se passer de sa branche, c'est nickel. On a deux incidents en cours, un en pré-production pour le regroupement, qu'a testé Aurélien, on l'avait déjà rencontré avec Reims en prod. On l'avait résolu avec Reims sur la prod, donc pré-prod là avec Aurélien. On l'a rencontré la semaine dernière, on n'a pas encore... Je ne sais pas pourquoi, il n'y a pas le nom. Bon. Le premier point, c'est le fait de classer le terminaux dans les différents dossiers, dans les différentes organes OG, donc sur le dossier, selon l'appartenance des personnes à telle ou telle mise en groupe. Et l'autre, c'est le déploiement d'applications qui met un peu de temps. On a identifié avec Omniface la semaine dernière que sur les postes, sur les postes de travail, l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arrivée de l'arriv bizarrement, deux académies ont dit qu'ils avaient le même problème. Donc ça, c'est un souci. Donc on a identifié que sur le tourisme, il y a une tâche planifiée qui est censée s'exécuter, mais qui ne s'exécutera pas correctement. Donc on a créé le ticket, on est en cours avec un support de domicile, donc ils nous ont écrit vendredi, mais personne n'a répondu. Donc on va répondre aujourd'hui. Ensuite, les deux autres sujets, ça va être la conformité éteinte du poste de travail. On a eu la semaine dernière J'ai rencontré ça la semaine dernière avec M. Teresso et Christophe Cisco. Ils nous ont présenté leurs produits, à quoi ils fonctionnent. Et en l'occurrence, ce que j'ai pu comprendre, c'est que même si on fait la conformité avec Magenta, avec la télévance, on sera quand même obligé de prendre leurs produits. De toute façon, il faudra voir comment passer à des produits de Cisco et Magenta. Donc, on les a rencontrés. et le dernier point c'est prévoir la mise à jour de CPT donc il y a peut-être pas une mise à jour qui va être poussée normalement CPT donc on va paniquer ça pour que ça se passe correctement et avoir le moins d'interruption de service possible. Généralement nous les interruptions de service c'est une demi-journée. Voilà, tout le monde est visiteur. Voilà, après en parallèle, les mises à jour sont planifiées, on va dire, pendant les grandes périodes de vacances. Donc, c'est effectivement en été. Et sinon, effectivement, c'est fin décembre. Donc, quand les académies sont censées être fermées. Il faut que, juste pour vous deux, il faut juste que je recontacte le responsable de l'UNISA pour recaler un point avec le Réseau de l'Aînés. Et c'est bien que, comme tu disais, je peux en contacter avec eux ? qui me donne des dates un peu plus... Précises, ouais ? Est-ce que c'est sûr le passage en mode insas ? Parce que c'était en fin février, début mars, cet été, puis pour l'instant, plus de nouvelles ? Non, mais le sujet de fond, pour moi, il y a quand même un vrai sujet de fond. On en rigole, et c'est vrai qu'on n'a pas trop la main, mais c'est vrai que globalement, sur tous les projets, on est dépendant des... Au-delà de l'éditeur, on est dépendant... trouve des communications commerciales que font nos éditeurs. C'est ça un peu le problème. C'est qu'en gros, ils nous vendent toujours plein de trucs et finalement, il n'y a pas beaucoup de trucs qui arrivent où ça bouge beaucoup. Donc c'est plutôt ça où il faut qu'on travaille vraiment sur le... Dans notre cas, c'est pire que ça, c'est qu'on n'a rien. J'ai demandé, par exemple, les prérequis d'installation. Je dis n'importe quoi, ça peut être du Kubernetes, du Kafka et compagnie, ou le Glanceable du Terraform. Les mecs d'Omnisa ne savent pas me répondre. Ils ne veulent pas. ils ne veulent pas je forme comment moi ? je ne connais pas les prérequis donc j'ai beau les remettre sur des trucs on va dire classiques comme John Siebel très bien mais ça ne fera pas tout c'est le travail de fond je ne vous dis pas qu'il faut faire tout je vous dis juste que c'est un sujet qu'il faut qu'on amène et qu'on progresse là-dessus Merci, monsieur. Frédéric. Frédéric, il y a de moins en moins de choses sur ta slide. Le pire, c'est que j'ai du temps en vacances. Je suis désolé. J'ai oublié de le renseigner. Je vais le faire à l'oral et je mettrai à jour après. Comme ça, il y aura l'historique. Trois petits points sur Nuage. On a appris la semaine dernière que dans la dernière livraison actuellement, nous, en prod, on est en version 2K. 30, il y a la version 31 qui est disponible depuis quelque temps quand même, on doit être à 31 0, 0, 4, quelque chose comme ça et en fait il y a une grosse modification des liens qui a été côté fonctionnel, qui a été fait côté Nextcloud ils ne nous ont informé que la semaine dernière et donc nous on avait planifié la mise à jour en fait majeure pour justement le 15, donc on l'a même repris poussé un petit peu pour pouvoir la tester heureusement qu'on a eu l'info parce que tout a été refondu donc on ne peut pas la mettre en prod tel que parce que les utilisateurs seraient complètement perdus les liens internes ils sont je crois de mémoire Nicolas tu peux compléter si je me trompe mais voilà ils se retrouvent dans les liens externes c'est incompréhensible moi je ne comprends pas pourquoi en fait ils ont fait des gros changements comme ça en cours de route pour moi c'est inexplicable En plus, la version 31, c'était un prérequis de Global Scale. Nous, on avait prévu de déployer en prod, sur une version prod parallèle, comme tout ce qui est annuaire et authentification, on ne pouvait pas faire de test et recette de Global Scale sur la pré-prod. Donc, on était obligé de le faire en prod. Et donc, c'est vraiment impossible aujourd'hui d'essayer de déployer Global Scale puisque le prérequis, c'est... c'est Nextcloud 31, donc il faut qu'on voit absolument avec le support éditeur et son responsable Maxime Leherici, voir comment on peut faire pour avoir une version entre guillemets parallèle, qui puisse restaurer toutes les fonctionnalités telles que les utilisateurs le connaissaient en fait dans la version 30. Voilà. Ça c'est le premier gros point, ensuite on est toujours en attente, en fait on avait fait une réunion le mois dernier avec l'équipe de Nantes c'était entre guillemets l'équipe pilote pour tester le script de migration de Nextcloud académique vers le centralisé qu'on gère Nuage voilà il y a eu une remontée d'évolution qui avait été demandée dans le script de migration et donc on est toujours en attente donc Benoît m'a répondu je te remercie ce week-end que le correctif devrait arriver d'ici peu voilà ça permet de poursuivre et après de planifier j'ai rencontré en fait les collègues Irina la semaine dernière Irina du pôle de Paris responsable de l'équipe Socle et donc ils sont en attente du retour de Nantes pour pouvoir après eux commencer à envisager une migration académique tant que Nantes n'aura pas essuyé les plâtres au travers la migration académique ils ne souhaitent pas se lancer tout de suite, donc ils préfèrent différer. Et ensuite, dernier petit point, la dernière recommandation de l'audit de base de données qu'on avait, qui était toujours en attente, c'était l'augmentation de la RAM côté serveur Postgres. Donc on a réussi par le biais des ateliers Optimus Green. Optimus Green, normalement, c'est plus pour... En fait, c'est la restitution de tout ce qui est... infrastructures entre guillemets en trop qui ne sont pas utilisées. Voilà, on a profité de ces ateliers avec la CCO et le CRTH pour nous récupérer 4 Go de RAM sur tous les serveurs BDD. Et en fait, ça leur a fait du bien parce qu'on avait depuis environ 3-4 mois, on avait des plantages assez récurrents et même quasiment tous les jours sur les serveurs de base de données. Bon, c'était les services de métrologie qui plantaient, donc ce n'était vraiment pas encore le cœur post-Grece. mais depuis, il ne plante plus. Donc ça, c'est vraiment un point positif. Donc, on s'est mis à la fois en conformité avec l'audit BDD. On est passé de 8 gigas à 12 gigas. Ce n'est pas énorme. Au départ, ils avaient mis la recommandation de basculer à 16. Donc, on a coupé la poire en deux. On est passé à 12. Mais déjà, en fait, on a vu un gain au niveau des process systems qui, maintenant, ne plantent plus. Et donc, normalement, fin mai, on devrait planifier avec le CRTH. Par contre, cette fois-ci ce sera toujours dans le biais de toujours dans l'atelier Optimus Green on va la restituer 4Go sur tous les frontaux les frontaux applicatifs Nextcloud et là par contre il va falloir qu'on surveille parce que je pense qu'on pourrait planter et là il va falloir surveiller et être très très réactif pour rebasculer aux anciennes valeurs de RAM si jamais on venait à planter donc voilà tout ce que j'avais à remonter pour nuages Est-ce que tu avais quelque chose d'autre Nicolas ? Non, non, c'est juste que peut-être que ça sera bon pour le 19, mais je ne sais pas si du coup on va quand même faire la migration vers le 31 ou pas, parce qu'ils sont en train de travailler dessus, en tout cas Maxime Melly qui travaille dessus. Il faut d'abord qu'on l'atteste, il faut d'abord qu'on l'atteste, je ne fais pas une mise à jour majeure, comme ça sans qu'on l'ait testé et prouvé, qu'on ait vérifié que les s'ils n'arrivent pas à retrouver leur partage, ça va être catastrophique. Oui, bien sûr, ça, c'est pas possible. Moi, je ne veux pas en assumer la responsabilité à la place de Nextcloud, donc on va différer au mois prochain pour être certain qu'ils aient bien livré un correctif pour remettre, fonctionnellement parlant, les liens de partage au bon endroit. Juste une petite question. Benoît, est-ce que tu seras là tout à l'heure ? Maxime n'est pas là à la réunion de support Nextcloud ? Mais voilà, je souhaitais juste échanger 10 petites minutes avec toi, quelques points sur les interactions qu'on a avec Maxime, savoir si tu étais là ou pas. Oui, je pourrais être là. D'ailleurs, ce sera l'occasion que tu me montres le problème sur le partage parce que moi, j'ai la version 31 à la maison et je la trouve plus claire sur les partages et plus simple, je pense même, du OSI SS pour supprimer les partages internes dont on avait dit qu'on n'émettait pas s'ils n'étaient pas télé. Tout à fait. Oui, on fait un point tout à l'heure et on... On évoquera ce qu'on fera tout à l'heure. Ça marche. Voilà, j'ai terminé pour nuage. Merci Frédéric. Merci Nicolas. Nicolas est en formation. Je ne suis pas sûr qu'on peut passer. Avisé aux agents. Ça c'est moi, c'est un peu plus officiel. Donc on a validé l'intégration de BGB. C'est un peu plus officiel. Je veux dire que Pod et Luc, c'était pas... Ah c'était officiel, d'accord. Voilà. C'est pas délicat, c'est... Je peux le réjouir. Quand c'est Benoît, c'est officiel. Oui, c'est évident. En police, 6 après 12, après 8, c'est souvent l'important, ça me regarde très bien. Alors, donc on a validé avec Frédéric Cognès l'intégration de DBV dans Cap Education. Enfin, au moins déjà le développement. Donc la commande a été validée. On va pouvoir démarrer avec l'éditeur. Donc ça, pour rappel, c'est sur un lien particulier, on va pouvoir ajouter les gens arrivant sur CHAP avec un lien particulier, dans un premier temps, avant qu'on généralise ça avec la DINUM, pourront avoir à la place de l'outil de visioconférence proposé par CHAP, intégré directement dans CHAP, auront des élus. Ce sera VisioAgent qui sera présenté, donc ils cliquent sur l'outil de visio, et ça ouvrira le BB et ça proposera aux gens qui sont dans le sénat de discussion un bouton permettant de rejoindre la même réunion. Donc ça, ça a été validé. Ensuite, on a le Pôle Poids qui travaille sur le POC de la Cine des Yéhouètes. Ils ont remis en place tout ça. On en avait parlé il y a trois semaines avant qu'on n'était pas en vacances. Ils avaient entièrement réinstallé la Cine des Yéhouètes il y a personne de côté à peu près qui a travaillé là-dessus ? Je vais regarder si il n'y a pas des partis. Non, Mickaël est en congé et Benjamin en formation. Ils ont travaillé tous les deux, Benjamin et Mickaël, sur le poste. Ça fonctionnait, il n'y a pas de soucis. On travaille main dans la main avec Renater sur ce sujet-là. Ça fonctionne tranquillement. Il y a des développements supplémentaires qu'on a demandé à Renater, donc c'est la partie RCMP qu'il faudra intégrer et travailler avec eux aussi. Et la demande de Benjamin et de Mickaël là-dessus, et qu'on avait déjà il y a deux ans quand on avait démarré, c'était de travailler sur la montée en charge de la Sydney Gateway parce qu'aujourd'hui, on supporte quelques salons par serveur, je crois trois salons par serveur, pas plus. Donc évidemment, si on a plus de demandes, il faut être capable de distribuer ses demandes sur un certain nombre d'EDL, ce qui n'est pas proposé par le système actuel. Voilà, donc c'était un peu le gros développement à faire là-dessus. Et puis, être capable de mettre en place un démonstrateur qu'on puisse montrer à Eugran, montrer à différentes personnes pour prouver qu'on peut, dans une salle de réunion avec des systèmes Cisco, SID, tout ça, avoir un bouton qui permet directement d'accéder à d'accéder à un BBB même si les gens sont chez eux sur du BBB, qu'on puisse depuis un mécanisme Cisco accéder à la même salle de réunion. Ça, il faut qu'on arrive jusqu'au démonstrateur. Donc, visio agent 1.3, alors ça, je ne sais plus si c'était la livraison du frontal ? Donc, on a livré un frontal. Il n'a pas été mis à jour, je ne pense pas. Je vérifie tout de suite, mais je ne pense pas qu'il ait été... Ah, si, il a été mis à jour. Très bien, oui, c'est ça. C'est ce que vous avez, d'ailleurs, c'est ce que vous montrez, mon 1, avec le tri, ouais. C'est ce que vous regardez là. Il y a maintenant, il y a un certain nombre de choses qui ont été rajoutées. Par exemple, un nouveau bandeau d'informations en haut du frontal qui permet d'annoncer, là, en l'occurrence, la nouvelle fonction de prix des salons et de favoris sur les salons. Voilà, ce qui était le mot depuis très longtemps. Quand on faisait F5 dans la liste des salons, ça changeait l'ordre des salons à chaque rafraîchissement. Donc, c'est un peu bizarre. Et maintenant, on est en ordre alphabétique et en ordre de création. Voilà. Et en plus, on a la gestion des favoris. Voilà. Donc, ça, c'est tout plutôt cool on a d'autres fonctionnalités en attente qu'on mettra en place quand tout le monde sera revenu et puis en plus quand Yann aura de nouveau des jours de développement puisqu'on a plus de jours de dev depuis un mois donc on attend que la commande soit passée la commande est partie voilà la commande est partie ce matin voilà c'est ça elle a été validée ce matin la commande par par par Valérie déjà au moins j'ai pas vu la médiation de Frédéric, mais ça a été pris en compte, donc on a 35 jours, je crois, c'est 35 jours de dev qui sont partis en commun. Donc on va pouvoir se remettre à travailler avec Yal là-dessus, ça c'est cool. Voilà, donc il y a V2V 3.0 qui a été livré il y a maintenant plus d'un mois déjà par Bitesite Network. Nickel a fait passer sa recette, la nouvelle recette qu'il avait rédigée dessus. Il y a quelques fonctionnalités qu'on On a remonté tout ça avec la network qui ont répondu avant mon départ en vacances que déjà ils ne s'en étaient pas aperçus sur sa tête. Et puis, mais il y a des groupes pays où on n'utilisait pas vraiment, genre le sous-titrage, le sous-titrage j'en ai plus, le sous-titrage SME, il y en a plus. Alors je pense que personne ne l'utilise à l'éducation nationale, c'est un système de sous-titrage où il faut que quelqu'un tape à la main, c'est du géotyping, à ce que les gens disent. Je pense que personne ne l'utilise à l'éducation nationale, je pense que ce n'est pas très important et ça ne me sent pas clocant pour nous. Mais c'est un peu bizarre de s'apercevoir que des fonctionnalités ont disparu à l'arrivée de la 3.0. J'ai remonté la liste de toutes les fonctionnalités disparues, mais je pense qu'on n'est pas loin d'une mise en preuve de la 3.0 parce qu'en fait, on est quand même à presque ISO et quand on n'est pas ISO, ce n'est pas des trucs très importants. Il y a quand même des fonctionnalités fonctionnelles qui sont intéressantes. Oui, mais il faut qu'on vérifie. Il y a des fonctionnalités qu'on n'utilise pas et que je pense que ce n'est pas la peine de mettre dans la recette. Je suis sûr que vu les dernières mises en place qu'on a fait, j'ai eu un petit problème. On se le mit que cette fois. C'est ça. Voilà. Alors, dans la 3.0, il y a des plugins. Il y a un système de plugins qui est rajouté. Il y a une des fonctionnalités, par exemple, c'est celle de sélection automatique d'une personne au hasard. Vous êtes dans un salon et vous voulez déligner quelqu'un pour répondre à une question ou pour dire c'est la prochaine personne qui va présenter son sujet. Un peu comme en classe, c'est un peu un système pédagogique à la base. Vous pouvez demander au système de sélectionner une personne au hasard. Ça, c'est sorti des fonctionnalités de base de l'outil. C'est maintenant un plugin. On m'a demandé à rajouter le plugin. Donc il y a des choses aussi qu'il faut qu'on voit. Et si nous, on veut des fonctionnalités particulières dans BBB, en fait, au lieu de demander à ce qu'elles soient développées dans le cœur de l'outil, comme on faisait jusqu'à maintenant, on peut aussi demander à l'administrateur de développer en tant que plugin, donc qu'on aurait juste pour nous, voire éventuellement de prendre des développeurs autres pour pouvoir le faire. Alors ça ne va pas leur faire plaisir, et d'ailleurs il a un petit quai quand je lui dis ça, c'est un peu le principe du plugin, c'est qu'on peut le faire développer par quelqu'un d'autre que l'éditeur. Donc voilà, il faut qu'ils jouent le jeu aussi et on pourrait faire développer des plugins externes par des boîtes locales françaises pour ajouter des fonctionnalités dans VNB qui nous seraient du personnel. - Mais quand tu as un plugin, quand tu as une plateforme qui n'a pas d'arrêt, c'est franchement... - Ah, il faut peut-être quand même l'arrêter, je ne sais pas, c'est du... Je ne sais plus en quoi ça... C'est du PHP ? Je ne sais plus. Du PHP, il n'y aurait pas besoin de la redémarrer. Un autre langage, il y aurait besoin. probablement je ne sais pas la 3.0 c'est la nouvelle version avant il y avait une réalité c'est juste des pubs que tu pourrais faire au service sans redémarrer je ne sais pas du tout comme ils l'ont entièrement redéveloppé pour permettre l'intégration de plugins je ne sais pas comment ils ont fait et nous avons reçu en dernier sujet on a reçu encore une lettre au père Noël de la part du Cmed qui demande des évolutions dans BBB, mais surtout dans le frontal. Par exemple, alors ça, c'est un sujet qui nous intéresse aussi, mais qui a été dégagé plus tard, depuis au moins deux ans, qui est la délégation de salles. Je suis une responsable de département. Je ne vais pas gérer mes réunions moi-même. Je veux que ce soit mon ou ma secrétaire qui s'en occupe. Mais par contre, c'est moi qui dois générer ces réunions en être propriétaire et accéder aux enregistrements qui y sont liés. Et à ce moment-là, je veux créer un salon et le déléguer à mon ou ma secrétaire en disant « utilise ce salon pour les réunions avec les entreprises externes ». Ça, c'est un sujet qui a été déclaré comme complexe à mettre en œuvre par YAL. Donc pour le moment, on n'a pas avancé sur le sujet et c'est demandé par le CNET. Mais ça, c'est un des sujets demandés par le CNET. » Donc, je dis, il est le maître au Père Noël et aujourd'hui, je ne sais pas vraiment comment le prendre en compte. Par exemple, que certains des sujets soient déjà en place. Ils m'ont demandé qu'ils étaient en place. Soit dans notre feuille de route, mais pas priorisé. Soit pas du tout dans notre feuille de route et à ce moment-là, qui paye et comment. Donc, il y a un sujet à discuter en interne chez nous avec Frédéric. Je crois que je vous l'ai transféré d'ailleurs. Je ne sais pas s'il m'arrive. Voilà. Est-ce qu'il y a des questions sur Jésus-Agent ? Non, ce truc-là. C'est là où tu vois, quand on se rencontre, on demande d'autres rangs. J'insiste, mais je pense vraiment qu'un sujet de fond, c'est de dire... C'est une version qu'on va pouvoir mettre en production. On a un moment à tabler une date. Tu vois, tu dois décider que c'est OK. On sort deux semaines, trois semaines, un mois, un mois et demi. Tu vas dire OK, globalement, le 13, le 13 juin, le 15 juin, le 20 juin. à la nouvelle version, qui apporte ces fonctionnalités-là précisément, enfin, que fonctionnalités, c'est ça qui m'intéresse, les fonctionnalités, et on table sur l'initiative. Clairement, ce que je disais tout à l'heure, c'est que, une fois que la version est livrée, la version définitive de l'éditeur est livrée, nous, on sait qu'on va avoir tant de temps de test, tant de temps de déploiement, de préparation et autres, et donc on peut donner une date un peu plus précise, mais franchement, tant que Benzentor n'a pas livré sa version... Non, mais tu vois, c'est pas... à la limite ça peut être une zone et à partir du moment où on est sûr, on peut se faire un mail en disant le 15, il y aura cette version-là avec, peut-être un entre-deux finalement. Par contre, la développement de plugins, je parlais maintenant de les plugins, s'il y a des fonctionnalités précises qui sont demandées et qu'on peut le faire développer, alors là, c'est beaucoup plus clair. Là, ça va être bien plus simple pour définir une date. Oui, ça. Mais je pense que c'est plutôt montrer qu'à un moment, on maîtrise clairement le timing. Et les fonctionnalités qui arrivent au début. et tu vas être en mode, la semaine prochaine, on est en prod, et tu vois, ça va sortir un peu de ça. Ok, merci. Alors, le portail apps, donc ça, c'est les chiffres il y a 15 jours. D'ailleurs, on a dépassé, on est à plus de 80 000, presque 80 000 vidéos sur la podéduque d'intérieur des stats. Donc ça, c'est les chiffres d'avant les vacances. On a 221 000 comptes ouverts sur le portail apps, sachant que ça compte pas les comptes qui ont été ouverts directement sur les applications. Les gens qui sont allés directement sur l'image, qui ne sont pas passés par le portail, et ils ne sont pas enregistrés dans les 221 000 comptes qui sont là. Et dessus, il y a 15 jours, il y avait 73 000 comptes sur ces 221 000 qui se sont reconnectés depuis décembre et qui ont donc remonté leur âge d'une humaine. Donc ça fait qu'un tiers des gens qui se sont connectés en 5 mois. Voilà. C'est pas grave. Le cinquième, 73 000 qui sont... Sans qu'on ait été au moins une fois utilisés. Voilà. Donc, Matomo a été installé sur le portail Apps. Donc, on a des stats plus précises sur les parcours des utilisateurs, d'où ils viennent, avec quels terminaux, etc. On va commencer à avoir des choses intéressantes puisque ça fait trois semaines à moi qu'on l'a posé. On va commencer à avoir des stats qui veulent dire quelque chose. Voilà. Le portail, ici, 6.4.1 a été mis en production. Je ne sais pas exactement avec les vacances ce qu'il y avait dedans, mais encore, il y a eu le cycle de vie des utilisateurs, les choses qui ont été rajoutées. Il y a quelques petites choses. Les travaux sur le raccourci du URL, je ne sais pas si tu avais quelque chose à montrer, Hugo. Non, rien de nouveau. En tout cas, les développeurs, il y a deux développeurs qui travaillent dessus. Hugo est allé les voir à Dijon. Il y a eu un échange d'une marque Donc, vous pouvez aller voir les clients directement, ils ont discuté ensemble et tout. Donc, voilà, on a deux devs qui travaillent jusqu'à fin de semaine, fin de semaine, début de semaine prochaine, on devrait avoir des nouvelles du développement, mais il y a eu un bon échange et des bons travaux, des bons propositions d'Hugo avec eux. Ils avaient aussi des propositions de leur côté, donc il a fallu, voilà, travailler maintenant la main et donc on devra avoir le rapport de l'histoire du RL donc le 10 juillet à midi on va faire la mise à jour alors c'est déconner on est en prime c'est pas mort c'est pas automatisé non c'est déconner on est pas en prime jusqu'au 14 juillet on est en prime d'accord avec le régime on fait l'échange on va faire le reportage à tuer surtout des examens. Bon, voilà. En tout cas, dans peu de temps, avant l'été, normalement, on devrait pouvoir mettre en place le raccourcisseur du RL. Ils ont bien avancé là-dessus. Là, ils se font trois semaines d'affilée sur ce sujet à deux. Ça devrait être pas mal. J'espère qu'on aura une démonstration la semaine prochaine. Voilà. Alors, pour rappel, c'est un outil en API qui sera disponible aussi pour d'autres services qu'ils voudraient générer les URL raccourcis et du QR code. Ensuite, on a avancé sur le cycle de vie, sur l'architecture particulièrement du cycle de vie, où on va déployer des micro-applications par service. Donc le portail va appeler des micro-applications très flexibles et sécurisées par des de token et chaque micro application fera ensuite toutes les actions nécessaires sur cette application. L'intelligence sera au niveau de la micro application. Typiquement sur le portail, sur les tubes, sur les tiers tubes, on a 11 tiers tubes. C'est cette micro application qui va parcourir chacun des tiers tubes pour aller détruire les comptes, transférer les vidéos de la personne, etc. Ce ne sera pas le portail qui va devoir connaître exactement les particularités de chaque service. Voilà, ça va. Mais donc, on avance un peu dans cette architecture de 30 décousses. Le Rancher de Créprod, donc, il a été livré maintenant il y a au moins deux semaines de plus. Donc, au moins cette semaine, il n'est toujours pas fonctionnel. Voilà, dans les discussions, on avait des demandes de dérogation pour les... Il y a des sujets sur les certificats. J'ai fait une demande tout à l'heure de clarification de où on en était. Mais en tout cas, on a eu un contact qui nous a un peu plus expliqué comment utiliser ce Rancher en pré-prod, en l'occurrence pour le moment. Mais le Rancher, on a eu des explications, mais on n'est toujours pas capable de déployer nos applications dessus parce qu'il y a des choses, par exemple, sur le déploiement d'outils, on s'est aperçu que c'était au peu le logiciel libre de le déployer et non pas à l'exploitant. Il y a des choses qu'on découvre au fur et à mesure, les documentations sont passées. On va avancer, mais c'est vrai que ça c'est vraiment à petite vitesse cette histoire de range. On a la main de bout en bout là. C'est vraiment l'arguement. C'est chez nous, c'est complètement plus compliqué que d'aller chez un développeur actuel. Ça marche, merci. Ensuite, on arrive à Tube. On a des gros travaux à faire sur les thèmes. Donc on avait un thème qui avait été préparé par la drame du Grand Est il y a deux ans, deux ans et demi, trois ans, il y a trois ans maintenant, pour avoir une identité graphique sur les tubes pour que les gens sachent là où ils sont. Parce qu'évidemment, on en a onze, il faut vraiment que les gens comprennent là où ils sont et qu'ils ne se plantent pas quand ils postent une vidéo, qu'ils s'y retrouvent dans la navigation, etc. Ils ne sont pas perdus. Donc on avait fait une thématique avec une identité graphique par... Fertube. Or, la 7.1.1, qu'on a été obligé de passer en urgence il y a trois semaines pour un problème de faille de sécurité, ne supporte pas cette évolution graphique qui avait évolué depuis au moins la 5 jusqu'à la 6.4, je crois, qu'on avait avant. Elle n'est pas supportée sur la 7.1.1. Donc, toutes ces instances, aujourd'hui, ont exactement la même tête. Ce qui est un peu dommage. Donc, il y a des travaux qu'on été démarré par la Drâle du Grand Est à ce sujet-là. Il y a eu des propositions. Il y a Hugo qui s'est penché aussi sur la question. Et on a mis Manon aussi. On a fait une réunion assez intéressante il y a deux semaines et demie, avant notre départ en vacances, avec tout le monde, la Drâle du Grand Est, Hugo, Manon et moi. Il y a des choses super intéressantes qui en sont sorties sur une nouvelle manière de parcourir les tubes de manière beaucoup plus compréhensible, c'est-à-dire arrêter de parler d'instances, mais parler justement que de thématiques. C'est-à-dire que nous, on explique aux gens que chaque instance a un thème particulier et maintenant, on se dit, à ce moment-là, on va parler d'instances et ne parler que de thèmes. Donc, essayer de masquer, encore une fois, on va essayer exactement de la même manière que sur Nestled, masquer au maximum les instances pour que les gens voient des thématiques et non plus quelque chose de technique. On y arrive, c'est cool. Par contre, il n'y aura rien de fait à ce niveau-là avant au moins la rentrée prochaine. On va rester pendant quelques mois, il y a un message qui nous dit : "Le thème a disparu mais il reviendra bientôt". Bientôt, ça arrive, ça va être dans 3-4 mois, vu les travaux qu'on va entamer sur ce sujet-là. La transcription des vidéos est opérationnelle sur test. Maintenant qu'on est passé à la 7, on va pouvoir le généraliser. Donc il faut qu'on le déploie avec Nicolas. On a un serveur qui est prêt, il faut qu'on en fasse un deuxième et qu'on paramètre tous les serveurs tubes pour que la transcription se fasse. On va commencer par la transcription et ensuite, ce qu'on s'est dit, c'est qu'on généraliserait sur transcription et transcodage en externalité. Ce qui permettrait, comme je l'avais expliqué précédemment, de diminuer la puissance des machines des serveurs tubes puisqu'on ne ferait plus que de la lecture et transcodage qui seraient, eux, envoyés sur les 11, dans les 13 même, avec la diminution et le Conseil national du numérique, qui y est là tous, sur deux grosses machines qui passeraient leur temps à faire du transplodage. Et qui ne feraient que ça, transplodage et transcription de vidéos. Voilà. Le déploiement, je le mets en priorité. Le déploiement de l'asset 1.1 à cause des tailles de sécurité. Les travaux de cyclonomie des comptes et des vidéos sur tube. Alors, il y a une attente de devis, effectivement, par le développeur, qu'on en a parlé, et avec l'éditeur et avec le développeur de nos précédents plugins. Voilà, donc on s'est mis d'accord un peu sur comment répartissait les développements. Donc il y a une partie qui sera chez Pramasoft parce que ça les intéresse de dire qu'une vidéo ne peut durer que tant de temps, tant de mois ou d'années et qu'elle disparaît automatiquement au bout de ce temps-là. Ça, ça les intéresse. Donc on mettra ça dans le cœur de PeerTube. Par contre, il y a d'autres choses qui sont beaucoup plus spécifiques à nous. Par exemple, de déclarer qu'il y a des mineurs dans la vidéo et que cette vidéo doit donc être décrite au bout d'un an. Ça, c'est très particulier au ministère des questions nationales. On ne va pas rajouter dans le cadre de la question. Donc ça, ce sera fait sous la forme d'un plugin. Il y a quelques petites choses comme ça. Mais donc, là, on est prêt sur le descriptif. Il n'y a plus qu'à gérer les devis et trouver le marché sur lequel on va le mettre. Et pour le documentaire, l'automatisation des déploiements, c'est pareil, on est toujours en attente du grand test. Il me semble qu'ils avaient pas mal avancé sur l'automatisation des mises à jour. Il faut que je fasse un point avec eux là-dessus, mais apparemment, ça a un peu avancé ces dernières semaines. Voilà. Est-ce qu'il y a des questions ? Non ? Eh bien voilà, ça serait bien. La prochaine fois, on mettra les slides de Benoît un peu écartés, parce que le pauvre, il On doit être à plus de 2 000 % parce qu'on était déjà à 6 000, 4 000 et on a eu 7 000, donc on doit être à 13 000 et quelques. Ah non, on a plus. Parce qu'en plus, il y a eu l'URAZ qui a été fait en niveau d'ADS. On va être aux alentours de 14 000 maintenant. Donc le document n'a pas été mis à jour. On a dépassé les 20%. Et en fait, on est en ordre de marche pour migrer plus largement. Donc les 6 établissements, c'était passé figure in the room, c'est-à-dire aucun appel support, aucune difficulté tout le monde a travaillé et tout le monde s'était bien fait à l'époque. L'Académie de Corse, je dirais que sur 99% des comptes, tout s'est bien passé, sauf qu'il y a eu quelques problèmes, notamment sur le compte de l'AGA, de l'ASGA. Donc, il y a eu quelques petites difficultés. C'est l'un des deux comptes, c'est aussi l'arrière-têteur de l'un des deux comptes. Et on continue à apprendre. Il y a une taille 8 pour les boîtes à huîtres ? Comment ? Il y a une taille 8 pour les boîtes à huîtres. En plus, la boîte de lettres faisait 94 gigas de dégâts. 96. Donc, potentiellement, de toute façon, c'est des boîtes à risque, mais pour autant, c'est des boîtes qu'on va pouvoir anticiper, prévoir. Donc, ça nous fait aussi améliorer nos process. On a eu plusieurs difficultés. Ce qui est sûr, c'est que l'accord a montré que c'était une première vraie académie entière qu'on déployait. Sur tout ça, je pense qu'il faut retenir que c'est notre premier pilotes en conditions réelles. Qui plus est, ils ont décidé de tous passer sur WebMate. Donc fini Thunderbird et tout. Ils ont tout basculé sur le WebMate. C'était en one shot. C'était une académie complète en one shot. Avec un petit débit. Avec un petit débit, etc. Donc il y a eu une petite affinité. C'est-à-dire 200 mégas. 200 mégas. 200 mégas. Pour le matériel. ils ont du rhum parce que c'est. Ça, c'est ce que ça serait. Ça serait plus vite si j'étais avec mon disque. Si on voulait partir en Corse, il y a des fois, c'est plus rapide. C'est parce que je suis déjà fait. Je crois que je crois que c'est bien. Je suis obligé de le faire. Il faudrait que ça soit plus sur la nature. Le bilan de tout ça, finalement, ça concerne... Il y a un premier bilan qui est de dire que même si on ne fait qu'une messagerie, on se rend bien compte qu'après 20 ans, 25 ans d'utilisation de convergence, il y a quand même des usages qu'ils ont, des appuis qu'ils ont, il faut quand même travailler dessus. Et même pour une messagerie, ça montre qu'on a un vrai sujet de change, d'accompagnement au changement, de maîtrise des façons de travailler en local, donc ça concerne la messagerie là, parce que c'est le cas de la messagerie, mais ça concerne... Donc, il y a tous un petit peu ce... - Et bah, typiquement, la FGRA qui est une façon de travailler avec sa secrétaire, où elle a l'adresse mail générique, qui est une adresse mail fonctionnelle, il faut avoir tout sur l'adresse mail de la FGRA, qui trie ses mails, parce que les inters trient ses mails dans la boîte fonctionnelle, et puis elles échangent comme ça par mail, elles se renvoient les trucs. Du coup, le jour où tu interdis les FGRA, par exemple, et bah boum le jour où tu ouvres la messagerie ça pète quoi ça pète pas parce que ça marche pas ça pète parce que en façon de travailler exactement en façon de travailler tu as des solutions de contournement tu peux aussi essayer de proposer d'autres façons de travailler mais ça montre en tout cas que même si c'est un petit messagerie qui semble vraiment on dit que c'est la même chose finalement il y a pas mal d'usages qui changent surtout après 20 ans de convergence c'est des outils de utilisation d'usages qui sont différents mais après il y a une charge Si tu vas par là, chaque personne, chaque série, chaque équipe va avoir des droits de usage totalement différents. Comme je dis, tu vois, c'est 20 ans, 25 ans de mode de contenu. Moi, j'ai rencontré une PDG qui faisait un premier sémail et qui était dans un dossier, dans un classeur. Chacun travaille différemment. À partir du moment où tu mets certaines contraintes, il faut que ces contraintes soient créées en groupe. On a aussi le recteur, qui fait les exports de ses mails... sous le format EML, on disait ça sous Timberburn, un webmail, il ne peut plus. Il ne peut faire que des exports PDF. Donc, le mec, il se retrouve en disant, je ne peux plus faire mes exports, où est-ce que je stocke mes mails, comment je fais pour les garder, en gros, sur mon local, et tout. On a des vrais cas métiers, en tout cas, où il faut qu'on arrive, pour faire un peu de déploiement et tout ça, à amener plus de réponses, plus de réponses un peu fluides. Ça, ça va arriver au fur et à mesure des Et après, il y a un travail d'accompagnement qu'il faut qu'on arrive encore à améliorer, mais ça, ça concerne aussi tous les projets. Je veux vraiment que vous l'ayez tous en tête. Ça va être pareil pour Nuages, quand vous allez faire les transferts de comptes de migraines. Vous allez migrer les comptes entre les nexels locaux et Nuages. Ça va être pareil avec Tribu, quand vous allez mettre la nouvelle interface. Ça va être pareil avec Viojant, quand on aura la refonte globale du VIX. Il y a vraiment un sujet d'accompagnement du terrain et d'être proche, à la fois très proche des VIP parce que malheureusement, c'est eux qui créent le plus fort, donc il faut qu'on arrive à être très proche et à leur répondre tout de suite si on a des difficultés, mais aussi proche du local pour comprendre comment ils travaillent et pouvoir être très proactif ou alors avoir déjà les solutions en tête quand ils ont des façons de travailler différentes. Et ça, aujourd'hui, je trouve qu'on ne l'est pas, mais je parle vraiment au global du programme je ne connais pas encore assez proche du terrain voilà on connaît bien on sait comment travailler les gens on sait comment globalement comment ils font mais je pense qu'on peut encore être meilleur là dessus donc voilà donc premier pilote de la corse qui s'est fait on a une grosse partie où tout s'est bien passé on a une partie où on doit encore corriger des choses chez nous corriger des choses fonctionnelles et puis arriver à encore plus automatiser tout ça pour que ça se passe de mieux en mieux qu'à la fin on arrive à faire des déploiements d'académie en fluide et rapide. Mais ce qui est sûr, c'est que ça demande du temps. Je pense que le bilan que je pourrais te dire, c'est que ça demande du temps en amont et le jour de la semaine du déploiement. Donc quand on va devoir faire les différents lots de déploiement, il va falloir faire gaffe aussi à garder un petit timing de gestion, même si le timing va être très serré. Mais sinon, on risque d'être tout de suite, il y a des difficultés. Pour la suite des déploiements, au niveau des pilotes, que ce soit Nantes, Poitiers, Paca, il va y avoir aussi une reprise des déploiements. Poitiers a communiqué son panier pour qu'on rejoigne des salicements des sites pilotes, des salicements des sites pilotes migrés. Pareil pour les collèges pilotes qui vont être migrés, sachant que la drame va basculer très très vite. Et Nantes, en attendant la et elles sont obligées, mais envisagent de libérer tous les établissements publics et privés, écoles primaires et collèges, à pas d'ICC, d'ici mois de juin. Pour aussi avoir justement une volumétrie qui ne pose pas de problème, puisque en fait ce sont des personnes sur lesquelles il y a très peu de besoins d'accompagnement et de retours, pour se focaliser en fait sur les populations un peu plus sensibles, comme Jean-Michel Doré et Joanne. Dans les bacs, il y a l'Académie de Reims qui est en cours, la réunion début juin qui va lier tous ces établissements du premier débat, la DLCI, je crois, la réunion de la DLCI. Donc on est quand même sur une accélération du déploiement, sachant que demain, on a une réunion de 100 des référents pour valider entièrement le plan de déploiement de tout le monde. Et la semaine prochaine, on a un réunion de lancement au lieu de France, qui doit basculer en octobre, et qui a un plus versable, qui a vraiment plus... Je vais dire qu'avant, en fait, un lieu de France qui aurait un plus basculé, un quatrième trimestre. Un peu plus. Un peu plus d'année. Donc, en fait, il va y avoir vraiment des dépôts à une très, très grande échelle sur le troisième et quatrième trimestre. C'est pour ça que ma découverte de tournoi de l'ISCON est vraiment dispensable. La bonne nouvelle, c'est que en ce moment on fait tester l'usine d'apport des contacts et des archives, et là justement par les utilisateurs de course qui sont migrés, puisque les éléments ont été mis en collection. Donc c'est aussi une bonne nouvelle. Et en fait, j'ai un plugin Visivo Agent, un problème de sagesse sur lequel nous avons une demande de l'OBF de l'OBF et j'espère qu'il va arriver très vite pour qu'en plus, chacun des tests aussi soit prédécent sur la faute de tests en visuel. Côte-Saint-Francis, il y avait des difficultés par rapport à des latences qui semblent réglées et qui nécessitent, j'irais, d'alléger les détections qui sont faites dans les bodies, dans les corps des messages. Donc en fait, ils sont en train d'essayer de réactiver les règles de parole pour... pour identifier la règle qui provoquerait le plus de latence. Donc, la situation est... et se contrôle là-dessus. La difficulté, c'est que derrière, ils ont voulu, je pense aussi, alors je ne suis pas encore complètement avec eux, mais je sais qu'ils ont repris les dictionnaires de toutes les académies, ils ont fait un énorme dictionnaire. Ils sont d'ailleurs les dictionnaires, ils sont quand même un peu moins au sourceau. Et que c'est ça aussi qui provoquait la latence, mais je vais voir le sujet avec eux. Et je n'ai pas eu des retours par rapport aux académies, et les académies, hélas, la camille qui fait traduire fin avril et là jusqu'à fin mai début juin notamment à kelly qui sont en participation je pense que je ferai le grand du mal avec avec eux pour valider ces éléments de famille mais avant que je porte en réponse tout à l'aise et monter ce contrôle par rapport à ça et des musées aux gens sont sans coup de prod du coup ? sans coup de prod il y a un petit moment de recours à l'accès enfin un lien qui est adressé depuis le passé un mois que le mois a bien vu donc je pense qu'il va revenir ça donc le prod va faire ça donc preneur de découpés par les têtes preneur de l'or c'est un prénom savant moi aussi c'est très attendu aussi par les bas de monde et par la Corse donc c'est vraiment quand je suis sur le bouton il n'y a pas ce type de truc donc je pense que là il y a oui oui je crois Il me semble que la demande s'occupe justement vers l'authentification. Donc, les questions qui nous restent, les caisses, pareil qu'un client type Thunderbird et compagnie, non, non, c'est que... Non, non, c'est que... Pour la blague, pour Thunderbird, on a déjà un plugin depuis... Je sais qu'il y a des académies qui vont encore utiliser Thunderbird via un message link. Il y a un plugin et on va s'occuper de... En fait, pour l'historique... Les InnoTools, les Senderboard ont été créés en 2022. En janvier 2022, ils ont été livrés. Depuis, ça a pas mal bougé sur la partie d'identification. Ils sont plus compatibles. On est en train de faire les travaux avec Nicolas et le pôle identité et avec l'éditeur pour rendre tout ça compatible proprement. Vous avez des académies qui mirent sur l'investigation ? Notre volonté, c'est quand même de les amener plus sur le webmail. On se pose la question, si on diffuse C'est une question qu'il faut qu'on se pose. Il me semblait que c'était supporté. C'est supporté. Est-ce que tu mets en preuve pour les convaincre de venir sur le webmail ? Est-ce que tu le mets partout ? Est-ce que tu le laisses que sur le webmail pour qu'une ordure de l'administration webmail vous donne plus d'avantages ? Ce qui est sûr, c'est que là, de ce qu'on voit, c'est que les académiques, normalement, font ce qu'elles veulent. Ce plugin n'est pas un vrai avantage. Enfin, c'est pas un truc qui va les convaincre de venir. Bon, moi, je suis... Tu n'as plus le temps de passer les bichons. C'est plutôt partisan de dire "on ne met que sur le webmail" plus le temps passe, plus je me dis autant fournir le même portier. Pour quelles raisons ils souhaiteraient avoir un Thunderbird plus gros que celui sur le webmail ? 15, 10, 20 ans... Ils ont la charge de Thunderbird et déjà configuré son gestion de cache. Ils ont le moteur récentré, ils n'ont pas besoin de re-sacrificer les mails, ils n'ont pas besoin de récupérer les contacts et tout ça. C'est automatique, donc c'est un peu plus facilité pour moi. C'est un cachant de cas. Sur un Thunderbolt, pour prendre un webmode, c'est qui jouait. Donc forcément, si t'as plus de connexion d'un élite, c'est ça. Si t'es dans le train, c'est vrai que Thunderbolt, c'est comme... Ouais, finalement, c'est un peu comme du auto. Après, ils sont pas tous en mobilité, hein. Non, non, mais... C'est ma question de savoir, ceux qui ont du Thunderbolt, quelle est la raison ? Si c'est uniquement de... Enfin, uniquement. C'est quand même important, l'historie. Moi, j'ai des phases de série, mais j'ai aussi, à un moment donné, où il dit, bah, t'expliques la population. doivent être sur Thunderbird et quelques titres de population. Donc, Thunderbird et Puget Sound, Thunderbird et quelques titres de... Non. Non. C'est tout simplement... - On va mentir mille fois. - Ah, grave. - Sachant que les agents qui les accueillissent, ce n'est pas un trait. - On peut mentir mille fois. - Non, en fait, la question, c'est plus des postes que des agents soutenus. Parce qu'il faut savoir quand même qu'il y a forcément des postes qui sont dans les conditions d'accueillissement par des agents qui sont sur leur propre cause de travail. Est-ce qu'on fournit des plugins sur des bases de travail qui ne sont pas soutenues ? C'est tous ces sujets-là. C'est des questions à l'époque. Nous, de toute façon, il est clair qu'on ne fait pas de développement sur le client-file d'Order, parce que ça change tout le temps avec les plugins d'éditeurs de l'officiel. Alors que d'avoir des plugins qu'on a nous sur OMS, c'est quand même plus simple, parce que c'est des images qui sont... D'avoir des choses qui vont tenir compte de la version Il y a des techniques qui sont 100% d'importance. Il y a trois courses aujourd'hui. Merci Olivier. Sur les bornes Wi-Fi, pas de grande avancée depuis la dernière fois. On a envoyé un questionnaire aux Académies d'Île-de-France pour avoir un petit peu leur retour sur ce questionnaire qui sert du coup à voir un petit peu les usages et les problèmes qu'il peut y avoir au niveau des usages de la connectivité sur les bornes Wi-Fi. Donc on est toujours en attente de leur retour à ce point-là. Pas d'autres nouveautés sur le sujet du Wi-Fi. marche et c'était tout au niveau des sujets pour aujourd'hui ça marche il y a juste le pour tout le monde il y a le portail agent portail intranet la refonte du portail intranet académique on va essayer d'accepter la semaine prochaine l'implication de cette académie parce qu'il y a des régions académiques dans ce projet de refonte d'intranet on va essayer d'ancrer derrière ce projet qui à mon avis est la porte d'entrée de tous nos services donc plutôt intéressant et C'est peut-être un moment charnière à la fin de ce projet. On va savoir si on y va ou pas. Est-ce qu'à distance, vous avez des sujets qu'on n'aurait pas vus ? Ou d'autres questions ? Rien de particulier de mon côté. GFR. Bordeaux. GFR, Bordeaux, Fédéfrace, GFR complètement. C'est début juin. Il y en a un. Procat, je crois, si je ne dis pas de bêtises en regardant le programme. Ce que je disais la dernière fois, c'est que rappeler que Aetna, ce n'est pas que la messagerie, parce qu'en académie, là, je suis en formation et je l'écoutais encore une fois, et les mecs, pour eux, Aetna, c'est que la messagerie. Oui, je suis bien d'accord. Même, tu vois, encore sur le déploiement, à la fin, ils disent même que c'est la messagerie, ils disent Aetna. Donc, c'est leur dire qu'il faut qu'on le rappelle, on le rappellera au GSR. Et c'est bien que le Dieu, ce que ça reste, c'est un C'est un vrai sujet, tout le monde la comprend. Je ne veux pas le dire, mais depuis mon arrivée dans la DNE, personne ne comprend exactement ce que c'est qu'être Nara. Depuis début 2021, c'était déjà ça. Si avec ce projet, avec ce programme, ça irait encore mieux. Je crois que l'on n'est pas laissé. On n'a même pas fait un programme, donc on ne peut pas aller trop loin. Je suis bien d'accord. On va le rappeler de la raison au GSA. Il y aura qui au ministère de Top 2 ? Non, pas toi, mais il y a Johan. Il y a moi. Benoît, Nicolas. Benoît, Nicolas. Et voilà. Quoi ? On sera 5. Oui, François, Sophie, Frédéric. C'est une question de... Vous venez la veille aussi ou pas ? Vas-y, jeune. Vous arrivez la veille aussi ? Non, moi non. Est-ce que vous arrivez la veille ou moi non ? J'arrive la veille. Je ne serai pas avec vous. En fait, je ne suis pas venu hier. Il y a une teuf à Bordeaux, donc vous m'arrivez le jour J. Oui, j'arrive le matin. Je vous montrerai la visite. Ok. Ok. Merci tout le monde. Bonne après-midi, bonne semaine, bonne reprise pour ceux qui reviennent. Et puis, on se dit à plus tard. Ciao. Bonne après-midi à tous. Au revoir, bonne journée.
+
+---
+
+# Résumé — A
+
+**Compte rendu de la réunion (46ᵉ session)**
+
+---
+
+### Participants
+- **Didier**
+- **Hugo**
+- **Benoît**
+- **Audran** (comité de domaine)
+- **Simon** (organisation du Squash / Tribu)
+- **Frédéric** (intégration DBV, suivi licences)
+- **Nicolas** (formation, suivi Nuage)
+- **Maxime Leherici** (support éditeur Nextcloud)
+- **Johan**, **François**, **Sophie**, **Valérie** (interventions ponctuelles)
+
+*(d’autres intervenants sont cités sans être présents physiquement : Audran, les prestataires Collabora, Nextcloud, BGB, etc.)*
+
+---
+
+### Objet de la réunion
+Faire le point sur l’avancement des projets du **programme DLE** : budget, jalons de livraison, relations avec les prestataires, licences, campagnes de communication, refonte d’applications (Tribu, Portail Apps, Nuage, BNA, etc.) et préparer les prochains comités de suivi.
+
+---
+
+### Sujets abordés
+| Thème | Points clés |
+|-------|-------------|
+| **Budget DLE** | Réduction globale du budget confirmée ; attendue la validation des montants. |
+| **Suivi des jalons / dates de livraison** | Difficulté à fournir des dates précises ; besoin d’une meilleure visibilité (ex. : « avant/pendant/après l’été »). |
+| **Relation avec les prestataires** | Manque de fiabilité des plannings (Collabora, Nextcloud, BGB, etc.) ; besoin d’engagements plus réalistes. |
+| **Licences IES Microsoft** | Renouvellement effectué la semaine précédente pour 30 000 agents. |
+| **Squash avec Tribu** | À organiser, Simon en charge de la planification. |
+| **Comité des référents** | Réunion prévue mardi ; slides à préparer et diffuser. |
+| **Dotation** | Étude des besoins en profils à remettre à Frédéric. |
+| **BNA (campagne d’enquête)** | Décalage d’un mois : du 16 juin au 27‑28 juin. |
+| **Communication unifiée** | Choix entre outil privé vs. libre (Cisco, Webex, etc.) en cours d’étude. |
+| **Refonte graphique Tribu (UX8)** | Chiffrage en cours ; 3 lots (accueil, recherche, admin) → ≈ 200 jrs. MEP prévue fin 2025 (début 2026). |
+| **Nextcloud / version 31** | Régression fonctionnelle non prévue ; besoin d’un correctif avant mise en prod. |
+| **RAM PostgreSQL** | +4 Go obtenus via ateliers Optimus Green (passage de 8 → 12 Go). |
+| **Portail Apps** | 221 000 comptes, 80 000 vidéos, Matomo installé, raccourcisseur d’URL en cours de développement. |
+| **Rancher (pré‑prod)** | Livré mais pas encore opérationnel ; besoin de documentation et de droits d’exploitation. |
+| **Tube (thématisation, transcription, transcodage)** | Travail sur thèmes UI, transcription testée, plan d’externalisation du transcodage. |
+| **Accompagnement terrain** | Nécessité d’être plus proche des utilisateurs finaux (VIP, académies, etc.). |
+| **Déploiements académiques** | Pilotage en Corse, plan d’accélération (Nantes, Poitiers, PACA, etc.) et préparation du grand déploiement Q3‑Q4. |
+
+---
+
+### Décisions prises
+- **Budget** : accepter la réduction globale du budget DLE (attente des chiffres définitifs).
+- **Dates de livraison** : instaurer un suivi plus précis et communiquer des fourchettes (ex. : « avant l’été ») aux directions.
+- **BNA** : reporter la campagne du 16 juin au 27‑28 juin pour éviter le chevauchement avec la DELCOM.
+- **Intégration DBV** : validation du développement ; démarrage du projet avec l’éditeur.
+- **Tribu** : ne pas couper le service pendant la mise en prod ; déploiement transparent.
+- **Nextcloud** : ne pas pousser la version 31 en production tant que le correctif de régression n’est pas disponible.
+- **RAM PostgreSQL** : augmentation validée et mise en production via Optimus Green.
+- **Squash** : Simon organise la session avec Tribu.
+
+---
+
+### Questions en suspens
+1. **Quand les éditeurs (Collabora, Nextcloud, BGB…) pourront‑t‑ils fournir des dates de livraison fiables ?**
+2. **Quel sera le périmètre exact de la refonte graphique Tribu (lots à valider, date de mise en prod précise) ?**
+3. **Correctif Nextcloud 31 : date de disponibilité et procédure de mise à jour parallèle.**
+4. **Script de migration Nextcloud académique : délai de livraison du correctif par l’équipe de Nantes.**
+5. **Choix final de l’outil de communication unifiée (privé vs. libre) et architecture SIP/BBB.**
+6. **Déploiement du Rancher : quels droits et quelles procédures sont nécessaires pour le rendre opérationnel ?**
+7. **Plan détaillé de l’accompagnement terrain (formation, support) pour les académies pilotes.**
+
+---
+
+### Tâches à effectuer
+| Action | Responsable | Échéance / Commentaire |
+|--------|-------------|------------------------|
+| Confirmer les montants exacts du nouveau budget DLE | **Didier** | Dès réception des chiffres officiels |
+| Produire un tableau de suivi des jalons avec fourchettes de dates | **Audran** | Avant le prochain comité référent |
+| Organiser le **Squash** avec Tribu | **Simon** | À planifier (date à définir) |
+| Préparer et diffuser les slides du comité référent (mardi) | **Frédéric** | Slides à envoyer d’ici fin de semaine |
+| Finaliser le chiffrage de la refonte Tribu et valider le planning | **Équipe de développement Tribu** | Dès que les estimations seront actées |
+| Obtenir le correctif de régression de Nextcloud 31 et planifier le test en pré‑prod | **Maxime Leherici** (support éditeur) | Avant toute mise en prod prévue |
+| Suivre le correctif du script de migration (Nantes) | **Benoît** | Attente du correctif « ce week‑end » |
+| Mettre à jour la RAM PostgreSQL sur tous les serveurs BDD | **Equipe Infra** | Déjà réalisé ; monitorer la stabilité |
+| Déployer le raccourcisseur d’URL (RL) et le QR‑code pour le Portail Apps | **Hugo** + **Développeurs** | Démo attendue la semaine prochaine |
+| Finaliser la documentation et les droits d’accès au Rancher | **Equipe Exploitation** | Priorité haute, avant le prochain déploiement |
+| Planifier les formations support pour les académies (BNA, Tube, etc.) | **Frédéric** + **Responsable formation** | Avant le lancement des campagnes (juin) |
+| Valider le choix de l’outil de visioconférence unifiée (Cisco/BBB) | **Paul Fouad** + **Direction** | Décision attendue avant le prochain trimestre |
+
+---
+
+### Prochaine rencontre
+- **Comité des référents** – mardi prochain (date exacte à confirmer).
+- Une réunion de suivi **Squash / Tribu** sera planifiée par Simon.
+- Le **point de suivi des jalons** sera présenté lors du prochain comité de pilotage (date à définir).
+
+---
+
+*Fin du compte rendu.*
+
+---
+
+# Résumé — B
+
+# Compte rendu de réunion
+
+## Participants
+- Didier
+- Hugo
+- Benoît
+- Simon
+- Frédéric
+- Nicolas
+- Autres participants non nommés
+
+## Objet de la réunion
+Point projet et suivi des différents chantiers en cours.
+
+## Durée estimée
+Non mentionnée.
+
+## Sujets abordés
+
+### 1. Comité de domaine avec Audran
+- **Réduction du budget** sur la DLE : impact limité mais possible "coup de rabot" sur les produits.
+- **Suivi des jalons** : besoin de plus de précision sur les dates de livraison des nouveautés. Problème de maîtrise des plannings par les prestataires.
+- **Communication avec la direction** : nécessité d'informations plus fiables et précises.
+
+### 2. Projets spécifiques
+- **Tribu** : Refonte graphique en cours (3 lots de spécifications, 200 jours estimés). Mise en production prévue fin 2025.
+- **Nuage (Nextcloud)** : Problème de régression fonctionnelle avec la version 31 (partage de fichiers). Migration vers Global Scale reportée.
+- **VisioAgent** : Intégration dans CHAP validée. Développements en cours (1.3 livré).
+- **Portail Apps** : 221 000 comptes ouverts, 80 000 vidéos. Matomo installé pour les stats. Raccourcisseur d'URL en développement.
+- **Tube** : Travaux sur les thèmes et transcription des vidéos. Automatisation des déploiements en attente.
+
+### 3. Autres points
+- **Messagerie** : Migrations en cours (Corse, Nantes, Poitiers, Paca). Problèmes d'accompagnement du changement.
+- **Wi-Fi** : Questionnaire envoyé aux académies d'Île-de-France pour les usages.
+- **Prochaines étapes** : Comité des référents (mardi prochain), réunion de lancement pour le lieu de France (semaine prochaine).
+
+## Décisions prises
+- Décalage de la campagne BNA du 16 au 27/28 juin pour éviter les sollicitations concurrentes.
+- Validation de l'intégration de DBV dans Cap Education.
+- Priorisation des travaux sur la refonte graphique de Tribu.
+
+## Questions en suspens
+- Comment améliorer la maîtrise des roadmaps par les éditeurs ?
+- Comment mieux communiquer les dates de livraison aux instances ?
+- Quelles solutions pour les problèmes de latence dans la messagerie ?
+
+## Tâches à effectuer
+- **Simon** : Organiser un Squash avec Tribu.
+- **Frédéric** : Faire un point avec l'équipe de Nantes sur la migration Nextcloud.
+- **Hugo** : Suivre le développement du raccourcisseur d'URL pour le portail Apps.
+- **Nicolas** : Déployer la transcription des vidéos sur Tube.
+
+## Prochaine rencontre
+- **Comité des référents** : Mardi prochain (distanciel).
+- **Réunion de lancement** : Semaine prochaine pour le lieu de France.
+
+---
+
+# Résumé — C
+
+# Compte rendu de réunion - Projets et suivi des jalons
+
+## Participants
+- Didier
+- Hugo
+- Benoît
+- Simon
+- Frédéric Cognès
+- Nicolas
+- Hugo (présent pour le point sur Tribu)
+- Autres intervenants : Frédéric, Benoît, Johan, Sophie, François, Sophie, Paul Fouad, Mickaël, Benjamin, Aurélien, Nicolas (en formation), Frédéric, Johan, etc.
+
+---
+
+## Objet de la réunion
+Retour d'expérience et suivi des projets en cours au sein de la DLE (Direction des Logiciels Éducatifs) et des comités associés.
+
+---
+
+## Durée estimée
+Non précisée dans la transcription.
+
+---
+
+## Sujets abordés
+
+### 1. Comité de domaine et réduction du budget
+- **Réduction du budget** : Réduction budgétaire sur toute la DLE. Impact variable selon les projets, mais globalement indolore.
+- **Suivi des jalons** : Audran insiste sur la nécessité d’améliorer la précision des dates de livraison des nouvelles fonctionnalités. Actuellement, les dates sont souvent des estimations ou des plages temporelles vagues (ex. "avant l'été").
+- **Problématiques identifiées** :
+  - Manque de visibilité sur les dates de livraison des fonctionnalités.
+  - Dépendance aux éditeurs pour les versions majeures, avec des retards fréquents.
+  - Nécessité d’améliorer la communication avec les prestataires pour obtenir des engagements plus réalistes.
+
+### 2. Projets spécifiques
+#### **Tribu**
+- **Refonte graphique et UX** :
+  - Chiffrage et planning en cours de validation. Trois lots identifiés :
+    - Lot 1 : Accueil, tableaux de bord, dossiers (~80 jours).
+    - Lot 2 : Outils et recherche.
+    - Lot 3 : Administration.
+  - Objectif : Mise en production prévue pour fin 2025, avec une version finalisée attendue pour fin d’année 2024.
+  - Préparation des environnements de pré-production pour éviter les imprévus.
+
+#### **Nuage (Nextcloud)**
+- **Version 31** : Problème de régression fonctionnelle sur le partage de fichiers. Difficulté à déployer en production sans correction.
+- **Migration académique** : Attente d’un correctif pour le script de migration. Nantes en pilote, mais migration académique reportée en attendant.
+- **Optimisation des serveurs** : Ajout de 4 Go de RAM sur les serveurs de base de données, améliorant la stabilité. Planification d’une augmentation similaire sur les serveurs frontaux.
+
+#### **BNA (Base Nationale des Agents)**
+- **Décalage de la campagne** : Report du lancement de la campagne de juin au 27 juin pour éviter un chevauchement avec une autre enquête.
+
+#### **Communication unifiée**
+- **Problématique** : Choix des outils (Cisco, Webex, outils libres) et intégration avec CHAP pour une solution de téléphonie unifiée.
+- **Démonstrateur** : Travail en cours pour intégrer BBB dans CHAP et les salles de vidéo.
+
+#### **Vioja (BBB)**
+- **Version 3.0** : Livrée depuis un mois, avec quelques fonctionnalités disparues (ex. sous-titrage manuel). Fonctionnalités comme la sélection aléatoire d’un participant sont désormais des plugins.
+- **Demandes du CNET** : Intégration de fonctionnalités spécifiques comme la délégation de salles, en discussion pour priorisation et financement.
+
+#### **Portail Apps**
+- **Chiffres clés** :
+  - 221 000 comptes ouverts (hors comptes directs).
+  - 73 000 comptes actifs depuis décembre.
+  - 80 000 vidéos sur le portail.
+- **Améliorations** :
+  - Installation de Matomo pour analyser les parcours utilisateurs.
+  - Mise à jour 6.4.1 en production.
+  - Travail sur le raccourcissement des URLs et l’architecture du cycle de vie des utilisateurs.
+
+#### **Wi-Fi et bornes**
+- **Questionnaire aux académies** : En attente des retours pour identifier les usages et problèmes liés aux bornes Wi-Fi.
+
+#### **Messagerie (Aetna)**
+- **Dépôt de la Corse** : Premier pilote complet en conditions réelles. Bilan :
+  - Usages variés et parfois complexes après 20 ans d’utilisation de Convergence.
+  - Nécessité d’accompagner le changement et d’adapter les processus.
+  - Problèmes rencontrés (ex. boîtes aux lettres surchargées, 96 Go).
+- **Migration académique** : Accélération prévue pour les pilotes (Nantes, Poitiers, Paca).
+
+#### **Autres points**
+- **Dotation et support** :
+  - Étude des profils à doter en cours avec Frédéric.
+  - Formation des équipes support en académies.
+- **Comités et prochaines réunions** :
+  - Comité des référents (mardi prochain, en distanciel).
+  - Retour d’expérience Squash avec Tribu (à organiser avec Simon).
+  - Réunion de lancement pour la migration de la messagerie en académie (fin juin).
+
+---
+
+## Décisions prises
+1. **Précision des dates de livraison** :
+   - Améliorer la communication avec les prestataires pour obtenir des engagements plus réalistes et des dates précises.
+   - Établir une balance entre la communication avec la direction et le risque de ne pas livrer à temps.
+
+2. **Tribu** :
+   - Valider le chiffrage et le planning pour lancer les développements dès que possible.
+   - Préparer les environnements de pré-production pour éviter les imprévus.
+
+3. **Nuage** :
+   - Attendre le correctif de Nextcloud pour la version 31 avant toute mise à jour majeure.
+   - Surveiller attentivement les serveurs après l’ajout de RAM pour éviter les plantages.
+
+4. **BNA** :
+   - Décaler la campagne de juin au 27 juin pour éviter les chevauchements.
+
+5. **Communication unifiée** :
+   - Continuer les travaux d’intégration des outils (Cisco, BBB) avec CHAP.
+
+6. **Vioja** :
+   - Discuter en interne de la priorisation des demandes du CNET (ex. délégation de salles).
+   - Explorer le développement de plugins pour des fonctionnalités spécifiques.
+
+7. **Portail Apps** :
+   - Finaliser le raccourcissement des URLs et l’architecture du cycle de vie des utilisateurs.
+
+8. **Messagerie** :
+   - Accélérer les déploiements pilotes (Nantes, Poitiers, Paca) et préparer l’accompagnement des académies.
+
+---
+
+## Questions en suspens
+1. **Dates de livraison** :
+   - Quand les prestataires pourront-ils fournir des dates précises pour les jalons en cours ?
+   - Comment gérer les retards des éditeurs (ex. Nextcloud, Collaborat) ?
+
+2. **Migration académique** :
+   - Quand la migration académique de Nextcloud pourra-t-elle commencer après Nantes ?
+
+3. **Délégation de salles dans Vioja** :
+   - Comment prioriser et financer cette demande du CNET ?
+
+4. **Wi-Fi** :
+   - Quand les académies d’Île-de-France pourront-elles répondre au questionnaire sur les usages des bornes Wi-Fi ?
+
+---
+
+## Tâches à effectuer
+
+| **Responsable**       | **Tâche**                                                                                     | **Échéance**          |
+|-----------------------|-----------------------------------------------------------------------------------------------|-----------------------|
+| Équipe Tribu         | Finaliser le chiffrage et lancer les développements pour la refonte graphique.               | Début juillet        |
+| Frédéric (Nuage)      | Coordonner avec le support éditeur pour la correction de la version 31 de Nextcloud.         | Juin                  |
+| Frédéric (Nuage)      | Surveiller les serveurs après l’ajout de RAM et préparer la montée en puissance.             | Fin juin              |
+| Frédéric (BNA)        | Finaliser la communication et le traitement des données pour la campagne décalée.           | 27 juin               |
+| Frédéric (Comms)      | Avancer sur l’intégration de BBB avec CHAP et les outils de téléphonie.                     | Juillet               |
+| Frédéric (Vioja)      | Discuter avec Frédéric Cognès sur la priorisation des demandes du CNET.                      | Juin                  |
+| Équipe Portail Apps  | Finaliser le raccourcissement des URLs et l’architecture du cycle de vie des utilisateurs.    | Juillet               |
+| Frédéric (Messagerie) | Préparer l’accompagnement des académies pilotes (Nantes, Poitiers, Paca).                   | Juin                  |
+| Frédéric (Wi-Fi)      | Relancer les académies d’Île-de-France pour obtenir leurs retours sur le questionnaire.       | Juin                  |
+| Simon                | Organiser un retour d’expérience Squash avec Tribu.                                           | Prochain comité       |
+| Frédéric (Comité)     | Préparer les slides pour le comité des référents (mardi prochain).                          | Avant mardi           |
+
+---
+
+## Prochaine rencontre
+- **Comité des référents** : Mardi prochain (en distanciel).
+- **Réunion de lancement de la migration de la messagerie** : Fin juin.
+- **Réunion de suivi avec les académies pilotes** (Nantes, Poitiers, Paca) : Dates à confirmer.
+```
+
+Ce compte rendu est structuré pour refléter les points clés de la réunion tout en restant fidèle au contenu de la transcription. Les sections inutiles ou redondantes ont été supprimées pour garder une version concise et pertinente.
+
+---
+
+# Résumé — D
+
+# Compte rendu de réunion
+
+## Participants
+- Didier
+- Hugo
+- Benoît
+- Frédéric
+- Simon
+- Nicolas
+- Aurélien
+- Olivier
+
+## Objet de la réunion
+Point projet - 46ème comité de domaine
+
+## Durée estimée
+Environ 1 heure
+
+## Sujets abordés
+
+### 1. Comité de domaine
+- Réduction du budget sur toute la DLE
+- Suivi précis des prochains jalons
+- Communication et visibilité sur les livraisons
+
+### 2. Problématiques liées aux fournisseurs
+- Manque de précision sur les dates de livraison
+- Décalages fréquents entre les éditeurs et les livraisons
+- Nécessité d'un meilleur suivi des roadmaps fournisseurs
+- Problèmes de communication avec les directions métiers
+
+### 3. Projets spécifiques
+#### Tribu
+- Refonte graphique UX8
+- Planning et chiffrage en cours
+- Mise en production prévue fin 2025
+
+#### Nuage (Nextcloud)
+- Problèmes avec la version 31 due à une régression fonctionnelle
+- Attente d'un correctif pour les liens de partage
+- Migration académique vers le centralisé en attente
+
+#### BGB / DBV
+- Intégration de DBV dans Cap Education
+- Validation de la commande pour l'intégration
+
+#### BBB
+- Livraison de la version 3.0
+- Développement de plugins pour fonctionnalités spécifiques
+- Problèmes de délégation de salles
+
+#### Portail Apps
+- Plus de 80 000 vidéos sur la podéduque
+- 221 000 comptes ouverts
+- Avancement sur le raccourcisseur d'URL
+
+#### Tube
+- Problèmes avec le thème graphique suite à la mise à jour 7.1.1
+- Déploiement de la transcription de vidéos
+- Travail sur l'architecture micro-applications
+
+#### Messagerie (Aetna)
+- Bilan du déploiement en Corse
+- Difficultés d'accompagnement des usages
+- Questions sur la transition vers WebMate
+
+### 4. Prochaines actions
+- Retour d'expérience Squash avec Tribu
+- Comité des référents (mardi prochain)
+- Point sur les développements spécifiques
+
+## Décisions prises
+- Adoption d'une approche plus rigoureuse sur les dates de livraison avec les fournisseurs
+- Mise en place d'un processus de validation plus strict pour les versions majeures
+- Continuation des travaux sur les plugins BBB pour les fonctionnalités spécifiques
+- Définition d'un planning plus précis pour les déploiements de messagerie
+
+## Questions en suspens
+- Date précise de mise en production de la refonte Tribu
+- Solution pour les problèmes de partage dans Nextcloud 31
+- Coordination avec les éditeurs pour les dates de livraison
+- Approche pour les migrations de messagerie
+
+## Tâches à effectuer
+- **Simon** : Organiser le retour d'expérience Squash avec Tribu
+- **Frédéric** : Suivre les développements BBB et les plugins
+- **Nicolas** : Coordonner les tests et corrections Nextcloud
+- **Hugo** : Suivre les avancées du raccourcisseur d'URL
+- **Tous** : Préparer les slides pour le comité des référents
+
+## Prochaine rencontre
+- Comité des référents : mardi prochain
+- Prochaine réunion : à définir (probablement après les vacances)
+
+---
+
+# Résumé — E
+
+# Compte Rendu de Réunion
+
+## Participants
+- Didier
+- Hugo
+- Benoît
+- Audran
+- Simon
+- Frédéric
+- Nicolas
+- Joanne
+- Samir
+
+## Objet de la réunion
+Point sur les projets en cours et les décisions à prendre concernant les développements et les budgets.
+
+## Durée estimée
+1h30
+
+## Sujets abordés
+1. **Point Projet**
+   - Réduction du budget sur la DLE.
+   - Suivi des jalons et des dates de livraison des nouveautés.
+   - Importance d'améliorer la communication avec les prestataires pour obtenir des dates précises.
+
+2. **Renouvellement des Licences IES Microsoft**
+   - Renouvellement effectué la semaine dernière.
+
+3. **Retour d'expérience Squash**
+   - Organisation d'un Squash avec Tribu à prévoir.
+
+4. **Dotation et montée en compétences**
+   - Étude des volumiers et réévaluation des profils à doter.
+
+5. **BNA**
+   - Décalage d'un mois du lancement de la campagne.
+
+6. **Communication unifiée**
+   - Discussion sur les outils de communication à mettre en place avec le déménagement du ministère.
+
+7. **Projets Tribu**
+   - Refonte graphique pour l'UX8, chiffrage en cours.
+
+8. **Nuage**
+   - Problèmes rencontrés avec la version 31 de Nextcloud.
+
+9. **VisioAgent et intégration de DBV**
+   - Validation de l'intégration de DBV dans Cap Education.
+
+## Décisions prises
+- Décalage de la campagne BNA du 16 au 27 ou 28 juin.
+- Organisation d'un Squash avec Tribu à voir avec Simon.
+- Validation de l'intégration de DBV dans Cap Education.
+
+## Questions en suspens
+- Clarification sur les délais de livraison des nouvelles fonctionnalités par les prestataires.
+- Suivi des retours d'expérience sur les projets en cours.
+
+## Tâches à effectuer
+- **Simon** : Organiser un Squash avec Tribu.
+- **Frédéric** : Suivre le retour d'expérience sur les projets.
+- **Nicolas** : Recontacter le responsable de l'UNISA pour des dates précises.
+
+## Prochaine rencontre
+À définir lors de la prochaine réunion de suivi des projets.
+
+---
+
+# Résumé — F
+
+# Compte Rendu de Réunion
+
+## Participants
+- Didier
+- Hugo
+- Benoît
+- Audran
+- Simon
+- Frédéric
+- Nicolas
+- Olivier
+- Johan
+- Samir
+- Aurélien
+- Mickaël
+- Benjamin
+- Benoît
+- Maxime
+- Irina
+
+## Objet de la Réunion
+Suivi des projets en cours et planification des prochaines étapes.
+
+## Sujets Abordés
+
+### Point Projet
+- Réduction du budget sur la DLE.
+- Suivi des jalons et précisions sur les dates de livraison.
+
+### Projets Techniques
+- **Nuage** : Problèmes de partage de fichiers avec la version 31 de Nextcloud.
+- **VisioAgent** : Intégration dans Cap Education validée.
+- **Portail Apps** : Installation de Matomo pour des statistiques précises.
+- **Tube** : Problèmes de thèmes après mise à jour, transcription des vidéos en cours de déploiement.
+
+### Déploiement Messagerie
+- Migration de l'Académie de Corse réussie avec quelques ajustements nécessaires.
+- Planification des déploiements pour d'autres académies.
+
+### Autres Sujets
+- Renouvellement des licences Microsoft.
+- Enjeux de la communication unifiée avec le déménagement du ministère.
+
+## Décisions Prises
+- Valider l'intégration de VisioAgent dans Cap Education.
+- Reporter la mise à jour vers Nextcloud 31 jusqu'à résolution des problèmes de partage.
+- Avancer sur le développement des plugins pour BBB.
+
+## Questions en Suspens
+- Comment améliorer la précision des dates de livraison avec les éditeurs.
+- Finalisation des thèmes pour Tube après la mise à jour.
+
+## Tâches à Effectuer
+- **Simon** : Organiser le retour d'expérience Squash avec Tribu.
+- **Frédéric** : Suivre la mise à jour de la RAM sur les serveurs Postgres.
+- **Nicolas** : Travailler sur la compatibilité des plugins Thunderbird.
+- **Olivier** : Recueillir les retours des académies sur le questionnaire Wi-Fi.
+
+## Prochaine Rencontre
+- Réunion des référents pour valider le plan de déploiement des académies.
+- Réunion de lancement pour l'Île-de-France prévue pour octobre.
+
+## Remarques
+- Nécessité d'améliorer l'accompagnement des utilisateurs lors des migrations et changements d'outils.
+- Importance de communiquer clairement sur les fonctionnalités et les délais des projets en cours.
+
+---
+
+# Résumé — G
+
+# Compte rendu de réunion - 46ème réunion du programme
+
+## Participants
+
+- Didier, Hugo, Benoît, Nicolas, Frédéric, Simon, Johan, Olivier, Samir, Aurélien, Benjamin, Mickaël, Yann, Manon, et autres membres de l'équipe
+
+## Objet de la réunion
+
+Point projet sur l'avancement des différents projets du programme (Tribu, Nuage, Visio Agent, Tube, Aetna, etc.)
+
+## Sujets abordés
+
+### Comité de domaine et enjeux transversaux
+
+**Réduction budgétaire**
+- Réduction du budget sur toute la DLE annoncée
+- Confirmations des montants attendues pour le programme
+- Possibilité de « coups de rabot » sur les produits
+
+**Précision des jalons de livraison**
+- Enjeu majeur : améliorer la précision des dates de livraison des nouvelles fonctionnalités
+- Actuellement : soit dates imprécises, soit ordres d'idées (avant/après l'été)
+- Besoin de meilleure visibilité pour la direction et les communications externes
+- Sujet de fond : maîtriser les plannings avec les prestataires et éditeurs
+- Différences selon les éditeurs : Collaborat (zéro vision), BigBlueButton (vision décalée), Nextcloud (plus clair)
+
+**Gestion des relations avec les éditeurs**
+- Décalages fréquents entre les promesses et les livraisons
+- Nécessité d'améliorer les engagements réalistes des éditeurs
+- Distinction à faire entre développements financés et versions publiques
+
+### Projet Tribu
+
+**Refonte graphique UX8**
+- Lancement du chantier de refonte ergonomique
+- Chiffrage en cours avec les prestataires
+- Découpage en 3 lots :
+  - Lot 1 : accueils, tableaux de bord, dossiers (~80 jours)
+  - Lot 2 : outils et recherche
+  - Lot 3 : administration
+- Total : environ 200 jours
+- Spécifications livrées fin avril, retours en cours
+- Mise en production prévue fin 2025 (fin novembre/début décembre)
+- Environnements de pré-prod en préparation
+- Montées de versions techniques effectuées
+- Mise en production en transparence (pas de maintenance longue)
+- Mise à jour des tutoriels et documents prévue
+
+### Projet Nuage (Nextcloud)
+
+**Problème critique version 31**
+- Grosse modification des liens de partage introduite unilatéralement par l'éditeur
+- Liens internes retrouvés dans les liens externes
+- Mise à jour majeure prévue le 15 juin reportée
+- Impossible de déployer en production en l'état
+- Prérequis pour Global Scale : version 31 obligatoire
+- Nécessité de travailler avec le support éditeur pour une version parallèle compatible
+
+**Migration académique**
+- Attente du correctif du script de migration (Nantes pilote)
+- Équipe de Paris en attente du retour de Nantes avant de commencer
+- Préférence pour différer plutôt que de se lancer immédiatement
+
+**Infrastructure**
+- Augmentation de RAM réussie via ateliers Optimus Green : passage de 8 Go à 12 Go sur serveurs BDD
+- Résolution des plantages récurrents des services de métrologie
+- Prévision : augmentation de 4 Go sur frontaux applicatifs fin mai
+
+### Projet Aetna (Messagerie)
+
+**Déploiement Corse**
+- Premier pilote en conditions réelles (académie complète)
+- 99% de consommation de musée
+- Passage complet à WebMate (fin de Thunderbird)
+- Déploiement en one shot avec débit limité (200 Mbps)
+- Quelques difficultés : comptes AGA/ASGA, boîtes à lettres volumineuses (94-96 Go)
+- Bilan positif globalement, apprentissages importants
+
+**Accompagnement du changement**
+- Enjeu majeur : usages différents après 20-25 ans de Convergence
+- Cas métiers identifiés : exports de mails, boîtes fonctionnelles (FGRA), etc.
+- Nécessité d'améliorer l'accompagnement du terrain
+- Sujet transversal à tous les projets (Nuage, Tribu, Visio Agent)
+
+**Déploiements suivants**
+- Nantes : libération de tous les établissements publics/privés d'ici juin
+- Poitiers, Paca : reprise des déploiements
+- Reims : réunion début juin
+- Accélération prévue sur T3 et T4 2024
+- Réunion de 100 des référents demain pour valider le plan de déploiement
+- Réunion de lancement Île-de-France (basculement octobre)
+
+**Usine d'apport**
+- Tests en cours avec utilisateurs corses migrés
+- Contacts et archives en collection
+
+**Difficultés techniques**
+- Latences résolues (allègement des détections dans les corps de messages)
+- Dictionnaires académiques consolidés (peut causer latence)
+- Thunderbird : plugin en cours de mise à jour pour compatibilité
+
+### Projet Visio Agent
+
+**Intégration BigBlueButton dans CHAP**
+- Commande validée avec Frédéric Cognès
+- Lien particulier permettant d'ajouter BBB dans CHAP
+- Bouton de rejointe de réunion pour participants
+
+**Cine des Yéhouètes (POC)**
+- Réinstallation complète effectuée
+- Collaboration avec Renater
+- Développements supplémentaires demandés (RCMP)
+- Enjeu : montée en charge de la Sydney Gateway (actuellement 3 salons par serveur)
+- Objectif : démonstrateur pour Eugran
+
+**Visio Agent 1.3**
+- Frontal mis à jour
+- Nouveau bandeau d'informations
+- Gestion des favoris sur salons
+- Tri alphabétique et par création
+- Commande de 35 jours de développement validée ce matin
+
+**BigBlueButton 3.0**
+- Livré il y a plus d'un mois par Bitesite Network
+- Recette validée
+- Quelques fonctionnalités disparues (sous-titrage SME notamment)
+- Système de plugins introduit
+- Demande du CMED : délégation de salles (complexe à mettre en œuvre)
+- Prochaine mise en production : date à définir après livraison éditeur
+
+### Portail Apps
+
+**Statistiques**
+- 221 000 comptes ouverts
+- 73 000 comptes reconnectés depuis décembre (1/3 des utilisateurs)
+- Presque 80 000 vidéos
+- Matomo installé depuis 3 semaines
+
+**Portail 6.4.1**
+- Mise en production effectuée
+- Cycle de vie des utilisateurs amélioré
+
+**Raccourcisseur d'URL**
+- Deux développeurs travaillent dessus à Dijon
+- Échanges productifs avec Hugo
+- Démonstration prévue la semaine prochaine
+- Déploiement avant l'été
+- Outil en API disponible pour autres services
+
+**Cycle de vie des comptes et vidéos**
+- Architecture en micro-applications par service
+- Chaque service responsable de ses actions (suppression, transfert, etc.)
+- Déploiement de Rancher en pré-prod : toujours non fonctionnel
+- Certificats et déploiement d'outils : sujets à clarifier
+- Progression lente mais en cours
+
+### Projet Tube (PeerTube)
+
+**Thématisation**
+- Thème préparé par Drame du Grand Est il y a 3 ans non supporté en 7.1.1
+- Réunion productive avec Drame du Grand Est, Hugo, Manon
+- Nouvelle approche : masquer les instances, parler de thématiques
+- Implémentation prévue après la rentrée (3-4 mois)
+- Message temporaire : « Le thème a disparu mais il reviendra bientôt »
+
+**Transcription**
+- Opérationnelle sur test
+- Généralisation prévue après passage en 7
+- Déploiement de serveur supplémentaire nécessaire
+- Paramétrisation de tous les serveurs tubes
+
+**Transcodage externalisé**
+- Objectif : diminuer la puissance des machines tubes
+- Deux grosses machines dédiées au transcodage et transcription
+- Déploiement en priorité
+
+**Cycle de vie des vidéos**
+- Attente de devis du développeur
+- Partie générique (durée de vie des vidéos) : chez Pramasoft (cœur PeerTube)
+- Partie spécifique (mineurs, description après 1 an) : plugin
+- Descriptif finalisé, en attente de gestion des devis et marché
+
+**Automatisation des déploiements**
+- Attente du grand test
+- Avancées récentes sur automatisation des mises à jour
+
+### Autres sujets
+
+**Renouvellement licences Microsoft**
+- Effectué la semaine précédente
+- Concerne 30 000 agents
+
+**Dotation**
+- Étude des volumiers en cours
+- Point prévu avec Frédéric pour réévaluer la liste des profils
+- Mise à jour CRT et team en cours
+- Montée en compétences des académies sur les projets
+
+**BNA (Enquête)**
+- Décalage d'un mois : du 16 au 27-28 juin
+- Raison : éviter déclouement avec enquête DELCOM
+- Questionnaire finalisé
+- Première communication prête
+- Intégration des deux communications suivantes en cours
+
+**Communication unifiée**
+- Sujet lié au déménagement ministériel à Gentilly
+- Choix à faire : Cisco/Webex vs outils libres
+- Enjeu : téléphonie unifiée (SIP, chat, vidéo)
+- Travaux en cours avec Paul Fouad sur intégration BBB dans salles vidéo
+- Objectif : matériel tout intégré (BBB, CHAP, SIP)
+
+**Bornes Wi-Fi**
+- Questionnaire envoyé aux académies Île-de-France
+- Attente des retours sur usages et problèmes
+
+**Portail intranet académique**
+- Refonte en cours
+- Implication d'académies prévue la semaine prochaine
+- Porte d'entrée de tous les services
+
+## Décisions prises
+
+- Mise à jour de Nextcloud 31 reportée (attente du correctif des liens de partage)
+- Commande Visio Agent 1.3 validée (35 jours de développement)
+- Intégration BBB dans CHAP validée
+- Décalage BNA d'un mois (16 au 27-28 juin)
+- Passage en RAM 12 Go sur serveurs BDD approuvé
+- Augmentation RAM 4 Go sur frontaux applicatifs prévue fin mai
+
+## Questions en suspens
+
+- Date précise de mise en production Tribu (fin novembre/début décembre à confirmer)
+- Résolution du problème de liens de partage Nextcloud 31
+- Compatibilité Global Scale avec version Nextcloud corrigée
+- Statut du passage en mode INSAS (mentionné comme fin février/début mars, plus de nouvelles)
+- Prérequis d'installation UNISA (Kubernetes, Kafka, Terraform, etc.)
+- Stratégie Thunderbird : maintien du plugin ou passage exclusif WebMate ?
+- Financement et priorisation des demandes CMED pour BBB
+
+## Tâches à effectuer
+
+| Tâche | Responsable | Délai |
+|-------|-------------|-------|
+| Fournir date précise MEP Tribu | Simon | Après validation chiffrage |
+| Tester et corriger version Nextcloud 31 | Frédéric/Maxime | Avant 15 juin |
+| Mettre à jour slides pour comité référent | Équipe | Prochains jours |
+| Point avec Frédéric sur dotation et profils | Frédéric | Avant comité référent |
+| Montée en compétences équipes support académies | Équipe | En cours |
+| Intégrer communications BNA | Équipe | Avant 27-28 juin |
+| Recontacter responsable UNISA | Olivier | Rapidement |
+| Finaliser chiffrage Tribu | Prestataires/Simon | Cette semaine |
+| Préparer démonstration raccourcisseur URL | Hugo/Devs | Semaine prochaine |
+| Valider plan de déploiement Aetna | Équipe | Demain (réunion 100 référents) |
+| Surveiller RAM frontaux applicatifs | Frédéric | Fin mai |
+| Travailler compatibilité Thunderbird | Nicolas/Pôle identité | En cours |
+| Préparer présentation GSA Bordeaux | Équipe | Début juin |
+| Implication académies portail intranet | Équipe | Semaine prochaine |
+
+## Prochaine rencontre
+
+- **Comité référents** : mardi prochain (en distanciel)
+- **Réunion 100 référents** : demain (validation plan déploiement Aetna)
+- **Réunion lancement Île-de-France** : semaine prochaine
+- **GSA Bordeaux** : début juin
+- **Prochaine réunion projet** : date non précisée dans la transcription
+
+---
+
+# Résumé — H
+
+# Compte rendu de réunion — Point projet (46ème édition)
+
+---
+
+## Participants mentionnés
+
+- **Johan** (animateur)
+- **Benoît**
+- **Hugo**
+- **Didier**
+- **Simon**
+- **Frédéric**
+- **Nicolas**
+- **Joanne**
+- **Samir**
+- **Aurélien**
+- **Manon**
+- **Olivier**
+- **Audran** (comité de domaine, non présent)
+- **Yann / Yal** (développeur externe)
+- **Maxime Leherici** (support éditeur Nextcloud)
+- **Paul Fouad** (travaux SIP/vidéo)
+- **Irina** (pôle Paris, équipe Socle)
+
+---
+
+## Objet de la réunion
+
+Point projet quinzomadaire couvrant l'ensemble des projets du programme : Tribu, Nuage, Visio Agent / BBB, Portail Apps, Tube, messagerie (déploiement académique), dotation, bornes Wi-Fi et communication unifiée.
+
+---
+
+## Sujets abordés
+
+### 1. Comité de domaine (avec Audran)
+
+- **Réduction budgétaire** sur l'ensemble de la DLE : un coup de rabot sur les projets du programme est possible. Les montants précis sont en attente de confirmation.
+- **Suivi des jalons** : Audran souhaite davantage de précision sur les dates de livraison et de mise en production des nouvelles fonctionnalités. Actuellement, les estimations sont trop vagues (« avant l'été », « T4 »), voire sujettes à des reports répétés.
+  - Problème structurel identifié : dépendance aux éditeurs (Collabora, Nextcloud, BBB/Bitesite Network) dont les roadmaps sont peu fiables ou peu communicées.
+  - Distinction faite entre les développements financés en propre (sur lesquels on peut être plus exigeant) et les versions publiques des éditeurs (sur lesquelles la maîtrise est limitée).
+  - Piste évoquée : améliorer la relation contractuelle avec les prestataires pour obtenir des engagements plus réalistes et stables.
+
+### 2. Renouvellement des licences Microsoft
+
+- Renouvellement des licences IES Microsoft effectué la semaine précédente, pour l'ensemble des agents (environ 30 000 postes).
+
+### 3. Prochains jalons
+
+- **Retour d'expérience Squash / Tribu** : à organiser avec Simon, probablement au prochain comité.
+- **Comité des référents** (DRAZI / SGRAS) : prévu **mardi prochain**, en distanciel. Des slides sont à préparer et à transmettre en amont.
+
+### 4. Dotation (projet 4)
+
+- Toujours en phase d'étude des volumétries.
+- Point à organiser avec **Frédéric** pour remettre le contexte du projet et réévaluer la liste des profils à doter.
+- Positionnement à définir pour le comité référent.
+- Mise à jour en cours côté CRT et teams.
+- Formation des équipes support académiques à planifier : un point collectif est à organiser pour identifier les projets mûrs.
+
+### 5. BNA (enquête)
+
+- Décalage d'un mois de la campagne : lancement repoussé **du 16 au 27-28 juin**, pour éviter un chevauchement avec une enquête DELCOM.
+- Questionnaire finalisé, première communication prête, deux suivantes à intégrer.
+- Anticipation du traitement des données à démarrer.
+
+### 6. Communication unifiée
+
+- Sujet en cours, lié notamment au déménagement du ministère à Gentilly (regroupement sur un seul site).
+- Enjeux autour du soft-phone : Cisco/Webex vs outils libres.
+- Travaux en cours avec Paul Fouad sur l'intégration BBB + SIP dans les salles de vidéoconférence (matériel compatible, tests en cours).
+- Bruno à inviter pour présenter les enjeux lors d'un prochain point.
+
+### 7. Tribu
+
+- Lancement du chantier de **refonte graphique (UX)** : chiffrage en cours avec les prestataires, en finalisation cette semaine.
+- Découpage en **3 lots** :
+  - Lot 1 : accueil, tableaux de bord, dossiers (~80 jours)
+  - Lot 2 : outils et recherche
+  - Lot 3 : administration
+- Total estimé : **~200 jours**
+- Première partie des specs livrée fin avril, retours en cours.
+- Objectif de mise en production : **fin novembre / début décembre 2025**, avec une quinzaine de jours de marge avant les congés de Noël.
+- Préparation de plusieurs environnements parallèles (iso-prod, dev refonte, qualité).
+- Montées de versions techniques réalisées en parallèle pour assurer la stabilité.
+- Mise à jour des tutoriels et documents prévue en même temps que la MEP.
+
+### 8. Nuage (Nextcloud)
+
+- **Régression fonctionnelle majeure dans la version 31** : les liens de partage ont été entièrement refondus par l'éditeur sans information préalable suffisante. La mise à jour vers la v31 est **suspendue** jusqu'à correction par Nextcloud (interlocuteur : Maxime Leherici).
+- La v31 était un prérequis pour le déploiement de **Global Scale** en prod, ce qui bloque également ce chantier.
+- **Migration Nextcloud académique → Nuage** : en attente d'un correctif sur le script de migration (annoncé prochainement par Benoît). L'académie de Paris (Irina) attend le retour de Nantes avant d'envisager sa propre migration.
+- **Audit BDD** : augmentation de la RAM des serveurs Postgres de 8 Go à 12 Go (via ateliers Optimus Green). Les plantages quotidiens des services de métrologie ont cessé.
+- Prochaine étape : restitution de 4 Go de RAM sur les frontaux applicatifs Nextcloud, prévue fin mai, avec surveillance renforcée.
+
+### 9. Visio Agent / BBB
+
+- **Intégration BBB dans CHAP (Cap Éducation)** : commande validée avec Frédéric Cognès, développement à démarrer avec l'éditeur.
+- **POC Cinéma des Yéhouètes** (SIP Gateway) : réinstallation effectuée par Benjamin et Mickaël, fonctionne en collaboration avec Renater. Développements supplémentaires demandés (RCMP, montée en charge de la Sydney Gateway).
+- **Visio Agent v1.3** : mis en production. Nouveautés : bandeau d'information, tri alphabétique et par date de création des salons, gestion des favoris.
+- **Commande de 35 jours de développement** avec Yann : validée ce matin, les travaux vont reprendre.
+- **BBB v3.0** : livrée par Bitesite Network. Recette effectuée par Nickel. Quelques fonctionnalités disparues (ex. : sous-titrage SME, sélection aléatoire passée en plugin). Mise en production envisagée prochainement, sous réserve de vérifications finales.
+- **Système de plugins BBB** : nouvelle architecture permettant de faire développer des fonctionnalités spécifiques par des tiers (ex. : boîtes françaises), indépendamment de l'éditeur.
+- **Demande du CNED** : liste d'évolutions souhaitées sur le frontal (dont la délégation de salles, sujet complexe). À discuter en interne avec Frédéric pour priorisation et financement.
+
+### 10. Portail Apps
+
+- **221 000 comptes** ouverts sur le portail (hors comptes créés directement sur les applications).
+- **73 000 comptes** reconnectés depuis décembre (soit environ un tiers).
+- **Matomo** installé sur le portail depuis ~3 semaines : premières statistiques exploitables à venir.
+- **Portail v6.4.1** mis en production (cycle de vie des utilisateurs, divers correctifs).
+- **Raccourcisseur d'URL** : deux développeurs travaillent dessus depuis Dijon (échange avec Hugo). Démonstration espérée la semaine prochaine, mise en production avant l'été. L'outil sera disponible en API pour d'autres services (QR code inclus).
+- **Architecture cycle de vie** : avancement sur le déploiement de micro-applications par service (sécurisées par token).
+- **Rancher pré-prod** : livré depuis plus de deux semaines, toujours non fonctionnel pour le déploiement des applications (problèmes de certificats, documentation incomplète, découvertes progressives).
+
+### 11. Tube (PeerTube)
+
+- **Thème graphique** : la v7.1.1 (déployée en urgence pour faille de sécurité) ne supporte plus le thème graphique précédent. Travaux de refonte en cours (Hugo, Manon, Drâle du Grand Est). Nouvelle approche : masquer les instances, ne parler que de thématiques. Résultat attendu **après la rentrée** (~3-4 mois).
+- **Transcription vidéo** : opérationnelle en environnement de test. Déploiement à généraliser avec Nicolas (un second serveur à préparer).
+- **Transcodage externalisé** : à généraliser en parallèle de la transcription pour alléger les serveurs tubes.
+- **Cycle de vie des comptes et vidéos** : descriptif finalisé, devis en attente. Répartition des développements entre Framasoft (fonctionnalités génériques dans le cœur PeerTube) et un plugin spécifique ministère (ex. : vidéos avec mineurs, durée de conservation d'un an).
+- **Automatisation des déploiements** : avancement signalé, point à faire avec l'équipe.
+- **Déploiement de l'asset v1.1** : mis en priorité (failles de sécurité).
+- Environ **80 000 vidéos** sur Pod Éducation (chiffres d'avant les vacances).
+
+### 12. Messagerie — Déploiement académique
+
+- **Académie de Corse** : premier pilote en conditions réelles sur une académie entière. 99 % des comptes migrés sans incident majeur. Quelques difficultés sur les comptes de l'ASGA (boîte de 96 Go, délégations de boîtes fonctionnelles).
+- Enseignements tirés :
+  - Après 20-25 ans d'utilisation de Convergence, les usages sont très ancrés et variés (délégations, exports EML, règles de tri, etc.).
+  - Nécessité d'un accompagnement au changement renforcé, notamment pour les VIP et les usages locaux spécifiques.
+  - Ce constat vaut pour tous les projets du programme (Nuage, Tribu, Visio Agent).
+- **Usine de portage des contacts et archives** : en cours de test par les utilisateurs corses migrés.
+- **Plugin Visio Agent** : demande en attente, attendu prochainement.
+- **Saint-Francis (antispam)** : latences en cours de résolution. Travaux sur les règles de détection et les dictionnaires académiques.
+- **Prochains déploiements** :
+  - Académie de Reims : en cours.
+  - Nantes : envisage de libérer tous les établissements publics et privés (écoles, collèges) d'ici juin.
+  - Poitiers : communication du calendrier des sites pilotes.
+  - Île-de-France : réunion de lancement prévue la semaine prochaine, bascule envisagée en octobre.
+  - Réunion de 100 référents le lendemain pour valider le plan de déploiement global.
+- **Plugin Thunderbird** : question ouverte sur l'opportunité de le diffuser ou de le réserver au webmail pour inciter à la migration.
+
+### 13. Bornes Wi-Fi
+
+- Questionnaire envoyé aux académies d'Île-de-France pour recueillir les retours sur les usages et problèmes de connectivité. En attente de réponses.
+
+### 14. Portail intranet académique
+
+- Refonte du portail intranet académique : implication d'une académie à valider la semaine prochaine. Projet identifié comme porte d'entrée de l'ensemble des services.
+
+### 15. GSR Bordeaux
+
+- Événement prévu début juin. Participants confirmés : Johan, Benoît, Nicolas, François, Sophie, Frédéric.
+- Point à rappeler : **Atena n'est pas uniquement la messagerie** — message à porter lors du GSR.
+
+---
+
+## Décisions prises
+
+- Décalage de la campagne BNA : lancement repoussé au **27-28 juin**.
+- Suspension de la mise à jour Nextcloud v31 jusqu'à correction de la régression sur les liens de partage.
+- Intégration BBB dans CHAP : commande validée, développement à lancer.
+- Commande de 35 jours de développement Visio Agent validée ce matin.
+- Répartition des développements cycle de vie Tube entre Framasoft (cœur) et plugin spécifique ministère.
+- Augmentation RAM serveurs Postgres de 8 Go à 12 Go (déjà réalisée).
+
+---
+
+## Questions en suspens
+
+- Montants précis de la réduction budgétaire sur le programme : en attente de confirmation.
+- Mise à jour Nextcloud v31 : conditionnée à la livraison d'un correctif par l'éditeur sur les liens de partage.
+- Déploiement de Global Scale : bloqué par le prérequis v31.
+- Passage en mode INSAS : plus de nouvelles depuis fin février / début mars, à reclarifier.
+- Opportunité de diffuser le plugin Thunderbird ou de le réserver au webmail : question ouverte.
+- Prise en compte des demandes du CNED sur Visio Agent (dont délégation de salles) : à discuter avec Frédéric (priorisation et financement).
+- Rancher pré-prod : toujours non opérationnel pour le déploiement des applications.
+- Restitution de 4 Go de RAM sur les frontaux Nextcloud : à surveiller attentivement lors de l'opération.
+
+---
+
+## Tâches à effectuer
+
+| Tâche | Responsable |
+|---|---|
+| Confirmer les montants de réduction budgétaire sur le programme | Johan |
+| Organiser un retour d'expérience Squash / Tribu (prochain comité) | Simon / Johan |
+| Préparer et transmettre les slides pour le comité référents (mardi prochain) | Équipe (tous) |
+| Faire un point avec Frédéric pour recaler le projet dotation et réévaluer les profils | À organiser |
+| Organiser un point collectif pour identifier les projets mûrs pour la formation des équipes support académiques | Johan / équipe |
+| Intégrer les deux communications suivantes pour la campagne BNA et anticiper le traitement des données | À confirmer |
+| Inviter Bruno pour un point sur la communication unifiée | Johan |
+| Finaliser le chiffrage de la refonte graphique Tribu et lancer les développements | Simon |
+| Préparer les environn
+
+---
+
+# Résumé — I
+
+# **Compte rendu de réunion – 46ème comité de domaine**
+*Date non précisée*
+
+---
+
+## **Participants**
+- **Animateur** : [Nom non précisé]
+- **Didier, Hugo, Benoît** (présents ou en distanciel)
+- **Audran** (mentionné pour le comité de domaine)
+- **Simon** (référent Tribu)
+- **Aurélien** (mentionné pour le projet "regroupement")
+- **Bruno** (mentionné pour la communication unifiée)
+- **Frédéric Cognès** (mentionné pour l'intégration de DBV dans Cap Education)
+- **Nicolas** (mentionné pour Nextcloud)
+- **Maxime Leherici** (support Nextcloud)
+- **Paul Fouad** (travaux sur CHAP)
+- **Valérie** (validation de commandes)
+- **Mickaël, Benjamin** (travaux sur la Cine des Yéhouètes)
+- **Irina** (pôle Socle, Paris)
+- **Charly** (mentionné pour Tribu)
+- **Johan** (mentionné pour le raccourcisseur d'URL)
+- **Aurélien** (mentionné pour le projet "regroupement")
+- **Joanne, Samir** (mentionnés pour les incidents techniques)
+- **Olivier** (mentionné pour les bornes Wi-Fi)
+- **François, Sophie, Frédéric** (mentionnés pour le GSR)
+- **Simon** (mentionné pour le Squash avec Tribu)
+
+---
+
+## **Objet de la réunion**
+Point projet et comité de domaine, avec focus sur :
+- Suivi des jalons et livraisons (Nextcloud, Collaborat, BBB, etc.).
+- Refonte graphique de Tribu (UX/UI).
+- Déploiements (messagerie, Nuage, etc.).
+- Communication unifiée et outils collaboratifs.
+- Gestion des prestataires et visibilité des roadmaps.
+
+---
+
+## **Durée estimée**
+Non précisée (réunion longue, plusieurs sujets abordés).
+
+---
+
+## **Sujets abordés**
+
+### **1. Comité de domaine (Audran)**
+- **Réduction du budget DLE** : Confirmation attendue des montants, risque de "rabot" sur certains projets.
+- **Suivi des jalons** :
+  - **Points positifs** : Nouvelles fonctionnalités appréciées (ex : BBB, Nextcloud).
+  - **Problèmes** :
+    - Manque de **précision sur les dates de livraison** (ex : T4 2025 vs. reports fréquents).
+    - Dépendance aux éditeurs (ex : Collaborat, Nextcloud) avec des délais non maîtrisés.
+    - Exemple : **Nextcloud 31** a introduit des régressions fonctionnelles (liens de partage) sans préavis.
+    - **BBB** : Livraisons tardives (ex : commandes BVB prévues pour fin 2024/début 2025).
+    - **Collaborat** : Absence de visibilité sur la roadmap (ex : pas de dates pour la version 3.1).
+
+### **2. Tribu**
+- **Refonte graphique (UX/UI)** :
+  - **Chiffrage en cours** (200 jours de développement, 3 lots : accueil/dossiers, outils/recherche, administration).
+  - **Objectif** : Mise en production **fin 2025** (date précise à confirmer après validation du chiffrage).
+  - **Environnements** : Pré-prod isoprod + dev pour la refonte.
+  - **Risques** : Retards possibles sur les spécifications ou développements.
+
+### **3. Nextcloud (Nuage)**
+- **Version 31** :
+  - **Problème** : Régression sur les liens de partage (fonctionnalités modifiées unilatéralement par l'éditeur).
+  - **Solution** : Report de la migration en prod (attente d'un correctif).
+  - **Global Scale** : Prérequis = Nextcloud 31 (impossible de tester en pré-prod).
+- **Migration académique** :
+  - **Nantes** : Script de migration en attente de correctifs.
+  - **Paris** : Attente des retours de Nantes avant de démarrer.
+- **Audit BDD** : Augmentation de RAM (8 Go → 12 Go) pour éviter les plantages.
+
+### **4. BBB (VisioAgent)**
+- **Nouveautés** :
+  - Gestion des favoris, tri alphabétique des salons, bandeau d'informations.
+  - **Plugins** : Possibilité de développer des fonctionnalités spécifiques (ex : sélection aléatoire de participants).
+  - **Demandes CNET** : Délégation de salles (sujet complexe, non priorisé).
+- **Problèmes** :
+  - Fonctionnalités disparues dans la v3.0 (ex : sous-titrage SME).
+  - **Commande validée** : 35 jours de développement pour des évolutions (visio agent 1.3).
+
+### **5. Messagerie (Aetna)**
+- **Déploiement pilote en Corse** :
+  - **Bilan** :
+    - 99% des comptes migrés sans incident majeur.
+    - Problèmes résiduels : comptes fonctionnels (ex : AGA/ASGA) et usages locaux (ex : FGRA).
+    - **Enjeux** : Accompagnement au changement (ex : exports PDF vs. EML pour les recteurs).
+  - **Prochaines étapes** :
+    - Nantes, Poitiers, PACA : reprise des déploiements.
+    - **Lieux de France** : Migration prévue en **octobre 2025**.
+    - **Automatisation** : Usine d'import des contacts/archives en test avec la Corse.
+
+### **6. Portail Apps**
+- **Chiffres** :
+  - 80 000 vidéos (PodEduque).
+  - 221 000 comptes ouverts (dont 73 000 reconnectés en 5 mois).
+  - **Matomo** : Stats d'usage en cours de collecte.
+- **Évolutions** :
+  - **Raccourcisseur d'URL** : Développement en cours (livraison prévue avant l'été).
+  - **Architecture** : Micro-applications pour le cycle de vie des utilisateurs.
+- **Rancher (Créprod)** :
+  - **Problèmes** : Certificats, documentation incomplète, déploiement complexe.
+
+### **7. PeerTube**
+- **Transcription automatique** : Opérationnelle sur test (v7), généralisation prévue.
+- **Cyclonomie** :
+  - **Fonctionnalités** :
+    - Suppression automatique des vidéos après X mois (plugin Pramasoft).
+    - Gestion des mineurs (plugin spécifique au ministère).
+  - **En attente** : Devis et marché public.
+
+### **8. Communication unifiée**
+- **Enjeux** :
+  - **Outils** : Cisco, Webex, BBB, CHAP (téléphonie SIP).
+  - **Déménagement du ministère** : Besoin de définir une stratégie (ex : EVT Cisco vs. outils libres).
+  - **Intégration** : BBB dans CHAP, Webex dans BBB (travaux en cours avec Paul Fouad).
+- **Problème** : Matériel compatible non testé.
+
+### **9. Autres sujets**
+- **Renouvellement licences Microsoft** : Réalisé pour 30 000 agents.
+- **BNA** : Campagne reportée au **16–27/06/2025** (éviter la superposition avec une enquête DELCOM).
+- **Wi-Fi** : Questionnaire envoyé aux académies d'Île-de-France (retours en attente).
+- **Intranet académique** : Refonte en discussion (projet stratégique).
+
+---
+
+## **Décisions prises**
+1. **Nextcloud 31** :
+   - Report de la migration en prod jusqu’à correction des régressions.
+   - Point avec **Maxime Leherici** (support Nextcloud) pour valider les correctifs.
+2. **Tribu** :
+   - Validation du chiffrage et lancement des développements après accord.
+   - Mise en prod **fin 2025** (date précise à confirmer).
+3. **BBB** :
+   - Commande de **35 jours de développement** validée pour les évolutions (VisioAgent 1.3).
+4. **Messagerie** :
+   - Poursuite des déploiements pilotes (Corse, Nantes, Poitiers, PACA).
+   - **Lieux de France** : Migration prévue en **octobre 2025**.
+5. **Portail Apps** :
+   - Livraison du **raccourcisseur d’URL** avant l’été.
+   - Déploiement de **Matomo** pour les stats utilisateurs.
+6. **PeerTube** :
+   - Généralisation de la transcription automatique après tests.
+   - Lancement des devis pour la cyclonomie (plugins).
+
+---
+## **Questions en suspens**
+1. **Précision des roadmaps éditeurs** :
+   - Comment obtenir des engagements réalistes de la part de **Collaborat**, **Nextcloud**, et **BBB** ?
+   - Exemple : **BBB v3.1** (date de livraison inconnue).
+2. **Global Scale (Nextcloud)** :
+   - Comment tester en pré-prod avec la version 31 ?
+3. **Migration académique (Nuage)** :
+   - Quand **Nantes** aura-t-il terminé ses tests pour que **Paris** puisse démarrer ?
+4. **Communication unifiée** :
+   - Quel outil choisir (Cisco, Webex, BBB, outils libres) ?
+   - Stratégie pour le **SIP** et la téléphonie.
+5. **Aetna** :
+   - Faut-il fournir des plugins pour **Thunderbird** ou se concentrer sur le webmail ?
+6. **Rancher (Créprod)** :
+   - Comment déployer les applications malgré les problèmes de documentation ?
+
+---
+## **Tâches à effectuer**
+| **Tâche** | **Responsable** | **Échéance** |
+|-----------|----------------|--------------|
+| Valider le chiffrage Tribu | Simon | Semaine en cours |
+| Corriger les régressions Nextcloud 31 | Maxime Leherici (support) | À confirmer |
+| Finaliser le questionnaire Wi-Fi | Olivier | Retour académies Île-de-France |
+| Préparer les slides pour le comité référent | [Non précisé] | J-7 avant la réunion |
+| Lancer les devis PeerTube (cyclonomie) | [Non précisé] | À définir |
+| Tester l’usine d’import des contacts (Corse) | [Non précisé] | En cours |
+| Clarifier la stratégie communication unifiée | Bruno | À organiser |
+| Suivre l’avancement du Rancher | [Non précisé] | À définir |
+
+---
+## **Prochaine rencontre**
+- **Comité référent** : **Mardi prochain** (en distanciel).
+- **Point Squash avec Tribu** : À organiser avec **Simon**.
+- **Réunion de lancement "Lieux de France"** : **Octobre 2025** (date à confirmer).
+
+---
+
+# Résumé — J
+
+# Compte rendu de réunion
+
+## Objet de la réunion
+Point projet sur l'avancement des différents programmes et outils numériques (DLE, Tribu, Nuage, VisioAgent, etc.).
+
+## Participants
+- Animateur (non nommé)
+- Didier
+- Hugo
+- Benoît
+- Simon
+- Johan
+- Frédéric
+- Nicolas
+- Joanne
+- Samir
+- Olivier
+- Autres intervenants (Audran, Charly, Benjamin, Mickaël, etc.)
+
+---
+
+## Sujets abordés
+
+### 1. Budget et jalons projets
+- **Réduction du budget DLE** : Confirmation attendue sur les montants impactant le programme. Risque de coupes sur certains produits.
+- **Suivi des jalons** : Besoin d’améliorer la précision des dates de livraison et de mise en production pour les nouvelles fonctionnalités. Problématique de visibilité avec les prestataires et éditeurs (ex. : décalages fréquents, manque de roadmaps claires).
+
+### 2. Relations avec les prestataires et éditeurs
+- **Manque de fiabilité** :
+  - Exemples : Collaborat (aucune visibilité sur la roadmap), BBB (décalages permanents), Nextcloud (modifications unilatérales en version 31).
+  - Problème récurrent de décalages entre engagements et livraisons (ex. : commandes BVB non livrées depuis un an).
+- **Pistes d’amélioration** :
+  - Exiger des engagements plus réalistes pour les développements financés.
+  - Travailler sur la maîtrise des roadmaps éditeurs (ex. : Nextcloud, BBB).
+  - Développer des plugins externes pour des fonctionnalités spécifiques (ex. : BBB).
+
+### 3. Projets spécifiques
+
+#### Tribu
+- **Refonte graphique (UX8)** :
+  - Chiffrage en cours avec les prestataires (3 lots : accueil/tableaux de bord, outils/recherche, administration).
+  - Planning : Spécifications en cours, développement à lancer après validation du chiffrage.
+  - Objectif : Mise en production fin 2025 (novembre/décembre).
+- **Environnements** : Préparation de pré-prod et dev pour travailler en parallèle.
+
+#### Nuage (Nextcloud)
+- **Problème version 31** :
+  - Modifications fonctionnelles unilatérales (liens de partage) rendant la mise à jour impossible sans correctif.
+  - Report de la migration en attendant une solution de l’éditeur.
+- **Migration académique** :
+  - Script de migration testé avec Nantes (correctifs en attente).
+  - Audit BDD : Augmentation de la RAM (de 8 Go à 12 Go) pour stabiliser les serveurs.
+- **Global Scale** : Prérequis non rempli (version 31 nécessaire).
+
+#### VisioAgent
+- **Version 1.3** :
+  - Livraison du frontal avec nouvelles fonctionnalités (bandeau d’informations, tri des salons, favoris).
+  - Commande de 35 jours de développement validée pour poursuivre les évolutions.
+- **Demandes du CNET** :
+  - Délégation de salles (complexe à mettre en œuvre).
+  - Besoin de clarifier les priorités et financements.
+
+#### Portail Apps
+- **Statistiques** :
+  - 221 000 comptes ouverts (dont 73 000 actifs depuis décembre).
+  - 80 000 vidéos sur PodÉdu.
+- **Évolutions** :
+  - Installation de Matomo pour des stats précises.
+  - Raccourcisseur d’URL en développement (livraison prévue avant l’été).
+  - Architecture en micro-applications pour le cycle de vie des comptes.
+
+#### Messagerie (Aetna)
+- **Déploiement en Corse** :
+  - Premier pilote en conditions réelles (académie entière basculée en one shot).
+  - Bilan mitigé : 99% des comptes migrés sans problème, mais difficultés sur certains usages (ex. : FGRA, exports EML).
+  - Besoin d’améliorer l’accompagnement au changement.
+- **Prochains déploiements** :
+  - Accélération prévue (Nantes, Poitiers, PACA, Reims, Île-de-France).
+  - Réunion des référents pour valider le plan de déploiement.
+
+#### Autres projets
+- **BNA** : Report de la campagne du 16 au 27/28 juin (éviter les sollicitations simultanées).
+- **Communication unifiée** : Réflexion sur les outils (Cisco Webex, solutions libres) dans le cadre du déménagement à Gentilly.
+- **Tube** :
+  - Travaux sur les thèmes pour différencier les instances.
+  - Transcription des vidéos opérationnelle sur test (généralisation prévue).
+  - Automatisation des déploiements en attente de tests.
+
+---
+
+## Décisions prises
+1. **Amélioration de la précision des jalons** :
+   - Travailler avec les prestataires pour obtenir des dates plus fiables.
+   - Communiquer des plages temporelles réalistes à la direction (ex. : "septembre/octobre" au lieu de "T4").
+
+2. **Gestion des éditeurs** :
+   - Exiger des engagements clairs pour les développements financés.
+   - Prioriser la maîtrise des roadmaps éditeurs (ex. : Nextcloud, BBB).
+
+3. **Report de la migration Nextcloud 31** :
+   - Attendre un correctif de l’éditeur pour les liens de partage avant mise en production.
+
+4. **Déploiement de Tribu** :
+   - Valider le chiffrage et lancer les développements pour une MEP fin 2025.
+
+5. **Accompagnement au changement** :
+   - Renforcer la proximité avec les utilisateurs (VIP et terrain) pour les projets futurs (Nuage, Tribu, VisioAgent).
+
+---
+
+## Questions en suspens
+- **Plugin Thunderbird** : Faut-il le diffuser largement ou le réserver au webmail pour inciter à son utilisation ?
+- **Délégation de salles dans VisioAgent** : Comment prioriser et financer cette demande du CNET ?
+- **Roadmap Collaborat** : Comment obtenir plus de visibilité de la part de l’éditeur ?
+
+---
+
+## Tâches à effectuer
+| Tâche | Responsable |
+|-------|-------------|
+| Finaliser le chiffrage de la refonte Tribu | Simon |
+| Organiser un retour d’expérience Squash avec Tribu | Simon |
+| Préparer les slides pour le comité des référents (mardi prochain) | Équipe projet |
+| Contacter l’UNISA pour recaler un point sur le Réseau de l’Aînés | Non précisé |
+| Déployer la transcription des vidéos sur Tube | Nicolas |
+| Valider les devis pour le cycle de vie des comptes/vidéos sur Tube | Équipe projet |
+| Tester l’usine d’apport des contacts/archives pour la messagerie | Équipe Aetna |
+| Envoyer le questionnaire Wi-Fi aux académies d’Île-de-France | Olivier |
+
+---
+
+## Prochaine rencontre
+- **Comité des référents** : Mardi prochain (en distanciel).
+- **Réunion de lancement pour l’Île-de-France** : Semaine prochaine.
+- **Prochaine réunion projet** : Non précisée (à planifier).
