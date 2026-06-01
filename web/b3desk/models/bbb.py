@@ -18,6 +18,7 @@ from xml.etree import ElementTree
 
 import requests
 from flask import current_app
+from flask import g
 from flask import url_for
 
 from b3desk.tasks import background_upload
@@ -237,7 +238,7 @@ class BBB:
             params["moderatorOnlyMessage"] = moderator_only_message
         params["guestPolicy"] = "ASK_MODERATOR" if guest_policy else "ALWAYS_ACCEPT"
 
-        if not current_app.config["FILE_SHARING"]:
+        if not g.user.can_use_file:
             request = self.bbb_request("create", params=params)
             return self.bbb_response(request)
 

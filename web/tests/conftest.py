@@ -598,6 +598,38 @@ def group(client_app):
 
 
 @pytest.fixture
+def group_2(client_app):
+    from b3desk.models.groups import Group
+
+    group_2 = Group(
+        name="Group 2",
+        enable_sip=False,
+        enable_file_sharing=False,
+        enable_transcription=False,
+    )
+    db.session.add(group_2)
+    db.session.commit()
+
+    yield group
+
+
+@pytest.fixture
+def group_3(client_app):
+    from b3desk.models.groups import Group
+
+    group_3 = Group(
+        name="Group 3",
+        enable_sip=None,
+        enable_file_sharing=None,
+        enable_transcription=None,
+    )
+    db.session.add(group_3)
+    db.session.commit()
+
+    yield group
+
+
+@pytest.fixture
 def previous_voiceBridge(client_app):
     from b3desk.models.meetings import PreviousVoiceBridge
 
