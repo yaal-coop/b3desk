@@ -58,34 +58,35 @@ def get_or_create_user(user_info):
         db.session.commit()
 
     else:
-        user_has_changed = update_user_nc_credentials(user)
+        user_changes = update_user_nc_credentials(user) or {}
 
         if user.given_name != given_name:
             user.given_name = given_name
-            user_has_changed = True
+            user_changes["given_name"] = given_name
 
         if user.family_name != family_name:
             user.family_name = family_name
-            user_has_changed = True
+            user_changes["family_name"] = family_name
 
         if user.preferred_username != preferred_username:
             user.preferred_username = preferred_username
-            user_has_changed = True
+            user_changes["preferred_username"] = preferred_username
 
         if (
             not user.last_connection_utc_datetime
             or user.last_connection_utc_datetime.date() < date.today()
         ):
             user.last_connection_utc_datetime = datetime.now(timezone.utc)
-            user_has_changed = True
+            user_changes["last_connection_utc_datetime"] = datetime.now(timezone.utc)
 
         if user.meta_data and user.meta_data != meta_data:
             user.meta_data = meta_data
-            user_has_changed = True
+            user_changes["meta_data"] = meta_data
 
-        if user_has_changed:
+        if user_changes:
             db.session.add(user)
             db.session.commit()
+            current_app.logger.info("%s has changed %s", user.fullname, user_changes)
 
     user.automatic_group_affiliation()
 
@@ -195,7 +196,6 @@ class User(db.Model):
 
     def automatic_group_affiliation(self):
         meta_data_dict = json.loads(self.meta_data)
-        current_app.logger.warning(meta_data_dict)
         groups = db.session.execute(db.select(Group)).scalars().all()
         added_groups = []
         removed_groups = []
