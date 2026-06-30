@@ -282,6 +282,16 @@ msgstr ""
 msgid "Activé par défaut"
 msgstr ""
 
+#: web/b3desk/forms.py:376
+msgid "ac-<nom de l'académie>.fr"
+msgstr ""
+
+#: web/b3desk/forms.py:382
+msgid ""
+"Les utilisateurs portant ce nom de domaine seront automatiquement ajoutés"
+" à ce groupe lors de leur prochaine connexion au service"
+msgstr ""
+
 #: web/b3desk/settings.py:660 web/b3desk/templates/meeting/list.html:4
 msgid "Mes salles de réunion"
 msgstr ""
@@ -308,38 +318,38 @@ msgid ""
 "envoyez-lui l'un de ces liens :"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:188
+#: web/b3desk/endpoints/admin.py:189
 msgid "Ce nom est déjà utilisé."
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:203
+#: web/b3desk/endpoints/admin.py:204
 #, python-brace-format
 msgid "{group_name} a bien été créé(e)"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:255 web/b3desk/endpoints/meetings.py:151
+#: web/b3desk/endpoints/admin.py:258 web/b3desk/endpoints/meetings.py:151
 #: web/b3desk/endpoints/meetings.py:211
 msgid "Le formulaire contient des erreurs"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:280
+#: web/b3desk/endpoints/admin.py:284
 #, python-format
 msgid "%(group_name)s modifications prises en compte"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:311
+#: web/b3desk/endpoints/admin.py:315
 msgid "L'utilisateur ne fait pas partie du groupe"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:315
+#: web/b3desk/endpoints/admin.py:319
 msgid "L'utilisateur a été retiré du groupe"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:349
+#: web/b3desk/endpoints/admin.py:353
 msgid "Le groupe a été supprimé"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:400
+#: web/b3desk/endpoints/admin.py:404
 msgid "Vous n'avez pas sélectionné d'utilisateur"
 msgstr ""
 
@@ -907,7 +917,7 @@ msgstr ""
 
 #: web/b3desk/templates/admin/add_group_members.html:9
 #: web/b3desk/templates/admin/delete_group.html:9
-#: web/b3desk/templates/admin/group_form.html:9
+#: web/b3desk/templates/admin/group_form.html:60
 #: web/b3desk/templates/admin/group_infos.html:10
 #: web/b3desk/templates/admin/group_members.html:9
 #: web/b3desk/templates/admin/groups.html:9
@@ -925,7 +935,7 @@ msgstr ""
 
 #: web/b3desk/templates/admin/add_group_members.html:12
 #: web/b3desk/templates/admin/delete_group.html:12
-#: web/b3desk/templates/admin/group_form.html:12
+#: web/b3desk/templates/admin/group_form.html:63
 #: web/b3desk/templates/admin/group_infos.html:13
 #: web/b3desk/templates/admin/group_members.html:12
 #: web/b3desk/templates/admin/groups.html:12
@@ -1047,8 +1057,8 @@ msgid "Supprimer %(group_name)s"
 msgstr ""
 
 #: web/b3desk/templates/admin/delete_group.html:34
-#: web/b3desk/templates/admin/group_form.html:37
-#: web/b3desk/templates/admin/group_form.html:47
+#: web/b3desk/templates/admin/group_form.html:88
+#: web/b3desk/templates/admin/group_form.html:98
 #: web/b3desk/templates/meeting/files.html:171
 #: web/b3desk/templates/meeting/form.html:188
 #: web/b3desk/templates/meeting/form.html:190
@@ -1059,48 +1069,48 @@ msgstr ""
 msgid "Annuler"
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:16
+#: web/b3desk/templates/admin/group_form.html:26
+#: web/b3desk/templates/admin/group_form_content.html:10
+msgid "Non disponible : aucun serveur SIP configuré (FQDN_SIP_SERVER)"
+msgstr ""
+
+#: web/b3desk/templates/admin/group_form.html:26
+msgid "OUI"
+msgstr ""
+
+#: web/b3desk/templates/admin/group_form.html:67
 msgid "Créer groupe"
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:24
-#: web/b3desk/templates/admin/group_form.html:41
+#: web/b3desk/templates/admin/group_form.html:75
+#: web/b3desk/templates/admin/group_form.html:92
 #: web/b3desk/templates/admin/group_infos.html:25
 #: web/b3desk/templates/meeting/form.html:59
 #: web/b3desk/templates/meeting/wizard.html:23
 msgid "Modifier"
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:32
+#: web/b3desk/templates/admin/group_form.html:83
 msgid "Créer un groupe"
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:36
+#: web/b3desk/templates/admin/group_form.html:87
 msgid "Créer le groupe"
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:42
+#: web/b3desk/templates/admin/group_form.html:93
 #, python-format
 msgid ""
 "%(group_name)s a été créé le %(group_created)s et modifié le "
 "%(group_updated)s."
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:46
+#: web/b3desk/templates/admin/group_form.html:97
 #: web/b3desk/templates/meeting/form.html:183
 msgid "Enregistrer"
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form_content.html:23
-#: web/b3desk/templates/admin/group_form_content.html:60
-msgid "Non disponible : aucun serveur SIP configuré (FQDN_SIP_SERVER)"
-msgstr ""
-
-#: web/b3desk/templates/admin/group_form_content.html:23
-msgid "OUI"
-msgstr ""
-
-#: web/b3desk/templates/admin/group_form_content.html:53
+#: web/b3desk/templates/admin/group_form_content.html:3
 #: web/b3desk/templates/meeting/files.html:47
 #: web/b3desk/templates/meeting/form.html:66
 msgid "Enregistrement impossible car certains champs sont mal renseignés."

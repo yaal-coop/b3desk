@@ -368,3 +368,20 @@ class GroupForm(FlaskForm):
             if current_app.config["FILE_SHARING"]
             else _("Désactivé par défaut")
         )
+
+
+class AcademicDomainForm(FlaskForm):
+    academic_domain = StringField(
+        label=_(
+            "ac-<nom de l'académie>.fr",
+        ),
+        render_kw={
+            "placeholder": "Saisir le nom de domaine de l'académie (ex: ac-paris.fr)"
+        },
+        description=_(
+            "Les utilisateurs portant ce nom de domaine seront automatiquement ajoutés à ce groupe lors de leur prochaine connexion au service",
+        ),
+        validators=[
+            validators.DataRequired(),
+        ],
+    )

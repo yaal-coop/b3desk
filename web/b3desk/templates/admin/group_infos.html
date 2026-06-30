@@ -121,5 +121,10 @@
             </div>
         </div>
     </div>
-
+    {% if group.academic_domains %}
+        <h6>Liste des noms de domaine académiques de <em>{{ group.name }}</em></h6>
+    {% endif %}
+    {% if group.excluded_users %}
+        <h6>Liste des utilisateurs exclus de <em>{{ group.name }}</em></h6>
+    {% endif %}
 {% endblock %}

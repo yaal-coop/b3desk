@@ -10,6 +10,7 @@ from flask_babel import lazy_gettext as _
 from sqlalchemy import or_
 from sqlalchemy.exc import IntegrityError
 
+from b3desk.forms import AcademicDomainForm
 from b3desk.forms import GroupForm
 from b3desk.forms import GroupSearchForm
 from b3desk.forms import MeetingSearchForm
@@ -244,10 +245,12 @@ def manage_groups():
 def edit_group(group: Group):
     """Display group settings for group edition of admin page."""
     form = GroupForm(request.form if request.method == "POST" else None, obj=group)
+    domain_form = AcademicDomainForm(request.form)
     if request.method == "GET":
         return render_template(
             "admin/group_form.html",
             form=form,
+            domain_form=domain_form,
             group=group,
         )
 
@@ -256,6 +259,7 @@ def edit_group(group: Group):
         return render_template(
             "admin/group_form.html",
             form=form,
+            domain_form=domain_form,
             group=group,
         )
 
