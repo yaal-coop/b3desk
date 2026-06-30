@@ -1,9 +1,17 @@
 from datetime import datetime
 
+from sqlalchemy.ext.mutable import MutableList
+
 from . import db
 
 group_member_table = db.Table(
     "group_member",
+    db.Column("user_id", db.Integer, db.ForeignKey("user.id"), primary_key=True),
+    db.Column("group_id", db.Integer, db.ForeignKey("group.id"), primary_key=True),
+)
+
+excludelist_table = db.Table(
+    "excludelist",
     db.Column("user_id", db.Integer, db.ForeignKey("user.id"), primary_key=True),
     db.Column("group_id", db.Integer, db.ForeignKey("group.id"), primary_key=True),
 )
@@ -21,9 +29,13 @@ class Group(db.Model):
     enable_sip = db.Column(db.Boolean, default=None)
     enable_file_sharing = db.Column(db.Boolean, default=None)
     enable_ai_summary = db.Column(db.Boolean, default=None)
+    academic_domains = db.Column(MutableList.as_mutable(db.JSON), default=list)
 
     members = db.relationship(
         "User", secondary=group_member_table, back_populates="groups"
+    )
+    excluded_users = db.relationship(
+        "User", secondary=excludelist_table, back_populates="excluded_groups"
     )
 
     @property

@@ -9,12 +9,14 @@
 # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE.
 import hashlib
+import json
 from datetime import date
 from datetime import datetime
 from datetime import timezone
 
 from flask import current_app
 
+from b3desk.models.groups import Group
 from b3desk.nextcloud import update_user_nc_credentials
 from b3desk.utils import secret_key
 
@@ -34,6 +36,12 @@ def get_or_create_user(user_info):
     )
     email = user_info[mapping.get("email", "email")].lower()
 
+    meta_data = json.dumps(
+        {
+            "academic_domain": user_info.get(mapping.get("FrEduAca", "FrEduAca"), ""),
+        }
+    )
+
     user = User.get_user_by_email(email)
 
     if user is None:
@@ -43,6 +51,7 @@ def get_or_create_user(user_info):
             family_name=family_name,
             preferred_username=preferred_username,
             last_connection_utc_datetime=datetime.now(timezone.utc),
+            meta_data=meta_data,
         )
         update_user_nc_credentials(user)
         db.session.add(user)
@@ -70,9 +79,15 @@ def get_or_create_user(user_info):
             user.last_connection_utc_datetime = datetime.now(timezone.utc)
             user_has_changed = True
 
+        if user.meta_data and user.meta_data != meta_data:
+            user.meta_data = meta_data
+            user_has_changed = True
+
         if user_has_changed:
             db.session.add(user)
             db.session.commit()
+
+    user.automatic_group_affiliation()
 
     return user
 
@@ -90,6 +105,7 @@ class User(db.Model):
     last_connection_utc_datetime = db.Column(db.DateTime)
     created_at = db.Column(db.DateTime, default=datetime.now, nullable=False)
     admin = db.Column(db.Boolean, default=False, nullable=False)
+    meta_data = db.Column(db.JSON)
 
     meetings = db.relationship("Meeting", back_populates="owner")
     favorites = db.relationship(
@@ -97,6 +113,9 @@ class User(db.Model):
     )
     groups = db.relationship(
         "Group", secondary="group_member", back_populates="members"
+    )
+    excluded_groups = db.relationship(
+        "Group", secondary="excludelist", back_populates="excluded_users"
     )
 
     @property
@@ -173,3 +192,32 @@ class User(db.Model):
         if all(group.enable_ai_summary is False for group in self.groups):
             return False
         return current_app.config["ENABLE_AI_SUMMARY"]
+
+    def automatic_group_affiliation(self):
+        meta_data_dict = json.loads(self.meta_data)
+        current_app.logger.warning(meta_data_dict)
+        groups = db.session.execute(db.select(Group)).scalars().all()
+        added_groups = []
+        removed_groups = []
+        for group in groups:
+            if (
+                self not in group.excluded_users
+                and meta_data_dict["academic_domain"] in group.academic_domains
+            ):
+                group.members.append(self)
+                added_groups.append((group.id, group.name))
+            if self in group.excluded_users and self in group.members:
+                group.members.remove(self)
+                removed_groups.append((group.id, group.name))
+
+        for group in added_groups:
+            current_app.logger.info(
+                "%s added in group %s %s", self.fullname, group[0], group[1]
+            )
+        for group in removed_groups:
+            current_app.logger.info(
+                "%s removed from group %s %s", self.fullname, group[0], group[1]
+            )
+
+        if added_groups or removed_groups:
+            db.session.commit()
