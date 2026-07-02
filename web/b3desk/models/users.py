@@ -142,7 +142,10 @@ class User(db.Model):
 
     @property
     def mail_domain(self):
-        """Extract and return the domain part of the user's email address."""
+        """Extract and return the domain from meta_data or part of the user's email address."""
+        if self.meta_data:
+            user_meta_data = json.loads(self.meta_data)
+            return user_meta_data["academic_domain"]
         return self.email.split("@")[1] if self.email and "@" in self.email else None
 
     @property
@@ -195,14 +198,13 @@ class User(db.Model):
         return current_app.config["ENABLE_AI_SUMMARY"]
 
     def automatic_group_affiliation(self):
-        user_meta_data = json.loads(self.meta_data)
         groups = db.session.execute(db.select(Group)).scalars().all()
         added_groups = []
         removed_groups = []
         for group in groups:
             if (
                 self not in group.excluded_users
-                and user_meta_data["academic_domain"] in group.academic_domains
+                and self.mail_domain in group.academic_domains
             ):
                 group.members.append(self)
                 added_groups.append((group.id, group.name))
