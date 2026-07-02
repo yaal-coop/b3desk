@@ -337,43 +337,43 @@ msgstr ""
 msgid "{group_name} a bien été créé(e)"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:262 web/b3desk/endpoints/admin.py:444
-#: web/b3desk/endpoints/admin.py:514 web/b3desk/endpoints/meetings.py:151
+#: web/b3desk/endpoints/admin.py:264 web/b3desk/endpoints/admin.py:447
+#: web/b3desk/endpoints/admin.py:517 web/b3desk/endpoints/meetings.py:151
 #: web/b3desk/endpoints/meetings.py:211
 msgid "Le formulaire contient des erreurs"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:287
+#: web/b3desk/endpoints/admin.py:290
 #, python-format
 msgid "%(group_name)s modifications prises en compte"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:318
+#: web/b3desk/endpoints/admin.py:321
 msgid "L'utilisateur ne fait pas partie du groupe"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:322
+#: web/b3desk/endpoints/admin.py:325
 msgid "L'utilisateur a été retiré du groupe"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:356
+#: web/b3desk/endpoints/admin.py:359
 msgid "Le groupe a été supprimé"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:407
+#: web/b3desk/endpoints/admin.py:410
 msgid "Vous n'avez pas sélectionné d'utilisateur"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:463
+#: web/b3desk/endpoints/admin.py:466
 #, python-brace-format
 msgid "{new_domain} est déjà dans la liste du groupe {group_name}"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:532
+#: web/b3desk/endpoints/admin.py:535
 msgid "L'utilisateur est déjà pas dans la liste"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:550
+#: web/b3desk/endpoints/admin.py:553
 msgid "L'utilisateur n'est pas dans la liste"
 msgstr ""
 
@@ -943,7 +943,7 @@ msgstr ""
 #: web/b3desk/templates/admin/delete_group.html:9
 #: web/b3desk/templates/admin/group_academic_domain.html:9
 #: web/b3desk/templates/admin/group_excluded_users.html:9
-#: web/b3desk/templates/admin/group_form.html:9
+#: web/b3desk/templates/admin/group_form.html:60
 #: web/b3desk/templates/admin/group_infos.html:10
 #: web/b3desk/templates/admin/group_members.html:9
 #: web/b3desk/templates/admin/groups.html:9
@@ -963,7 +963,7 @@ msgstr ""
 #: web/b3desk/templates/admin/delete_group.html:12
 #: web/b3desk/templates/admin/group_academic_domain.html:12
 #: web/b3desk/templates/admin/group_excluded_users.html:12
-#: web/b3desk/templates/admin/group_form.html:12
+#: web/b3desk/templates/admin/group_form.html:63
 #: web/b3desk/templates/admin/group_infos.html:13
 #: web/b3desk/templates/admin/group_members.html:12
 #: web/b3desk/templates/admin/groups.html:12
@@ -1085,8 +1085,8 @@ msgid "Supprimer %(group_name)s"
 msgstr ""
 
 #: web/b3desk/templates/admin/delete_group.html:34
-#: web/b3desk/templates/admin/group_form.html:37
-#: web/b3desk/templates/admin/group_form.html:48
+#: web/b3desk/templates/admin/group_form.html:88
+#: web/b3desk/templates/admin/group_form.html:99
 #: web/b3desk/templates/meeting/files.html:171
 #: web/b3desk/templates/meeting/form.html:188
 #: web/b3desk/templates/meeting/form.html:190
@@ -1099,7 +1099,7 @@ msgstr ""
 
 #: web/b3desk/templates/admin/group_academic_domain.html:16
 #: web/b3desk/templates/admin/group_excluded_users.html:16
-#: web/b3desk/templates/admin/group_form.html:16
+#: web/b3desk/templates/admin/group_form.html:67
 msgid "Créer groupe"
 msgstr ""
 
@@ -1143,8 +1143,17 @@ msgid_plural "%(count)s utilisateurs exclus"
 msgstr[0] ""
 msgstr[1] ""
 
-#: web/b3desk/templates/admin/group_form.html:24
-#: web/b3desk/templates/admin/group_form.html:41
+#: web/b3desk/templates/admin/group_form.html:26
+#: web/b3desk/templates/admin/group_form_content.html:10
+msgid "Non disponible : aucun serveur SIP configuré (FQDN_SIP_SERVER)"
+msgstr ""
+
+#: web/b3desk/templates/admin/group_form.html:26
+msgid "OUI"
+msgstr ""
+
+#: web/b3desk/templates/admin/group_form.html:75
+#: web/b3desk/templates/admin/group_form.html:92
 #: web/b3desk/templates/admin/group_infos.html:25
 #: web/b3desk/templates/meeting/form.html:59
 #: web/b3desk/templates/meeting/wizard.html:23
@@ -1166,7 +1175,7 @@ msgid ""
 "%(group_updated)s."
 msgstr ""
 
-#: web/b3desk/templates/admin/group_form.html:47
+#: web/b3desk/templates/admin/group_form.html:98
 #: web/b3desk/templates/meeting/form.html:183
 msgid "Enregistrer"
 msgstr ""

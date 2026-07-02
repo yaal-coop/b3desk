@@ -100,7 +100,4 @@
             </div>
         </form>
     {% endif %}
-    <form id="group-domain-form" action="{{ url_for("admin.create_group") }}" method="post">
-        {{ render_field(domain_form.academic_domain) }}
-    </form>
 {% endblock %}
