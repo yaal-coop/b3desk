@@ -223,7 +223,7 @@ def iam_user(iam_server):
         preferred_username="alice",
         meta_data=json.dumps(
             {
-                "academic_domain": "ac-toulouse.fr",
+                "academic_domain": "domain.tld",
             }
         ),
     )
@@ -243,7 +243,7 @@ def iam_user_2(iam_server):
         family_name="Cooler",
         meta_data=json.dumps(
             {
-                "academic_domain": "ac-orleans-tours.fr",
+                "academic_domain": "domain.tld",
             }
         ),
     )
@@ -263,7 +263,7 @@ def iam_user_3(iam_server):
         family_name="Crooner",
         meta_data=json.dumps(
             {
-                "academic_domain": "ac-centrale.fr",
+                "academic_domain": "domain.tld",
             }
         ),
     )
@@ -727,7 +727,7 @@ def authenticated_user(client_app, user, iam_token, iam_server, iam_user):
             "family_name": "Cooper",
             "given_name": "Alice",
             "preferred_username": "alice",
-            "FrEduAca": "ac-toulouse.fr",
+            "FrEduAca": "domain.tld",
         }
         session["refresh_token"] = ("",)
         session["visio_code_attempt_counter"] = 0
@@ -753,7 +753,7 @@ def authenticated_user_2(client_app, user_2, iam_token, iam_server, iam_user_2):
             "family_name": "Cooler",
             "given_name": "Berenice",
             "preferred_username": "berenice",
-            "FrEduAca": "ac-orleans-tours.fr",
+            "FrEduAca": "domain.tld",
         }
         session["refresh_token"] = ""
 
@@ -777,7 +777,7 @@ def authenticated_attendee(client_app, user, mocker):
             "email": "bob@domain.tld",
             "family_name": "Dylan",
             "given_name": "Bob",
-            "FrEduAca": "ac-centrale.fr",
+            "FrEduAca": "domain.tld",
         }
         session["refresh_token"] = ""
 

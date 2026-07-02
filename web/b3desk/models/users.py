@@ -86,7 +86,7 @@ def get_or_create_user(user_info):
         if user_changes:
             db.session.add(user)
             db.session.commit()
-            current_app.logger.info("%s has changed %s", user.fullname, user_changes)
+            current_app.logger.info("%s has changed %s", user.email, user_changes)
 
     user.automatic_group_affiliation()
 

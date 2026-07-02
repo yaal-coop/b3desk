@@ -1,6 +1,7 @@
 import pytest
 from b3desk.commands import bp
 from b3desk.join import create_bbb_meeting
+from b3desk.models import db
 
 
 def test_add_group_members_displays_users(
@@ -354,3 +355,148 @@ def test_meeting_with_ai_summary_but_owner_lost_authorisation(
     create_bbb_meeting(meeting, meeting.owner)
     assert meeting.ai_summary is False
     assert user.can_use_ai_summary is False
+
+
+def test_automatic_affiliation_with_academic_domain(user_2, group):
+    """Test user not in group become member if is from academic domain list."""
+    group.academic_domains = ["domain.tld"]
+    db.session.commit()
+    assert group.members == []
+    user_2.automatic_group_affiliation()
+    assert group.members == [user_2]
+
+
+def test_automatic_affiliation_with_academic_domain_and_user_in_excluded_users(
+    user_2, group
+):
+    """Test excluded user does not become member even if is from academic domain list."""
+    group.academic_domains = ["domain.tld"]
+    group.excluded_users.append(user_2)
+    db.session.commit()
+    user_2.automatic_group_affiliation()
+    assert group.members == []
+
+
+def test_automatic_removing_from_group_if_in_excluded_users(user_2, group):
+    """Test user in group is automaticly remove if is excluded."""
+    group.members.append(user_2)
+    group.excluded_users.append(user_2)
+    db.session.commit()
+    assert user_2 in db.session.execute(group.get_all_exclude_users).scalars().all()
+    user_2.automatic_group_affiliation()
+    assert group.members == []
+
+
+def test_admin_can_add_domain_in_group(client_app, group, user, authenticated_user):
+    """Test admin can add academic domain in group."""
+    user.admin = True
+    db.session.commit()
+    res = client_app.get("/admin/academic-domain/1", status=200)
+    form = res.form
+    form["academic_domain"] = "domain.tld"
+    form.submit()
+    assert group.academic_domains == ["domain.tld"]
+    client_app.get("/welcome")
+    assert group.members == [user]
+
+
+def test_add_domain_in_group_with_form_error(
+    client_app, group, user, authenticated_user
+):
+    """Test academic domain form display error message."""
+    user.admin = True
+    db.session.commit()
+    res = client_app.get("/admin/academic-domain/1", status=200)
+    form = res.form
+    form["academic_domain"] = ""
+    res = form.submit()
+    assert ("error", "Le formulaire contient des erreurs") in res.flashes
+
+
+def test_add_domain_already_in_group(client_app, group, user, authenticated_user):
+    """Test admin cannot add academic domain already in group."""
+    user.admin = True
+    group.academic_domains.append("domain.tld")
+    db.session.commit()
+    res = client_app.get("/admin/academic-domain/1", status=200)
+    form = res.form
+    form["academic_domain"] = "domain.tld"
+    res = form.submit()
+    assert (
+        "error",
+        "domain.tld est déjà dans la liste du groupe Group 1",
+    ) in res.flashes
+
+
+def test_admin_can_remove_domain_in_group(client_app, group, user, authenticated_user):
+    """Test admin can remove academic domain in group."""
+    user.admin = True
+    group.academic_domains.append("domain.tld")
+    db.session.commit()
+    assert group.academic_domains == ["domain.tld"]
+    client_app.get(
+        "/admin/remove-academic-domain/1", params={"domain": "domain.tld"}, status=200
+    )
+    assert group.academic_domains == []
+
+
+def test_admin_can_add_excluded_user_in_group(
+    client_app, group, user, user_2, authenticated_user
+):
+    """Test admin can add excluded in group."""
+    user.admin = True
+    db.session.commit()
+    res = client_app.get("/admin/excluded-users/1", status=200)
+    form = res.form
+    form["search"] = user_2.email
+    form.submit()
+    assert group.excluded_users == [user_2]
+
+
+def test_add_excluded_user_in_group_with_form_error(
+    client_app, group, user, user_2, authenticated_user
+):
+    """Test excluded user form display error message."""
+    user.admin = True
+    db.session.commit()
+    res = client_app.get("/admin/excluded-users/1", status=200)
+    form = res.form
+    form["search"] = ""
+    res = form.submit()
+    assert ("error", "Le formulaire contient des erreurs") in res.flashes
+
+
+def test_admin_cannot_add_excluded_user_already_excluded(
+    client_app, group, user, user_2, authenticated_user
+):
+    """Test admin cannot add excluded user already excluded."""
+    user.admin = True
+    group.excluded_users.append(user_2)
+    db.session.commit()
+    res = client_app.get("/admin/excluded-users/1", status=200)
+    form = res.form
+    form["search"] = user_2.email
+    res = form.submit()
+    assert ("error", "L'utilisateur est déjà pas dans la liste") in res.flashes
+
+
+def test_admin_remove_excluded_user_in_group(
+    client_app, group, user, user_2, authenticated_user
+):
+    """Test admin can remove excluded user in group."""
+    user.admin = True
+    group.excluded_users.append(user_2)
+    db.session.commit()
+    assert group.excluded_users == [user_2]
+    client_app.get("/admin/excluded-users/1/2", status=200)
+    assert group.excluded_users == []
+
+
+def test_admin_cannot_remove_not_excluded_user_from_excluded_users_list(
+    client_app, group, user, user_2, authenticated_user
+):
+    """Test admin cannot remove not excluded user from excluded users list."""
+    user.admin = True
+    db.session.commit()
+    res = client_app.get("/admin/excluded-users/1/2", status=200)
+    assert ("error", "L'utilisateur n'est pas dans la liste") in res.flashes
