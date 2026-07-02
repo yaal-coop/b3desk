@@ -48,3 +48,14 @@ class Group(db.Model):
             .where(group_member_table.c.group_id == self.id)
             .order_by(User.family_name, User.given_name)
         )
+
+    @property
+    def get_all_exclude_users(self):
+        from b3desk.models.users import User
+
+        return (
+            db.select(User)
+            .join(excludelist_table, User.id == excludelist_table.c.user_id)
+            .where(excludelist_table.c.group_id == self.id)
+            .order_by(User.family_name, User.given_name)
+        )

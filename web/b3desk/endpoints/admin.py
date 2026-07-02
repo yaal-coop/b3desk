@@ -14,6 +14,7 @@ from b3desk.forms import AcademicDomainForm
 from b3desk.forms import GroupForm
 from b3desk.forms import GroupSearchForm
 from b3desk.forms import MeetingSearchForm
+from b3desk.forms import UserExclusionForm
 from b3desk.forms import UserSearchForm
 from b3desk.join import get_signin_url
 from b3desk.models import db
@@ -97,6 +98,11 @@ def get_all_users_not_in_group(group, data=None):
             )
         )
     return db.session.execute(query).scalars().all()
+
+
+def get_excluded_users_paginate(group, per_page):
+    members = group.get_all_exclude_users
+    return db.paginate(members, per_page=per_page)
 
 
 @bp.route("/admin/home")
@@ -421,4 +427,146 @@ def add_group_members(group: Group):
         add_members=True,
         selected_users=selected_users,
         select_all=select_all,
+    )
+
+
+@bp.route("/admin/academic-domain/<group:group>", methods=["GET", "POST"])
+@admin_needed
+def manage_academic_domain(group: Group):
+    """Display and manage a group's academic domains."""
+    form = AcademicDomainForm(request.form)
+
+    if request.method == "GET":
+        return render_template(
+            "admin/group_academic_domain.html",
+            form=form,
+            group=group,
+        )
+
+    if not form.validate():
+        flash(_("Le formulaire contient des erreurs"), "error")
+        return render_template(
+            "admin/group_academic_domain.html",
+            form=form,
+            group=group,
+        )
+
+    new_domain = form.data["academic_domain"]
+    if new_domain not in group.academic_domains:
+        group.academic_domains.append(new_domain)
+        db.session.commit()
+        current_app.logger.info(
+            "%s a été ajouté à la liste du groupe %s %s",
+            new_domain,
+            group.id,
+            group.name,
+        )
+    else:
+        flash(
+            _("{new_domain} est déjà dans la liste du groupe {group_name}").format(
+                new_domain=new_domain, group_name=group.name
+            ),
+            "error",
+        )
+
+    return render_template(
+        "admin/group_academic_domain.html",
+        form=form,
+        group=group,
+    )
+
+
+@bp.route("/admin/remove-academic-domain/<group:group>")
+@admin_needed
+def remove_academic_domain(group: Group):
+    """Remove academic domain from group."""
+    form = AcademicDomainForm(request.form)
+    domain = request.args["domain"]
+    if domain in group.academic_domains:
+        group.academic_domains.remove(domain)
+        db.session.commit()
+        current_app.logger.info(
+            "%s a été retiré le la liste du groupe %s %s", domain, group.id, group.name
+        )
+
+    return render_template(
+        "admin/group_academic_domain.html",
+        form=form,
+        group=group,
+    )
+
+
+@bp.route("/admin/excluded-users/<group:group>", methods=["GET", "POST"])
+@admin_needed
+def manage_excluded_users(group: Group):
+    form = UserExclusionForm(request.form)
+
+    if request.method == "GET":
+        excluded_users_page = get_excluded_users_paginate(group, per_page=PER_PAGE)
+        return render_template(
+            "admin/group_excluded_users.html",
+            form=form,
+            group=group,
+            excluded_users_page=excluded_users_page,
+            add_members=False,
+            remove_excluded_users=True,
+        )
+
+    if not form.validate():
+        excluded_users_page = get_excluded_users_paginate(group, per_page=PER_PAGE)
+        flash(_("Le formulaire contient des erreurs"), "error")
+        return render_template(
+            "admin/group_excluded_users.html",
+            form=form,
+            group=group,
+            excluded_users_page=excluded_users_page,
+            add_members=False,
+            remove_excluded_users=True,
+        )
+
+    email = form.data["search"]
+    user = User.get_user_by_email(email)
+    current_app.logger.warning(email)
+    current_app.logger.warning(user)
+    if user not in group.excluded_users:
+        group.excluded_users.append(user)
+        db.session.commit()
+    else:
+        flash(_("L'utilisateur est déjà pas dans la liste"), "error")
+    excluded_users_page = get_excluded_users_paginate(group, per_page=PER_PAGE)
+    return render_template(
+        "admin/group_excluded_users.html",
+        form=form,
+        group=group,
+        excluded_users_page=excluded_users_page,
+        add_members=False,
+        remove_excluded_users=True,
+    )
+
+
+@bp.route("/admin/excluded-users/<group:group>/<user:user>")
+@admin_needed
+def remove_excluded_users(group: Group, user: User):
+    form = UserExclusionForm(request.form)
+
+    if user not in group.excluded_users:
+        flash(_("L'utilisateur n'est pas dans la liste"), "error")
+    else:
+        group.excluded_users.remove(user)
+        db.session.commit()
+        current_app.logger.info(
+            "%s a été retiré le la liste du groupe %s %s",
+            user.fullname,
+            group.id,
+            group.name,
+        )
+
+    excluded_users_page = get_excluded_users_paginate(group, per_page=PER_PAGE)
+    return render_template(
+        "admin/group_excluded_users.html",
+        form=form,
+        group=group,
+        excluded_users_page=excluded_users_page,
+        add_members=False,
+        remove_excluded_users=True,
     )

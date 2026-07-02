@@ -373,7 +373,7 @@ class GroupForm(FlaskForm):
 class AcademicDomainForm(FlaskForm):
     academic_domain = StringField(
         label=_(
-            "ac-<nom de l'académie>.fr",
+            "Académies",
         ),
         render_kw={
             "placeholder": "Saisir le nom de domaine de l'académie (ex: ac-paris.fr)"
@@ -384,4 +384,17 @@ class AcademicDomainForm(FlaskForm):
         validators=[
             validators.DataRequired(),
         ],
+    )
+
+
+class UserExclusionForm(FlaskForm):
+    search = EmailField(
+        label=_("Liste d'exclusion"),
+        render_kw={
+            "placeholder": "Saisir l'e-mail de l'utilisateur (ex: nom@exemple.fr)"
+        },
+        description=_(
+            "Les utilisateurs exclus seront automatiquement retirés du groupe lors de leur prochaine connexion au service",
+        ),
+        validators=[validators.DataRequired()],
     )

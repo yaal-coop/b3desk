@@ -195,14 +195,14 @@ class User(db.Model):
         return current_app.config["ENABLE_AI_SUMMARY"]
 
     def automatic_group_affiliation(self):
-        meta_data_dict = json.loads(self.meta_data)
+        user_meta_data = json.loads(self.meta_data)
         groups = db.session.execute(db.select(Group)).scalars().all()
         added_groups = []
         removed_groups = []
         for group in groups:
             if (
                 self not in group.excluded_users
-                and meta_data_dict["academic_domain"] in group.academic_domains
+                and user_meta_data["academic_domain"] in group.academic_domains
             ):
                 group.members.append(self)
                 added_groups.append((group.id, group.name))

@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+        <button class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-1"></button>
+        <div class="fr-collapse" id="breadcrumb-1">
+            <ol class="fr-breadcrumb__list">
+                <li>
+                    <a class="fr-breadcrumb__link" href="{{ url_for('admin.home') }}">{% trans %}Menu Admin{% endtrans %}</a>
+                </li>
+                <li>
+                    <a class="fr-breadcrumb__link" href="{{ url_for('admin.manage_groups') }}">{% trans %}Groupes{% endtrans %}</a>
+                </li>
+                {% if group is none %}
+                    <li>
+                        <a class="fr-breadcrumb__link" href="{{ url_for('admin.create_group') }}">{% trans %}Créer groupe{% endtrans %}</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a class="fr-breadcrumb__link" href="{{ url_for('admin.group_infos', group=group) }}">{{ group.name }}</a>
+                    </li>
+                    <li>
+                        <a class="fr-breadcrumb__link" href="{{ url_for('admin.manage_academic_domain', group=group) }}">
+                            {% trans %}Gérer les académies de{% endtrans %} {{ group.name }}
+                        </a>
+                    </li>
+                {% endif %}
+            </ol>
+        </div>
+    </nav>
+
+    <h4>{{ form.academic_domain.label }}</h4>
+    <p class="fr-hint-text">{{ form.academic_domain.description }}</p>
+    <form class="fr-search-bar", id="addDomain", name="search_meeting" role="search" action="{{ url_for("admin.manage_academic_domain", group=group) }}" method="post">
+        {% include 'meeting/csrf.html' %}
+        {{ form.academic_domain(class_="fr-input") }}
+        <button title="{% trans %}Exclure l'utilisateur du groupe{% endtrans %}" type="submit" class="fr-btn"></button>
+    </form>
+    {% if not group.academic_domains %}
+        <p>{% trans %}Aucune académie sélectionnée{% endtrans %}</p>
+    {% else %}
+        <p class="fr-table__detail">
+            {% trans trimmed count=group.academic_domains|length %}
+                {{ count }} académie sélectionnée
+                {% pluralize %}
+                {{ count }} académies sélectionnées
+            {% endtrans %}
+        </p>
+        {% for domain in group.academic_domains %}
+            <a href="{{ url_for("admin.remove_academic_domain", group=group, domain=domain) }}" class="fr-tag fr-tag--dismiss" aria-label="{% trans %}Retirer {{ domain }}{% endtrans %}">
+                {{ domain }}
+            </a>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
