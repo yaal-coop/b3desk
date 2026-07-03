@@ -208,7 +208,10 @@ class User(db.Model):
             ):
                 group.members.append(self)
                 added_groups.append((group.id, group.name))
-            if self in group.excluded_users and self in group.members:
+            if (
+                self in group.excluded_users
+                or self.mail_domain not in group.academic_domains
+            ) and self in group.members:
                 group.members.remove(self)
                 removed_groups.append((group.id, group.name))
 

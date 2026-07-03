@@ -342,6 +342,8 @@ def test_admin_cannot_add_member_already_in_group(
     """Test admin cannot add a user already in a group."""
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
     res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
+    group.academic_domains.append("domain.tld")
+    db.session.commit()
     res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
     assert ("success", "0 membre(s) ajouté(s) au groupe") in res.flashes
     res = client_app.get(res.location)
@@ -355,6 +357,8 @@ def test_admin_can_remove_member_from_group(
     """Test admin can remove member from group."""
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
     res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
+    group.academic_domains.append("domain.tld")
+    db.session.commit()
     res = client_app.get("/admin/manage-group-members/1/1", status=200)
     assert ("success", "L'utilisateur a été retiré du groupe") in res.flashes
     assert "alice@domain.tld member removed from group 1 Group 1" in caplog.text

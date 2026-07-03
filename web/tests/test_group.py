@@ -216,10 +216,13 @@ def test_welcome_page_displays_file_sharing_icon_according_to_owner_ability_with
     authenticated_user,
 ):
     """Test that welcome page displays file sharing icon according to owner ability with file sharing setting True."""
-    cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
-    res = client_app.post("/admin/add-group-members/2", {"user_ids": [2]}, status=302)
-    res = client_app.post("/admin/add-group-members/3", {"user_ids": [3]}, status=302)
+    user.admin = True
+    user.admin = True
+    group.members.append(user)
+    group_2.members.append(user_2)
+    group_3.members.append(user_3)
+    group.academic_domains.append("domain.tld")
+    db.session.commit()
     assert user.groups[0].name == "Group 1"
     assert user.groups[0].enable_file_sharing
     assert user_2.groups[0].name == "Group 2"
@@ -252,10 +255,11 @@ def test_welcome_page_displays_file_sharing_icon_according_to_owner_ability_with
 ):
     """Test that welcome page displays file sharing icon according to owner ability with file sharing setting False."""
     client_app.app.config["FILE_SHARING"] = False
-    cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
-    res = client_app.post("/admin/add-group-members/2", {"user_ids": [2]}, status=302)
-    res = client_app.post("/admin/add-group-members/3", {"user_ids": [3]}, status=302)
+    user.admin = True
+    group.members.append(user)
+    group_2.members.append(user_2)
+    group_3.members.append(user_3)
+    group.academic_domains.append("domain.tld")
     assert user.groups[0].name == "Group 1"
     assert user.groups[0].enable_file_sharing
     assert user_2.groups[0].name == "Group 2"
@@ -346,9 +350,12 @@ def test_meeting_with_ai_summary_but_owner_lost_authorisation(
     bbb_response,
 ):
     """Test when owner loses ai-summary authorization, ai_summary is disabled on their meetings before launch."""
-    cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
-    client_app.post("/admin/add-group-members/2", {"user_ids": [1]}, status=302)
+    user.admin = True
+    group.members.append(user)
+    group_2.members.append(user)
+    group.academic_domains.append("domain.tld")
+    group_2.academic_domains.append("domain.tld")
+    db.session.commit()
     assert user.can_use_ai_summary is True
     meeting.ai_summary = True
     client_app.get("/admin/manage-group-members/1/1", status=200)
@@ -381,10 +388,24 @@ def test_automatic_removing_from_group_if_in_excluded_users(user_2, group):
     """Test user in group is automaticly remove if is excluded."""
     group.members.append(user_2)
     group.excluded_users.append(user_2)
+    group.academic_domains.append("domain.tld")
     db.session.commit()
     assert user_2 in db.session.execute(group.get_all_exclude_users).scalars().all()
     user_2.automatic_group_affiliation()
     assert group.members == []
+
+
+def test_automatic_removing_from_group_if_not_in_academic_list(user_2, group):
+    """Test user in group is automaticly remove if is not in academic list excluded."""
+    assert not group.members
+    group.academic_domains.append("domain.tld")
+    db.session.commit()
+    user_2.automatic_group_affiliation()
+    assert user_2 in group.members
+    group.academic_domains.remove("domain.tld")
+    db.session.commit()
+    user_2.automatic_group_affiliation()
+    assert not group.members
 
 
 def test_admin_can_add_domain_in_group(client_app, group, user, authenticated_user):
