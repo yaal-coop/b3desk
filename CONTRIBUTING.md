@@ -30,7 +30,13 @@ docker compose up  # ou docker-compose up
 # docker compose down pour tout couper
 ```
 
-3. Tester l'accès [http://b3desk.localhost:5000] puis se connecter.
+3. Peupler la base de données.
+La base de données postgresql a été initialisée. Pour la peupler avec les utilisateurs par défaut, il faut jouer la commande suivante :
+```bash
+docker compose exec web flask db upgrade
+```
+
+4. Tester l'accès [http://b3desk.localhost:5000] puis se connecter.
 Le compte d'accès est `bbb-visio-user`, mot de passe `Pa55w0rd`.
 Des comptes supplémentaires `bbb-visio-user1` à `bbb-visio-user5` sont disponibles (mot de passe = username).
 Si nécessaire, tester l'accès au keycloak [http://keycloak.localhost:8080] via l'interface d'administration. Le compte d'accès admin est `admin` (mot de passe unique dans les fichiers d'environnement).
