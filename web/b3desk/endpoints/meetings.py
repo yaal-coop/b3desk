@@ -35,7 +35,6 @@ from b3desk.models.meetings import Meeting
 from b3desk.models.meetings import MeetingAccess
 from b3desk.models.meetings import assign_unique_visio_code
 from b3desk.models.meetings import get_quick_meeting_from_fake_id
-from b3desk.models.meetings import save_voiceBridge_and_delete_meeting
 from b3desk.models.meetings import unique_visio_code_generation
 from b3desk.models.roles import Role
 from b3desk.models.users import User
@@ -298,29 +297,9 @@ def delete_meeting():
             abort(403)
 
         if meeting.owner_id == g.user.id or g.user.admin:
-            if not meeting.get_all_delegates:
-                for meeting_file in meeting.files:
-                    db.session.delete(meeting_file)
-
-                data = BBB(meeting.meetingID).delete_all_recordings()
-                if data and not BBB.success(data):
-                    flash(
-                        _(
-                            "Impossible de supprimer les vidéos de cette réunion : {message}"
-                        ).format(message=data.get("message", "")),
-                        "error",
-                    )
-                else:
-                    save_voiceBridge_and_delete_meeting(meeting)
-                    flash(_("Élément supprimé"), "success")
-                    current_app.logger.info(
-                        "Meeting %s %s was deleted by %s",
-                        meeting.name,
-                        meeting.id,
-                        g.user.email,
-                    )
-            else:
-                flash(_("Vous devez retirer les délégataires"), "error")
+            meeting.delete() if not meeting.get_all_delegates else flash(
+                _("Vous devez retirer les délégataires"), "error"
+            )
         else:
             flash(_("Vous ne pouvez pas supprimer cet élément"), "error")
     return redirect(url_for("public.welcome" if not is_admin_mode() else "admin.home"))

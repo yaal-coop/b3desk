@@ -2,6 +2,7 @@ import os
 
 import requests
 from celery import Celery
+from celery.schedules import crontab
 from celery.utils.log import get_task_logger
 from flask import current_app
 
@@ -15,6 +16,12 @@ DEBUG = os.environ.get("FLASK_DEBUG")
 celery = Celery("tasks")
 celery.conf.broker_url = f"redis://{REDIS_URL}"
 celery.conf.result_backend = f"redis://{REDIS_URL}"
+celery.conf.beat_schedule = {
+    "delete-old-meetings-every-day-at-5-am": {
+        "task": "delete-old-meetings",
+        "schedule": crontab(minute=00, hour=5),
+    },
+}
 
 logger = get_task_logger(__name__)
 
@@ -134,3 +141,38 @@ def send_recording_notification(
     send_available_recording_notification_mail(
         meeting, playbacks, recording_name, recording_start
     )
+
+
+@celery.task(name="delete-old-meetings")
+def delete_old_meetings():
+    """Celery cron task to delete expired meetings from database."""
+    logger.info("Celery cron task: delete_old_meetings started")
+    from datetime import datetime
+
+    from b3desk import create_app
+
+    app = create_app()
+    with app.app_context():
+        from b3desk.models import db
+        from b3desk.models.meetings import DATA_RETENTION
+        from b3desk.models.meetings import Meeting
+
+        old_meetings = [
+            meeting
+            for meeting in db.session.query(Meeting).filter(
+                Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
+            )
+        ]
+        if old_meetings:
+            logger.info(
+                "Celery cron task: %d expired meetings to delete", len(old_meetings)
+            )
+        for meeting in old_meetings:
+            meeting.delete()
+            logger.info(
+                "Celery cron task: %s id:%s named:%s deleted",
+                "shadow_meeting" if meeting.is_shadow else "meeting",
+                meeting.id,
+                meeting.name,
+            )
+        logger.info("Celery cron task: delete_old_meetings ended")

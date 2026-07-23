@@ -14,6 +14,8 @@ from datetime import timedelta
 from enum import IntEnum
 
 from flask import current_app
+from flask import flash
+from flask import g
 from flask_babel import lazy_gettext as _
 from itsdangerous import Signer
 from itsdangerous import URLSafeSerializer
@@ -22,6 +24,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy_utils import StringEncryptedType
 from wtforms import ValidationError
 
+from b3desk.models.bbb import BBB
 from b3desk.utils import get_random_alphanumeric_string
 from b3desk.utils import secret_key
 
@@ -202,6 +205,28 @@ class Meeting(db.Model):
             )
             .all()
         )
+
+    def delete(self):
+        for meeting_file in self.files:
+            db.session.delete(meeting_file)
+
+        data = BBB(self.meetingID).delete_all_recordings()
+        if data and not BBB.success(data):
+            flash(
+                _(
+                    "Impossible de supprimer les vidéos de cette réunion : {message}"
+                ).format(message=data.get("message", "")),
+                "error",
+            )
+        else:
+            save_voiceBridge_and_delete_meeting(self)
+            flash(_("Élément supprimé"), "success")
+            current_app.logger.info(
+                "Meeting %s %s was deleted by %s",
+                self.name,
+                self.id,
+                g.user.email,
+            )
 
 
 def get_meeting_from_bbb_meeting_id(bbb_meeting_id):
@@ -394,20 +419,6 @@ def save_voiceBridge_and_delete_meeting(meeting):
     db.session.add(previous_voiceBridge)
     db.session.delete(meeting)
     db.session.commit()
-
-
-def delete_all_old_shadow_meetings():
-    """Delete all shadow meetings not used in the past year."""
-    old_shadow_meetings = [
-        shadow_meeting
-        for shadow_meeting in db.session.query(Meeting).filter(
-            Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
-            Meeting.is_shadow,
-        )
-    ]
-
-    for shadow_meeting in old_shadow_meetings:
-        save_voiceBridge_and_delete_meeting(shadow_meeting)
 
 
 def visio_code_exists(code):
