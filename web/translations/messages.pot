@@ -3306,34 +3306,34 @@ msgstr ""
 msgid "Copier les informations dans le presse-papiers"
 msgstr ""
 
-#: web/b3desk/utils/__init__.py:100
-msgid "Présentation interactive"
-msgstr ""
-
-#: web/b3desk/utils/__init__.py:108
-msgid "Vidéo (téléchargement direct)"
-msgstr ""
-
-#: web/b3desk/utils/__init__.py:114
-msgid "Compte-rendu (HTML)"
-msgstr ""
-
-#: web/b3desk/utils/__init__.py:116
-msgid "Compte-rendu (PDF)"
-msgstr ""
-
-#: web/b3desk/utils/__init__.py:118
-msgid "Compte-rendu (Markdown)"
-msgstr ""
-
-#: web/b3desk/utils/__init__.py:149
-#, python-brace-format
-msgid "Votre enregistrement pour {name}"
-msgstr ""
-
-#: web/b3desk/utils/__init__.py:271
+#: web/b3desk/utils/__init__.py:143
 msgid ""
 "La clé privée n'a pas été configurée dans les paramètres B3Desk pour "
 "sécuriser la connexion SIPMediaGW"
+msgstr ""
+
+#: web/b3desk/utils/mailing.py:55
+msgid "Présentation interactive"
+msgstr ""
+
+#: web/b3desk/utils/mailing.py:63
+msgid "Vidéo (téléchargement direct)"
+msgstr ""
+
+#: web/b3desk/utils/mailing.py:69
+msgid "Compte-rendu (HTML)"
+msgstr ""
+
+#: web/b3desk/utils/mailing.py:71
+msgid "Compte-rendu (PDF)"
+msgstr ""
+
+#: web/b3desk/utils/mailing.py:73
+msgid "Compte-rendu (Markdown)"
+msgstr ""
+
+#: web/b3desk/utils/mailing.py:104
+#, python-brace-format
+msgid "Votre enregistrement pour {name}"
 msgstr ""
 

@@ -7,7 +7,7 @@ from flask import current_app
 
 from b3desk import cache
 from b3desk.models import db
-from b3desk.utils import send_available_recording_notification_mail
+from b3desk.utils.mailing import send_available_recording_notification_mail
 
 REDIS_URL = os.environ.get("REDIS_URL")
 DEBUG = os.environ.get("FLASK_DEBUG")

@@ -442,7 +442,7 @@ def test_get_recordings_ai_summary(mocker, meeting, bbb_getRecordings_ai_summary
 
 def test_build_recording_links_ai_summary():
     """The notification mail links include the three ai-summary report formats."""
-    from b3desk.utils import _build_recording_links
+    from b3desk.utils.mailing import _build_recording_links
 
     playbacks = {
         "ai-summary": {
