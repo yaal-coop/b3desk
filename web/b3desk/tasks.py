@@ -2,12 +2,17 @@ import os
 
 import requests
 from celery import Celery
+from celery.schedules import crontab
 from celery.utils.log import get_task_logger
 from flask import current_app
 
 from b3desk import cache
 from b3desk.models import db
+from b3desk.models.meetings import clean_db_and_delete_meeting
+from b3desk.models.meetings import get_inactive_meetings_to_delete
+from b3desk.models.meetings import get_inactive_meetings_to_inform
 from b3desk.utils.mailing import send_available_recording_notification_mail
+from b3desk.utils.mailing import send_mail_before_meeting_deletion
 
 REDIS_URL = os.environ.get("REDIS_URL")
 DEBUG = os.environ.get("FLASK_DEBUG")
@@ -15,6 +20,16 @@ DEBUG = os.environ.get("FLASK_DEBUG")
 celery = Celery("tasks")
 celery.conf.broker_url = f"redis://{REDIS_URL}"
 celery.conf.result_backend = f"redis://{REDIS_URL}"
+celery.conf.beat_schedule = {
+    "delete-old-meetings-every-day-at-5-am": {
+        "task": "delete-old-meetings",
+        "schedule": crontab(minute=00, hour=5),
+    },
+    "inform-owner-before-meeting-deletion-every-day-at-4-30-am": {
+        "task": "inform-owner-before-meeting-deletion",
+        "schedule": crontab(minute=30, hour=4),
+    },
+}
 
 logger = get_task_logger(__name__)
 
@@ -134,3 +149,56 @@ def send_recording_notification(
     send_available_recording_notification_mail(
         meeting, playbacks, recording_name, recording_start
     )
+
+
+@celery.task(name="delete-old-meetings")
+def delete_old_meetings():
+    """Celery cron task to delete expired meetings from database."""
+    logger.info("Celery cron task: delete_old_meetings started")
+    from b3desk import create_app
+
+    app = create_app()
+    with app.app_context():
+        meetings_to_delete = get_inactive_meetings_to_delete()
+
+        if meetings_to_delete:
+            logger.info(
+                "Celery cron task: %d expired meetings to delete",
+                len(meetings_to_delete),
+            )
+        for meeting in meetings_to_delete:
+            _, category = clean_db_and_delete_meeting(meeting, celery_cron=True)
+            if category == "success":
+                logger.info(
+                    "Celery cron task: %s id:%s named:%s deleted",
+                    "shadow_meeting" if meeting.is_shadow else "meeting",
+                    meeting.id,
+                    meeting.name,
+                )
+        logger.info("Celery cron task: delete_old_meetings ended")
+
+
+@celery.task(name="inform-owner-before-meeting-deletion")
+def inform_owner_before_meeting_deletion():
+    """Celery cron task to inform meeting owner before meeting deletion."""
+    logger.info("Celery cron task: inform-owner-before-meeting-deletion started")
+    from b3desk import create_app
+
+    app = create_app()
+    with app.app_context():
+        meetings_to_inform = get_inactive_meetings_to_inform()
+
+        if meetings_to_inform:
+            logger.info(
+                "Celery cron task: %d meetings expire soon", len(meetings_to_inform)
+            )
+        for meeting, delay in meetings_to_inform:
+            send_mail_before_meeting_deletion(meeting, delay)
+            logger.info(
+                "Celery cron task: %s id:%s named:%s informed (%d day(s) left)",
+                "shadow_meeting" if meeting.is_shadow else "meeting",
+                meeting.id,
+                meeting.name,
+                delay,
+            )
+        logger.info("Celery cron task: inform-owner-before-meeting-deletion ended")

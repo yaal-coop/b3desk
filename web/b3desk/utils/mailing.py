@@ -109,6 +109,25 @@ def send_available_recording_notification_mail(
     send_email(msg, text, html, smtp)
 
 
+def send_mail_before_meeting_deletion(meeting, delay):
+    """Send email to inform the owner that the meeting will be deleted in `delay` days."""
+    smtp = make_smtp()
+    msg = EmailMessage()
+    body_file = "mail_before_meeting_deletion"
+    context = {
+        "meeting": meeting,
+        "delay": delay,
+        "welcome_url": url_for("public.welcome", _external=True),
+    }
+    text = render_template(f"meeting/mailto/{body_file}.txt", **context)
+    html = render_template(f"meeting/mailto/{body_file}.html", **context)
+    msg["Subject"] = str(_(f"Information avant suppression : {meeting.name}"))
+    msg["From"] = smtp["from_email"]
+    msg["To"] = meeting.owner.email
+
+    send_email(msg, text, html, smtp)
+
+
 def send_email(msg, text, html, smtp):
     msg.set_content(text)
     msg.add_alternative(html, subtype="html")

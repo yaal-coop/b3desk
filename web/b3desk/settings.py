@@ -994,3 +994,19 @@ class MainSettings(BaseSettings):
 
     Allow AI summary generation on records
     """
+
+    INACTIVITY_TIMER_CLEANUP_MEETING: int = 365
+    """Inactivity Timer Cleanup Meeting
+
+    Duration in days indicating inactivity before the meeting is deleted
+    Room activity is determined by the use of one of the meeting URLs
+    An informational email is sent at D-30, D-15, and D-1
+    """
+
+    INACTIVITY_TIMER_CLEANUP_ACCOUNT: int = 365
+    """Inactivity Timer Cleanup Account
+
+    Duration in days indicating inactivity before the user account is deleted
+    User account activity is determined by the use of one of the meeting URLs associated with the account or user's login
+    An informational email is sent at D-30, D-15, and D-1
+    """

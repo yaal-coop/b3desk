@@ -30,6 +30,10 @@ from . import db
 from .roles import Role
 from .users import User
 
+DELAY_FOR_FIRST_EMAIL = 30
+DELAY_FOR_SECOND_EMAIL = 15
+DELAY_FOR_THIRD_EMAIL = 1
+
 
 class AccessLevel(IntEnum):
     NONE = 0
@@ -436,7 +440,10 @@ def get_or_create_shadow_meeting(user):
     )
 
 
-def clean_db_and_delete_meeting(meeting):
+def clean_db_and_delete_meeting(meeting, celery_cron=False):
+    if celery_cron:
+        for delegate in meeting.get_all_delegates:
+            remove_delegate_from_db(meeting, delegate)
     if meeting.get_all_delegates:
         return _("Vous devez retirer les délégataires"), "error"
 
@@ -447,8 +454,8 @@ def clean_db_and_delete_meeting(meeting):
         if data and not BBB.success(data):
             return (
                 _(
-                    "Impossible de supprimer les vidéos de cette réunion : {message}"
-                ).format(message=data.get("message", "")),
+                    "Impossible de supprimer les vidéos de cette réunion {meeting_id}: {message}"
+                ).format(meeting_id=meeting.id, message=data.get("message", "")),
                 "error",
             )
         for meeting_file in meeting.files:
@@ -463,20 +470,6 @@ def clean_db_and_delete_meeting(meeting):
     db.session.commit()
 
     return _("Élément supprimé"), "success"
-
-
-def delete_all_old_shadow_meetings():
-    """Delete all shadow meetings not used in the past year."""
-    old_shadow_meetings = [
-        shadow_meeting
-        for shadow_meeting in db.session.query(Meeting).filter(
-            Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
-            Meeting.is_shadow,
-        )
-    ]
-
-    for shadow_meeting in old_shadow_meetings:
-        clean_db_and_delete_meeting(shadow_meeting)
 
 
 def visio_code_exists(code):
@@ -554,3 +547,47 @@ def remove_delegate_from_db(meeting, delegate):
     ).one()
     db.session.delete(access)
     db.session.commit()
+
+
+def get_inactive_meetings_to_delete():
+    cutoff = datetime.now() - timedelta(
+        days=current_app.config["INACTIVITY_TIMER_CLEANUP_MEETING"]
+    )
+    return (
+        db.session.query(Meeting)
+        .filter(
+            or_(
+                Meeting.last_connection_utc_datetime < cutoff,
+                (Meeting.last_connection_utc_datetime.is_(None))
+                & (Meeting.created_at < cutoff),
+            )
+        )
+        .all()
+    )
+
+
+def get_inactive_meetings_to_inform():
+    today = datetime.now().date()
+    inactivity_period = timedelta(
+        days=current_app.config["INACTIVITY_TIMER_CLEANUP_MEETING"]
+    )
+    meetings = []
+    for delay in (DELAY_FOR_FIRST_EMAIL, DELAY_FOR_SECOND_EMAIL, DELAY_FOR_THIRD_EMAIL):
+        target_date = today + timedelta(days=delay) - inactivity_period
+        day_start = datetime(target_date.year, target_date.month, target_date.day)
+        day_end = day_start + timedelta(days=1)
+        matching_meetings = (
+            db.session.query(Meeting)
+            .filter(
+                or_(
+                    (Meeting.last_connection_utc_datetime >= day_start)
+                    & (Meeting.last_connection_utc_datetime < day_end),
+                    (Meeting.last_connection_utc_datetime.is_(None))
+                    & (Meeting.created_at >= day_start)
+                    & (Meeting.created_at < day_end),
+                )
+            )
+            .all()
+        )
+        meetings += [(meeting, delay) for meeting in matching_meetings]
+    return meetings

@@ -138,7 +138,7 @@ msgstr ""
 msgid "150 caractères max"
 msgstr ""
 
-#: web/b3desk/forms.py:161 web/b3desk/models/meetings.py:392
+#: web/b3desk/forms.py:161 web/b3desk/models/meetings.py:396
 msgid "Bienvenue aux modérateurs"
 msgstr ""
 
@@ -491,30 +491,32 @@ msgstr ""
 msgid "⚠️ Les enregistrements de cette session seront traités par l'IA AlbertAPI"
 msgstr ""
 
-#: web/b3desk/models/meetings.py:371 web/b3desk/models/meetings.py:378
+#: web/b3desk/models/meetings.py:375 web/b3desk/models/meetings.py:382
 msgid "Ce code PIN est déjà utilisé"
 msgstr ""
 
-#: web/b3desk/models/meetings.py:385
+#: web/b3desk/models/meetings.py:389
 #, python-format
 msgid "la réunion de %(fullname)s"
 msgstr ""
 
-#: web/b3desk/models/meetings.py:387
+#: web/b3desk/models/meetings.py:391
 #, python-format
 msgid "Bienvenue dans la réunion de %(fullname)s"
 msgstr ""
 
-#: web/b3desk/models/meetings.py:441
+#: web/b3desk/models/meetings.py:448
 msgid "Vous devez retirer les délégataires"
 msgstr ""
 
-#: web/b3desk/models/meetings.py:450
+#: web/b3desk/models/meetings.py:457
 #, python-brace-format
-msgid "Impossible de supprimer les vidéos de cette réunion : {message}"
+msgid ""
+"Impossible de supprimer les vidéos de cette réunion {meeting_id}: "
+"{message}"
 msgstr ""
 
-#: web/b3desk/models/meetings.py:465
+#: web/b3desk/models/meetings.py:472
 msgid "Élément supprimé"
 msgstr ""
 
