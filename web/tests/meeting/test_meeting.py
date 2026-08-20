@@ -7,6 +7,8 @@ from unittest import mock
 from urllib.parse import parse_qs
 from urllib.parse import urlparse
 
+import pytest
+from b3desk.endpoints.bbb_callback import get_meeting_ended_callback_url
 from b3desk.endpoints.bbb_callback import get_recording_status_callback_url
 from b3desk.join import get_meeting_secret_key
 from b3desk.join import get_quick_meeting_secret_key
@@ -32,9 +34,9 @@ from flask import url_for
 
 def test_show_meeting_recording(client_app, authenticated_user, meeting, bbb_response):
     """Test that meeting recordings page displays correctly."""
-    response = client_app.get(f"/meeting/recordings/{meeting.id}", status=200)
+    response = client_app.get(f"/meeting/history/{meeting.id}", status=200)
 
-    assert "meeting/recordings.html" in response.contexts
+    assert "meeting/history.html" in response.contexts
 
 
 def test_new_meeting(client_app, authenticated_user):
@@ -510,6 +512,7 @@ def test_create_no_file(
         ),
         "voiceBridge": "111111111",
         "meta_bbb-recording-ready-url": get_recording_status_callback_url(),
+        "meta_endCallbackUrl": get_meeting_ended_callback_url(meeting.meetingID),
         "meta_bbb-disable-recording-formats": "ai-summary",
     }
 
@@ -653,6 +656,7 @@ def test_create_with_only_a_default_file(
         ),
         "voiceBridge": "111111111",
         "meta_bbb-recording-ready-url": get_recording_status_callback_url(),
+        "meta_endCallbackUrl": get_meeting_ended_callback_url(meeting.meetingID),
         "meta_bbb-disable-recording-formats": "ai-summary",
     }
 
@@ -765,6 +769,7 @@ def test_create_with_files(
         ),
         "voiceBridge": "111111111",
         "meta_bbb-recording-ready-url": get_recording_status_callback_url(),
+        "meta_endCallbackUrl": get_meeting_ended_callback_url(meeting.meetingID),
         "meta_bbb-disable-recording-formats": "ai-summary",
     }
 

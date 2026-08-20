@@ -332,7 +332,7 @@ def test_update_recording_name(
     assert bbb_params["meta_name"] == "First recording"
     assert bbb_params["recordID"] == recording_id
 
-    assert f"meeting/recordings/{meeting.id}" in response.location
+    assert f"meeting/history/{meeting.id}" in response.location
 
 
 def test_update_name_of_an_unknown_recording(
@@ -386,7 +386,7 @@ def test_delete_recordings(
         f"Meeting meeting {meeting.id} record {first_recording_id} was deleted by alice@domain.tld\n"
     ) in caplog.text
     assert ("success", "Vidéo supprimée") in response.flashes
-    assert f"/meeting/recordings/{meeting.id}" in response.location
+    assert f"/meeting/history/{meeting.id}" in response.location
 
 
 def test_delegate_can_delete_recordings(
@@ -417,7 +417,7 @@ def test_delegate_can_delete_recordings(
         f"Meeting delegated meeting {meeting_1_user_2.id} record {first_recording_id} was deleted by alice@domain.tld\n"
     ) in caplog.text
     assert ("success", "Vidéo supprimée") in response.flashes
-    assert f"/meeting/recordings/{meeting_1_user_2.id}" in response.location
+    assert f"/meeting/history/{meeting_1_user_2.id}" in response.location
 
 
 def test_delete_unknown_recording(
@@ -480,11 +480,11 @@ def test_open_recordings_page(
     mocker.patch("b3desk.models.bbb.requests.get", return_value=DirectLinkRecording)
     mocker.patch("b3desk.models.bbb.BBB.is_running", return_value=False)
 
-    response = client_app.get(f"/meeting/recordings/{meeting.id}")
+    response = client_app.get(f"/meeting/history/{meeting.id}")
     html = response.body.decode("utf-8")
     assert (
         html.count(
-            '<button type="button" class="btn-copy fr-btn fr-btn--primary fr-ml-1v fr-icon-clipboard-line"'
+            '<button type="button" class="btn-copy fr-btn--sm fr-btn fr-btn--primary fr-ml-1v fr-icon-clipboard-line"'
         )
         == 2
     )
@@ -585,7 +585,7 @@ def test_open_recordings_page_ai_summary(
     mocker.patch("b3desk.models.bbb.BBB.is_running", return_value=False)
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
     response = client_app.post("/admin/add-group-members/1/1", status=302)
-    response = client_app.get(f"/meeting/recordings/{meeting.id}")
+    response = client_app.get(f"/meeting/history/{meeting.id}")
     html = response.body.decode("utf-8")
 
     assert "https://bbb.test/ai-summary/rec-ai-1/ai-summary.html" in html
