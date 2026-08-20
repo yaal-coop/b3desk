@@ -91,7 +91,7 @@ def test_delegate_can_see_records_of_delegated_meeting(
     bbb_response,
 ):
     """Test that delegate can see and manage records of a delegated meeting as owner."""
-    client_app.get("/meeting/recordings/1", status=200)
+    client_app.get("/meeting/history/1", status=200)
 
 
 def test_delegate_can_edit_delegated_meeting(
