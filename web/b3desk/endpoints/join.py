@@ -32,6 +32,7 @@ from b3desk.utils import check_token_errors
 
 from .. import auth
 from ..session import get_authenticated_attendee_fullname
+from ..session import login_required
 from ..session import meeting_access_required
 from ..session import should_display_captcha
 
@@ -90,8 +91,7 @@ def signin_meeting(
 # it may be removed after https://github.com/numerique-gouv/b3desk/issues/256
 @bp.route("/meeting/auth/<meeting_id>/creator/<user:creator>/hash/<secret_key>")
 @bp.route("/meeting/auth/<meeting_id>/hash/<secret_key>")
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 def authenticate_then_signin_meeting(
     meeting_id, secret_key, creator: User | None = None
 ):
@@ -255,8 +255,7 @@ def join_meeting_as_authenticated(meeting_id):
 
 
 @bp.route("/meeting/join/<meeting:meeting>/<role:role>")
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @meeting_access_required(AccessLevel.DELEGATE)
 def join_meeting_as_role(meeting: Meeting, role: Role, user: User):
     """Join a meeting as the owner with a specific role."""

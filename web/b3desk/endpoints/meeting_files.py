@@ -33,10 +33,9 @@ from b3desk.models.meetings import get_meeting_file_hash
 from b3desk.models.users import User
 from b3desk.nextcloud import create_webdav_client
 from b3desk.nextcloud import is_nextcloud_available
-from b3desk.utils import check_oidc_connection
 
-from .. import auth
 from ..session import is_admin_mode
+from ..session import login_required
 from ..session import meeting_access_required
 from ..session import user_needed
 
@@ -45,8 +44,7 @@ bp = Blueprint("meeting_files", __name__)
 
 
 @bp.route("/meeting/files/<meeting:meeting>")
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @meeting_access_required(AccessLevel.DELEGATE)
 def edit_meeting_files(meeting: Meeting, user: User):
     """Display the meeting files management page."""
@@ -72,8 +70,7 @@ def edit_meeting_files(meeting: Meeting, user: User):
 
 
 @bp.route("/meeting/files/<meeting:meeting>", methods=["POST"])
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @meeting_access_required(AccessLevel.DELEGATE)
 def add_meeting_files(meeting: Meeting, user: User):
     """Add a file to a meeting from Nextcloud, URL, or file upload."""
@@ -92,8 +89,7 @@ def add_meeting_files(meeting: Meeting, user: User):
 
 
 @bp.route("/meeting/files/<meeting:meeting>/<meetingfiles:meeting_file>/download")
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @meeting_access_required(AccessLevel.DELEGATE)
 def download_meeting_files(meeting: Meeting, meeting_file: MeetingFiles, user: User):
     """Download a meeting file from URL or Nextcloud."""
@@ -140,8 +136,7 @@ def download_meeting_files(meeting: Meeting, meeting_file: MeetingFiles, user: U
     "/meeting/files/<meeting:meeting>/<meetingfiles:meeting_file>/toggledownload",
     methods=["POST"],
 )
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @meeting_access_required(AccessLevel.DELEGATE)
 def toggledownload(meeting: Meeting, meeting_file: MeetingFiles, user: User):
     """Toggle the downloadable status of a meeting file."""
@@ -342,8 +337,7 @@ def create_external_meeting_file(path, owner, meeting_id=None):
 
 
 @bp.route("/meeting/files/<meeting:meeting>/upload", methods=["POST"])
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @meeting_access_required(AccessLevel.DELEGATE)
 def upload_file_chunks(meeting: Meeting, user: User):
     """Handle chunked file uploads."""
@@ -390,8 +384,7 @@ def upload_file_chunks(meeting: Meeting, user: User):
 
 
 @bp.route("/meeting/files/delete", methods=["POST"])
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 def delete_meeting_file():
     """Delete a meeting file."""
     data = request.get_json()
@@ -420,8 +413,7 @@ def delete_meeting_file():
 
 
 @bp.route("/meeting/<signed:bbb_meeting_id>/file-picker")
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @user_needed
 def file_picker(user: User, bbb_meeting_id: str):
     """Display the nextcloud file selector.
@@ -446,8 +438,7 @@ def file_picker(user: User, bbb_meeting_id: str):
 @bp.route(
     "/meeting/files/<signed:bbb_meeting_id>/file-picker-callback", methods=["POST"]
 )
-@check_oidc_connection(auth)
-@auth.oidc_auth("default")
+@login_required
 @user_needed
 def file_picker_callback(user: User, bbb_meeting_id: str):
     """Insert documents from Nextcloud into a running BBB meeting.
