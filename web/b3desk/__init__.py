@@ -13,6 +13,7 @@ from logging.config import fileConfig
 from pathlib import Path
 from urllib.parse import urlencode
 
+from authlib.integrations.flask_client import OAuth
 from babel import Locale
 from flask import Flask
 from flask import has_app_context
@@ -45,6 +46,7 @@ babel = Babel()
 cache = Cache()
 csrf = CSRFProtect()
 auth = OIDCAuthentication({"default": None, "attendee": None})
+oauth = OAuth()
 migrate = Migrate()
 
 
@@ -451,6 +453,31 @@ def setup_oidc(app):
         app.logger.error("OIDC service is not ready: %s", exc)
 
 
+def setup_authlib(app):
+    """Configure OpenID Connect authentication for organizers and attendees."""
+    oauth.register(
+        "default",
+        client_id=app.config["OIDC_CLIENT_ID"],
+        client_secret=app.config["OIDC_CLIENT_SECRET"],
+        token_endpoint_auth_method=app.config["OIDC_CLIENT_AUTH_METHOD"],
+        server_metadata_url=f"{app.config['OIDC_ISSUER']}/.well-known/openid-configuration",
+        client_kwargs={"scope": app.config["OIDC_SCOPES"]},
+    )
+    oauth.register(
+        "attendee",
+        client_id=app.config["OIDC_ATTENDEE_CLIENT_ID"],
+        client_secret=app.config["OIDC_ATTENDEE_CLIENT_SECRET"],
+        token_endpoint_auth_method=app.config["OIDC_ATTENDEE_CLIENT_AUTH_METHOD"],
+        server_metadata_url=f"{app.config['OIDC_ATTENDEE_ISSUER']}/.well-known/openid-configuration",
+        client_kwargs={"scope": app.config["OIDC_ATTENDEE_SCOPES"]},
+    )
+
+    try:
+        oauth.init_app(app)
+    except Exception as exc:  # noqa: BLE001
+        app.logger.error("OIDC service is not ready: %s", exc)
+
+
 def create_app(test_config=None):
     """Flask application factory - creates and configures the application instance."""
     app = Flask(__name__)
@@ -468,6 +495,7 @@ def create_app(test_config=None):
         setup_error_pages(app)
         setup_endpoints(app)
         setup_oidc(app)
+        setup_authlib(app)
         setup_debug_host_redirect(app)
         setup_user_session(app)
     except Exception as exc:  # pragma: no cover
