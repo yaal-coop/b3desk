@@ -3,15 +3,41 @@ from functools import wraps
 from flask import abort
 from flask import current_app
 from flask import g
+from flask import redirect
 from flask import request
 from flask import session
+from flask import url_for
 from flask_pyoidc.user_session import UserSession
+
+
+def store_userinfo(token):
+    """Add userinfo and id_token from token in session."""
+    session["userinfo"] = token["userinfo"]
+    session["id_token"] = token["id_token"]
+
+
+def clear_userinfo():
+    """Remove userinfo and id_token from session, logging out the current user locally."""
+    session.pop("userinfo", None)
+    session.pop("id_token", None)
 
 
 def has_user_session():
     """Check if user has an active authenticated session."""
-    user_session = UserSession(dict(session), "default")
-    return user_session.is_authenticated()
+    return "userinfo" in session
+
+
+def login_required(view_function):
+    """Require that the user is authenticated, redirecting to login otherwise."""
+
+    @wraps(view_function)
+    def decorator(*args, **kwargs):
+        if not has_user_session():
+            return redirect(url_for("public.login"))
+
+        return view_function(*args, **kwargs)
+
+    return decorator
 
 
 def get_authenticated_attendee_fullname():

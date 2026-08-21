@@ -20,19 +20,20 @@ def test_user_authentication(
     res.mustcontain("S’identifier")
     res.mustcontain(no="se déconnecter")
 
-    # 1. attempt to access a protected page
+    # 1. attempt to access a protected page, redirected to the login route
     res1 = client_app.get("/welcome", status=302)
 
-    # 2. authorization code request
-    res2 = iam_server.test_client.get(res1.location)
+    # 2. the login route redirects to the provider's authorization endpoint
+    res1b = client_app.get(res1.location, status=302)
+
+    # 3. authorization code request
+    res2 = iam_server.test_client.get(res1b.location)
     assert res2.status_code == 302
 
-    # 3. load your application authorization endpoint
-    # pyoidc produces a useless error message there
-    # https://github.com/CZ-NIC/pyoidc/issues/824
-    res3 = client_app.get(res2.headers["Location"], status=302, expect_errors=True)
+    # 4. load your application authorization endpoint
+    res3 = client_app.get(res2.headers["Location"], status=302)
 
-    # 4. redirect to the protected page
+    # 5. redirect to the protected page
     res4 = res3.follow(status=200)
     res4.mustcontain(no="S’identifier")
     res4.mustcontain("se déconnecter")
@@ -61,19 +62,20 @@ def test_lasuite_user_authentication(
     res.mustcontain("Se connecter ou créer un compte")
     res.mustcontain(no="se déconnecter")
 
-    # 1. attempt to access a protected page
+    # 1. attempt to access a protected page, redirected to the login route
     res1 = client_app.get("/welcome", status=302)
 
-    # 2. authorization code request
-    res2 = iam_server.test_client.get(res1.location)
+    # 2. the login route redirects to the provider's authorization endpoint
+    res1b = client_app.get(res1.location, status=302)
+
+    # 3. authorization code request
+    res2 = iam_server.test_client.get(res1b.location)
     assert res2.status_code == 302
 
-    # 3. load your application authorization endpoint
-    # pyoidc produces a useless error message there
-    # https://github.com/CZ-NIC/pyoidc/issues/824
-    res3 = client_app.get(res2.headers["Location"], status=302, expect_errors=True)
+    # 4. load your application authorization endpoint
+    res3 = client_app.get(res2.headers["Location"], status=302)
 
-    # 4. redirect to the protected page
+    # 5. redirect to the protected page
     res4 = res3.follow(status=200)
     res4.mustcontain(no="Se connecter ou créer un compte")
     res4.mustcontain("se déconnecter")

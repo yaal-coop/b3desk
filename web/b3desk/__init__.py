@@ -383,7 +383,6 @@ def setup_user_session(app):
     """Initialize g.user on each request based on authentication status."""
     from flask import g
     from flask import session
-    from flask_pyoidc.user_session import UserSession
 
     from b3desk import session as b3desk_session
     from b3desk.models.users import get_or_create_user
@@ -395,9 +394,8 @@ def setup_user_session(app):
             return
 
         try:
-            user_session = UserSession(session)
-            info = user_session.userinfo
-            g.user = get_or_create_user(info)
+            userinfo = session["userinfo"]
+            g.user = get_or_create_user(userinfo)
         except (KeyError, TypeError):
             return
 

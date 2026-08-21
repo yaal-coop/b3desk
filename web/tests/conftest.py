@@ -264,7 +264,10 @@ def iam_client(iam_server):
     iam_client = iam_server.models.Client(
         client_id="client_id",
         client_secret="client_secret",
-        redirect_uris=["http://b3desk.test/oidc_callback"],
+        redirect_uris=[
+            "http://b3desk.test/oidc_callback",
+            "http://b3desk.test/authorize",
+        ],
         token_endpoint_auth_method="client_secret_post",
         post_logout_redirect_uris=["http://b3desk.test/logout"],
         grant_types=["authorization_code"],

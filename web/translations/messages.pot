@@ -496,6 +496,20 @@ msgstr ""
 msgid "L'utilisateur a été retiré des délégataires"
 msgstr ""
 
+#: web/b3desk/endpoints/public.py:77
+msgid "Votre session de connexion a expiré, merci de réessayer."
+msgstr ""
+
+#: web/b3desk/endpoints/public.py:81
+msgid "La connexion a été annulée."
+msgstr ""
+
+#: web/b3desk/endpoints/public.py:87
+msgid ""
+"Le service d'authentification est temporairement indisponible. Veuillez "
+"réessayer dans quelques minutes."
+msgstr ""
+
 #: web/b3desk/models/bbb.py:273
 msgid "⚠️ Les enregistrements de cette session seront traités par l'IA AlbertAPI"
 msgstr ""
