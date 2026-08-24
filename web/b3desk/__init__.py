@@ -26,7 +26,6 @@ from flask_babel import Babel
 from flask_babel import get_locale
 from flask_caching import Cache
 from flask_migrate import Migrate
-from flask_pyoidc import OIDCAuthentication
 from flask_wtf.csrf import CSRFError
 from flask_wtf.csrf import CSRFProtect
 from jinja2 import StrictUndefined
@@ -45,7 +44,6 @@ LANGUAGES = ["fr", "en"]
 babel = Babel()
 cache = Cache()
 csrf = CSRFProtect()
-auth = OIDCAuthentication({"default": None, "attendee": None})
 oauth = OAuth()
 migrate = Migrate()
 
@@ -400,57 +398,6 @@ def setup_user_session(app):
             return
 
 
-def setup_oidc(app):
-    """Configure OpenID Connect authentication for users and attendees."""
-    from flask_pyoidc.provider_configuration import ClientMetadata
-    from flask_pyoidc.provider_configuration import ProviderConfiguration
-
-    with app.app_context():
-        logout_url = url_for("public.logout", _external=True)
-
-    user_provider_configuration = ProviderConfiguration(
-        issuer=app.config["OIDC_ISSUER"],
-        userinfo_http_method=app.config["OIDC_USERINFO_HTTP_METHOD"],
-        client_metadata=ClientMetadata(
-            client_id=app.config["OIDC_CLIENT_ID"],
-            client_secret=app.config["OIDC_CLIENT_SECRET"],
-            token_endpoint_auth_method=app.config["OIDC_CLIENT_AUTH_METHOD"],
-            introspection_endpoint_auth_method=app.config[
-                "OIDC_INTROSPECTION_AUTH_METHOD"
-            ],
-            post_logout_redirect_uris=[logout_url],
-        ),
-        auth_request_params={"scope": app.config["OIDC_SCOPES"]},
-    )
-    attendee_provider_configuration = ProviderConfiguration(
-        issuer=app.config.get("OIDC_ATTENDEE_ISSUER"),
-        userinfo_http_method=app.config.get("OIDC_ATTENDEE_USERINFO_HTTP_METHOD"),
-        client_metadata=ClientMetadata(
-            client_id=app.config.get("OIDC_ATTENDEE_CLIENT_ID"),
-            client_secret=app.config.get("OIDC_ATTENDEE_CLIENT_SECRET"),
-            token_endpoint_auth_method=app.config.get(
-                "OIDC_ATTENDEE_CLIENT_AUTH_METHOD"
-            ),
-            introspection_endpoint_auth_method=app.config.get(
-                "OIDC_ATTENDEE_INTROSPECTION_AUTH_METHOD"
-            ),
-            post_logout_redirect_uris=[logout_url],
-        ),
-        auth_request_params={"scope": app.config["OIDC_ATTENDEE_SCOPES"]},
-    )
-
-    # This is a hack to be able to initialize flask-oidc in two steps
-    # https://github.com/zamzterz/Flask-pyoidc/issues/171
-    auth._provider_configurations = {
-        "default": user_provider_configuration,
-        "attendee": attendee_provider_configuration,
-    }
-    try:
-        auth.init_app(app)
-    except Exception as exc:  # noqa: BLE001
-        app.logger.error("OIDC service is not ready: %s", exc)
-
-
 def setup_authlib(app):
     """Configure OpenID Connect authentication for organizers and attendees."""
     oauth.register(
@@ -492,7 +439,6 @@ def create_app(test_config=None):
         setup_flask(app)
         setup_error_pages(app)
         setup_endpoints(app)
-        setup_oidc(app)
         setup_authlib(app)
         setup_debug_host_redirect(app)
         setup_user_session(app)
