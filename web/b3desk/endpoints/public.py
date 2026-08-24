@@ -4,6 +4,7 @@ import requests
 from authlib.integrations.base_client import MismatchingStateError
 from authlib.integrations.base_client import OAuthError
 from flask import Blueprint
+from flask import abort
 from flask import current_app
 from flask import flash
 from flask import g
@@ -20,6 +21,7 @@ from ..session import clear_userinfo
 from ..session import has_user_session
 from ..session import login_required
 from ..session import should_display_captcha
+from ..session import store_attendee_userinfo
 from ..session import store_userinfo
 from ..templates.content import FAQ_CONTENT
 from ..utils import check_private_key
@@ -93,6 +95,34 @@ def authorize():
 
     store_userinfo(token)
     return redirect(url_for("public.welcome"))
+
+
+@bp.route("/login_as_attendee")
+def login_as_attendee():
+    redirect_uri = url_for("public.attendee_callback", _external=True)
+    return oauth.attendee.authorize_redirect(redirect_uri)
+
+
+@bp.route(
+    "/oidc_callback"
+)  # vérifier ce qui est enregistré en prod dans OIDC_REDIRECT_URI
+def attendee_callback():
+    try:
+        token = oauth.attendee.authorize_access_token()
+    except MismatchingStateError as exc:
+        current_app.logger.warning("Attendee OIDC state mismatch: %s", exc)
+        flash(_("Votre session de connexion a expiré, merci de réessayer."), "error")
+        return redirect(url_for("public.index"))
+    except OAuthError as exc:
+        current_app.logger.warning("Attendee OIDC authorization error: %s", exc)
+        flash(_("La connexion a été annulée."), "error")
+        return redirect(url_for("public.index"))
+
+    store_attendee_userinfo(token)
+    meeting_id = session.pop("attendee_next_meeting_id", None) or abort(404)
+    return redirect(
+        url_for("join.join_meeting_as_authenticated", meeting_id=meeting_id)
+    )
 
 
 @bp.route("/home")

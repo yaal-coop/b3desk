@@ -343,21 +343,21 @@ msgstr ""
 msgid "L'utilisateur a été ajouté au groupe"
 msgstr ""
 
-#: web/b3desk/endpoints/join.py:67 web/b3desk/endpoints/join.py:77
-#: web/b3desk/endpoints/join.py:143 web/b3desk/endpoints/join.py:148
-#: web/b3desk/endpoints/join.py:201 web/b3desk/endpoints/join.py:209
+#: web/b3desk/endpoints/join.py:68 web/b3desk/endpoints/join.py:78
+#: web/b3desk/endpoints/join.py:144 web/b3desk/endpoints/join.py:149
+#: web/b3desk/endpoints/join.py:202 web/b3desk/endpoints/join.py:210
 msgid "Le lien d'invitation que vous avez utilisé est invalide."
 msgstr ""
 
-#: web/b3desk/endpoints/join.py:179
+#: web/b3desk/endpoints/join.py:180
 msgid "Lien invalide"
 msgstr ""
 
-#: web/b3desk/endpoints/join.py:312
+#: web/b3desk/endpoints/join.py:315
 msgid "Le captcha saisi est erroné"
 msgstr ""
 
-#: web/b3desk/endpoints/join.py:317
+#: web/b3desk/endpoints/join.py:320
 msgid "Le code de connexion saisi est erroné"
 msgstr ""
 
@@ -496,15 +496,15 @@ msgstr ""
 msgid "L'utilisateur a été retiré des délégataires"
 msgstr ""
 
-#: web/b3desk/endpoints/public.py:77
+#: web/b3desk/endpoints/public.py:79 web/b3desk/endpoints/public.py:114
 msgid "Votre session de connexion a expiré, merci de réessayer."
 msgstr ""
 
-#: web/b3desk/endpoints/public.py:81
+#: web/b3desk/endpoints/public.py:83 web/b3desk/endpoints/public.py:118
 msgid "La connexion a été annulée."
 msgstr ""
 
-#: web/b3desk/endpoints/public.py:87
+#: web/b3desk/endpoints/public.py:89
 msgid ""
 "Le service d'authentification est temporairement indisponible. Veuillez "
 "réessayer dans quelques minutes."

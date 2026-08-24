@@ -7,13 +7,17 @@ from flask import redirect
 from flask import request
 from flask import session
 from flask import url_for
-from flask_pyoidc.user_session import UserSession
 
 
 def store_userinfo(token):
     """Add userinfo and id_token from token in session."""
     session["userinfo"] = token["userinfo"]
     session["id_token"] = token["id_token"]
+
+
+def store_attendee_userinfo(token):
+    """Add userinfo and id_token from token in session."""
+    session["attendee_userinfo"] = token["userinfo"]
 
 
 def clear_userinfo():
@@ -25,6 +29,11 @@ def clear_userinfo():
 def has_user_session():
     """Check if user has an active authenticated session."""
     return "userinfo" in session
+
+
+def has_attendee_session():
+    """Check if an attendee has an active authenticated session."""
+    return "attendee_userinfo" in session
 
 
 def login_required(view_function):
@@ -42,8 +51,7 @@ def login_required(view_function):
 
 def get_authenticated_attendee_fullname():
     """Extract and return full name from authenticated attendee session."""
-    attendee_session = UserSession(session)
-    attendee_info = attendee_session.userinfo
+    attendee_info = session.get("attendee_userinfo", {})
     mapping = current_app.config["OIDC_ATTENDEE_CLAIMS_MAPPING"]
     given_name = attendee_info.get(mapping.get("given_name", "given_name"), "").title()
     family_name = attendee_info.get(

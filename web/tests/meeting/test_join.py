@@ -195,9 +195,7 @@ def test_fix_authenticated_attendee_name_case(client_app, meeting, user):
     user.family_name = "LENNON"
     user.email = "john@lennon.test"
     with client_app.session_transaction() as session:
-        session["current_provider"] = "attendee"
-        session["last_authenticated"] = "true"
-        session["userinfo"] = {
+        session["attendee_userinfo"] = {
             "given_name": user.given_name,
             "family_name": user.family_name,
             "email": user.email,
