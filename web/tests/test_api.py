@@ -163,6 +163,32 @@ def test_keycloak_introspect_token_validator_accepts_matching_audience(client_ap
         validator.validate_token(token, ["openid"], request=None)
 
 
+def test_keycloak_introspect_token_validator_accepts_matching_string_audience(
+    client_app,
+):
+    """Some providers return a single audience as a bare string rather than a list."""
+    validator = KeycloakIntrospectTokenValidator()
+
+    with client_app.app.app_context():
+        token = {
+            "active": True,
+            "aud": client_app.app.config["OIDC_CLIENT_ID"],
+            "scope": "openid",
+        }
+        validator.validate_token(token, ["openid"], request=None)
+
+
+def test_keycloak_introspect_token_validator_rejects_wrong_string_audience(
+    client_app,
+):
+    """A bare-string audience that doesn't match our client_id must be rejected too."""
+    validator = KeycloakIntrospectTokenValidator()
+    token = {"active": True, "aud": "some-other-client", "scope": "openid"}
+
+    with client_app.app.app_context(), pytest.raises(InvalidTokenError):
+        validator.validate_token(token, ["openid"], request=None)
+
+
 def test_api_meetings_missing_scope_in_token(
     client_app, iam_server, iam_client, iam_user, user
 ):
