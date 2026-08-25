@@ -82,16 +82,6 @@ def authorize():
         current_app.logger.warning("OIDC authorization error: %s", exc)
         flash(_("La connexion a été annulée."), "error")
         return redirect(url_for("public.home"))
-    except requests.RequestException as exc:
-        current_app.logger.error("OIDC token endpoint unreachable: %s", exc)
-        flash(
-            _(
-                "Le service d'authentification est temporairement indisponible. "
-                "Veuillez réessayer dans quelques minutes."
-            ),
-            "error",
-        )
-        return redirect(url_for("public.home"))
 
     store_userinfo(token)
     return redirect(url_for("public.welcome"))
