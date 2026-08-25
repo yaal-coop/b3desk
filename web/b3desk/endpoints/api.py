@@ -16,7 +16,7 @@ bp = Blueprint("api", __name__)
 require_oauth = ResourceProtector()
 
 
-class KeycloakIntrospectTokenValidator(IntrospectTokenValidator):
+class OIDCIntrospectTokenValidator(IntrospectTokenValidator):
     def introspect_token(self, token_string):
         introspection_endpoint = oauth.default.load_server_metadata()[
             "introspection_endpoint"
@@ -41,7 +41,7 @@ class KeycloakIntrospectTokenValidator(IntrospectTokenValidator):
             raise InvalidTokenError(realm=self.realm)
 
 
-require_oauth.register_token_validator(KeycloakIntrospectTokenValidator())
+require_oauth.register_token_validator(OIDCIntrospectTokenValidator())
 
 
 def _get_authenticated_user():

@@ -2,7 +2,7 @@ import datetime
 
 import pytest
 from authlib.oauth2.rfc6750 import InvalidTokenError
-from b3desk.endpoints.api import KeycloakIntrospectTokenValidator
+from b3desk.endpoints.api import OIDCIntrospectTokenValidator
 from b3desk.models import db
 from b3desk.models.meetings import Meeting
 
@@ -143,7 +143,7 @@ def test_keycloak_introspect_token_validator_rejects_wrong_audience(client_app):
     test_api_meetings_client_id_missing_in_token_audience above), so this
     custom check can't be reached through a real HTTP call in tests.
     """
-    validator = KeycloakIntrospectTokenValidator()
+    validator = OIDCIntrospectTokenValidator()
     token = {"active": True, "aud": ["some-other-client"], "scope": "openid"}
 
     with client_app.app.app_context(), pytest.raises(InvalidTokenError):
@@ -152,7 +152,7 @@ def test_keycloak_introspect_token_validator_rejects_wrong_audience(client_app):
 
 def test_keycloak_introspect_token_validator_accepts_matching_audience(client_app):
     """A token whose audience includes our client_id and has the required scope is accepted."""
-    validator = KeycloakIntrospectTokenValidator()
+    validator = OIDCIntrospectTokenValidator()
 
     with client_app.app.app_context():
         token = {
@@ -167,7 +167,7 @@ def test_keycloak_introspect_token_validator_accepts_matching_string_audience(
     client_app,
 ):
     """Some providers return a single audience as a bare string rather than a list."""
-    validator = KeycloakIntrospectTokenValidator()
+    validator = OIDCIntrospectTokenValidator()
 
     with client_app.app.app_context():
         token = {
@@ -182,7 +182,7 @@ def test_keycloak_introspect_token_validator_rejects_wrong_string_audience(
     client_app,
 ):
     """A bare-string audience that doesn't match our client_id must be rejected too."""
-    validator = KeycloakIntrospectTokenValidator()
+    validator = OIDCIntrospectTokenValidator()
     token = {"active": True, "aud": "some-other-client", "scope": "openid"}
 
     with client_app.app.app_context(), pytest.raises(InvalidTokenError):
