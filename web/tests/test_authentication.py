@@ -20,27 +20,19 @@ def test_user_authentication(
 
     assert db.session.scalar(db.select(db.func.count()).select_from(User)) == 0
 
-    res = client_app.get("/home")
-    res.mustcontain("S’identifier")
-    res.mustcontain(no="se déconnecter")
+    response = client_app.get("/home")
+    response.mustcontain("S’identifier")
+    response.mustcontain(no="se déconnecter")
 
-    # 1. attempt to access a protected page, redirected to the login route
-    res1 = client_app.get("/welcome", status=302)
+    response = client_app.get("/welcome", status=302)
+    response = client_app.get(response.location, status=302)
+    response = iam_server.test_client.get(response.location)
+    assert response.status_code == 302
 
-    # 2. the login route redirects to the provider's authorization endpoint
-    res1b = client_app.get(res1.location, status=302)
-
-    # 3. authorization code request
-    res2 = iam_server.test_client.get(res1b.location)
-    assert res2.status_code == 302
-
-    # 4. load your application authorization endpoint
-    res3 = client_app.get(res2.headers["Location"], status=302)
-
-    # 5. redirect to the protected page
-    res4 = res3.follow(status=200)
-    res4.mustcontain(no="S’identifier")
-    res4.mustcontain("se déconnecter")
+    response = client_app.get(response.headers["Location"], status=302)
+    response = response.follow(status=200)
+    response.mustcontain(no="S’identifier")
+    response.mustcontain("se déconnecter")
 
     user = db.session.get(User, 1)
     assert user.email == iam_user.emails[0]
@@ -62,27 +54,19 @@ def test_lasuite_user_authentication(
 
     assert db.session.scalar(db.select(db.func.count()).select_from(User)) == 0
 
-    res = client_app.get("/home")
-    res.mustcontain("Se connecter ou créer un compte")
-    res.mustcontain(no="se déconnecter")
+    response = client_app.get("/home")
+    response.mustcontain("Se connecter ou créer un compte")
+    response.mustcontain(no="se déconnecter")
 
-    # 1. attempt to access a protected page, redirected to the login route
-    res1 = client_app.get("/welcome", status=302)
+    response = client_app.get("/welcome", status=302)
+    response = client_app.get(response.location, status=302)
+    response = iam_server.test_client.get(response.location)
+    assert response.status_code == 302
 
-    # 2. the login route redirects to the provider's authorization endpoint
-    res1b = client_app.get(res1.location, status=302)
-
-    # 3. authorization code request
-    res2 = iam_server.test_client.get(res1b.location)
-    assert res2.status_code == 302
-
-    # 4. load your application authorization endpoint
-    res3 = client_app.get(res2.headers["Location"], status=302)
-
-    # 5. redirect to the protected page
-    res4 = res3.follow(status=200)
-    res4.mustcontain(no="Se connecter ou créer un compte")
-    res4.mustcontain("se déconnecter")
+    response = client_app.get(response.headers["Location"], status=302)
+    response = response.follow(status=200)
+    response.mustcontain(no="Se connecter ou créer un compte")
+    response.mustcontain("se déconnecter")
 
     user = db.session.get(User, 1)
     assert user.email == iam_user.emails[0]
