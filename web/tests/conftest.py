@@ -317,7 +317,6 @@ def configuration(tmp_path, iam_server, iam_client, request, private_key, db):
         "OIDC_CLIENT_SECRET": iam_client.client_secret,
         "OIDC_CLIENT_AUTH_METHOD": iam_client.token_endpoint_auth_method,
         "OIDC_SCOPES": iam_client.scope,
-        "OIDC_USERINFO_HTTP_METHOD": "GET",
         "SECONDARY_IDENTITY_PROVIDER_ENABLED": False,
         "UPLOAD_DIR": str(tmp_path),
         "TMP_DOWNLOAD_DIR": str(tmp_path),
