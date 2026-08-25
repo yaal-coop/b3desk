@@ -97,12 +97,6 @@ def authorize():
     return redirect(url_for("public.welcome"))
 
 
-@bp.route("/login_as_attendee")
-def login_as_attendee():
-    redirect_uri = url_for("public.attendee_callback", _external=True)
-    return oauth.attendee.authorize_redirect(redirect_uri)
-
-
 @bp.route(
     "/oidc_callback"
 )  # vérifier ce qui est enregistré en prod dans OIDC_REDIRECT_URI

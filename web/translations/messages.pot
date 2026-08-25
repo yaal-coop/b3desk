@@ -496,11 +496,11 @@ msgstr ""
 msgid "L'utilisateur a été retiré des délégataires"
 msgstr ""
 
-#: web/b3desk/endpoints/public.py:79 web/b3desk/endpoints/public.py:114
+#: web/b3desk/endpoints/public.py:79 web/b3desk/endpoints/public.py:108
 msgid "Votre session de connexion a expiré, merci de réessayer."
 msgstr ""
 
-#: web/b3desk/endpoints/public.py:83 web/b3desk/endpoints/public.py:118
+#: web/b3desk/endpoints/public.py:83 web/b3desk/endpoints/public.py:112
 msgid "La connexion a été annulée."
 msgstr ""
 
