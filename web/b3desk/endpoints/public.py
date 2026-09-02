@@ -7,11 +7,8 @@ from flask import render_template
 from flask import request
 from flask import url_for
 
-from b3desk.models.roles import Role
-
 from .. import auth
 from .. import cache
-from ..join import get_signin_url
 from ..session import has_user_session
 from ..session import should_display_captcha
 from ..templates.content import FAQ_CONTENT
@@ -80,12 +77,12 @@ def welcome():
     """Render the authenticated user's welcome page with their meetings."""
     stats = get_meetings_stats()
 
-    order_key = request.args.get("order-key", "created_at")
+    order_key = request.args.get("order_key", "created_at")
     reverse_order = request.args.get(
-        "reverse-order", True, type=lambda x: x.lower() == "true"
+        "reverse_order", True, type=lambda x: x.lower() == "true"
     )
     favorite_filter = request.args.get(
-        "favorite-filter", False, type=lambda x: x.lower() == "true"
+        "favorite_filter", False, type=lambda x: x.lower() == "true"
     )
 
     if order_key not in ["created_at", "name"]:
@@ -108,15 +105,10 @@ def welcome():
             getattr(m, order_key).lower()
             if isinstance(getattr(m, order_key), str)
             else getattr(m, order_key),
-            m.id,
+            m.created_at,
         ),
         reverse=reverse_order,
     )
-
-    for meeting in meetings:
-        meeting.moderator_url = get_signin_url(meeting, Role.moderator)
-        meeting.attendee_url = get_signin_url(meeting, Role.attendee)
-        meeting.authenticated_url = get_signin_url(meeting, Role.authenticated)
 
     return render_template(
         "welcome.html",

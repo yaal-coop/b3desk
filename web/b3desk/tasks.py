@@ -1,27 +1,11 @@
-import os
-
 import requests
-from celery import Celery
-from celery.schedules import crontab
+from celery import shared_task
 from celery.utils.log import get_task_logger
 from flask import current_app
 
 from b3desk import cache
 from b3desk.models import db
 from b3desk.utils import send_available_recording_notification_mail
-
-REDIS_URL = os.environ.get("REDIS_URL")
-DEBUG = os.environ.get("FLASK_DEBUG")
-
-celery = Celery("tasks")
-celery.conf.broker_url = f"redis://{REDIS_URL}"
-celery.conf.result_backend = f"redis://{REDIS_URL}"
-celery.conf.beat_schedule = {
-    "delete-old-meetings-every-day-at-5-am": {
-        "task": "delete-old-meetings",
-        "schedule": crontab(minute=00, hour=5),
-    },
-}
 
 logger = get_task_logger(__name__)
 
@@ -45,15 +29,14 @@ def recording_notified_key(bbb_recording_id):
     return f"recording_notification_sent:{bbb_recording_id}"
 
 
-@celery.task(name="background_upload")
+@shared_task(name="background_upload")
 def background_upload(endpoint, xml):
     """Celery task to upload XML documents to BigBlueButton API in background."""
     logger.info("BBB API request %s: xml:%s", endpoint, xml)
 
     session = requests.Session()
-    if DEBUG:  # pragma: no cover
-        # In local development environment, BBB is not served as https
-        session.verify = False
+    # In local development environment, BBB is not served as https
+    session.verify = not current_app.debug
 
     response = session.post(
         endpoint,
@@ -65,7 +48,7 @@ def background_upload(endpoint, xml):
     return True
 
 
-@celery.task(name="send_recording_notification")
+@shared_task(name="send_recording_notification")
 def send_recording_notification(
     meeting_id, bbb_recording_id, force=False, is_min_deadline=False
 ):
@@ -101,7 +84,7 @@ def send_recording_notification(
         cache.get(recording_min_reached_key(bbb_recording_id))
     )
 
-    bbb = BBB(meeting.meetingID)
+    bbb = BBB(meeting.bbb_meeting_id)
     recordings = BBB.get_recordings.uncached(bbb, bbb_recording_id=bbb_recording_id)
     if not recordings:
         logger.warning(
@@ -143,36 +126,37 @@ def send_recording_notification(
     )
 
 
-@celery.task(name="delete-old-meetings")
+@shared_task(name="delete-old-meetings")
 def delete_old_meetings():
     """Celery cron task to delete expired meetings from database."""
-    logger.info("Celery cron task: delete_old_meetings started")
     from datetime import datetime
 
-    from b3desk import create_app
+    from b3desk.models.meetings import DATA_RETENTION
+    from b3desk.models.meetings import Meeting
+    from b3desk.models.meetings import clean_db_and_delete_meeting
 
-    app = create_app()
-    with app.app_context():
-        from b3desk.models import db
-        from b3desk.models.meetings import DATA_RETENTION
-        from b3desk.models.meetings import Meeting
+    logger.info("Celery cron task: delete_old_meetings started")
 
-        old_meetings = [
-            meeting
-            for meeting in db.session.query(Meeting).filter(
-                Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
-            )
-        ]
-        if old_meetings:
-            logger.info(
-                "Celery cron task: %d expired meetings to delete", len(old_meetings)
-            )
-        for meeting in old_meetings:
-            meeting.delete()
-            logger.info(
-                "Celery cron task: %s id:%s named:%s deleted",
-                "shadow_meeting" if meeting.is_shadow else "meeting",
+    old_meetings = db.session.scalars(
+        db.select(Meeting).where(
+            Meeting.last_connection_utc_datetime < datetime.now() - DATA_RETENTION,
+        )
+    ).all()
+    logger.info("Celery cron task: %d expired meetings to delete", len(old_meetings))
+    for meeting in old_meetings:
+        success, data = clean_db_and_delete_meeting(meeting)
+        if not success:
+            logger.error(
+                "Celery cron task: could not delete meeting id:%s named:%s: %s",
                 meeting.id,
                 meeting.name,
+                data.get("message", "") if data else "remaining delegates",
             )
-        logger.info("Celery cron task: delete_old_meetings ended")
+            continue
+        logger.info(
+            "Celery cron task: %s id:%s named:%s deleted",
+            "shadow_meeting" if meeting.is_shadow else "meeting",
+            meeting.id,
+            meeting.name,
+        )
+    logger.info("Celery cron task: delete_old_meetings ended")
