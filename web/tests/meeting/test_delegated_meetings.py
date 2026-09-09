@@ -187,7 +187,10 @@ def test_add_new_delegate_with_wrong_email(
     form = response.form
     form["search"] = "wrong@domain.tld"
     response = form.submit()
-    assert ("error", "L'utilisateur recherché n'existe pas") in response.flashes
+    assert (
+        "error",
+        "Cette personne n'a pas de compte sur Webinaire. \nVous pourrez l'ajouter une fois son compte créé en l'invitant sur http://b3desk.test/",
+    ) in response.flashes
     assert meeting.get_all_delegates == []
 
 

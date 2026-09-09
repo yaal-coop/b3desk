@@ -422,9 +422,16 @@ def manage_delegation(meeting: Meeting, user: User):
 
     data = form.search.data.lower()
     new_delegate = User.get_user_by_email(data)
+    service_title = current_app.config["SERVICE_TITLE"]
+    service_url = url_for("public.index", _external=True)
 
     if new_delegate is None:
-        flash(_("L'utilisateur recherché n'existe pas"), "error")
+        flash(
+            _(
+                f"Cette personne n'a pas de compte sur {service_title}. \nVous pourrez l'ajouter une fois son compte créé en l'invitant sur {service_url}"
+            ),
+            "error",
+        )
 
     elif new_delegate in meeting.get_all_delegates:
         flash(_("L'utilisateur est déjà délégataire"), "warning")
