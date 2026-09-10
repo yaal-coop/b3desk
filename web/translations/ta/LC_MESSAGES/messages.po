@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-09 09:25+0200\n"
+"POT-Creation-Date: 2026-09-10 09:43+0200\n"
 "PO-Revision-Date: 2026-06-24 15:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language: ta\n"
@@ -357,8 +357,8 @@ msgstr ""
 msgid "{group_name} a bien été créé(e)"
 msgstr ""
 
-#: web/b3desk/endpoints/admin.py:226 web/b3desk/endpoints/meetings.py:188
-#: web/b3desk/endpoints/meetings.py:250
+#: web/b3desk/endpoints/admin.py:226 web/b3desk/endpoints/meetings.py:187
+#: web/b3desk/endpoints/meetings.py:249
 msgid "Le formulaire contient des erreurs"
 msgstr "படிவத்தில் பிழைகள் உள்ளன"
 
@@ -463,7 +463,7 @@ msgid "Fichier introuvable"
 msgstr "கோப்பு கிடைக்கவில்லை"
 
 #: web/b3desk/endpoints/meeting_files.py:432
-#: web/b3desk/endpoints/meetings.py:358
+#: web/b3desk/endpoints/meetings.py:346
 msgid "Vous ne pouvez pas supprimer cet élément"
 msgstr "நீங்கள் இந்த உருப்படியை நீக்க முடியாது"
 
@@ -475,81 +475,81 @@ msgstr "கோப்பு வெற்றிகரமாக நீக்கப�
 msgid "La réunion n'est pas en cours"
 msgstr "கூட்டம் நடைபெறவில்லை"
 
-#: web/b3desk/endpoints/meetings.py:150
+#: web/b3desk/endpoints/meetings.py:149
 msgid "Enregistrement renommé"
 msgstr "பதிவு பெயர் மாற்றப்பட்டது"
 
-#: web/b3desk/endpoints/meetings.py:153
+#: web/b3desk/endpoints/meetings.py:152
 #, python-brace-format
 msgid "Impossible de modifier cet enregistrement : {code}, {message}"
 msgstr "இந்தப் பதிவை மாற்ற முடியவில்லை: {code}, {message}"
 
-#: web/b3desk/endpoints/meetings.py:169
+#: web/b3desk/endpoints/meetings.py:168
 msgid "Vous n'avez pas le droit de créer de nouvelles réunions"
 msgstr "புதிய சந்திப்புகளை உருவாக்க உங்களுக்கு உரிமை இல்லை"
 
-#: web/b3desk/endpoints/meetings.py:215
+#: web/b3desk/endpoints/meetings.py:214
 #, python-brace-format
 msgid "{meeting_name} a bien été créé(e)"
 msgstr "{meeting_name} வெற்றிகரமாக உருவாக்கப்பட்டது"
 
-#: web/b3desk/endpoints/meetings.py:302
+#: web/b3desk/endpoints/meetings.py:301
 #, python-format
 msgid "%(meeting_name)s modifications prises en compte"
 msgstr "%(meeting_name)s மாற்றங்கள் கணக்கில் எடுத்துக்கொள்ளப்பட்டன"
 
-#: web/b3desk/endpoints/meetings.py:327
+#: web/b3desk/endpoints/meetings.py:326
 #, python-format
 msgid "Réunion « %(meeting_name)s » terminée"
 msgstr "“%(meeting_name)s” சந்திப்பு முடிந்தது"
 
-#: web/b3desk/endpoints/meetings.py:363
+#: web/b3desk/endpoints/meetings.py:351
 msgid "Élément supprimé"
 msgstr "நீக்கப்பட்ட உருப்படி"
 
-#: web/b3desk/endpoints/meetings.py:371
+#: web/b3desk/endpoints/meetings.py:359
 msgid "Vous devez retirer les délégataires"
 msgstr "நீங்கள் பிரதிநிதிகளை அகற்ற வேண்டும்"
 
-#: web/b3desk/endpoints/meetings.py:374
+#: web/b3desk/endpoints/meetings.py:362
 #, python-brace-format
 msgid "Impossible de supprimer les vidéos de cette réunion : {message}"
 msgstr "இந்த சந்திப்பிலிருந்து வீடியோக்களை நீக்க முடியவில்லை: {message}"
 
-#: web/b3desk/endpoints/meetings.py:396
+#: web/b3desk/endpoints/meetings.py:384
 msgid "Vidéo supprimée"
 msgstr "வீடியோ நீக்கப்பட்டது"
 
-#: web/b3desk/endpoints/meetings.py:407
+#: web/b3desk/endpoints/meetings.py:395
 #, python-format
 msgid "Impossible de supprimer cette vidéo : %(code)s, %(message)s"
 msgstr "இந்த வீடியோவை நீக்க முடியவில்லை: %(code)s, %(message)s"
 
-#: web/b3desk/endpoints/meetings.py:460
+#: web/b3desk/endpoints/meetings.py:448
 msgid "L'utilisateur recherché n'existe pas"
 msgstr "நீங்கள் தேடும் பயனர் இல்லை"
 
-#: web/b3desk/endpoints/meetings.py:463
+#: web/b3desk/endpoints/meetings.py:451
 msgid "L'utilisateur est déjà délégataire"
 msgstr "பயனர் ஏற்கனவே ஒரு சார்பாளர்"
 
-#: web/b3desk/endpoints/meetings.py:466
+#: web/b3desk/endpoints/meetings.py:454
 msgid "Cet utilisateur est le propriétaire"
 msgstr "இந்த பயனர் உரிமையாளர்"
 
-#: web/b3desk/endpoints/meetings.py:473
+#: web/b3desk/endpoints/meetings.py:461
 msgid "Cette réunion ne peut plus recevoir de nouvelle délégation"
 msgstr "இந்தக் கூட்டத்தில் இனி புதிய பிரதிநிதிகளைப் பெற முடியாது"
 
-#: web/b3desk/endpoints/meetings.py:486
+#: web/b3desk/endpoints/meetings.py:474
 msgid "L'utilisateur a été ajouté aux délégataires"
 msgstr "பிரதிநிதிகளில் பயனர் சேர்க்கப்பட்டார்"
 
-#: web/b3desk/endpoints/meetings.py:508
+#: web/b3desk/endpoints/meetings.py:496
 msgid "L'utilisateur ne fait pas partie des délégataires"
 msgstr "பயனர் பிரதிநிதிகளில் ஒருவர் அல்ல"
 
-#: web/b3desk/endpoints/meetings.py:511
+#: web/b3desk/endpoints/meetings.py:499
 msgid "L'utilisateur a été retiré des délégataires"
 msgstr "பிரதிநிதிகளில் இருந்து பயனர் அகற்றப்பட்டார்"
 
