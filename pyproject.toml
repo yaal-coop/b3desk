@@ -36,6 +36,7 @@ dependencies = [
     "sqlalchemy>=2.0.44,<3.0.0",
     "sqlalchemy-utils>=0.42.1,<0.50.0",
     "webdavclient3==3.14.6",
+    "stamina>=26.1.0",
 ]
 
 [tool.uv]
