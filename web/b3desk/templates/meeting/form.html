@@ -1,8 +1,5 @@
 {% block js %}
-  <script>
-    window.visioCodeUrl = "{{ url_for('meetings.get_available_visio_code') }}";
-  </script>
-  <script src="{{ url_for('static', filename='js/meeting-form.js')}}"></script>
+  <script src="{{ url_for('static', filename='js/meeting-form.js')}}" data-visio-code-url="{{ url_for('meetings.get_available_visio_code') }}"></script>
 {% endblock %}
 
 {% macro render_field(field, generate_button=False, reset_visio_code_button=False) %}

@@ -1,3 +1,5 @@
+window.visioCodeUrl = document.currentScript.dataset.visioCodeUrl
+
 document.addEventListener("DOMContentLoaded", () => {
     let buttons = document.getElementsByClassName("visio-code-button");
     for (let button of buttons){
