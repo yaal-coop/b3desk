@@ -15,6 +15,15 @@
       {% endfor %}
     </div>
   </li>
+{% elif field.type in ("ComboboxMultiField", "ComboboxSingleField") %}
+  <div id="wrap-{{ field.id }}" class="fr-input-group{% if field.errors %} fr-input-group--error{% endif %}">
+    <label class="fr-label" for="{{ field.query.id }}">{{ field.label.text }}</label>
+    <p class="fr-hint-text" id="{{ field.id }}-desc">{{ field.description }}</p>
+    {% for error in field.errors %}
+      <p class="fr-error-text" id="{{ field.id }}-error-{{ loop.index }}">{{ error }}</p>
+    {% endfor %}
+    {{ field.widget(field, **render_kw) }}
+  </div>
 {% else %}
   <div id="wrap-{{ field.id }}"{% if field.meta.field_class %} class="{{ field.meta.field_class }}"{% endif %}>
     <div class="fr-input-group{% if field.errors %} fr-input-group--error{% endif %}">

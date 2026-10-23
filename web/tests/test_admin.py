@@ -13,6 +13,7 @@ from b3desk.models.meetings import assign_unique_codes
 from b3desk.models.users import User
 from flask import url_for
 
+from tests.helpers import add_group_members
 from tests.helpers import form_with_action
 
 
@@ -301,7 +302,7 @@ def test_admin_can_add_member_in_group(
 ):
     """Test admin can add a user in a group."""
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
+    res = add_group_members(client_app, 1, [1])
     assert len(group.members) == 1
     assert ("success", "1 membre ajouté au groupe") in res.flashes
     assert "alice@domain.tld became member of group 1 Group 1" in caplog.text
@@ -313,8 +314,8 @@ def test_admin_cannot_add_member_already_in_group(
 ):
     """Test adding an already-member user again does not duplicate them."""
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
-    res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
+    add_group_members(client_app, 1, [1])
+    res = add_group_members(client_app, 1, [1])
     category, message = res.flashes[0]
     assert category == "success"
     assert message.startswith("0 membre")
@@ -327,7 +328,7 @@ def test_admin_can_remove_member_from_group(
 ):
     """Test admin can remove member from group."""
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    res = client_app.post("/admin/add-group-members/1", {"user_ids": [1]}, status=302)
+    res = add_group_members(client_app, 1, [1])
     res = client_app.get("/admin/manage-group-members/1")
     res = form_with_action(res, "/admin/manage-group-members/1/1").submit(status=302)
     assert ("success", "L'utilisateur a été retiré du groupe") in res.flashes
@@ -662,7 +663,7 @@ def test_admin_cannot_edit_files_if_meeting_owner_cannot_use_file_sharing(
 ):
     """Test admin cannot edit meeting files if owner cannot use file sharing."""
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    res = client_app.post("/admin/add-group-members/1", {"user_ids": [2]}, status=302)
+    res = add_group_members(client_app, 1, [2])
     assert user_2.groups[0].name == "Group 2"
     res = client_app.get(
         url_for("meeting_files.edit_meeting_files", meeting=meeting_2_user_2),

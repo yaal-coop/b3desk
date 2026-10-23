@@ -83,37 +83,10 @@ def get_users_paginate(per_page, data=None):
     return db.paginate(query, per_page=per_page)
 
 
-def query_all_users_not_in_group(group, data=None):
-    query = (
-        db.select(User).where(~User.groups.contains(group)).order_by(User.created_at)
-    )
-    if data:
-        query = query.where(
-            or_(
-                User.id == int(data) if data.isdigit() else None,
-                User.given_name.ilike(f"%{data}%"),
-                User.family_name.ilike(f"%{data}%"),
-                User.email.ilike(f"%{data}%"),
-            )
-        )
-    return query
-
-
-def get_all_users_not_in_group(group, data=None):
-    query = query_all_users_not_in_group(group, data)
-    return db.session.execute(query).scalars().all()
-
-
-def get_all_users_not_in_group_paginate(per_page, group, data=None):
-    query = query_all_users_not_in_group(group, data)
-    return db.paginate(query, per_page=per_page)
-
-
 def get_users_by_ids(user_ids):
-    ids = [int(user_id) for user_id in user_ids if user_id.isdigit()]
-    if not ids:
+    if not user_ids:
         return []
-    query = db.select(User).where(User.id.in_(ids))
+    query = db.select(User).where(User.id.in_(user_ids))
     return db.session.execute(query).scalars().all()
 
 
@@ -140,7 +113,6 @@ def manage_users():
         form=form,
         data=data,
         group=None,
-        add_members=False,
     )
 
 
@@ -304,7 +276,6 @@ def manage_group_members(group: Group):
         form=form,
         members_page=members_page,
         data=data,
-        add_members=False,
         confirm_form=ConfirmForm(),
     )
 
@@ -376,42 +347,18 @@ def add_users_in_group(users, group):
 @bp.route("/admin/add-group-members/<group:group>", methods=["GET", "POST"])
 @admin_needed
 def add_group_members(group: Group):
-    """Display non member users list to add members."""
-    form = UserSearchForm(request.args)
-    select_all = bool(request.values.get("select_all"))
-    search = request.values.get("search")
-    data = search.lower() if search else None
-
-    users_page = get_all_users_not_in_group_paginate(
-        per_page=PER_PAGE, group=group, data=data
-    )
-
-    if request.method == "POST":
-        users = (
-            get_all_users_not_in_group(group, data)
-            if select_all
-            else get_users_by_ids(request.form.getlist("user_ids"))
-        )
+    """Add members to a group, picked with a combobox."""
+    form = AddGroupMembersForm(group=group)
+    if form.validate_on_submit(submitter=form.add_members):
+        users = get_users_by_ids(form.users.data)
         if users:
             add_users_in_group(users, group)
         else:
             flash(_("Vous n'avez pas sélectionné d'utilisateur"), "message")
-        return redirect(
-            url_for(
-                "admin.add_group_members",
-                group=group,
-                search=data,
-                select_all=1 if select_all else None,
-            )
-        )
+        return redirect(url_for("admin.add_group_members", group=group))
 
     return render_template(
         "admin/add_group_members.html",
         group=group,
         form=form,
-        users_page=users_page,
-        data=data,
-        add_members=True,
-        select_all=select_all,
-        add_members_form=AddGroupMembersForm(),
     )

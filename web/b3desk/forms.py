@@ -18,12 +18,18 @@ from wtforms import TextAreaField
 from wtforms import ValidationError
 from wtforms import validators
 from wtforms.widgets import HiddenInput
+from wtforms_htmx_components import ComboboxMultiField
 
+from b3desk.models import db
 from b3desk.models.meetings import DEFAULT_MAX_PARTICIPANTS
 from b3desk.models.meetings import MODERATOR_ONLY_MESSAGE_MAXLENGTH
 from b3desk.models.meetings import PIN_LENGTH
 from b3desk.models.meetings import pin_generation
 from b3desk.models.meetings import pin_is_unique_validator
+from b3desk.models.users import User
+from b3desk.models.users import query_users_not_in_group
+from b3desk.widgets import DsfrChipsWidget
+from b3desk.widgets import DsfrComboboxWidget
 
 MAX_URL_LENGTH = 255
 MAX_LOGOUTURL_LENGTH = 250
@@ -66,8 +72,38 @@ class DeleteRecordingForm(ConfirmForm):
     recordID = HiddenField()
 
 
+def user_label(user_id):
+    """Return the name and email of a user, from their id."""
+    user = db.session.get(User, int(user_id)) if str(user_id).isdigit() else None
+    return f"{user.fullname} <{user.email}>" if user else str(user_id)
+
+
+def suggest_users_not_in_group(query, form):
+    """Suggest the users who match the query and are not in the group yet."""
+    users = db.session.scalars(query_users_not_in_group(form.group, query).limit(10))
+    return [
+        SelectChoice(str(user.id), f"{user.fullname} <{user.email}>") for user in users
+    ]
+
+
 class AddGroupMembersForm(B3DeskForm):
-    add_members = ButtonField(_("Ajouter les utilisateurs sélectionnés"))
+    users = ComboboxMultiField(
+        _("Utilisateurs à ajouter"),
+        suggest=suggest_users_not_in_group,
+        label_for=user_label,
+        coerce=int,
+        placeholder=_("Nom, prénom ou adresse e-mail"),
+        search_label=_("Rechercher"),
+        query_render_kw={"class": "fr-input"},
+        chips_widget=DsfrChipsWidget(),
+        chips_render_kw={"class": "fr-tags-group"},
+        widget=DsfrComboboxWidget(),
+    )
+    add_members = ButtonField(_("Ajouter au groupe"))
+
+    def __init__(self, *args, group, **kwargs):
+        self.group = group
+        super().__init__(*args, **kwargs)
 
 
 class JoinMeetingForm(B3DeskForm):

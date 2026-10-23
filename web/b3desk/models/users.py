@@ -15,6 +15,7 @@ from typing import TYPE_CHECKING
 
 from flask import current_app
 from sqlalchemy import Unicode
+from sqlalchemy import or_
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
@@ -196,3 +197,20 @@ class User(db.Model):
         if all(group.enable_ai_summary is False for group in self.groups):
             return False
         return current_app.config["ENABLE_AI_SUMMARY"]
+
+
+def query_users_not_in_group(group, data=None):
+    """Build a query of the users who are not in the group and match ``data``."""
+    query = (
+        db.select(User).where(~User.groups.contains(group)).order_by(User.created_at)
+    )
+    if data:
+        query = query.where(
+            or_(
+                User.id == int(data) if data.isdigit() else None,
+                User.given_name.ilike(f"%{data}%"),
+                User.family_name.ilike(f"%{data}%"),
+                User.email.ilike(f"%{data}%"),
+            )
+        )
+    return query

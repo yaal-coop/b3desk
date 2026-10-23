@@ -2,6 +2,10 @@
 {% from 'forms.html' import form_tag %}
 {% from 'admin/macros.html' import breadcrumb %}
 
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/combobox.css') }}">
+{% endblock %}
+
 {% block main %}
     {{ breadcrumb([
     {'href': url_for('admin.home'), 'label': _('Menu Admin')},
@@ -21,75 +25,12 @@
             {% endtrans %}
         </p>
     {% endif %}
-    {% call form_tag(form, class="fr-search-bar", id="userSearchForm", name="search_user", role="search", action=url_for("admin.add_group_members", group=group), method="get") %}
-        {{ form.search() }}
-        {{ form.find(class_="fr-btn", title=_("Rechercher un utilisateur")) }}
+    {% call form_tag(form, id="add-members-form", action=url_for("admin.add_group_members", group=group), method="post") %}
+        {{ form.users() }}
+        {{ form.add_members(class_="fr-btn") }}
     {% endcall %}
-    <br>
-    {% set users = users_page.items %}
-    {% if not users %}
-        <br>
-        <p>{% trans %}Aucun utilisateur ne correspond à cette recherche.{% endtrans %}</p>
-    {% else %}
-        <h5>{% trans %}Liste des utilisateurs{% endtrans %}</h5>
-        {% set page_obj = users_page %}
-        {% set page_endpoint = 'admin.add_group_members' %}
-        {% set search = data %}
-        <p class="fr-table__detail">
-            {% if data %}
-                {% trans trimmed count=page_obj.total %}
-                    {{ count }} utilisateur correspondant aux critères
-                    {% pluralize %}
-                    {{ count }} utilisateurs correspondant aux critères
-                {% endtrans %}
-            {% else %}
-                {% trans trimmed count=page_obj.total %}
-                    {{ count }} utilisateur
-                    {% pluralize %}
-                    {{ count }} utilisateurs
-                {% endtrans %}
-            {% endif %}
-        </p>
-        <form method="get" action="{{ url_for("admin.add_group_members", group=group) }}">
-            {% if data %}<input type="hidden" name="search" value="{{ data }}">{% endif %}
-            <input type="hidden" name="page" value="{{ page_obj.page }}">
-            <div class="fr-checkbox-group fr-checkbox-group--sm">
-                <input id="select-all-users" type="checkbox" {% if select_all %}checked{% endif %} name="select_all" value="1" aria-describedby="checkbox-messages">
-                <label class="fr-label" for="select-all-users">
-                    {% if data %}
-                        {% trans count=page_obj.total %}
-                            Sélectionner {{ count }} utilisateur correspondant aux critères et ne faisant pas partie du groupe
-                            {% pluralize %}
-                            Sélectionner {{ count }} utilisateurs correspondants aux critères et ne faisant pas partie du groupe
-                        {% endtrans %}
-                    {% else %}
-                        {% trans count=page_obj.total %}
-                            Sélectionner {{ count }} utilisateur ne faisant pas partie du groupe
-                            {% pluralize %}
-                            Sélectionner {{ count }} utilisateurs ne faisant pas partie du groupe
-                        {% endtrans %}
-                    {% endif %}
-                </label>
-                <div class="fr-messages-group" id="checkbox-messages" aria-live="polite">
-                </div>
-            </div>
-        </form>
-        {% call form_tag(add_members_form, method="post", action=url_for('admin.add_group_members', group=group)) %}
-            {% if data %}<input type="hidden" name="search" value="{{ data }}">{% endif %}
-            {% if select_all %}<input id="select-all-scope" type="hidden" name="select_all" value="1">{% endif %}
-            <div class="fr-grid-row fr-grid-row--center fr-mt-2w">
-                {{ add_members_form.add_members(id=False, class_="fr-btn") }}
-            </div>
-            {% include 'admin/user_table.html' %}
-            <div class="fr-grid-row fr-grid-row--center">
-                {{ add_members_form.add_members(id=False, class_="fr-btn") }}
-            </div>
-        {% endcall %}
-        <br>
-        {% include 'admin/paging.html' %}
-    {% endif %}
 {% endblock %}
 
 {% block js %}
-    <script src="{{ url_for('static', filename='js/group-members.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/combobox.js')}}"></script>
 {% endblock %}

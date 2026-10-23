@@ -6,6 +6,7 @@ import pytest
 import respx
 from b3desk.commands import bp
 from defusedxml import ElementTree
+from tests.helpers import add_group_members
 
 
 @pytest.fixture
@@ -608,9 +609,7 @@ def test_open_recordings_page_ai_summary(
     """The recordings page shows the ai-summary report links (HTML/PDF/Markdown)."""
     mocker.patch("b3desk.models.bbb.BBB.is_running", return_value=False)
     cli_runner.invoke(bp.cli, ["user-to-admin", "alice@domain.tld"])
-    response = client_app.post(
-        "/admin/add-group-members/1", {"user_ids": [1]}, status=302
-    )
+    response = add_group_members(client_app, 1, [1])
     response = client_app.get(f"/meeting/recordings/{meeting.id}")
     html = response.body.decode("utf-8")
 
