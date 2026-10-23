@@ -3,6 +3,7 @@ from datetime import timedelta
 from flask import current_app
 from flask_babel import lazy_gettext as _
 from flask_wtf import FlaskForm
+from flask_wtforms_htmx import HtmxFlaskForm
 from markupsafe import Markup
 from wtforms import BooleanField
 from wtforms import ButtonField
@@ -32,7 +33,7 @@ MAX_MEETING_DURATION = timedelta(minutes=999)
 BARE_FIELD_TYPES = {"HiddenField", "CSRFTokenField", "SubmitField", "ButtonField"}
 
 
-class B3DeskForm(FlaskForm):
+class B3DeskForm(HtmxFlaskForm):
     """Render every field through a Jinja template.
 
     Hidden fields and buttons render bare.
@@ -41,9 +42,9 @@ class B3DeskForm(FlaskForm):
     class Meta:
         field_template = "_field.html"
         field_class = ""
+        htmx_inline_validation = False
 
-        def render_field(self, field, render_kw):
-            render_kw = {**(field.render_kw or {}), **render_kw}
+        def field_wrapper(self, field, render_kw):
             if (
                 field.type in BARE_FIELD_TYPES
                 or isinstance(field.widget, HiddenInput)
