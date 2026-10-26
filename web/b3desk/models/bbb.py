@@ -131,7 +131,7 @@ class BBB:
             .replace(f"{current_app.config['BIGBLUEBUTTON_ENDPOINT']}/", ""),
             bigbluebutton_secret,
         )
-        checksum = hashlib.sha1(secret.encode("utf-8")).hexdigest()
+        checksum = hashlib.sha256(secret.encode("utf-8")).hexdigest()
         request.url = request.url.copy_merge_params({"checksum": checksum})
         return request
 

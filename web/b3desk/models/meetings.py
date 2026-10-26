@@ -139,7 +139,7 @@ class MeetingSecretKey(BaseMeetingSecretKey, db.Model):
     )
     legacy_secret_keys: Mapped[list[str]] = mapped_column(
         JSON, default=list
-    )  # old sha1-hash schemes
+    )  # old sha1-hash and sha256-hash schemes
     created_at: Mapped[datetime] = mapped_column(default=utcnow)
     updated_at: Mapped[datetime] = mapped_column(default=utcnow, onupdate=utcnow)
 

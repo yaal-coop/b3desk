@@ -126,7 +126,7 @@ class User(db.Model):
     def hash(self):
         """Generate SHA1 hash from user's email and application secret key."""
         s = f"{self.email}|{secret_key()}"
-        return hashlib.sha1(s.encode("utf-8")).hexdigest()
+        return hashlib.sha256(s.encode("utf-8")).hexdigest()
 
     @property
     def can_create_meetings(self):

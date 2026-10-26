@@ -32,7 +32,7 @@ BATCH_SIZE = 5000
 def legacy_bbb_meeting_id(meeting_id, owner_email, app_secret_key):
     """Rebuild the BBB meeting id the previous code computed on the fly."""
     owner_hash = (
-        hashlib.sha1(f"{owner_email}|{app_secret_key}".encode()).hexdigest()
+        hashlib.sha256(f"{owner_email}|{app_secret_key}".encode()).hexdigest()
         if owner_email
         else ""
     )
@@ -42,7 +42,7 @@ def legacy_bbb_meeting_id(meeting_id, owner_email, app_secret_key):
 def legacy_secret_keys(bbb_meeting_id, attendee_pw, name, role):
     """Rebuild the hashes of the signin links already handed out, in both role spellings."""
     return [
-        hashlib.sha1(
+        hashlib.sha256(
             f"{bbb_meeting_id}|{attendee_pw}|{name}|{spelling}".encode()
         ).hexdigest()
         for spelling in (f"Role.{role}", role)

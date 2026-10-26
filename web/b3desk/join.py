@@ -14,7 +14,7 @@ from b3desk.utils import utcnow
 def get_quick_meeting_secret_key(meeting, role: Role) -> str:
     name = meeting.name or str(current_app.config["QUICK_MEETING_DEFAULT_NAME"])
     s = f"{meeting.bbb_meeting_id}|{meeting.attendeePW}|{name}|{role}"
-    return hashlib.sha1(s.encode("utf-8")).hexdigest()
+    return hashlib.sha256(s.encode("utf-8")).hexdigest()
 
 
 def get_meeting_secret_key(meeting, role: Role) -> str:

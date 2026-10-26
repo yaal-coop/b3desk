@@ -1013,10 +1013,10 @@ def test_meeting_link_retrocompatibility(meeting):
                 MeetingSecretKey.role == role.name,
             )
         ).one()
-        role_interpolated_raw = hashlib.sha1(
+        role_interpolated_raw = hashlib.sha256(
             f"{meeting.bbb_meeting_id}|{meeting.attendeePW}|{meeting.name}|{role}".encode()
         ).hexdigest()
-        role_interpolated_as_name = hashlib.sha1(
+        role_interpolated_as_name = hashlib.sha256(
             f"{meeting.bbb_meeting_id}|{meeting.attendeePW}|{meeting.name}|{role.name}".encode()
         ).hexdigest()
         meeting_secret_key.legacy_secret_keys = [
@@ -1040,7 +1040,7 @@ def test_quick_meeting_link_retrocompatibility(client_app):
     assert meeting.bbb_meeting_id == f"meeting-vanish-{legacy_id}--"
 
     for role in Role:
-        legacy_secret_key = hashlib.sha1(
+        legacy_secret_key = hashlib.sha256(
             f"meeting-vanish-{legacy_id}--|{meeting.attendeePW}|{name}|{role}".encode()
         ).hexdigest()
         assert get_role(meeting, legacy_secret_key) == role
